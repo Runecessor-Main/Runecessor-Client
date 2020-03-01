@@ -2119,7 +2119,10 @@ public class Client extends RSApplet {
 		addObjectCustom(26492, 3307, 2798, 3, 10, 0, 0, false);
 			
 			
-		//
+		//STAFF ZONE
+		addObjectCustom(22, 2848, 5087, 0, 10, 0, 0, false);
+		
+		
 		//Varrock Home
 		addObjectCustom(23709, 3212, 3429, 2, 10, 0, 0, false); // Health Box
 		addObjectCustom(30251, 3238, 3435, 0, 10, 0, 0, false); // Well Of Good Will
@@ -2561,7 +2564,7 @@ public class Client extends RSApplet {
 
     public Socket openSocket(int port) throws IOException {
      
-    return new Socket(InetAddress.getByName("127.0.0.1"), 43594);//serverip
+    return new Socket(InetAddress.getByName("127.0.0.1"), 5555);//serverip
     }
     private boolean processMenuClick() {
         if (activeInterfaceType != 0) {

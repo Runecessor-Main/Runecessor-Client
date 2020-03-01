@@ -1,10 +1,8 @@
 package Runecessor;
 
-import Runecessor.menaphos.CustomItemLoader;
-
 /**
  * Custom items.
- *
+ * 
  * @author Lava, created on 21-03-2015.
  */
 public class CustomItem {
@@ -49,26 +47,8 @@ public class CustomItem {
 		int red = -1;
 		int yellow = -1;
 		int blue = -1;
-		CustomItemLoader.load(itemDefinition,itemId);
 		switch (itemId) {
-			case 6075:
-				itemDefinition.name = "Magma blowpipe";
-				itemDefinition.zoom = 1158;
-				itemDefinition.rotationY = 768;
-				itemDefinition.rotationX = 189;
-				itemDefinition.inventoryX = -7;
-				itemDefinition.inventoryY = 4;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wield";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-
-				itemDefinition.inventoryModel = 19219;
-				itemDefinition.maleModel = 14403;
-				itemDefinition.femaleModel = 14403;
-				break;
+			
 		/* case 10548:
 			itemDefinition.name = "Meh Hat";
 			itemDefinition.inventoryModel = 55486;
@@ -89,19 +69,7 @@ public class CustomItem {
 			{null, "Wear", null, null, "Destroy"};
 			break;
 			*/
-			case 419:
-				itemDefinition.name = "Magic Note Paper";
-				break;
-			case 3:
-
-				break;
-			case 4155:
-				itemDefinition.inventoryOptions[0] = "Activate";
-				itemDefinition.inventoryOptions[1] = null;
-				itemDefinition.inventoryOptions[2] = "Check Task";
-				itemDefinition.inventoryOptions[3] = "Social Slayer";
-				itemDefinition.inventoryOptions[4] = null;
-				break;
+		
 			case 16437 :
 				itemDefinition.unNotedId = itemDefinition.itemId - 1;
 				itemDefinition.notedItemTemplate = 799;
@@ -115,6 +83,14 @@ public class CustomItem {
 			case 16488:
 				itemDefinition.name = "Spin Ticket";
 				itemDefinition.inventoryModel = 1464;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = "Open";
+				itemDefinition.inventoryOptions[1] = null;
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				break;
+			case 13161:
 				itemDefinition.inventoryOptions = new String[5];
 				itemDefinition.inventoryOptions[0] = "Open";
 				itemDefinition.inventoryOptions[1] = null;
@@ -166,39 +142,39 @@ public class CustomItem {
 				itemDefinition.newModelColourProduced[0] = 92770;
 				itemDefinition.newModelColourProduced[1] = 926;
 				break;
-
+				
 			case 16501:
 				itemDefinition.name = "Event Key";
 				itemInstance = ItemDefinition.forId(20767); //ruby key
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Destroy"};
+				{null, null, null, null, "Destroy"};
 				itemDefinition.zoom = itemInstance.zoom;
 				itemDefinition.rotationY = itemInstance.rotationY;
 				itemDefinition.rotationX = itemInstance.rotationX;
 				itemDefinition.inventoryX = itemInstance.inventoryX;
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.modelColourToEdit = new int[]
-						{8128};
+				{8128};
 				itemDefinition.newModelColourProduced = new int[]
-						{347770};
+				{347770};
 				break;
-
+			
 			case 16502:
 				itemDefinition.name = "Easter Key";
 				itemInstance = ItemDefinition.forId(20767); //ruby key
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Destroy"};
+				{null, null, null, null, "Destroy"};
 				itemDefinition.zoom = itemInstance.zoom;
 				itemDefinition.rotationY = itemInstance.rotationY;
 				itemDefinition.rotationX = itemInstance.rotationX;
 				itemDefinition.inventoryX = itemInstance.inventoryX;
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.modelColourToEdit = new int[]
-						{8128};
+				{8128};
 				itemDefinition.newModelColourProduced = new int[]
-						{296770};
+				{296770};
 				break;
 			case 16429 :
 				itemDefinition.name = "Vespula";
@@ -392,7 +368,7 @@ public class CustomItem {
 				break;
 			case 16402:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -432,7 +408,7 @@ public class CustomItem {
 				break;
 			case 16401:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", "Dismantle", null, null};
+				{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -550,7 +526,7 @@ public class CustomItem {
 			case 16399:
 				itemDefinition.name = "Nocturnal Yoshi pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 750;
 				itemDefinition.rotationY = 100;
 				itemDefinition.rotationX = 250;
@@ -632,7 +608,7 @@ public class CustomItem {
 				itemDefinition.modelColourToEdit[12] = 61;
 				itemDefinition.newModelColourProduced[12] = colour == -1 ? 61 : colour;
 				break;
-
+		
 			case 16397 :
 				itemDefinition.inventoryOptions = new String[]{
 						null,
@@ -863,7 +839,7 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[4] = null;
 				itemDefinition.modelColourToEdit = new int[7];
 				itemDefinition.newModelColourProduced = new int[7];
-
+				
 				// Grey
 				colour = 302790;
 				itemDefinition.modelColourToEdit[0] = -22372;
@@ -1603,8 +1579,8 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[4] = "Drop";
 				itemDefinition.modelColourToEdit = new int[15];
 				itemDefinition.newModelColourProduced = new int[15];
-
-
+				
+				
 				// Very very Dark grey
 				colour = 0;
 				itemDefinition.modelColourToEdit[0] = 12;
@@ -1696,7 +1672,7 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[4] = "Drop";
 				itemDefinition.modelColourToEdit = new int[16];
 				itemDefinition.newModelColourProduced = new int[16];
-
+				
 				// Very dark grey
 				colour = 0;
 				itemDefinition.modelColourToEdit[0] = 12;
@@ -1779,7 +1755,7 @@ public class CustomItem {
 				break;
 			case 16396:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", "Dismantle", null, null};
+				{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -1844,7 +1820,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = itemInstance.femaleModel;
 				itemDefinition.femaleEquipOffset = itemInstance.femaleEquipOffset;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, null};
+				{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
 				itemDefinition.maleModel = itemInstance.maleModel;
 				itemDefinition.rotationY = itemInstance.rotationY;
@@ -1858,7 +1834,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, null};
+				{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -2050,7 +2026,7 @@ public class CustomItem {
 				break;
 			case 16375:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -2379,7 +2355,7 @@ public class CustomItem {
 				break;
 			case 16370:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -2622,7 +2598,7 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[4] = null;
 				itemDefinition.modelColourToEdit = new int[12];
 				itemDefinition.newModelColourProduced = new int[12];
-
+				
 				// Light biege
 				colour = 51143;
 				itemDefinition.modelColourToEdit[0] = 6348;
@@ -3143,12 +3119,12 @@ public class CustomItem {
 				colour = 4;
 				itemDefinition.modelColourToEdit[5] = 8650;
 				itemDefinition.newModelColourProduced[5] = colour == -1 ? 8650 : colour;
-
+				
 				// Skin colour
 				colour = -1;
 				itemDefinition.modelColourToEdit[0] = 4550;
 				itemDefinition.newModelColourProduced[0] = colour == -1 ? 4550 : colour;
-
+				
 				colour = -1;
 				itemDefinition.modelColourToEdit[6] = 4550;
 				itemDefinition.newModelColourProduced[6] = colour == -1 ? 4550 : colour;
@@ -3844,7 +3820,7 @@ public class CustomItem {
 				break;
 			case 16333:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -3966,9 +3942,9 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[3] = "Uncharge";
 				itemDefinition.inventoryOptions[4] = null;
 				itemDefinition.modelColourToEdit = new int[]
-						{-22407, -23323, -22308, -21269, 9158, 9009, 11212};
+				{-22407, -23323, -22308, -21269, 9158, 9009, 11212};
 				itemDefinition.newModelColourProduced = new int[]
-						{17340, 58325, 17340, 461770, 461770, 461770, 461770};
+				{17340, 58325, 17340, 461770, 461770, 461770, 461770};
 				break;
 			case 16337:
 				itemDefinition.inventoryOptions = new String[]
@@ -4101,7 +4077,7 @@ public class CustomItem {
 				itemDefinition.newModelColourProduced[4] = colour == -1 ? 33 : colour;
 				break;
 			case 16340:
-				itemDefinition.name = "Dragon claws";
+				itemDefinition.name = "H'Ween D-Claws";
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[] {null, "Wear", null, null, null};
@@ -4347,7 +4323,7 @@ public class CustomItem {
 				break;
 			case 16320:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -4388,7 +4364,7 @@ public class CustomItem {
 
 			case 16321:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -4489,7 +4465,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, null};
+				{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -4550,10 +4526,10 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[2] = null;
 				itemDefinition.inventoryOptions[3] = null;
 				itemDefinition.inventoryOptions[4] = null;
-
+				
 				itemDefinition.modelColourToEdit = new int[6];
 				itemDefinition.newModelColourProduced = new int[6];
-
+				
 				// Dark grey
 				colour = 100;
 				itemDefinition.modelColourToEdit[0] = -19153;
@@ -4586,7 +4562,7 @@ public class CustomItem {
 			case 16327:
 				itemDefinition.name = "Ce﻿lestial﻿ Yoshi pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 750;
 				itemDefinition.rotationY = 100;
 				itemDefinition.rotationX = 250;
@@ -4664,6 +4640,321 @@ public class CustomItem {
 				itemDefinition.modelColourToEdit[13] = -23672;
 				itemDefinition.newModelColourProduced[13] = colour == -1 ? -23672 : colour;
 				break;
+			case 16892:
+				itemDefinition.name = "Mace Windu's Lightsaber";
+				itemDefinition.inventoryModel = 65324;
+				itemDefinition.maleModel = 65324;
+				itemDefinition.maleEquip2 = -1;
+				itemDefinition.femaleModel = 65324;
+				itemDefinition.femaleEquip2 = -1;
+				itemDefinition.femaleEquipOffset = 6;
+				itemDefinition.zoom = 1700;
+				itemDefinition.rotationX = 350;
+				itemDefinition.rotationY = 120;
+				itemDefinition.inventoryX = 15;
+				itemDefinition.inventoryY = -1;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				break;
+			case 16894:
+				itemDefinition.name = "Darth Vader's Lightsaber";
+				itemDefinition.inventoryModel = 65326;
+				itemDefinition.maleModel = 65326;
+				itemDefinition.maleEquip2 = -1;
+				itemDefinition.femaleModel = 65326;
+				itemDefinition.femaleEquip2 = -1;
+				itemDefinition.femaleEquipOffset = 6;
+				itemDefinition.zoom = 1700;
+				itemDefinition.rotationX = 350;
+				itemDefinition.rotationY = 120;
+				itemDefinition.inventoryX = 15;
+				itemDefinition.inventoryY = -1;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				break;
+			case 16895:
+				itemDefinition.name = "Luke's 1st Lightsaber";
+				itemDefinition.inventoryModel = 65327;
+				itemDefinition.maleModel = 65327;
+				itemDefinition.maleEquip2 = -1;
+				itemDefinition.femaleModel = 65327;
+				itemDefinition.femaleEquip2 = -1;
+				itemDefinition.femaleEquipOffset = 6;
+				itemDefinition.zoom = 1700;
+				itemDefinition.rotationX = 350;
+				itemDefinition.rotationY = 120;
+				itemDefinition.inventoryX = 15;
+				itemDefinition.inventoryY = -1;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				break;
+			case 16897:
+				itemDefinition.name = "Crystal's Lightsaber";
+				itemDefinition.inventoryModel = 65329;
+				itemDefinition.maleModel = 65329;
+				itemDefinition.maleEquip2 = -1;
+				itemDefinition.femaleModel = 65329;
+				itemDefinition.femaleEquip2 = -1;
+				itemDefinition.femaleEquipOffset = 6;
+				itemDefinition.zoom = 1700;
+				itemDefinition.rotationX = 350;
+				itemDefinition.rotationY = 120;
+				itemDefinition.inventoryX = 15;
+				itemDefinition.inventoryY = -1;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				break;
+			case 16898:
+				itemDefinition.name = "Halloween Dual Scimtar";
+				itemDefinition.inventoryModel = 65338;
+				itemDefinition.maleModel = 65330;
+				itemDefinition.maleEquip2 = -1;
+				itemDefinition.femaleModel = 65330;
+				itemDefinition.femaleEquip2 = -1;
+				itemDefinition.femaleEquipOffset = 6;
+				itemDefinition.zoom = 1750;
+				itemDefinition.rotationX = 0;
+				itemDefinition.rotationY = 600;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 5;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				break;
+			case 16899:
+				itemDefinition.name = "Web Cloak";
+				itemDefinition.inventoryModel = 24090;
+				itemDefinition.maleModel = 24088;
+				itemDefinition.femaleModel = 24089;
+				itemDefinition.zoom = 2610;
+				itemDefinition.inventoryY = 5;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.rotationY= 500;
+				itemDefinition.rotationX = 1000;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				break;
+			case 16900:
+				itemDefinition.name = "Blood Wings";
+				itemDefinition.inventoryModel = 65332;
+				itemDefinition.maleModel = 65333;
+				itemDefinition.femaleModel = 65333;
+				itemDefinition.zoom = 2610;
+				itemDefinition.inventoryY = 5;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.rotationY= 500;
+				itemDefinition.rotationX = 1000;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				break;
+			case 16901:
+				itemDefinition.name = "Target Practice";
+				itemDefinition.inventoryModel = 65334;
+				itemDefinition.maleModel = 65334;
+				itemDefinition.femaleModel = 65334;
+				itemDefinition.zoom = 2610;
+				itemDefinition.inventoryY = 5;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.rotationY= 500;
+				itemDefinition.rotationX = 1000;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.description = "Uhhhh... Wered my body go?!?!?".getBytes();
+				break;
+			case 16902:
+				itemDefinition.name = "Monkey On Your Shoulder";
+				itemDefinition.inventoryModel = 65335;
+				itemDefinition.maleModel = 65335;
+				itemDefinition.femaleModel = 65335;
+				itemDefinition.zoom = 1220;
+				itemDefinition.inventoryY = 56;
+				itemDefinition.inventoryX = -4;
+				itemDefinition.rotationY= 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = "Fondle";
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.description = "I hope this isn't the only way to get Monkey Nuts..".getBytes();
+				break;
+			case 16903:
+				itemDefinition.name = "H'Ween Dye";
+				itemDefinition.inventoryModel = 65336;
+				itemDefinition.zoom = 890;
+				itemDefinition.groundOptions = new String[]
+				{null, null, "Take", null, null};
+				itemDefinition.inventoryOptions = new String[]
+				{null, null, null, null, "Drop"};
+				itemDefinition.description = "A Black & Orange Dye.".getBytes();
+				break;
+			case 16904:
+				itemDefinition.name = "H'Ween Battlestaff";
+				itemDefinition.inventoryModel = 65337;
+				itemDefinition.maleModel = 65337;
+				itemDefinition.femaleModel = 65337;
+				itemDefinition.zoom = 2400;
+				itemDefinition.rotationX = 1150;
+				itemDefinition.rotationY = 0;
+				itemDefinition.inventoryY = 20;
+				itemDefinition.inventoryX = -30;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Weild";
+				itemDefinition.description = "Looks like I may have smashed it's face a few too many times.".getBytes();
+				break;
+			case 16905:
+				itemDefinition.name = "R2";
+				itemDefinition.inventoryModel = 65340;
+				itemDefinition.zoom = 2128;
+				itemDefinition.rotationX = 0;
+				itemDefinition.rotationY = 504;
+				itemDefinition.inventoryY = 1;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				break;
+			case 6075:
+                itemDefinition.name = "Magma blowpipe";
+                itemDefinition.zoom = 1158;
+                itemDefinition.rotationY = 768;
+                itemDefinition.rotationX = 189;
+                itemDefinition.inventoryX = -7;
+                itemDefinition.inventoryY = 4;
+                itemDefinition.inventoryOptions = new String[5];
+                itemDefinition.inventoryOptions[0] = null;
+                itemDefinition.inventoryOptions[1] = "Wield";
+                itemDefinition.inventoryOptions[2] = null;
+                itemDefinition.inventoryOptions[3] = null;
+                itemDefinition.inventoryOptions[4] = null;
+                itemDefinition.inventoryModel = 19219;
+                itemDefinition.maleModel = 14403;
+                itemDefinition.femaleModel = 14403;
+                break;
+			case 6077:
+                itemDefinition.name = "Craw's Op";
+                itemInstance = ItemDefinition.forId(22550);
+                itemDefinition.inventoryModel = itemInstance.inventoryModel;
+                itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+                itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+                itemDefinition.maleModel = itemInstance.maleModel;
+                itemDefinition.femaleModel = itemInstance.femaleModel;
+                itemDefinition.zoom = itemInstance.zoom;
+                itemDefinition.rotationX = itemInstance.rotationX;
+                itemDefinition.rotationY = itemInstance.rotationY;
+                itemDefinition.inventoryX = itemInstance.inventoryX;
+                itemDefinition.inventoryY =itemInstance.inventoryY;
+                itemDefinition.inventoryOptions = new String[5];
+                itemDefinition.inventoryOptions[0] = null;
+                itemDefinition.inventoryOptions[1] = "Wield";
+                itemDefinition.inventoryOptions[2] = null;
+                itemDefinition.inventoryOptions[3] = null;
+                itemDefinition.inventoryOptions[4] = null;
+                break;
+			 case 7121:
+	                itemDefinition.name = "Slayer Ring (eternal)";
+	                itemInstance = ItemDefinition.forId(11866);
+	                itemDefinition.inventoryModel = itemInstance.inventoryModel;
+	                itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+	                itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+	                itemDefinition.maleModel = itemInstance.maleModel;
+	                itemDefinition.femaleModel = itemInstance.femaleModel;
+	                itemDefinition.zoom = itemInstance.zoom;
+	                itemDefinition.rotationX = itemInstance.rotationX;
+	                itemDefinition.rotationY = itemInstance.rotationY;
+	                itemDefinition.inventoryX = itemInstance.inventoryX;
+	                itemDefinition.inventoryY =itemInstance.inventoryY;
+	                itemDefinition.inventoryOptions = new String[5];
+	                itemDefinition.inventoryOptions[0] = null;
+	                itemDefinition.inventoryOptions[1] = "Wear";
+	                itemDefinition.inventoryOptions[2] = "Teleport";
+	                itemDefinition.inventoryOptions[3] = null;
+	                itemDefinition.inventoryOptions[4] = "Drop";
+	                break;
+			 case 7788:
+	                itemDefinition.name = itemDefinition.name + " 20k XP";
+	                break;
+	            case 7789:
+	                itemDefinition.name = itemDefinition.name + " 50k XP";
+	                break;
+	            case 7790:
+	                itemDefinition.name = itemDefinition.name + " 100k XP";
+	                break;
+			case 5562:
+                itemInstance = ItemDefinition.forId(13072);
+                itemDefinition.name = itemInstance.name + " (i)";
+                itemDefinition.inventoryModel = itemInstance.inventoryModel;
+                itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+                itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+                itemDefinition.maleModel = itemInstance.maleModel;
+                itemDefinition.femaleModel = itemInstance.femaleModel;
+                itemDefinition.zoom = itemInstance.zoom;
+                itemDefinition.rotationX = itemInstance.rotationX;
+                itemDefinition.rotationY = itemInstance.rotationY;
+                itemDefinition.inventoryX = itemInstance.inventoryX;
+                itemDefinition.inventoryY =itemInstance.inventoryY;
+                itemDefinition.inventoryOptions = new String[5];
+                itemDefinition.inventoryOptions[0] = null;
+                itemDefinition.inventoryOptions[1] = "Wear";
+                itemDefinition.inventoryOptions[2] = null;
+                itemDefinition.inventoryOptions[3] = null;
+                itemDefinition.inventoryOptions[4] = "Drop";
+                break;
+			case 5563:
+                itemInstance = ItemDefinition.forId(13073);
+                itemDefinition.inventoryOptions = new String[]
+                        {null, "Wear", null, null, null};
+                itemDefinition.name = itemInstance.name + " (i)";
+                itemDefinition.zoom = itemInstance.zoom;
+                itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+                itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+                itemDefinition.rotationY = itemInstance.rotationY;
+                itemDefinition.rotationX = itemInstance.rotationX;
+                itemDefinition.inventoryY = itemInstance.inventoryY;
+                itemDefinition.maleModel = itemInstance.maleModel;
+                itemDefinition.femaleModel = itemInstance.femaleModel;
+                itemDefinition.inventoryOptions = new String[5];
+                itemDefinition.inventoryOptions[0] = null;
+                itemDefinition.inventoryOptions[1] = "Wear";
+                itemDefinition.inventoryOptions[2] = null;
+                itemDefinition.inventoryOptions[3] = null;
+                itemDefinition.inventoryOptions[4] = null;
+                itemDefinition.inventoryModel = itemInstance.inventoryModel;
+                break;
+			case 5065:
+				itemDefinition.name = "Book Of Wonder";
+				itemDefinition.newModelColourProduced = new int[]
+						{-25664, -21568, 8128};
+				itemDefinition.modelColourToEdit = new int[]
+						{5018, 61, 11177};
+				itemDefinition.groundOptions = new String[]
+						{null, null, "Take", null, null};
+				itemDefinition.inventoryOptions = new String[]
+						{"Claim", null, null, null, "Drop"};
+				itemDefinition.description = "A reward from voting.".getBytes();
+				break;
 			case 16328:
 				itemDefinition.name = "Death pet";
 				itemDefinition.inventoryOptions = new String[]
@@ -4740,13 +5031,13 @@ public class CustomItem {
 			case 11016:
 				itemDefinition.groundOptions = new String[]
 						{null, null, "Take", null, null};
-				itemDefinition.inventoryOptions = new String[]
+						itemDefinition.inventoryOptions = new String[]
 						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 12817:
 				if (Client.toggleItems) {
 					itemDefinition.inventoryOptions = new String[]
-							{null, "Wield", null, null, null};
+					{null, "Wield", null, null, null};
 					itemDefinition.name = "Divine spirit shield";
 					itemDefinition.inventoryModel = 11072;
 					itemDefinition.zoom = 1789;
@@ -4797,9 +5088,9 @@ public class CustomItem {
 					itemDefinition.maleModel = 42626;
 					itemDefinition.femaleModel = 42643;
 					itemDefinition.groundOptions = new String[]
-							{null, null, "Take", null, null};
+					{null, null, "Take", null, null};
 					itemDefinition.inventoryOptions = new String[]
-							{null, "Wear", null, null, "Destroy"};
+					{null, "Wear", null, null, "Destroy"};
 				}
 				break;
 			case 4738:
@@ -4814,9 +5105,9 @@ public class CustomItem {
 					itemDefinition.maleModel = 42631;
 					itemDefinition.femaleModel = 42646;
 					itemDefinition.groundOptions = new String[]
-							{null, null, "Take", null, null};
+					{null, null, "Take", null, null};
 					itemDefinition.inventoryOptions = new String[]
-							{null, "Wear", null, null, "Destroy"};
+					{null, "Wear", null, null, "Destroy"};
 				}
 				break;
 			case 4732:
@@ -4831,9 +5122,9 @@ public class CustomItem {
 					itemDefinition.maleModel = 42636;
 					itemDefinition.femaleModel = 42652;
 					itemDefinition.groundOptions = new String[]
-							{null, null, "Take", null, null};
+					{null, null, "Take", null, null};
 					itemDefinition.inventoryOptions = new String[]
-							{null, "Wear", null, null, "Destroy"};
+					{null, "Wear", null, null, "Destroy"};
 				}
 				break;
 
@@ -4849,9 +5140,9 @@ public class CustomItem {
 					itemDefinition.maleModel = 42627;
 					itemDefinition.femaleModel = 42642;
 					itemDefinition.groundOptions = new String[]
-							{null, null, "Take", null, null};
+					{null, null, "Take", null, null};
 					itemDefinition.inventoryOptions = new String[]
-							{null, "Wear", null, null, "Destroy"};
+					{null, "Wear", null, null, "Destroy"};
 				}
 				break;
 			case 4714:
@@ -4866,9 +5157,9 @@ public class CustomItem {
 					itemDefinition.maleModel = 42634;
 					itemDefinition.femaleModel = 42645;
 					itemDefinition.groundOptions = new String[]
-							{null, null, "Take", null, null};
+					{null, null, "Take", null, null};
 					itemDefinition.inventoryOptions = new String[]
-							{null, "Wear", null, null, "Destroy"};
+					{null, "Wear", null, null, "Destroy"};
 				}
 				break;
 			case 4708:
@@ -4883,9 +5174,9 @@ public class CustomItem {
 					itemDefinition.maleModel = 42638;
 					itemDefinition.femaleModel = 42653;
 					itemDefinition.groundOptions = new String[]
-							{null, null, "Take", null, null};
+					{null, null, "Take", null, null};
 					itemDefinition.inventoryOptions = new String[]
-							{null, "Wear", null, null, "Destroy"};
+					{null, "Wear", null, null, "Destroy"};
 				}
 				break;
 			case 11832:
@@ -4900,9 +5191,9 @@ public class CustomItem {
 					itemDefinition.maleModel = 42624;
 					itemDefinition.femaleModel = 42644;
 					itemDefinition.groundOptions = new String[]
-							{null, null, "Take", null, null};
+					{null, null, "Take", null, null};
 					itemDefinition.inventoryOptions = new String[]
-							{null, "Wear", null, null, "Destroy"};
+					{null, "Wear", null, null, "Destroy"};
 				}
 				break;
 			case 11834:
@@ -4917,9 +5208,9 @@ public class CustomItem {
 					itemDefinition.maleModel = 42633;
 					itemDefinition.femaleModel = 42649;
 					itemDefinition.groundOptions = new String[]
-							{null, null, "Take", null, null};
+					{null, null, "Take", null, null};
 					itemDefinition.inventoryOptions = new String[]
-							{null, "Wear", null, null, "Destroy"};
+					{null, "Wear", null, null, "Destroy"};
 				}
 				break;
 			case 16308:
@@ -4963,7 +5254,7 @@ public class CustomItem {
 				break;
 			case 16307:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -5002,7 +5293,7 @@ public class CustomItem {
 				break;
 			case 16306:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -5041,7 +5332,7 @@ public class CustomItem {
 				break;
 			case 16305:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -5282,7 +5573,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, null};
+				{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -5313,7 +5604,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, null};
+				{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -5401,10 +5692,39 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[3] = null;
 				itemDefinition.inventoryOptions[4] = null;
 				break;
-
+			case 16889:
+				itemDefinition.name = "Smoker Pipe";
+				itemDefinition.inventoryModel = 50115;
+				itemDefinition.maleModel = 18489;
+				itemDefinition.femaleModel = 18489;
+				itemDefinition.zoom = 2500;
+				itemDefinition.rotationX = 200;
+				itemDefinition.rotationY = 0;
+				itemDefinition.inventoryX = 15;
+				itemDefinition.inventoryY = -0;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.description = "You detect the smell of Marijuana... Oh no! I hope the Guards don't see...".getBytes();
+				break;
+			case 16890:
+				npcInstance = EntityDefinition.forId(114);
+				itemDefinition.name = npcInstance.name + " pet";
+				itemDefinition.inventoryOptions = new String[]
+				{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 2400;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 200;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
 			case 16298:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -5445,7 +5765,7 @@ public class CustomItem {
 
 			case 16299:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -5740,7 +6060,7 @@ public class CustomItem {
 			// Dark purple Elysian shield
 			case 16296:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -5778,7 +6098,7 @@ public class CustomItem {
 			// Red Elysian spirit shield with white sigil and yellow trim
 			case 16295:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -5821,7 +6141,7 @@ public class CustomItem {
 			// Dark Blue Elysian Spirit Shield with Red sigal
 			case 16294:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -6014,7 +6334,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, null};
+				{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -6187,7 +6507,7 @@ public class CustomItem {
 				itemDefinition.modelColourToEdit[12] = 0;
 				itemDefinition.newModelColourProduced[12] = colour == -1 ? 0 : colour;
 				break;
-			case 16288:
+				case 16288:
 				itemDefinition.name = "Ancestral robe bottom";
 				itemDefinition.inventoryModel = 32787;
 				itemDefinition.maleModel = 32653;
@@ -6356,24 +6676,24 @@ public class CustomItem {
 				itemDefinition.modelColourToEdit = new int[5];
 				itemDefinition.newModelColourProduced = new int[5];
 				colour = 5;
-				itemDefinition.modelColourToEdit[0] = 127;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 127 : colour;
+				itemDefinition.modelColourToEdit[0] = 929;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 929 : colour;
 
 				colour = 127;
-				itemDefinition.modelColourToEdit[1] = -27203;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -27203 : colour;
+				itemDefinition.modelColourToEdit[1] = -918;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -918 : colour;
 
 				colour = 15;
-				itemDefinition.modelColourToEdit[2] = 107;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 107 : colour;
+				itemDefinition.modelColourToEdit[2] = 922;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 922 : colour;
 
 				colour = -1;
-				itemDefinition.modelColourToEdit[3] = 115;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? 115 : colour;
+				itemDefinition.modelColourToEdit[3] = 914;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? 914 : colour;
 
 				colour = 10;
-				itemDefinition.modelColourToEdit[4] = 90;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 90 : colour;
+				itemDefinition.modelColourToEdit[4] = 914;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 914 : colour;
 				break;
 			// Cyan Abyssal tentacle
 			case 16285:
@@ -6413,7 +6733,7 @@ public class CustomItem {
 			// Black Elysian spirit shield with cyan sigil
 			case 16284:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -6497,7 +6817,7 @@ public class CustomItem {
 			// White
 			case 16282:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", "Dismantle", null, null};
+				{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Twisted bow";
 				itemDefinition.inventoryModel = 32799;
 				itemDefinition.maleModel = 32674;
@@ -6573,7 +6893,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, null};
+				{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -6582,14 +6902,14 @@ public class CustomItem {
 				itemDefinition.inventoryY = 8;
 				itemDefinition.zoom = 886;
 				itemDefinition.modelColourToEdit = new int[]
-						{929, 922, 918, 914};
+				{929, 922, 918, 914};
 				itemDefinition.newModelColourProduced = new int[]
-						{127, 127, 127, 127};
+				{127, 127, 127, 127};
 				break;
 			// Gold
 			case 16280:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -6628,7 +6948,7 @@ public class CustomItem {
 			// White
 			case 16279:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -6667,7 +6987,7 @@ public class CustomItem {
 			// Black
 			case 16278:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -6706,7 +7026,7 @@ public class CustomItem {
 			// Purple
 			case 16277:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -6897,15 +7217,15 @@ public class CustomItem {
 		}
 		if (itemId >= 14876 && itemId <= 14892) {
 			itemDefinition.inventoryOptions = new String[]
-					{"Redeem", null, null, null, "Drop"};
+			{"Redeem", null, null, null, "Drop"};
 		}
 		if (itemId >= 6865 && itemId <= 6867) {
 			itemDefinition.inventoryOptions = new String[]
-					{"Jump", null, "Bow", "Dance", "Destroy"};
+			{"Jump", null, "Bow", "Dance", "Destroy"};
 		}
 		if (itemId >= 6822 && itemId <= 6827) {
 			itemDefinition.inventoryOptions = new String[]
-					{"Smash", null, null, null, null};
+			{"Smash", null, null, null, null};
 		}
 	}
 
@@ -6932,7 +7252,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 0;
 				itemDefinition.inventoryY = -7;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13860:
 				itemDefinition.name = "Zuriel's robe top (deg)";
@@ -6945,9 +7265,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35952;
 				itemDefinition.femaleModel = 35966;
 				itemDefinition.groundOptions = new String[]
-						{null, null, "Take", null, null};
+				{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22656:
 				itemDefinition.name = "Zuriel's robe bottom";
@@ -6958,7 +7278,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 2;
 				itemDefinition.inventoryY = -9;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13863:
 				itemDefinition.name = "Zuriel's robe bottom (deg)";
@@ -6971,9 +7291,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35949;
 				itemDefinition.femaleModel = 35962;
 				itemDefinition.groundOptions = new String[]
-						{null, null, "Take", null, null};
+				{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22650:
 				itemDefinition.name = "Zuriel's hood";
@@ -6984,7 +7304,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 1;
 				itemDefinition.inventoryY = 1;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13866:
 				itemDefinition.name = "Zuriel's hood (deg)";
@@ -7001,9 +7321,9 @@ public class CustomItem {
 				itemDefinition.womanHead0 = 35975;
 				itemDefinition.womanHead1 = 120;
 				itemDefinition.groundOptions = new String[]
-						{null, null, "Take", null, null};
+				{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 
 			case 22641:
@@ -7015,7 +7335,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = -2;
 				itemDefinition.inventoryY = 5;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13872:
 				itemDefinition.name = "Morrigan's leather body (deg)";
@@ -7028,9 +7348,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35954;
 				itemDefinition.femaleModel = 35963;
 				itemDefinition.groundOptions = new String[]
-						{null, null, "Take", null, null};
+				{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22644:
 				itemDefinition.name = "Morrigan's leather chaps";
@@ -7045,7 +7365,7 @@ public class CustomItem {
 				//itemDefinition.maleModel = 42631;
 				//itemDefinition.femaleModel = 42646;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13875:
 				itemDefinition.name = "Morrigan's leather chaps (deg)";
@@ -7058,9 +7378,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 42631;
 				itemDefinition.femaleModel = 42646;
 				itemDefinition.groundOptions = new String[]
-						{null, null, "Take", null, null};
+				{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22638:
 				itemDefinition.name = "Morrigan's coif";
@@ -7071,7 +7391,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = -3;
 				itemDefinition.inventoryY = 6;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13878:
 				itemDefinition.name = "Morrigan's coif (deg)";
@@ -7088,9 +7408,9 @@ public class CustomItem {
 				itemDefinition.womanHead0 = 35974;
 				itemDefinition.womanHead1 = 120;
 				itemDefinition.groundOptions = new String[]
-						{null, null, "Take", null, null};
+				{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 
 			case 22628:
@@ -7102,7 +7422,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = -2;
 				itemDefinition.inventoryY = 39;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13886:
 				itemDefinition.name = "Statius's platebody (deg)";
@@ -7115,9 +7435,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35951;
 				itemDefinition.femaleModel = 35964;
 				itemDefinition.groundOptions = new String[]
-						{null, null, "Take", null, null};
+				{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22616:
 				itemDefinition.name = "Vesta's chainbody";
@@ -7128,7 +7448,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 4;
 				itemDefinition.inventoryY = 5;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13889:
 				itemDefinition.name = "Vesta's chainbody (deg)";
@@ -7141,9 +7461,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35953;
 				itemDefinition.femaleModel = 35965;
 				itemDefinition.groundOptions = new String[]
-						{null, null, "Take", null, null};
+				{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22631:
 				itemDefinition.name = "Statius's platelegs";
@@ -7154,7 +7474,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 0;
 				itemDefinition.inventoryY = -11;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13892:
 				itemDefinition.name = "Statius's platelegs (deg)";
@@ -7167,9 +7487,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35947;
 				itemDefinition.femaleModel = 35961;
 				itemDefinition.groundOptions = new String[]
-						{null, null, "Take", null, null};
+				{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22619:
 				itemDefinition.name = "Vesta's plateskirt";
@@ -7180,7 +7500,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = -3;
 				itemDefinition.inventoryY = 11;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				// Pre-eoc version
 				itemDefinition.maleModel = 42633;
 				itemDefinition.femaleModel = 42649;
@@ -7196,9 +7516,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35950;
 				itemDefinition.femaleModel = 35960;
 				itemDefinition.groundOptions = new String[]
-						{null, null, "Take", null, null};
+				{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22625:
 				itemDefinition.name = "Statius's full helm";
@@ -7209,7 +7529,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 2;
 				itemDefinition.inventoryY = -7;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13898:
 				itemDefinition.name = "Statius' full helm (deg)";
@@ -7226,9 +7546,9 @@ public class CustomItem {
 				itemDefinition.womanHead0 = 35976;
 				itemDefinition.womanHead1 = 120;
 				itemDefinition.groundOptions = new String[]
-						{null, null, "Take", null, null};
+				{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Destroy"};
+				{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22622:
 				itemDefinition.name = "Statius's warhammer";
@@ -7239,7 +7559,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 7;
 				itemDefinition.inventoryY = 6;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, "Destroy"};
+				{null, "Wield", null, null, "Destroy"};
 				break;
 			case 13904:
 				itemDefinition.name = "Statius's warhammer (deg)";
@@ -7252,9 +7572,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35968;
 				itemDefinition.femaleModel = 35968;
 				itemDefinition.groundOptions = new String[]
-						{null, null, "Take", null, null};
+				{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, "Destroy"};
+				{null, "Wield", null, null, "Destroy"};
 				break;
 			case 22610:
 				itemDefinition.name = "Vesta's spear";
@@ -7264,7 +7584,7 @@ public class CustomItem {
 				itemDefinition.rotationY = 480;
 				itemDefinition.inventoryY = 5;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, "Destroy"};
+				{null, "Wield", null, null, "Destroy"};
 				break;
 			case 13907:
 				itemDefinition.name = "Vesta's spear (deg)";
@@ -7276,9 +7596,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35973;
 				itemDefinition.femaleModel = 35973;
 				itemDefinition.groundOptions = new String[]
-						{null, null, "Take", null, null};
+				{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, "Destroy"};
+				{null, "Wield", null, null, "Destroy"};
 				break;
 			case 22613:
 				itemDefinition.name = "Vesta's longsword";
@@ -7287,7 +7607,7 @@ public class CustomItem {
 				itemDefinition.rotationX = 1985;
 				itemDefinition.rotationY = 738;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, "Destroy"};
+				{null, "Wield", null, null, "Destroy"};
 				break;
 			case 9083:
 				itemDefinition.name = "Mace Windu's Lightsaber";
@@ -7298,10 +7618,10 @@ public class CustomItem {
 				itemDefinition.maleModel = 50561;
 				itemDefinition.femaleModel = 50561;
 				itemDefinition.groundOptions = new String[]
-						{null, null, "Take", null, null};
+				{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, "Destroy"};
-				break;
+				{null, "Wield", null, null, "Destroy"};
+				break; 
 			/*case 9087:
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
@@ -7326,9 +7646,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35969;
 				itemDefinition.femaleModel = 35969;
 				itemDefinition.groundOptions = new String[]
-						{null, null, "Take", null, null};
+				{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, "Destroy"};
+				{null, "Wield", null, null, "Destroy"};
 				break;
 			case 22647:
 				itemDefinition.name = "Zuriel's staff";
@@ -7337,7 +7657,7 @@ public class CustomItem {
 				itemDefinition.rotationX = 3;
 				itemDefinition.rotationY = 366;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, "Destroy"};
+				{null, "Wield", null, null, "Destroy"};
 				break;
 			case 13869:
 				itemDefinition.name = "Zuriel's staff (deg)";
@@ -7346,11 +7666,11 @@ public class CustomItem {
 				itemDefinition.rotationX = 3;
 				itemDefinition.rotationY = 366;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, "Destroy"};
+				{null, "Wield", null, null, "Destroy"};
 				itemDefinition.maleModel = 35971;
 				itemDefinition.femaleModel = 35971;
 				itemDefinition.groundOptions = new String[]
-						{null, null, "Take", null, null};
+				{null, null, "Take", null, null};
 				break;
 			case 22634:
 				itemDefinition.name = "Morrigan's throwing axe";
@@ -7361,7 +7681,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = -5;
 				itemDefinition.inventoryY = 4;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, "Destroy"};
+				{null, "Wield", null, null, "Destroy"};
 				break;
 			case 22636:
 				itemDefinition.name = "Morrigan's javelin";
@@ -7370,11 +7690,11 @@ public class CustomItem {
 				itemDefinition.rotationX = 2009;
 				itemDefinition.rotationY = 282;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, "Destroy"};
+				{null, "Wield", null, null, "Destroy"};
 				break;
 			case 16435:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", "Dismantle", null, null};
+				{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -7463,7 +7783,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, null};
+				{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -7661,7 +7981,6 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[4] = null;
 				itemDefinition.modelColourToEdit = new int[8];
 				itemDefinition.newModelColourProduced = new int[8];
-
 				// Dark red
 				colour = ItemColours.CYAN;
 				itemDefinition.modelColourToEdit[0] = 280;
@@ -7702,7 +8021,46 @@ public class CustomItem {
 				itemDefinition.modelColourToEdit[7] = 127;
 				itemDefinition.newModelColourProduced[7] = colour == -1 ? 127 : colour;
 				break;
-			case 16427:
+			case 21794:
+				itemDefinition.name = "Jack O Lantern Boots";
+				itemDefinition.inventoryModel = 65322;
+				itemDefinition.maleModel = 65322;
+				itemDefinition.maleEquip2 = -1;
+				itemDefinition.femaleModel = 65322;
+				itemDefinition.femaleEquip2 = -1;
+				itemDefinition.zoom = 780;
+				itemDefinition.rotationX = 279;
+				itemDefinition.rotationY = 147;
+				itemDefinition.inventoryX = 5;
+				itemDefinition.inventoryY = -5;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				break;
+			case 16891:
+				itemDefinition.name = "Jack O Lantern Whip";
+				itemDefinition.inventoryModel = 65323;
+				itemDefinition.maleModel = 65323;
+				itemDefinition.maleEquip2 = -1;
+				itemDefinition.femaleModel = 65323;
+				itemDefinition.femaleEquip2 = -1;
+				itemDefinition.femaleEquipOffset = 6;
+				itemDefinition.zoom = 1900;
+				itemDefinition.rotationX = 350;
+				itemDefinition.rotationY = 120;
+				itemDefinition.inventoryX = 15;
+				itemDefinition.inventoryY = 10;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				break;
+				case 16427:
 				itemDefinition.name = "Armadyl crossbow";
 				itemDefinition.inventoryModel = 19967;
 				itemDefinition.maleModel = 19839;
@@ -7739,7 +8097,7 @@ public class CustomItem {
 				break;
 			case 16426:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", "Dismantle", null, null};
+				{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -7802,7 +8160,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, null};
+				{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -7830,7 +8188,7 @@ public class CustomItem {
 				break;
 			case 16424:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", "Dismantle", null, null};
+				{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -7991,7 +8349,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, null};
+				{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -8020,7 +8378,7 @@ public class CustomItem {
 			case 16420:
 				itemDefinition.name = "R&b partyhat";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.inventoryModel = 16252;
 				itemDefinition.zoom = 440;
 				itemDefinition.rotationX = 1852;
@@ -8084,7 +8442,7 @@ public class CustomItem {
 			case 16511:
 				itemDefinition.name = "Strong Pink partyhat";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.inventoryModel = 16252;
 				itemDefinition.zoom = 440;
 				itemDefinition.rotationX = 1852;
@@ -8148,7 +8506,7 @@ public class CustomItem {
 			case 16513:
 				itemDefinition.name = "Gilded partyhat";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.inventoryModel = 16252;
 				itemDefinition.zoom = 440;
 				itemDefinition.rotationX = 1852;
@@ -8212,7 +8570,7 @@ public class CustomItem {
 			case 16512:
 				itemDefinition.name = "Forest partyhat";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.inventoryModel = 16252;
 				itemDefinition.zoom = 440;
 				itemDefinition.rotationX = 1852;
@@ -8275,7 +8633,7 @@ public class CustomItem {
 				break;
 			case 16419:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -8540,7 +8898,7 @@ public class CustomItem {
 				break;
 			case 16415:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", "Dismantle", null, null};
+				{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -8690,7 +9048,7 @@ public class CustomItem {
 				break;
 			case 16411:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", "Dismantle", null, null};
+				{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -8748,6 +9106,9 @@ public class CustomItem {
 				itemDefinition.modelColourToEdit[9] = -22440;
 				itemDefinition.newModelColourProduced[9] = colour == -1 ? -22440 : colour;
 				break;
+			case 419:
+				itemDefinition.name = "Magic Note Paper";
+				break;
 			case 16410:
 				itemDefinition.name = "Elder maul";
 				itemDefinition.inventoryModel = 32792;
@@ -8799,7 +9160,7 @@ public class CustomItem {
 				break;
 			case 16409:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", "Dismantle", null, null};
+				{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -8859,7 +9220,7 @@ public class CustomItem {
 				break;
 			case 16408:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -8954,8 +9315,8 @@ public class CustomItem {
 				itemDefinition.modelColourToEdit[5] = -22489;
 				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22489 : colour;
 				break;
-
-
+			
+		
 			case 16406:
 				itemDefinition.name = "Bandos chestplate";
 				itemDefinition.inventoryModel = 28042;
@@ -9122,7 +9483,7 @@ public class CustomItem {
 				break;
 			case 16404:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", "Dismantle", null, null};
+				{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -9185,7 +9546,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, null};
+				{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -9213,7 +9574,7 @@ public class CustomItem {
 				break;
 			case 16274:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -9383,7 +9744,7 @@ public class CustomItem {
 				break;
 			case 16271:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", "Dismantle", null, null};
+				{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -9444,7 +9805,7 @@ public class CustomItem {
 				break;
 			case 16270:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -9481,7 +9842,7 @@ public class CustomItem {
 				break;
 			case 16269:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -9518,7 +9879,7 @@ public class CustomItem {
 				break;
 			case 16268:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -9555,7 +9916,7 @@ public class CustomItem {
 				break;
 			case 16267:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -9624,7 +9985,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 65318;
 				itemDefinition.brightness = -45;
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				break;
 
 			case 16264:
@@ -9639,11 +10000,11 @@ public class CustomItem {
 				itemDefinition.femaleModel = 65316;
 				itemDefinition.brightness = -45;
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				break;
 			case 16263:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -9681,7 +10042,7 @@ public class CustomItem {
 			case 16262:
 				itemDefinition.name = "Nocturnal Yoshi";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 750;
 				itemDefinition.rotationY = 100;
 				itemDefinition.rotationX = 250;
@@ -9729,7 +10090,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(6768);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2400;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -9740,7 +10101,7 @@ public class CustomItem {
 
 			case 16260:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", "Dismantle", null, null};
+				{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -9880,7 +10241,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, null};
+				{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -9889,9 +10250,9 @@ public class CustomItem {
 				itemDefinition.inventoryY = 8;
 				itemDefinition.zoom = 886;
 				itemDefinition.modelColourToEdit = new int[]
-						{929, 922, 918, 914};
+				{929, 922, 918, 914};
 				itemDefinition.newModelColourProduced = new int[]
-						{34770, 34770, 34770, 34770};
+				{34770, 34770, 34770, 34770};
 				break;
 			case 16257:
 				itemDefinition.name = "Abyssal tentacle";
@@ -9927,7 +10288,7 @@ public class CustomItem {
 				break;
 			case 16256:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -10064,7 +10425,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(2510);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 1500;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -10124,7 +10485,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(6636);
 				itemDefinition.name = "White prince black dragon pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -10212,7 +10573,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(762);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 200;
@@ -10224,7 +10585,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(548);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 1300;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -10236,7 +10597,7 @@ public class CustomItem {
 				objectInstance = ObjectDefinition.forId(8091);
 				itemDefinition.name = objectInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 5000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -10248,7 +10609,7 @@ public class CustomItem {
 				objectInstance = ObjectDefinition.forId(29146);
 				itemDefinition.name = objectInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 200;
@@ -10260,7 +10621,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(404);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 1750;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -10272,7 +10633,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(3837);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 1000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -10284,7 +10645,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(1241);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 1000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -10296,7 +10657,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(2474);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -10308,7 +10669,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(7039);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 3000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 213;
@@ -10319,7 +10680,7 @@ public class CustomItem {
 			case 16233:
 				itemDefinition.name = "Blue Tekton pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 8000;
 				itemDefinition.rotationY = 100;
 				itemDefinition.rotationX = 100;
@@ -10665,9 +11026,9 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[3] = "Uncharge";
 				itemDefinition.inventoryOptions[4] = null;
 				itemDefinition.modelColourToEdit = new int[]
-						{-22407, -23323, -22308, -21269, 9158, 9009, 11212};
+				{-22407, -23323, -22308, -21269, 9158, 9009, 11212};
 				itemDefinition.newModelColourProduced = new int[]
-						{17350, 17350, 17350, 17350, 17350, 17350, 17350};
+				{17350, 17350, 17350, 17350, 17350, 17350, 17350};
 				break;
 			case 16226:
 				itemDefinition.name = "Abyssal tentacle";
@@ -10741,13 +11102,13 @@ public class CustomItem {
 
 			case 19564:
 				itemDefinition.inventoryOptions = new String[]
-						{"Commune", null, "Toggle", null, "Destroy"};
+				{"Commune", null, "Toggle", null, "Destroy"};
 				break;
 			case 16319:
 				objectInstance = ObjectDefinition.forId(8091);
 				itemDefinition.name = objectInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 5000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -10783,9 +11144,9 @@ public class CustomItem {
 				itemDefinition.inventoryY = 18;
 				itemDefinition.brightness = 25;
 				itemDefinition.modelColourToEdit = new int[]
-						{6806, 6439, 6558};
+				{6806, 6439, 6558};
 				itemDefinition.newModelColourProduced = new int[]
-						{7114, 7110, 7120};
+				{7114, 7110, 7120};
 				break;
 			case 16315:
 				itemDefinition.name = "Armadyl godsword (or)";
@@ -10988,7 +11349,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(1277);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 3000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -11018,7 +11379,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 1;
 				itemDefinition.inventoryY = 1;
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.modelColourToEdit = new int[1];
 				itemDefinition.modelColourToEdit[0] = 926;
 				itemDefinition.newModelColourProduced = new int[1];
@@ -11053,7 +11414,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(7792);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 4000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 200;
@@ -11154,7 +11515,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 1;
 				itemDefinition.inventoryY = 1;
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.modelColourToEdit = new int[1];
 				itemDefinition.modelColourToEdit[0] = 926;
 				itemDefinition.newModelColourProduced = new int[1];
@@ -11166,7 +11527,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, null};
+				{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -11175,9 +11536,9 @@ public class CustomItem {
 				itemDefinition.inventoryY = 8;
 				itemDefinition.zoom = 886;
 				itemDefinition.modelColourToEdit = new int[]
-						{929, 922, 918, 914};
+				{929, 922, 918, 914};
 				itemDefinition.newModelColourProduced = new int[]
-						{5, 5, 5, 5};
+				{5, 5, 5, 5};
 				break;
 			case 16209:
 				itemDefinition.name = "Cyan Toxic staff of the dead";
@@ -11352,7 +11713,7 @@ public class CustomItem {
 
 			case 16206:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", "Dismantle", null, null};
+				{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -11507,7 +11868,7 @@ public class CustomItem {
 				break;
 			case 21864:
 				itemDefinition.inventoryOptions = new String[]
-						{"Absorb-energy", null, null, null, "Drop"};
+				{"Absorb-energy", null, null, null, "Drop"};
 				break;
 			case 16198:
 				npcInstance = EntityDefinition.forId(11167);
@@ -11642,7 +12003,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 1;
 				itemDefinition.inventoryY = 1;
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.modelColourToEdit = new int[1];
 				itemDefinition.modelColourToEdit[0] = 926;
 				itemDefinition.newModelColourProduced = new int[1];
@@ -11712,7 +12073,7 @@ public class CustomItem {
 				break;
 			case 16186:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", null, null, null};
+				{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -11755,7 +12116,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(2592);
 				itemDefinition.name = "Mogre pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 500;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -11777,7 +12138,7 @@ public class CustomItem {
 				break;
 			case 16183:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", "Dismantle", null, null};
+				{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -11881,7 +12242,7 @@ public class CustomItem {
 			case 16175:
 				itemDefinition.name = "Twisted bow pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.inventoryModel = 32799;
 				itemDefinition.maleModel = 32674;
 				itemDefinition.femaleModel = 32674;
@@ -11896,7 +12257,7 @@ public class CustomItem {
 				itemDefinition.name = "Barbarian guard pet";
 				npcInstance = EntityDefinition.forId(7285);
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 1000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -11920,7 +12281,7 @@ public class CustomItem {
 				itemDefinition.name = "Witch's experiment pet";
 				npcInstance = EntityDefinition.forId(3996);
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 3000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -11946,7 +12307,7 @@ public class CustomItem {
 				itemDefinition.name = "Novice pet";
 				npcInstance = EntityDefinition.forId(7055);
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 4000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -11958,7 +12319,7 @@ public class CustomItem {
 				itemDefinition.name = "Steve pet";
 				npcInstance = EntityDefinition.forId(6798);
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 700;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -12008,7 +12369,7 @@ public class CustomItem {
 				itemDefinition.name = "Dragonkin pet";
 				npcInstance = EntityDefinition.forId(11126);
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 5000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -12021,8 +12382,8 @@ public class CustomItem {
 				break;
 			case 16163:
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", "Dismantle", null, null};
-				itemDefinition.name = "Armadyl godsword";
+				{null, "Wield", "Dismantle", null, null};
+				itemDefinition.name = "Deaths Godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
 				itemDefinition.rotationY = 498;
@@ -12065,9 +12426,9 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Torva full helm";
 				itemDefinition.inventoryModel = 40000;
-				itemDefinition.maleModel = 40001;
-				itemDefinition.femaleModel = 40001;
-				break;
+			itemDefinition.maleModel = 40001;
+			itemDefinition.femaleModel = 40001;
+			break;
 			case 2023://arlo
 				itemInstance = ItemDefinition.forId(20794);
 				itemDefinition.zoom = itemInstance.zoom;
@@ -12077,11 +12438,11 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Torva platebody";
 				itemDefinition.inventoryModel = 40002;
-				itemDefinition.maleModel = 40003;
-				itemDefinition.femaleModel = 40003;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
+			itemDefinition.maleModel = 40003;
+			itemDefinition.femaleModel = 40003;
+			itemDefinition.inventoryOptions = new String[]
+			{null, "Wear", null, null, "Drop"};
+			break;
 			case 4898://arlo
 				itemInstance = ItemDefinition.forId(20796);
 				itemDefinition.zoom = 1800;
@@ -12091,9 +12452,9 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Torva platelegs";
 				itemDefinition.inventoryModel = 40004;
-				itemDefinition.maleModel = 40005;
-				itemDefinition.femaleModel = 40005;
-				break;
+			itemDefinition.maleModel = 40005;
+			itemDefinition.femaleModel = 40005;
+			break;
 			case 20920://arlo
 				itemInstance = ItemDefinition.forId(2577);
 				itemDefinition.zoom = 400;
@@ -12103,11 +12464,11 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Primal boot";
 				itemDefinition.inventoryModel = 40046;
-				itemDefinition.maleModel = 40046;
-				itemDefinition.femaleModel = 40046;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
+			itemDefinition.maleModel = 40046;
+			itemDefinition.femaleModel = 40046;
+			itemDefinition.inventoryOptions = new String[]
+					{null, "Wear", null, null, "Drop"};
+			break;
 			case 20921://arlo
 				itemInstance = ItemDefinition.forId(7459);
 				itemDefinition.zoom = 400;
@@ -12117,11 +12478,11 @@ public class CustomItem {
 				itemDefinition.inventoryY = 1;
 				itemDefinition.name = "Primal gauntlets";
 				itemDefinition.inventoryModel = 40047;
-				itemDefinition.maleModel = 40048;
-				itemDefinition.femaleModel = 40048;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
+			itemDefinition.maleModel = 40048;
+			itemDefinition.femaleModel = 40048;
+			itemDefinition.inventoryOptions = new String[]
+					{null, "Wear", null, null, "Drop"};
+			break;
 			case 20917://arlo
 				itemInstance = ItemDefinition.forId(20792);
 				itemDefinition.zoom = 400;
@@ -12131,12 +12492,12 @@ public class CustomItem {
 				//itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Primal full helm";
 				itemDefinition.inventoryModel = 40037;
-				itemDefinition.maleModel = 40038;
-				itemDefinition.femaleModel = 40038;
-				itemDefinition.inventoryY = 1;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
+			itemDefinition.maleModel = 40038;
+			itemDefinition.femaleModel = 40038;
+			itemDefinition.inventoryY = 1;
+			itemDefinition.inventoryOptions = new String[]
+					{null, "Wear", null, null, "Drop"};
+			break;
 			case 20918://arlo
 				itemInstance = ItemDefinition.forId(20794);
 				itemDefinition.zoom = 700;
@@ -12146,11 +12507,11 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Primal platebody";
 				itemDefinition.inventoryModel = 40039;
-				itemDefinition.maleModel = 40040;
-				itemDefinition.femaleModel = 40040;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
+			itemDefinition.maleModel = 40040;
+			itemDefinition.femaleModel = 40040;
+			itemDefinition.inventoryOptions = new String[]
+			{null, "Wear", null, null, "Drop"};
+			break;
 			case 20919://arlo
 				itemInstance = ItemDefinition.forId(20796);
 				itemDefinition.zoom = 780;
@@ -12160,12 +12521,12 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Primal platelegs";
 				itemDefinition.inventoryModel = 40041;
-				itemDefinition.maleModel = 40042;
-				itemDefinition.femaleModel = 40042;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
-
+			itemDefinition.maleModel = 40042;
+			itemDefinition.femaleModel = 40042;
+			itemDefinition.inventoryOptions = new String[]
+					{null, "Wear", null, null, "Drop"};
+			break;
+			
 			case 10859://arlo
 				itemInstance = ItemDefinition.forId(20792);
 				itemDefinition.zoom = 400;
@@ -12175,12 +12536,12 @@ public class CustomItem {
 				//itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Primal full helm";
 				itemDefinition.inventoryModel = 40049;
-				itemDefinition.maleModel = 40050;
-				itemDefinition.femaleModel = 40050;
-				itemDefinition.inventoryY = 1;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
+			itemDefinition.maleModel = 40050;
+			itemDefinition.femaleModel = 40050;
+			itemDefinition.inventoryY = 1;
+			itemDefinition.inventoryOptions = new String[]
+					{null, "Wear", null, null, "Drop"};
+			break;
 			case 10860://arlo
 				itemInstance = ItemDefinition.forId(20794);
 				itemDefinition.zoom = 700;
@@ -12190,11 +12551,11 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Primal platebody";
 				itemDefinition.inventoryModel = 40051;
-				itemDefinition.maleModel = 40052;
-				itemDefinition.femaleModel = 40052;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
+			itemDefinition.maleModel = 40052;
+			itemDefinition.femaleModel = 40052;
+			itemDefinition.inventoryOptions = new String[]
+			{null, "Wear", null, null, "Drop"};
+			break;
 			case 10861://arlo
 				itemInstance = ItemDefinition.forId(20796);
 				itemDefinition.zoom = 780;
@@ -12204,11 +12565,11 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Primal platelegs";
 				itemDefinition.inventoryModel = 40053;
-				itemDefinition.maleModel = 40054;
-				itemDefinition.femaleModel = 40054;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
+			itemDefinition.maleModel = 40054;
+			itemDefinition.femaleModel = 40054;
+			itemDefinition.inventoryOptions = new String[]
+					{null, "Wear", null, null, "Drop"};
+			break;
 			case 1905://arlo
 				itemInstance = ItemDefinition.forId(20792);
 				itemDefinition.zoom = 400;
@@ -12218,12 +12579,12 @@ public class CustomItem {
 				//itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Fire torva gloves";
 				itemDefinition.inventoryModel = 40055;
-				itemDefinition.maleModel = 40056;
-				itemDefinition.femaleModel = 40056;
-				itemDefinition.inventoryY = 1;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
+			itemDefinition.maleModel = 40056;
+			itemDefinition.femaleModel = 40056;
+			itemDefinition.inventoryY = 1;
+			itemDefinition.inventoryOptions = new String[]
+					{null, "Wear", null, null, "Drop"};
+			break;
 			case 4616://arlo
 				itemInstance = ItemDefinition.forId(20794);
 				itemDefinition.zoom = 700;
@@ -12233,11 +12594,11 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Fire torva boots";
 				itemDefinition.inventoryModel = 40057;
-				itemDefinition.maleModel = 40057;
-				itemDefinition.femaleModel = 40057;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
+			itemDefinition.maleModel = 40057;
+			itemDefinition.femaleModel = 40057;
+			itemDefinition.inventoryOptions = new String[]
+			{null, "Wear", null, null, "Drop"};
+			break;
 			case 5066://arlo
 				itemInstance = ItemDefinition.forId(20796);
 				itemDefinition.zoom = 780;
@@ -12247,11 +12608,11 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Fire torva whip";
 				itemDefinition.inventoryModel = 40058;
-				itemDefinition.maleModel = 40059;
-				itemDefinition.femaleModel = 40059;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
+			itemDefinition.maleModel = 40059;
+			itemDefinition.femaleModel = 40059;
+			itemDefinition.inventoryOptions = new String[]
+					{null, "Wear", null, null, "Drop"};
+			break;
 			case 4857://arlo
 				itemInstance = ItemDefinition.forId(20792);
 				itemDefinition.zoom = 800;
@@ -12261,23 +12622,23 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Ganodermic visor";
 				itemDefinition.inventoryModel = 40006;
-				itemDefinition.maleModel = 40007;
-				itemDefinition.femaleModel = 40007;
-				break;
+			itemDefinition.maleModel = 40007;
+			itemDefinition.femaleModel = 40007;
+			break;
 			case 2026://arlo
 				itemDefinition.name = "Ganodermic poncho";
 				itemDefinition.inventoryModel = 40008;
-				itemDefinition.maleModel = 40009;
-				itemDefinition.femaleModel = 40009;
-				itemInstance = ItemDefinition.forId(20794);
-				itemDefinition.zoom = itemInstance.zoom;
-				itemDefinition.rotationY = itemInstance.rotationY;
-				itemDefinition.rotationX = itemInstance.rotationX;
-				itemDefinition.inventoryX = itemInstance.inventoryX;
-				itemDefinition.inventoryY = itemInstance.inventoryY;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
+			itemDefinition.maleModel = 40009;
+			itemDefinition.femaleModel = 40009;
+			itemInstance = ItemDefinition.forId(20794);
+			itemDefinition.zoom = itemInstance.zoom;
+			itemDefinition.rotationY = itemInstance.rotationY;
+			itemDefinition.rotationX = itemInstance.rotationX;
+			itemDefinition.inventoryX = itemInstance.inventoryX;
+			itemDefinition.inventoryY = itemInstance.inventoryY;
+			itemDefinition.inventoryOptions = new String[]
+			{null, "Wear", null, null, "Drop"};
+			break;
 			case 4875://arlo
 				itemInstance = ItemDefinition.forId(20796);
 				itemDefinition.zoom = 1800;
@@ -12287,9 +12648,9 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Ganodermic leggings";
 				itemDefinition.inventoryModel = 40010;
-				itemDefinition.maleModel = 40011;
-				itemDefinition.femaleModel = 40011;
-				break;
+			itemDefinition.maleModel = 40011;
+			itemDefinition.femaleModel = 40011;
+			break;
 			case 4858://arlo
 				itemInstance = ItemDefinition.forId(20792);
 				itemDefinition.zoom = 800;
@@ -12299,23 +12660,23 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Virtus mask";
 				itemDefinition.inventoryModel = 40012;
-				itemDefinition.maleModel = 40013;
-				itemDefinition.femaleModel = 40013;
-				break;
+			itemDefinition.maleModel = 40013;
+			itemDefinition.femaleModel = 40013;
+			break;
 			case 2028://arlo
 				itemDefinition.name = "Virtus robe top";
 				itemDefinition.inventoryModel = 40014;
-				itemDefinition.maleModel = 40015;
-				itemDefinition.femaleModel = 40015;
-				itemInstance = ItemDefinition.forId(20794);
-				itemDefinition.zoom = itemInstance.zoom;
-				itemDefinition.rotationY = itemInstance.rotationY;
-				itemDefinition.rotationX = itemInstance.rotationX;
-				itemDefinition.inventoryX = itemInstance.inventoryX;
-				itemDefinition.inventoryY = itemInstance.inventoryY;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
+			itemDefinition.maleModel = 40015;
+			itemDefinition.femaleModel = 40015;
+			itemInstance = ItemDefinition.forId(20794);
+			itemDefinition.zoom = itemInstance.zoom;
+			itemDefinition.rotationY = itemInstance.rotationY;
+			itemDefinition.rotationX = itemInstance.rotationX;
+			itemDefinition.inventoryX = itemInstance.inventoryX;
+			itemDefinition.inventoryY = itemInstance.inventoryY;
+			itemDefinition.inventoryOptions = new String[]
+			{null, "Wear", null, null, "Drop"};
+			break;
 			case 4877://arlo
 				itemInstance = ItemDefinition.forId(20796);
 				itemDefinition.zoom = 1800;
@@ -12325,9 +12686,9 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Virtus robe legs";
 				itemDefinition.inventoryModel = 40016;
-				itemDefinition.maleModel = 40017;
-				itemDefinition.femaleModel = 40017;
-				break;
+			itemDefinition.maleModel = 40017;
+			itemDefinition.femaleModel = 40017;
+			break;
 			case 4928://arlo
 				itemInstance = ItemDefinition.forId(20792);
 				itemDefinition.zoom = 800;
@@ -12337,23 +12698,23 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Pernix cowl";
 				itemDefinition.inventoryModel = 40018;
-				itemDefinition.maleModel = 40019;
-				itemDefinition.femaleModel = 40019;
-				break;
+			itemDefinition.maleModel = 40019;
+			itemDefinition.femaleModel = 40019;
+			break;
 			case 2030://arlo
 				itemDefinition.name = "Pernix body";
 				itemDefinition.inventoryModel = 40020;
-				itemDefinition.maleModel = 40021;
-				itemDefinition.femaleModel = 40021;
-				itemInstance = ItemDefinition.forId(20794);
-				itemDefinition.zoom = itemInstance.zoom;
-				itemDefinition.rotationY = itemInstance.rotationY;
-				itemDefinition.rotationX = itemInstance.rotationX;
-				itemDefinition.inventoryX = itemInstance.inventoryX;
-				itemDefinition.inventoryY = itemInstance.inventoryY;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
+			itemDefinition.maleModel = 40021;
+			itemDefinition.femaleModel = 40021;
+			itemInstance = ItemDefinition.forId(20794);
+			itemDefinition.zoom = itemInstance.zoom;
+			itemDefinition.rotationY = itemInstance.rotationY;
+			itemDefinition.rotationX = itemInstance.rotationX;
+			itemDefinition.inventoryX = itemInstance.inventoryX;
+			itemDefinition.inventoryY = itemInstance.inventoryY;
+			itemDefinition.inventoryOptions = new String[]
+			{null, "Wear", null, null, "Drop"};
+			break;
 			case 4946://arlo
 				itemInstance = ItemDefinition.forId(20796);
 				itemDefinition.zoom = 1800;
@@ -12363,63 +12724,63 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Pernix chaps";
 				itemDefinition.inventoryModel = 40022;
-				itemDefinition.maleModel = 40023;
-				itemDefinition.femaleModel = 40023;
-				break;
+			itemDefinition.maleModel = 40023;
+			itemDefinition.femaleModel = 40023;
+			break;
 			case 6605://arlo
 				itemDefinition.name = "Chaotic rapier";
 				itemDefinition.inventoryModel = 40032;
-				itemDefinition.maleModel = 40033;
-				itemDefinition.femaleModel = 40033;
-				itemDefinition.zoom = 1425;
-				itemDefinition.rotationY = 700;
-				itemDefinition.rotationX = 1300;
-				break;
+			itemDefinition.maleModel = 40033;
+			itemDefinition.femaleModel = 40033;
+			itemDefinition.zoom = 1425;
+			itemDefinition.rotationY = 700;
+			itemDefinition.rotationX = 1300;
+			break;
 			case 6607://arlo
 				itemDefinition.name = "Chaotic longsword";
 				itemDefinition.inventoryModel = 40028;
-				itemDefinition.maleModel = 40029;
-				itemDefinition.femaleModel = 40029;
-				itemDefinition.zoom = 1650;
-				itemDefinition.rotationY = 498;
-				itemDefinition.rotationX = 1300;
-				break;
+			itemDefinition.maleModel = 40029;
+			itemDefinition.femaleModel = 40029;
+			itemDefinition.zoom = 1650;
+			itemDefinition.rotationY = 498;
+			itemDefinition.rotationX = 1300;
+			break;
 			case 6609://arlo
 				itemDefinition.name = "Chaotic maul";
 				itemDefinition.inventoryModel = 40030;
-				itemDefinition.maleModel = 40031;
-				itemDefinition.femaleModel = 40031;
-				itemDefinition.zoom = 1360;
-				itemDefinition.rotationY = 498;
-				itemDefinition.rotationX = 354;
-				break;
+			itemDefinition.maleModel = 40031;
+			itemDefinition.femaleModel = 40031;
+			itemDefinition.zoom = 1360;
+			itemDefinition.rotationY = 498;
+			itemDefinition.rotationX = 354;
+			break;
 			case 9084://arlo
 				itemDefinition.name = "Chaotic staff";
 				itemDefinition.inventoryModel = 40034;
-				itemDefinition.maleModel = 40035;
-				itemDefinition.femaleModel = 40035;
-				itemDefinition.zoom = 1711;
-				itemDefinition.rotationY = 350;
-				itemDefinition.rotationX = 365;
-				break;
+			itemDefinition.maleModel = 40035;
+			itemDefinition.femaleModel = 40035;
+			itemDefinition.zoom = 1711;
+			itemDefinition.rotationY = 350;
+			itemDefinition.rotationX = 365;
+			break;
 			case 11165://arlo
 				itemDefinition.name = "Chaotic crossbow";
 				itemDefinition.inventoryModel = 40024;
-				itemDefinition.maleModel = 40025;
-				itemDefinition.femaleModel = 40025;
-				itemDefinition.zoom = 1650;
-				itemDefinition.rotationY = 498;
-				itemDefinition.rotationX = 700;
-				break;
+			itemDefinition.maleModel = 40025;
+			itemDefinition.femaleModel = 40025;
+			itemDefinition.zoom = 1650;
+			itemDefinition.rotationY = 498;
+			itemDefinition.rotationX = 700;
+			break;
 			case 6593://arlo
 				itemDefinition.name = "Korasi sword";
 				itemDefinition.inventoryModel = 40026;
-				itemDefinition.maleModel = 40027;
-				itemDefinition.femaleModel = 40027;
-				itemDefinition.zoom = 1650;
-				itemDefinition.rotationY = 498;
-				itemDefinition.rotationX = 500;
-				break;
+			itemDefinition.maleModel = 40027;
+			itemDefinition.femaleModel = 40027;
+			itemDefinition.zoom = 1650;
+			itemDefinition.rotationY = 498;
+			itemDefinition.rotationX = 500;
+			break;
 			case 16160:
 				itemDefinition.name = "Pig pet";
 				itemDefinition.inventoryOptions = new String[]
@@ -12561,7 +12922,7 @@ public class CustomItem {
 			case 16154:
 				itemDefinition.name = "Troll child pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 3500;
 				itemDefinition.rotationY = 100;
 				itemDefinition.rotationX = 300;
@@ -12575,7 +12936,7 @@ public class CustomItem {
 				itemInstance = ItemDefinition.forId(20784);
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = itemInstance.zoom;
 				itemDefinition.rotationY = itemInstance.rotationY;
 				itemDefinition.rotationX = itemInstance.rotationX;
@@ -12585,7 +12946,7 @@ public class CustomItem {
 			case 16152:
 				itemDefinition.name = "Sea snake pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 11000;
 				itemDefinition.rotationY = 250;
 				itemDefinition.rotationX = 100;
@@ -12640,7 +13001,7 @@ public class CustomItem {
 			case 16149:
 				itemDefinition.name = "Tree spirit pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2500;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -12652,7 +13013,7 @@ public class CustomItem {
 			case 16148:
 				itemDefinition.name = "Clerris pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 3500;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -12664,7 +13025,7 @@ public class CustomItem {
 			case 16147:
 				itemDefinition.name = "Fairy Godfather pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -12676,7 +13037,7 @@ public class CustomItem {
 			case 16146:
 				itemDefinition.name = "Nieve pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 750;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -12694,32 +13055,32 @@ public class CustomItem {
 				itemInstance = ItemDefinition.forId(20767); //ruby key
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Destroy"};
+				{null, null, null, null, "Destroy"};
 				itemDefinition.zoom = itemInstance.zoom;
 				itemDefinition.rotationY = itemInstance.rotationY;
 				itemDefinition.rotationX = itemInstance.rotationX;
 				itemDefinition.inventoryX = itemInstance.inventoryX;
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.modelColourToEdit = new int[]
-						{8128};
+				{8128};
 				itemDefinition.newModelColourProduced = new int[]
-						{560};
+				{560};
 				break;
 			case 4273:
 				itemDefinition.name = "Key of Tokens";
 				itemInstance = ItemDefinition.forId(20767); //ruby key
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Destroy"};
+				{null, null, null, null, "Destroy"};
 				itemDefinition.zoom = itemInstance.zoom;
 				itemDefinition.rotationY = itemInstance.rotationY;
 				itemDefinition.rotationX = itemInstance.rotationX;
 				itemDefinition.inventoryX = itemInstance.inventoryX;
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.modelColourToEdit = new int[]
-						{8128};
+				{8128};
 				itemDefinition.newModelColourProduced = new int[]
-						{123770};
+				{123770};
 				break;
 
 			case 16145:
@@ -12727,22 +13088,22 @@ public class CustomItem {
 				itemInstance = ItemDefinition.forId(21079); //ruby key
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
 				itemDefinition.inventoryOptions = new String[]
-						{"Read", null, null, null, "Drop"};
+				{"Read", null, null, null, "Drop"};
 				itemDefinition.zoom = itemInstance.zoom;
 				itemDefinition.rotationY = itemInstance.rotationY;
 				itemDefinition.rotationX = itemInstance.rotationX;
 				itemDefinition.inventoryX = itemInstance.inventoryX;
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.modelColourToEdit = new int[]
-						{5563};
+				{5563};
 				itemDefinition.newModelColourProduced = new int[]
-						{560};
+				{560};
 				break;
 
 			case 16139:
 				itemDefinition.name = "Pet chair";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2500;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 340;
@@ -12756,7 +13117,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, null};
+				{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -12765,16 +13126,16 @@ public class CustomItem {
 				itemDefinition.inventoryY = 8;
 				itemDefinition.zoom = 886;
 				itemDefinition.modelColourToEdit = new int[]
-						{929, 922, 918, 914};
+				{929, 922, 918, 914};
 				itemDefinition.newModelColourProduced = new int[]
-						{8128, 8128, 8128, 8128};
+				{8128, 8128, 8128, 8128};
 				break;
 
 			case 16137:
 				itemInstance = ItemDefinition.forId(20269);
 				itemDefinition.name = "Hopleez pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = itemInstance.zoom;
 				itemDefinition.rotationY = itemInstance.rotationY;
 				itemDefinition.rotationX = itemInstance.rotationX;
@@ -12801,7 +13162,7 @@ public class CustomItem {
 			case 16135:
 				itemDefinition.name = "Mcribb pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2200;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -12866,9 +13227,9 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[3] = "Uncharge";
 				itemDefinition.inventoryOptions[4] = null;
 				itemDefinition.modelColourToEdit = new int[]
-						{-22407, -23323, -22308, -21269, 9158, 9009, 11212};
+				{-22407, -23323, -22308, -21269, 9158, 9009, 11212};
 				itemDefinition.newModelColourProduced = new int[]
-						{34770, 34770, 34770, 34770, 34770, 34770, 34770};
+				{34770, 34770, 34770, 34770, 34770, 34770, 34770};
 				break;
 			case 16133:
 				itemDefinition.name = "Cyan h'ween mask";
@@ -12896,7 +13257,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(412);
 				itemDefinition.name = "Gargoyle pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 6400;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -12908,7 +13269,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(2041);
 				itemDefinition.name = "Broken Handz pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 1500;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -12920,7 +13281,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(7668);
 				itemDefinition.name = "Voice of Yama pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 4000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -12932,7 +13293,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(6077);
 				itemDefinition.name = "Gnome child pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 700;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 300;
@@ -12944,7 +13305,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(998);
 				itemDefinition.name = "Guard pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 900;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 150;
@@ -12964,7 +13325,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(2207);
 				itemDefinition.name = "Growler pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 3700;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 300;
@@ -12977,7 +13338,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(465);
 				itemDefinition.name = "Skeletal wyvern pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 3000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 300;
@@ -13001,7 +13362,7 @@ public class CustomItem {
 			case 16125:
 				itemDefinition.name = "Glod pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 9000;
 				itemDefinition.rotationY = 100;
 				itemDefinition.rotationX = 100;
@@ -13031,7 +13392,7 @@ public class CustomItem {
 			case 16123:
 				itemDefinition.name = "Karil pet";
 				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
+				{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2500;
 				itemDefinition.rotationY = 100;
 				itemDefinition.rotationX = 100;
@@ -13211,7 +13572,7 @@ public class CustomItem {
 				break;
 			case 11996:
 				itemDefinition.inventoryOptions = new String[]
-						{"Spawn Item", null, "Check Uses", null, "Destroy"};
+				{"Spawn Item", null, "Check Uses", null, "Destroy"};
 				break;
 			case 16113:
 				itemDefinition.inventoryOptions = new String[]
@@ -13445,6 +13806,7 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[0] = null;
 				itemDefinition.inventoryOptions[1] = "Wear";
 				break;
+			
 			case 3761:
 				itemDefinition.name = "Zulrah's Wings";
 				itemDefinition.inventoryModel = 50113;
@@ -13787,7 +14149,7 @@ public class CustomItem {
 				itemDefinition.newModelColourProduced[0] = 0;
 				itemDefinition.newModelColourProduced[1] = 130770;
 				break;
-			case 16088:
+			    case 16088:
 				itemDefinition.name = "Legendary Mystery box";
 				itemDefinition.inventoryModel = 2426;
 				itemDefinition.maleModel = -1;
@@ -13898,7 +14260,7 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
 				itemDefinition.name = "Infernal Stone";
-
+			
 				break;
 			case 16082:
 				itemDefinition.name = "Fear reaper pet";
@@ -13911,7 +14273,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = itemInstance.inventoryX;
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
-
+				
 				break;
 			case 16081:
 				itemDefinition.name = "Anti-santa pet";
@@ -14204,6 +14566,1480 @@ public class CustomItem {
 				itemDefinition.inventoryModel = 2705;
 				break;
 
+			case 16072:
+				itemDefinition.name = "White graceful dye";
+				itemDefinition.zoom = 760;
+				itemDefinition.rotationY = 124;
+				itemDefinition.rotationX = 1920;
+				itemDefinition.inventoryY = -2;
+				itemDefinition.newModelColourProduced = new int[]
+						{100};
+				itemDefinition.modelColourToEdit = new int[]
+						{61};
+				itemDefinition.groundOptions = new String[]
+						{null, null, "Take", null, null};
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.inventoryModel = 2705;
+				break;
+
+			case 16074:
+				itemDefinition.name = "Blue graceful dye";
+				itemDefinition.zoom = 760;
+				itemDefinition.rotationY = 124;
+				itemDefinition.rotationX = 1920;
+				itemDefinition.inventoryY = -2;
+				itemDefinition.newModelColourProduced = new int[]
+						{-22105};
+				itemDefinition.modelColourToEdit = new int[]
+						{61};
+				itemDefinition.groundOptions = new String[]
+						{null, null, "Take", null, null};
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.inventoryModel = 2705;
+				break;
+
+			case 9594:
+				itemDefinition.name = "Ground mud rune";
+				break;
+			case 20546:
+				itemDefinition.name = "Reward casket (small)";
+				break;
+			case 20545:
+				itemDefinition.name = "Reward casket (medium)";
+				break;
+			case 20544:
+				itemDefinition.name = "Reward casket (large)";
+				break;
+			case 20543:
+				itemDefinition.name = "Reward casket (huge)";
+				break;
+			case 16061:
+				itemDefinition.name = "Eve pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 650;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 80;
+				npcInstance = EntityDefinition.forId(7672);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16060:
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wield", "Dismantle", null, null};
+				itemDefinition.name = "Armadyl godsword"; // Black Ags
+				itemDefinition.inventoryModel = 28075;
+				itemDefinition.zoom = 1957;
+				itemDefinition.rotationY = 498;
+				itemDefinition.rotationX = 484;
+				itemDefinition.inventoryX = -1;
+				itemDefinition.inventoryY = -1;
+				itemDefinition.maleModel = 27649;
+				itemDefinition.femaleModel = 27649;
+				break;
+			case 16059:
+				npcInstance = EntityDefinition.forId(3475);
+				itemDefinition.name = "The Untouchable pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 5000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 1700;
+				itemDefinition.inventoryX = 35;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16058:
+				itemDefinition.name = "Treus Dayth pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 3000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 20;
+				npcInstance = EntityDefinition.forId(3616);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16057:
+				itemDefinition.name = "Hans pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 650;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 80;
+				npcInstance = EntityDefinition.forId(3077);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+
+			case 16056:
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wield", "Dismantle", null, null};
+				itemDefinition.name = "Twisted bow (Thuggahhh)";
+				itemDefinition.inventoryModel = 32799;
+				itemDefinition.maleModel = 32674;
+				itemDefinition.femaleModel = 32674;
+				itemDefinition.zoom = 2000;
+				itemDefinition.rotationX = 1500;
+				itemDefinition.rotationY = 720;
+				itemDefinition.inventoryX = -3;
+				itemDefinition.inventoryY = 1;
+				itemDefinition.scaleX = 128;
+				itemDefinition.scaleY = 128;
+				itemDefinition.scaleZ = 128;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				break;
+
+			case 16055:
+				itemDefinition.name = "Abyssal tentacle";
+				itemDefinition.inventoryModel = 28439;
+				itemDefinition.maleModel = 28446;
+				itemDefinition.femaleModel = 28446;
+				itemDefinition.zoom = 840;
+				itemDefinition.rotationX = 121;
+				itemDefinition.rotationY = 280;
+				itemDefinition.inventoryY = 56;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = "Check";
+				itemDefinition.inventoryOptions[4] = "Dissolve";
+				break;
+			case 16054:
+				npcInstance = EntityDefinition.forId(3028);
+				itemDefinition.name = "Goblin pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 750;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 1400;
+				itemDefinition.inventoryX = -15;
+				itemDefinition.inventoryY = 63;
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16053:
+				npcInstance = EntityDefinition.forId(2807);
+				itemDefinition.name = "Cow calf pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 4000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 1400;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16503:
+				itemDefinition.name = "Easter Blood Money Box";
+				itemDefinition.inventoryModel = 2426;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1180;
+				itemDefinition.rotationX = 172;
+				itemDefinition.rotationY = 160;
+				itemDefinition.inventoryY = -14;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = "Open";
+				itemDefinition.inventoryOptions[1] = null;
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.modelColourToEdit = new int[2];
+				itemDefinition.modelColourToEdit[0] = 359770;
+				itemDefinition.modelColourToEdit[1] = 22410;
+				itemDefinition.newModelColourProduced = new int[2];
+				itemDefinition.newModelColourProduced[0] = 92770;
+				itemDefinition.newModelColourProduced[1] = 359770;
+				break;
+			case 16052:
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wield", "Dismantle", null, null};
+				itemDefinition.name = "Twisted bow (Easter)";
+				itemDefinition.inventoryModel = 32799;
+				itemDefinition.maleModel = 32674;
+				itemDefinition.femaleModel = 32674;
+				itemDefinition.zoom = 2000;
+				itemDefinition.rotationX = 1500;
+				itemDefinition.rotationY = 720;
+				itemDefinition.inventoryX = -3;
+				itemDefinition.inventoryY = 1;
+				itemDefinition.scaleX = 128;
+				itemDefinition.scaleY = 128;
+				itemDefinition.scaleZ = 128;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				break;
+			case 16051:
+				itemDefinition.name = "TzKal-Zuk pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.inventoryModel = 30536;
+				itemDefinition.zoom = 905;
+				itemDefinition.rotationY = 673;
+				itemDefinition.rotationX = 427;
+				itemDefinition.inventoryX = 3;
+				itemDefinition.inventoryY = 3;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.brightness = -30;
+				break;
+			case 16050:
+				itemDefinition.name = "Elysian spirit shield pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.inventoryModel = 11072;
+				itemDefinition.zoom = 1789;
+				itemDefinition.rotationY = 431;
+				itemDefinition.rotationX = 27;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.maleModel = 11048;
+				itemDefinition.femaleModel = 11048;
+				itemDefinition.brightness = -30;
+				break;
+			case 16049:
+				npcInstance = EntityDefinition.forId(4912);
+				itemDefinition.name = "War tortoise pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 6000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 1400;
+				itemDefinition.inventoryX = -30;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16048:
+				npcInstance = EntityDefinition.forId(7561);
+				itemDefinition.name = "Muttadile pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 3000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 100;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16047:
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wield", "Dismantle", null, null};
+				itemDefinition.name = "Armadyl godsword";
+				itemDefinition.inventoryModel = 28075;
+				itemDefinition.zoom = 1957;
+				itemDefinition.rotationY = 498;
+				itemDefinition.rotationX = 484;
+				itemDefinition.inventoryX = -1;
+				itemDefinition.inventoryY = -1;
+				itemDefinition.maleModel = 27649;
+				itemDefinition.femaleModel = 27649;
+				break;
+			case 16046:
+				npcInstance = EntityDefinition.forId(7233);
+				itemDefinition.name = "Lucky impling pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 700;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 1700;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 90;
+				itemDefinition.inventoryModel = 31741;
+				break;
+			case 16045:
+				npcInstance = EntityDefinition.forId(3474);
+				itemDefinition.name = "The Everlasting pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 5000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 1700;
+				itemDefinition.inventoryX = 35;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16044:
+				npcInstance = EntityDefinition.forId(7102);
+				itemDefinition.name = "Mutated Glough pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 1000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 150;
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16043:
+				npcInstance = EntityDefinition.forId(6637);
+				itemDefinition.name = "Kalphite Princess pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 2900;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 40;
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16042:
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wield", "Dismantle", null, null};
+				itemDefinition.name = "Armadyl godsword";
+				itemDefinition.inventoryModel = 28075;
+				itemDefinition.zoom = 1957;
+				itemDefinition.rotationY = 498;
+				itemDefinition.rotationX = 484;
+				itemDefinition.inventoryX = -1;
+				itemDefinition.inventoryY = -1;
+				itemDefinition.maleModel = 27649;
+				itemDefinition.femaleModel = 27649;
+				break;
+			case 16041:
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wield", null, null, null};
+				itemDefinition.name = "Elysian spirit shield";
+				itemDefinition.inventoryModel = 11072;
+				itemDefinition.zoom = 1789;
+				itemDefinition.rotationY = 431;
+				itemDefinition.rotationX = 27;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.maleModel = 11048;
+				itemDefinition.femaleModel = 11048;
+				break;
+			case 6199:
+				itemDefinition.name = "Pet mystery box";
+				itemDefinition.description = "Open it to obtain a rare pet! 25 to collect! Includes 4 exclusive pets!".getBytes();
+				itemDefinition.modelColourToEdit = new int[2];
+				itemDefinition.modelColourToEdit[0] = 2999;
+				itemDefinition.modelColourToEdit[1] = 22410;
+				itemDefinition.newModelColourProduced = new int[2];
+				itemDefinition.newModelColourProduced[0] = 127;
+				itemDefinition.newModelColourProduced[1] = 356770;
+				break;
+
+			case 16040:
+				npcInstance = EntityDefinition.forId(5504);
+				itemDefinition.name = "Mr. Mordaut pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 1750;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 50;
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+
+			case 16039:
+				npcInstance = EntityDefinition.forId(7277);
+				itemDefinition.name = "Warped Jelly pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 2000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.brightness = 500;
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+
+			case 16038:
+				npcInstance = EntityDefinition.forId(5523);
+				itemDefinition.name = "Donator pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 600;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 100;
+				itemDefinition.modelColourToEdit = npcInstance.modelColourToEdit;
+				itemDefinition.newModelColourProduced = npcInstance.newModelColourProduced;
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+
+			case 16037:
+				npcInstance = EntityDefinition.forId(3473);
+				itemDefinition.name = "The Inadequacy pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 7000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 50;
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+
+			case 16036:
+				npcInstance = EntityDefinition.forId(3140);
+				itemDefinition.name = "Icefiend pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 1000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 50;
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+
+			case 16035:
+				npcInstance = EntityDefinition.forId(1378);
+				itemDefinition.name = "The Kendal pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 3000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 50;
+				itemDefinition.inventoryModel = npcInstance.models[1];
+				break;
+
+			case 16034:
+				itemDefinition.name = "Armadyl godsword pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.inventoryModel = 28075;
+				itemDefinition.zoom = 1957;
+				itemDefinition.rotationY = 498;
+				itemDefinition.rotationX = 484;
+				itemDefinition.inventoryX = -1;
+				itemDefinition.inventoryY = -1;
+				itemDefinition.brightness = -35;
+				break;
+
+			case 16033:
+				npcInstance = EntityDefinition.forId(6477);
+				itemDefinition.name = "Mutant tarn pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 5750;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 150;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+
+			case 16032:
+				npcInstance = EntityDefinition.forId(2067);
+				itemDefinition.name = "Mounted terrorbird pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 3000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 150;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+
+			case 16031:
+				itemDefinition.name = "Dad pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 1000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 100;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 80;
+				npcInstance = EntityDefinition.forId(4130);
+				itemDefinition.inventoryModel = npcInstance.models[1];
+				break;
+
+			case 16030:
+				itemDefinition.name = "Rainbow partyhat pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.inventoryModel = 16252;
+				itemDefinition.zoom = 440;
+				itemDefinition.rotationY = 76;
+				itemDefinition.rotationX = 1852;
+				itemDefinition.inventoryX = 1;
+				itemDefinition.inventoryY = 1;
+				itemDefinition.maleModel = 16246;
+				itemDefinition.femaleModel = 16248;
+				itemDefinition.brightness = -50;
+				break;
+
+			case 16029:
+				itemDefinition.name = "Party Pete pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, null};
+				itemDefinition.inventoryModel = 2635;
+				itemDefinition.zoom = 440;
+				itemDefinition.rotationY = 76;
+				itemDefinition.rotationX = 1852;
+				itemDefinition.inventoryX = 1;
+				itemDefinition.inventoryY = 1;
+				itemDefinition.maleModel = 187;
+				itemDefinition.femaleModel = 363;
+				itemDefinition.brightness = -50;
+				break;
+
+			case 16028:
+				itemDefinition.name = "Demonic gorilla pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 8000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 1000;
+				itemDefinition.zoom = 4000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 1000;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.brightness = 35;
+				itemDefinition.inventoryY = 300;
+				npcInstance = EntityDefinition.forId(7144);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+
+			case 16027:
+				itemDefinition.name = "JalTok-Jad pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 9000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 150;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 10;
+				npcInstance = EntityDefinition.forId(7700);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16026:
+				itemDefinition.name = "Flaming pyrelord pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 2000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 150;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 80;
+				npcInstance = EntityDefinition.forId(7394);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16025:
+				itemDefinition.name = "Wise Old Man pet";
+				itemInstance = ItemDefinition.forId(1042);
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				itemDefinition.newModelColourProduced = itemInstance.newModelColourProduced;
+				itemDefinition.modelColourToEdit = itemInstance.modelColourToEdit;
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				break;
+			case 16024:
+				itemDefinition.name = "Smoke devil pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 4000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 60;
+				npcInstance = EntityDefinition.forId(7406);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16023:
+				itemDefinition.name = "Death pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 650;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 80;
+				npcInstance = EntityDefinition.forId(5567);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16021:
+				itemDefinition.name = "Schoolgirl pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 1000;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 0;
+				npcInstance = EntityDefinition.forId(1915);
+				itemDefinition.inventoryModel = npcInstance.models[1];
+				break;
+			case 16022:
+				itemDefinition.name = "Banker pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 650;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 80;
+				npcInstance = EntityDefinition.forId(397);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				itemDefinition.modelColourToEdit = new int[5];
+				itemDefinition.newModelColourProduced = new int[5];
+				itemDefinition.modelColourToEdit[0] = 25238;
+				itemDefinition.modelColourToEdit[1] = 8741;
+				itemDefinition.modelColourToEdit[2] = 6798;
+				itemDefinition.modelColourToEdit[3] = 8741;
+				itemDefinition.modelColourToEdit[4] = 4550;
+				itemDefinition.newModelColourProduced[0] = 45;
+				itemDefinition.newModelColourProduced[1] = 45;
+				itemDefinition.newModelColourProduced[2] = 41;
+				itemDefinition.newModelColourProduced[3] = 45;
+				itemDefinition.newModelColourProduced[4] = 4647;
+				break;
+
+			// Name change scroll.
+			case 1505:
+				itemDefinition.name = "Name change scroll";
+				itemDefinition.inventoryOptions[0] = "Change name";
+				break;
+			case 20017:
+				if (Config.PVP) {
+					itemDefinition.name = "Ring of blood money";
+					itemDefinition.newModelColourProduced = new int[]
+							{940, 947};
+					itemDefinition.modelColourToEdit = new int[]
+							{9152, 9158};
+				}
+				break;
+			// Zamorak halo
+			case 12638:
+				itemDefinition.inventoryX -= 3;
+				break;
+			case 1704:
+			case 1706:
+			case 1708:
+			case 1710:
+			case 1712:
+				itemDefinition.operateOptions = new String[]
+						{"Al Kharid", "Draynor", "Karamja", "Edgeville"};
+				break;
+
+			case 21166:
+			case 21169:
+			case 21171:
+			case 21173:
+			case 21175:
+				itemDefinition.operateOptions = new String[]
+						{"Lava Maze", "Bandit Camp", "Chaos Temple", null, null};
+				break;
+
+			case 11238:
+			case 11240:
+			case 11242:
+			case 11244:
+			case 11246:
+			case 11248:
+			case 11250:
+			case 11252:
+			case 11254:
+			case 11256:
+				itemDefinition.inventoryOptions = new String[]
+						{"Loot", null, null, null, "Drop"};
+				break;
+
+			case 4079:
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				break;
+
+
+			case 11941:
+				itemDefinition.inventoryOptions[2] = "Withdraw";
+				break;
+			case 2740:
+				itemDefinition.name = "Clue casket (1st release)";
+				itemDefinition.inventoryOptions = new String[]
+						{"Open", null, null, null, "Drop"};
+				itemDefinition.modelColourToEdit = new int[1];
+				itemDefinition.modelColourToEdit[0] = -22477;
+				itemDefinition.newModelColourProduced = new int[1];
+				itemDefinition.newModelColourProduced[0] = 123456;
+				break;
+			case 2742:
+				itemDefinition.name = "Clue casket (2nd release)";
+				itemDefinition.inventoryOptions = new String[]
+						{"Open", null, null, null, "Drop"};
+				itemDefinition.modelColourToEdit = new int[1];
+				itemDefinition.modelColourToEdit[0] = -22477;
+				itemDefinition.newModelColourProduced = new int[1];
+				itemDefinition.newModelColourProduced[0] = 461770;
+				break;
+			case 2744:
+				itemDefinition.name = "Clue casket (3rd release)";
+				itemDefinition.inventoryOptions = new String[]
+						{"Open", null, null, null, "Drop"};
+				itemDefinition.modelColourToEdit = new int[1];
+				itemDefinition.modelColourToEdit[0] = -22477;
+				itemDefinition.newModelColourProduced = new int[1];
+				itemDefinition.newModelColourProduced[0] = 127;
+				break;
+
+			case 14011:
+				itemDefinition.inventoryModel = 65270;
+				itemDefinition.name = "Completionist cape";
+				itemDefinition.zoom = 1513;
+				itemDefinition.maleEquipOffset = 5;
+				itemDefinition.femaleEquipOffset = 9;
+				itemDefinition.femaleEquipOffsetOther = -2;
+				itemDefinition.rotationY = 279;
+				itemDefinition.rotationX = 948;
+				itemDefinition.inventoryX = -3;
+				itemDefinition.inventoryY = 24;
+				itemDefinition.maleModel = 65297;
+				itemDefinition.femaleModel = 65316;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", "Customise", null, "Drop"};
+				break;
+
+			case 14012:
+				itemDefinition.name = "Completionist hood";
+				itemDefinition.inventoryModel = 29629;
+				itemDefinition.zoom = 760;
+				itemDefinition.rotationY = 11;
+				itemDefinition.rotationX = 81;
+				itemDefinition.inventoryX = 1;
+				itemDefinition.inventoryY = -3;
+				itemDefinition.maleModel = 65292;
+				itemDefinition.femaleModel = 65310;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+
+			case 14013:
+				itemDefinition.name = "Veteran cape";
+				itemDefinition.inventoryModel = 65261;
+				itemDefinition.zoom = 1513;
+				itemDefinition.rotationY = 279;
+				itemDefinition.rotationX = 948;
+				itemDefinition.inventoryX = -3;
+				itemDefinition.inventoryY = 24;
+				itemDefinition.maleModel = 65305;
+				itemDefinition.femaleModel = 65318;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+
+			case 14014:
+				itemDefinition.name = "Veteran hood";
+				itemDefinition.zoom = 760;
+				itemDefinition.rotationY = 11;
+				itemDefinition.rotationX = 81;
+				itemDefinition.inventoryX = 1;
+				itemDefinition.inventoryY = -3;
+				itemDefinition.inventoryModel = 29629;
+				itemDefinition.maleModel = 29614;
+				itemDefinition.femaleModel = 29623;
+				itemDefinition.modelColourToEdit = new int[]
+						{668, 675, 784, 815, 673, 685};
+				itemDefinition.newModelColourProduced = new int[]
+						{115, 107, 7093, -22105, 0, 979};
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+
+			case 16013:
+				itemDefinition.name = "Camel";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemInstance = ItemDefinition.forId(7003);
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.rotationY = itemInstance.rotationX;
+				itemDefinition.rotationX = itemInstance.rotationY;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				break;
+			case 16014:
+				itemDefinition.name = "Skotos";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.inventoryModel = 65016;
+				itemDefinition.zoom = 1168;
+				itemDefinition.rotationY = 2012;
+				itemDefinition.rotationX = 0;
+				break;
+			case 16017:
+				itemDefinition.name = "Cerberus pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 6500;
+				itemDefinition.rotationY = 100;
+				itemDefinition.rotationX = 100;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 50;
+				npcInstance = EntityDefinition.forId(5866);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16018:
+				itemDefinition.name = "Blood money pet";
+				itemInstance = ItemDefinition.forId(13316);
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				itemDefinition.newModelColourProduced = itemInstance.newModelColourProduced;
+				itemDefinition.modelColourToEdit = itemInstance.modelColourToEdit;
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				break;
+			case 16504:
+				itemDefinition.inventoryModel = 3288;
+				itemDefinition.name = "Death Cape";
+				itemDefinition.description = "A cape worn by the Masters.".getBytes();
+				itemDefinition.zoom = 1579;
+				itemDefinition.inventoryY = -6;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.rotationY= 500;
+				itemDefinition.rotationX = 0;
+				itemDefinition.maleModel = 3287;
+				itemDefinition.femaleModel = 3287;
+				itemDefinition.groundOptions = new String[5];
+				itemDefinition.groundOptions[2] = "Take";
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[1] = "Wear";
+				break;
+			case 16506:
+				itemDefinition.inventoryModel = 65321;
+				itemDefinition.name = "Woodcutting 120 Cape";
+				itemDefinition.description = "A cape worn by the Masters of Masters.".getBytes();
+				itemDefinition.zoom = 2610;
+				itemDefinition.inventoryY = 5;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.rotationY= 500;
+				itemDefinition.rotationX = 1000;
+				itemDefinition.maleModel = 65320;
+				itemDefinition.femaleModel = 65320;
+				itemDefinition.groundOptions = new String[5];
+				itemDefinition.groundOptions[2] = "Take";
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[1] = "Wear";
+				break;
+			case 16508:
+				itemDefinition.inventoryModel = 50611;
+				itemDefinition.name = "Runecessor Cape";
+				itemDefinition.description = "A cape worn by the avid player.".getBytes();
+				itemDefinition.zoom = 2610;
+				itemDefinition.inventoryY = 5;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.rotationY= 500;
+				itemDefinition.rotationX = 1000;
+				itemDefinition.maleModel = 50610;
+				itemDefinition.femaleModel = 50610;
+				itemDefinition.groundOptions = new String[5];
+				itemDefinition.groundOptions[2] = "Take";
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[1] = "Wear";
+				break;
+			case 16505:
+				itemDefinition.name = "Tekton Ring";
+				itemInstance = ItemDefinition.forId(16076);
+				itemDefinition.newModelColourProduced = new int[]
+						{461770, 76770};
+				itemDefinition.modelColourToEdit = new int[]
+						{9152, 127};
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				itemDefinition.maleModel = itemInstance.maleModel;
+				itemDefinition.femaleModel = itemInstance.maleModel;
+				itemDefinition.description = "A Ring droped by Tekton give 7% droprate.".getBytes();
+				itemDefinition.groundOptions = new String[5];
+				itemDefinition.groundOptions[2] = "Take";
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[1] = "Wear";
+                break;
+			case 16019:
+				itemDefinition.name = "Tekton pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 8000;
+				itemDefinition.rotationY = 100;
+				itemDefinition.rotationX = 100;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 0;
+				npcInstance = EntityDefinition.forId(7544);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16020:
+				itemDefinition.name = "Yoshi pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 750;
+				itemDefinition.rotationY = 100;
+				itemDefinition.rotationX = 250;
+				itemDefinition.inventoryX = 10;
+				itemDefinition.inventoryY = 100;
+				npcInstance = EntityDefinition.forId(1873);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				itemDefinition.modelColourToEdit = new int[1];
+				itemDefinition.newModelColourProduced = new int[1];
+
+				itemDefinition.modelColourToEdit= new int[14];
+				itemDefinition.newModelColourProduced = new int[14];
+				colour = 51136;
+				itemDefinition.modelColourToEdit[0] = 29976;
+				itemDefinition.newModelColourProduced[0] = 419770;
+
+				colour = 419770;
+				itemDefinition.modelColourToEdit[1] = 7502;
+				itemDefinition.newModelColourProduced[1] = 356770 ;
+
+				colour = 419770;
+				itemDefinition.modelColourToEdit[2] = 27819;
+				itemDefinition.newModelColourProduced[2] = 356770 ;
+
+				colour = 419770;
+				itemDefinition.modelColourToEdit[3] = 0;
+				itemDefinition.newModelColourProduced[3] =   0 ;
+
+				colour = 419770;
+				itemDefinition.modelColourToEdit[4] = 29980;
+				itemDefinition.newModelColourProduced[4] =419770;
+
+				colour = 419770;
+				itemDefinition.modelColourToEdit[5] = 28302;
+				itemDefinition.newModelColourProduced[5] =  419770;
+
+				colour = 419770;
+				itemDefinition.modelColourToEdit[6] = 29980;
+				itemDefinition.newModelColourProduced[6] = 419770;
+
+				colour = 419770;
+				itemDefinition.modelColourToEdit[7] = 27934;
+				itemDefinition.newModelColourProduced[7] = 419770;
+				
+				// Circle on the ground, most inner first circle
+				colour = 419770;
+				itemDefinition.modelColourToEdit[8] = -26214;
+				itemDefinition.newModelColourProduced[8] = 419770;
+
+				// Second circle
+				colour = 419770;
+				itemDefinition.modelColourToEdit[9] = -26218;
+				itemDefinition.newModelColourProduced[9] = 419770;
+
+				// Third circle
+				colour = 419770;
+				itemDefinition.modelColourToEdit[10] = -26094;
+				itemDefinition.newModelColourProduced[10] = 356770 ;
+
+				// Fourth circle
+				colour = 419770;
+				itemDefinition.modelColourToEdit[11] = -25970;
+				itemDefinition.newModelColourProduced[11] = 356770 ;
+
+				// Fifth circle
+				colour = 419770;
+				itemDefinition.modelColourToEdit[12] = -25718;
+				itemDefinition.newModelColourProduced[12] = 356770 ;
+
+				// Sixth circle
+				colour = 419770;
+				itemDefinition.modelColourToEdit[13] = -23672;
+				itemDefinition.newModelColourProduced[13] = 356770 ;
+
+
+			
+				break;
+			case 13302:
+				itemDefinition.name = "Mini blood key";
+				break;
+			case 20526:
+				itemDefinition.name = "Blood key";
+				break;
+			case 16016:
+				itemDefinition.name = "Corporeal beast pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 3700;
+				itemDefinition.rotationY = 100;
+				itemDefinition.rotationX = 100;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 0;
+				npcInstance = EntityDefinition.forId(319);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16015:
+				itemDefinition.name = "Dharok pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 1000;
+				itemDefinition.rotationY = 100;
+				itemDefinition.rotationX = 100;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 100;
+				npcInstance = EntityDefinition.forId(1673);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16012:
+				itemDefinition.name = "Vespula";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 8000;
+				itemDefinition.rotationY = 100;
+				itemDefinition.rotationX = 200;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = -30;
+				npcInstance = EntityDefinition.forId(7531);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16011:
+				itemDefinition.name = "Vasa Nistirio";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 11500;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = -30;
+				npcInstance = EntityDefinition.forId(7566);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16010:
+				itemDefinition.name = "The Night Beast";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 6500;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = -30;
+				itemDefinition.inventoryModel = 32933;
+				break;
+			// This item id is used to fix herblore animation.
+			case 3:
+				itemDefinition.maleModel = 506;
+				itemDefinition.femaleModel = 506;
+				break;
+
+			case 16007:
+				itemDefinition.name = "Tormented demon pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 7300;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = -140;
+				itemDefinition.inventoryModel = 44733;
+				break;
+			case 16008:
+				itemDefinition.name = "Ice strykewyrm pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 7500;
+				itemDefinition.rotationY = 30;
+				itemDefinition.rotationX = 70;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryModel = 51847;
+				break;
+
+			case 7478:
+				itemDefinition.name = "Donator tokens";
+				itemDefinition.inventoryOptions = new String[5];
+				
+				break;
+
+			case 11863:
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = "Dismantle";
+				break;
+
+			// Monkey greegree.
+			case 4024:
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = "Transform into...";
+				itemDefinition.inventoryOptions[1] = null;
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				break;
+			// Christmas cracker.
+			case 962:
+				itemDefinition.inventoryOptions = new String[]
+						{"Open", null, null, null, "Drop"};
+				break;
+			case 4067:
+				itemDefinition.name = "Vote ticket";
+				break;
+			case 13146:
+				itemDefinition.name = "Xp lamp 1 million";
+				break;
+			case 16005:
+				itemDefinition.name = "Soul talisman";
+				itemDefinition.inventoryModel = 2496;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1160;
+				itemDefinition.rotationX = 160;
+				itemDefinition.rotationY = 352;
+				itemDefinition.inventoryX = 2;
+				itemDefinition.inventoryY = 20;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = null;
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = "Locate";
+				itemDefinition.inventoryOptions[4] = null;
+				break;
+
+			case 16006:
+				itemDefinition.name = "Blood talisman";
+				itemDefinition.inventoryModel = 2475;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1160;
+				itemDefinition.rotationX = 160;
+				itemDefinition.rotationY = 352;
+				itemDefinition.inventoryX = 2;
+				itemDefinition.inventoryY = 20;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = null;
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = "Locate";
+				itemDefinition.inventoryOptions[4] = null;
+				break;
+
+			case 16004:
+				itemDefinition.name = "Dice (up to 100)";
+				itemDefinition.inventoryOptions = new String[]
+						{"Roll", null, "Withdraw seeds", null, null};
+				itemDefinition.inventoryModel = 65004;
+				itemDefinition.rotationX = 94;
+				itemDefinition.rotationY = 215;
+				itemDefinition.zoom = 1104;
+				itemDefinition.inventoryX = 1;
+				itemDefinition.inventoryY = 0;
+				break;
+			case 16002:
+				itemInstance = ItemDefinition.forId(13316);
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				itemDefinition.newModelColourProduced = itemInstance.newModelColourProduced;
+				itemDefinition.modelColourToEdit = itemInstance.modelColourToEdit;
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				itemDefinition.name = "Blood money " + WebsiteRead.voteReward;
+				break;
+			case 16003:
+				itemInstance = ItemDefinition.forId(13316);
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				itemDefinition.newModelColourProduced = itemInstance.newModelColourProduced;
+				itemDefinition.modelColourToEdit = itemInstance.modelColourToEdit;
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				itemDefinition.name = "Blood money 10k";
+				break;
+			case 16000:
+				itemDefinition.unNotedId = 16002;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 16001:
+				itemDefinition.unNotedId = 16003;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			// Dark crabs cooked, burnt, raw.
+			case 11936:
+			case 11938:
+			case 11934:
+				itemDefinition.inventoryX = 10;
+				break;
+			case 14876:
+				itemDefinition.name = "Ancient statuette";
+				itemDefinition.inventoryModel = 47258;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1513;
+				itemDefinition.rotationX = 202;
+				itemDefinition.rotationY = 0;
+				itemDefinition.inventoryX = 43;
+				itemDefinition.inventoryY = -1;
+				break;
+			case 14877:
+				itemDefinition.name = "Seren statuette";
+				itemDefinition.inventoryModel = 47257;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1360;
+				itemDefinition.rotationX = 337;
+				itemDefinition.rotationY = 81;
+				itemDefinition.inventoryX = 8;
+				itemDefinition.inventoryY = -22;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = null;
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = "Drop";
+				break;
+			case 14878:
+				itemDefinition.name = "Armadyl statuette";
+				itemDefinition.inventoryModel = 47256;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1360;
+				itemDefinition.rotationX = 148;
+				itemDefinition.rotationY = 0;
+				itemDefinition.inventoryX = -30;
+				itemDefinition.inventoryY = 0;
+				break;
+			case 14879:
+				itemDefinition.name = "Zamorak statuette";
+				itemDefinition.inventoryModel = 47250;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 976;
+				itemDefinition.rotationX = 75;
+				itemDefinition.rotationY = 0;
+				itemDefinition.inventoryX = 33;
+				itemDefinition.inventoryY = 0;
+				break;
+			case 14880:
+				itemDefinition.name = "Saradomin statuette";
+				itemDefinition.inventoryModel = 47248;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1488;
+				itemDefinition.rotationX = 94;
+				itemDefinition.rotationY = 75;
+				itemDefinition.inventoryX = 37;
+				itemDefinition.inventoryY = -14;
+				break;
+			case 14881:
+				itemDefinition.name = "Bandos statuette";
+				itemDefinition.inventoryModel = 47244;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1360;
+				itemDefinition.rotationX = 1841;
+				itemDefinition.rotationY = 153;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = -47;
+				break;
+			case 14882:
+				itemDefinition.name = "Ruby chalice";
+				itemDefinition.inventoryModel = 47247;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 720;
+				itemDefinition.rotationX = 1653;
+				itemDefinition.rotationY = 105;
+				itemDefinition.inventoryX = 57;
+				itemDefinition.inventoryY = -4;
+				break;
+			case 14883:
+				itemDefinition.name = "Guthixian brazier";
+				itemDefinition.inventoryModel = 47252;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1300;
+				itemDefinition.rotationX = 1949;
+				itemDefinition.rotationY = 141;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 0;
+				break;
+			case 14884:
+				itemDefinition.name = "Armadyl totem";
+				itemDefinition.inventoryModel = 47251;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1032;
+				itemDefinition.rotationX = 1872;
+				itemDefinition.rotationY = 364;
+				itemDefinition.inventoryX = 5;
+				itemDefinition.inventoryY = 3;
+				break;
+			case 14885:
+				itemDefinition.name = "Zamorak medallion";
+				itemDefinition.inventoryModel = 47259;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 724;
+				itemDefinition.rotationX = 916;
+				itemDefinition.rotationY = 377;
+				itemDefinition.inventoryX = -1;
+				itemDefinition.inventoryY = 0;
+				break;
+			case 14886:
+				itemDefinition.name = "Saradomin carving";
+				itemDefinition.inventoryModel = 47246;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1744;
+				itemDefinition.rotationX = 0;
+				itemDefinition.rotationY = 0;
+				itemDefinition.inventoryX = -25;
+				itemDefinition.inventoryY = 2;
+				break;
+			case 14887:
+				itemDefinition.name = "Bandos scrimshaw";
+				itemDefinition.inventoryModel = 47245;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 921;
+				itemDefinition.rotationX = 94;
+				itemDefinition.rotationY = 552;
+				itemDefinition.inventoryX = 1;
+				itemDefinition.inventoryY = 0;
+				break;
+			case 14888:
+				itemDefinition.name = "Saradomin amphora";
+				itemDefinition.inventoryModel = 47254;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1347;
+				itemDefinition.rotationX = 1670;
+				itemDefinition.rotationY = 81;
+				itemDefinition.inventoryX = 12;
+				itemDefinition.inventoryY = 21;
+				break;
+			case 14889:
+				itemDefinition.name = "Ancient psaltery bridge";
+				itemDefinition.inventoryModel = 47249;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 848;
+				itemDefinition.rotationX = 1347;
+				itemDefinition.rotationY = 111;
+				itemDefinition.inventoryX = -5;
+				itemDefinition.inventoryY = 0;
+				break;
+			case 14890:
+				itemDefinition.name = "Bronzed dragon claw";
+				itemDefinition.inventoryModel = 47255;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 835;
+				itemDefinition.rotationX = 13;
+				itemDefinition.rotationY = 512;
+				itemDefinition.inventoryX = -1;
+				itemDefinition.inventoryY = -1;
+				break;
+			case 14891:
+				itemDefinition.name = "Third age carafe";
+				itemDefinition.inventoryModel = 47243;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1104;
+				itemDefinition.rotationX = 1820;
+				itemDefinition.rotationY = 130;
+				itemDefinition.inventoryX = -9;
+				itemDefinition.inventoryY = 29;
+				break;
+			case 14892:
+				itemDefinition.name = "Broken statue headdress";
+				itemDefinition.inventoryModel = 47253;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1360;
+				itemDefinition.rotationX = 417;
+				itemDefinition.rotationY = 512;
+				itemDefinition.inventoryX = -9;
+				itemDefinition.inventoryY = 0;
+				break;
+
+			case 14893:
+				itemDefinition.unNotedId = 14876;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14894:
+				itemDefinition.unNotedId = 14877;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14895:
+				itemDefinition.unNotedId = 14878;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14896:
+				itemDefinition.unNotedId = 14879;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14897:
+				itemDefinition.unNotedId = 14880;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14898:
+				itemDefinition.unNotedId = 14881;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14899:
+				itemDefinition.unNotedId = 14882;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14900:
+				itemDefinition.unNotedId = 14883;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14901:
+				itemDefinition.unNotedId = 14884;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14902:
+				itemDefinition.unNotedId = 14885;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14903:
+				itemDefinition.unNotedId = 14886;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14904:
+				itemDefinition.unNotedId = 14887;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14905:
+				itemDefinition.unNotedId = 14888;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14906:
+				itemDefinition.unNotedId = 14889;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14907:
+				itemDefinition.unNotedId = 14890;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14908:
+				itemDefinition.unNotedId = 14891;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14909:
+				itemDefinition.unNotedId = 14892;
+				itemDefinition.notedItemTemplate = 799;
+				break;
 		}
 	}
 
