@@ -12038,7 +12038,7 @@ public class Client extends RSApplet {
 				if (combinedArguments.contains("PRINT")) {
 					printToConsole = true;
 				}
-				WebsiteRead.port = combinedArguments.contains("43595") ? 43595 : 43594;
+				WebsiteRead.port = combinedArguments.contains("43595") ? 43595 : 5555;
 				if (combinedArguments.contains("ECO")) {
 					Config.ECO = true;
 					Config.PVP = false;
