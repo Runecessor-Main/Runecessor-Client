@@ -4402,7 +4402,7 @@ public class CustomItem {
 				itemDefinition.newModelColourProduced[5] = colour == -1 ? -29110 : colour;
 				break;
 			case 16322:
-				itemDefinition.name = "Light Blue Santa hat";
+				itemDefinition.name = "Neon Green Santa hat";
 				itemDefinition.inventoryModel = 2537;
 				itemDefinition.maleModel = 189;
 				itemDefinition.femaleModel = 366;
@@ -4873,7 +4873,30 @@ public class CustomItem {
                 itemDefinition.inventoryOptions[3] = null;
                 itemDefinition.inventoryOptions[4] = null;
                 break;
-			 case 7121:
+			case 16906:
+				itemDefinition.name = "*!* GAMBLE *!* D-Tokens M-Box";
+				itemDefinition.description = "Payout Ranges From 175-5,000 Donator Tokens".getBytes();
+				itemDefinition.inventoryModel = 2426;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1180;
+				itemDefinition.rotationX = 172;
+				itemDefinition.rotationY = 160;
+				itemDefinition.inventoryY = -14;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = "Open";
+				itemDefinition.inventoryOptions[1] = null;
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.modelColourToEdit = new int[2];
+				itemDefinition.modelColourToEdit[0] = 2999;
+				itemDefinition.modelColourToEdit[1] = 22410;
+				itemDefinition.newModelColourProduced = new int[2];
+				itemDefinition.newModelColourProduced[0] = 7445;
+				itemDefinition.newModelColourProduced[1] = 5548;
+				break;
+				case 7121:
 	                itemDefinition.name = "Slayer Ring (eternal)";
 	                itemInstance = ItemDefinition.forId(11866);
 	                itemDefinition.inventoryModel = itemInstance.inventoryModel;
@@ -7753,7 +7776,7 @@ public class CustomItem {
 				itemDefinition.newModelColourProduced[9] = colour == -1 ? -22440 : colour;
 				break;
 			case 16434:
-				itemDefinition.name = "Santa hat";
+				itemDefinition.name = "Santa hat (g)";
 				itemDefinition.inventoryModel = 2537;
 				itemDefinition.maleModel = 189;
 				itemDefinition.femaleModel = 366;
