@@ -3806,29 +3806,30 @@ public class Client extends RSApplet {
             Utility.print("Setting: " + i + ", Config: " + config + ", action: " + action);
         }
         if (action == 1) {
+        	// BRIGHTNESS Day/Night Cycle
             if (config == 1) {
-                Rasterizer.setupPalette(0.90000000000000002D);
+                Rasterizer.setupPalette(1.60000000000000002D); // NIGHT - Default 0.90000000000000002D
                 if (isLoggedIn()) {
                     brightness = ClientConstants.BRIGHTNESS_VERY_DARK;
                     Settings.saveSettings();
                 }
             }
             if (config == 2) {
-                Rasterizer.setupPalette(0.80000000000000004D);
+                Rasterizer.setupPalette(1.25000000000000004D); // DAWN - Defualt 0.80000000000000004D
                 if (isLoggedIn()) {
                     brightness = ClientConstants.BRIGHTNESS_DARK;
                     Settings.saveSettings();
                 }
             }
             if (config == 3) {
-                Rasterizer.setupPalette(0.69999999999999996D);
+                Rasterizer.setupPalette(0.69999999999999996D); // DAY - Default 0.69999999999999996D
                 if (isLoggedIn()) {
                     brightness = ClientConstants.BRIGHTNESS_NORMAL;
                     Settings.saveSettings();
                 }
             }
             if (config == 4) {
-                Rasterizer.setupPalette(0.59999999999999998D);
+                Rasterizer.setupPalette(0.99999999999999996D); // DUSK - Default 0.59999999999999998D
                 if (isLoggedIn()) {
                     brightness = ClientConstants.BRIGHTNESS_BRIGHT;
                     Settings.saveSettings();
