@@ -2151,6 +2151,11 @@ public class Client extends RSApplet {
             }
         }
         addObjectCustom(-1, 3084, 3512, 1, 10, 0, 0, false); // Removed statue fally park
+        //mining camp
+
+
+        addObjectCustom(-1, 3284, 3023, 1, 10, 0, 0, false);
+        //end 
         addObjectCustom(-1, 3112, 3355, 1, 10, 0, 0, false); // Removed statue fally park
         addObjectCustom(-1, 3112, 3356, 1, 10, 0, 0, false); // Removed statue fally park
         addObjectCustom(-1, 3078, 3483, 1, 10, 0, 0, false); // Removed ZMI @ Home
