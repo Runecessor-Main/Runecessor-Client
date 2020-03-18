@@ -59,7 +59,6 @@ public class Interfaces {
 		emoteTab();
 
 		equipmentTab(textDrawingAreas);
-		optionTab(textDrawingAreas);
 		clanChatTab(textDrawingAreas);
 		combatInterfaces(textDrawingAreas);
 		friendsTab(textDrawingAreas);
@@ -119,6 +118,7 @@ public class Interfaces {
 		ancientMagicTab2(textDrawingAreas);
 
 		configureLunar(textDrawingAreas);
+		optionTab(textDrawingAreas);
 
 		magicBottomComponent(textDrawingAreas);
 		modernSpellBookPreEoc(textDrawingAreas);
@@ -7939,62 +7939,76 @@ public class Interfaces {
 		RSInterface.addSprite(953, 227);
 		RSInterface.addSprite(955, 228);
 		RSInterface.addSprite(947, 230);
-		RSInterface.addSprite(949, 229);
-		RSInterface.addSprite(949, 229);
-		// run button here
+		RSInterface.addSprite(949, 229);;
 		RSInterface.addConfigButton(152, 904, 224, 225, 40, 40, "Toggle-run", 1, 5, 173);
-		RSInterface.addConfigButton(906, 904, 204, 208, 32, 16, "Dark", 1, 5, 166);
-		RSInterface.addConfigButton(908, 904, 205, 209, 32, 16, "Normal", 2, 5, 166);
-		RSInterface.addConfigButton(910, 904, 206, 210, 32, 16, "Bright", 3, 5, 166);
-		RSInterface.addConfigButton(912, 904, 207, 211, 32, 16, "Very Bright", 4, 5, 166);
+		
+		
+		
+		RSInterface.addText(906, "Time of Day: error", tda, 0, 0xeb981f, false, true);
+		RSInterface.addText(908, "Benefits: error", tda, 0, 0xffd700, false, true);
+		
 		RSInterface.addConfigButton(930, 904, 213, 218, 26, 16, "Music Off", 4, 5, 168);
 		RSInterface.addConfigButton(931, 904, 214, 219, 26, 16, "Music Level-1", 3, 5, 168);
 		RSInterface.addConfigButton(932, 904, 215, 220, 26, 16, "Music Level-2", 2, 5, 168);
 		RSInterface.addConfigButton(933, 904, 216, 221, 26, 16, "Music Level-3", 1, 5, 168);
 		RSInterface.addConfigButton(934, 904, 217, 222, 24, 16, "Music Level-4", 0, 5, 168);
+		
 		RSInterface.addConfigButton(941, 904, 213, 218, 26, 16, "Sound Effects Off", 4, 5, 169);
 		RSInterface.addConfigButton(942, 904, 214, 219, 26, 16, "Sound Effects Level-1", 3, 5, 169);
 		RSInterface.addConfigButton(943, 904, 215, 220, 26, 16, "Sound Effects Level-2", 2, 5, 169);
 		RSInterface.addConfigButton(944, 904, 216, 221, 26, 16, "Sound Effects Level-3", 1, 5, 169);
 		RSInterface.addConfigButton(945, 904, 217, 222, 24, 16, "Sound Effects Level-4", 0, 5, 169);
+		
 		RSInterface.addConfigButton(913, 904, 225, 224, 40, 40, "Open Resizable Settings", 0, 5, 200);
 		RSInterface.addConfigButton(915, 904, 224, 225, 40, 40, "Toggle-Chat Effects", 0, 5, 171);
-		RSInterface.addConfigButton(957, 904, 224, 225, 40, 40, "Toggle-Split Private Chat", 1, 5,
-				287);
+		RSInterface.addConfigButton(957, 904, 224, 225, 40, 40, "Toggle-Split Private Chat", 1, 5, 287);
 		RSInterface.addConfigButton(12464, 904, 224, 225, 40, 40, "Toggle-Accept Aid", 0, 5, 427);
 		RSInterface.addButton(24264, 202, "Client Settings");
-		tab.totalChildren(38);
+		
+		//Brightness levels
+		/*RSInterface.addConfigButton(906, 904, 204, 208, 32, 16, "Dark", 1, 5, 166);
+		RSInterface.addConfigButton(908, 904, 205, 209, 32, 16, "Normal", 2, 5, 166);
+		RSInterface.addConfigButton(910, 904, 206, 210, 32, 16, "Bright", 3, 5, 166);
+		RSInterface.addConfigButton(912, 904, 207, 211, 32, 16, "Very Bright", 4, 5, 166);*/
+		
+		tab.totalChildren(37);
 		int x = 0;
 		int y = 2;
 		tab.child(0, 905, 13 + x, 10 + y);
-		tab.child(1, 906, 48 + x, 18 + y);
+		tab.child(1, 906, 48 + x, 13 + y);
+		tab.child(2, 908, 48 + x, 28 + y);
+		
+		// Brightness levels
+		/*tab.child(1, 906, 48 + x, 18 + y);
 		tab.child(2, 908, 80 + x, 18 + y);
 		tab.child(3, 910, 112 + x, 18 + y);
 		tab.child(4, 912, 144 + x, 18 + y);
-		tab.child(5, 907, 14 + x, 55 + y);
-		tab.child(6, 930, 49 + x, 61 + y);
-		tab.child(7, 931, 75 + x, 61 + y);
-		tab.child(8, 932, 101 + x, 61 + y);
-		tab.child(9, 933, 127 + x, 61 + y);
-		tab.child(10, 934, 151 + x, 61 + y);
-		tab.child(11, 909, 13 + x, 99 + y);
-		tab.child(12, 941, 49 + x, 104 + y);
-		tab.child(13, 942, 75 + x, 104 + y);
-		tab.child(14, 943, 101 + x, 104 + y);
-		tab.child(15, 944, 127 + x, 104 + y);
-		tab.child(16, 945, 151 + x, 104 + y);
-		tab.child(17, 913, 15, 153);
-		tab.child(18, 955, 21, 159);
-		tab.child(19, 915, 75, 153);
-		tab.child(20, 953, 79, 160);
-		tab.child(21, 957, 135, 153);
-		tab.child(22, 951, 139, 159);
-		tab.child(23, 12464, 15, 208);
-		tab.child(24, 949, 20, 213);
-		tab.child(25, 152, 75, 208);
-		tab.child(26, 947, 87, 212);
-		tab.child(27, 149, 80, 231);
-		tab.child(28, 24264, 135, 208);
+		*/
+		
+		tab.child(3, 907, 14 + x, 55 + y);
+		tab.child(4, 930, 49 + x, 61 + y);
+		tab.child(5, 931, 75 + x, 61 + y);
+		tab.child(6, 932, 101 + x, 61 + y);
+		tab.child(7, 933, 127 + x, 61 + y);
+		tab.child(8, 934, 151 + x, 61 + y);
+		tab.child(9, 909, 13 + x, 99 + y);
+		tab.child(10, 941, 49 + x, 104 + y);
+		tab.child(11, 942, 75 + x, 104 + y);
+		tab.child(12, 943, 101 + x, 104 + y);
+		tab.child(13, 944, 127 + x, 104 + y);
+		tab.child(14, 945, 151 + x, 104 + y);
+		tab.child(15, 913, 15, 153);
+		tab.child(16, 955, 21, 159);
+		tab.child(17, 915, 75, 153);
+		tab.child(18, 953, 79, 160);
+		tab.child(19, 957, 135, 153);
+		tab.child(20, 951, 139, 159);
+		tab.child(21, 12464, 15, 208);
+		tab.child(22, 949, 20, 213);
+		tab.child(23, 152, 75, 208);
+		tab.child(24, 947, 87, 212);
+		tab.child(25, 149, 80, 231);
+		tab.child(26, 24264, 135, 208);
 		String[] hoverText =
 		{
 			"Adjust Screen Brightness",
@@ -8004,17 +8018,17 @@ public class Interfaces {
 				"Run (on) Energy 100%", "Advanced settings",};
 
 		// X of hover start, Y of hover start, Width, Height, X of box, Y of box
-		int[][] hoverBoxLocation = {{11, 10, 45, 85, 33, 33}, {11, 52, 45, 129, 33, 33},
-				{11, 94, 45, 173, 33, 33}, {12, 151, 45, 237, 42, 42
-				// Mouse button
-				}, {74, 151, 105, 237, 42, 42}, {134, 151, 105, 237, 42, 42}, {12, 206, 45, 196, 42, 42
+		int[][] hoverBoxLocation = {
+				{11, 10, 45, 85, 33, 33}, {11, 52, 45, 129, 33, 33},
+				{11, 94, 45, 173, 33, 33}, {12, 151, 45, 237, 42, 42 }, 
+				{74, 151, 105, 237, 42, 42}, {134, 151, 105, 237, 42, 42}, {12, 206, 45, 196, 42, 42
 				// Accept aid.
 				}, {74, 206, 63, 213, 42, 42}, {134, 206, 105, 213, 42, 42},};
 		for (int index = 0; index < 9; index++) {
 			RSInterface.createTimedHoverBox(22180 + index, hoverText[index],
 					hoverBoxLocation[index][4], hoverBoxLocation[index][5], hoverBoxLocation[index][2],
 					hoverBoxLocation[index][3]);
-			tab.child(29 + index, 22180 + index, hoverBoxLocation[index][0],
+			tab.child(27 + index, 22180 + index, hoverBoxLocation[index][0],
 					hoverBoxLocation[index][1]);
 		}
 
