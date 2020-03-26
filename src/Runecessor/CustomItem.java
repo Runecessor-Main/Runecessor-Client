@@ -4862,8 +4862,8 @@ public class CustomItem {
                 itemDefinition.maleModel = itemInstance.maleModel;
                 itemDefinition.femaleModel = itemInstance.femaleModel;
                 itemDefinition.zoom = itemInstance.zoom;
-                itemDefinition.rotationX = itemInstance.rotationX;
-                itemDefinition.rotationY = itemInstance.rotationY;
+                itemDefinition.rotationY = 768;
+                itemDefinition.rotationX = 189;
                 itemDefinition.inventoryX = itemInstance.inventoryX;
                 itemDefinition.inventoryY =itemInstance.inventoryY;
                 itemDefinition.inventoryOptions = new String[5];

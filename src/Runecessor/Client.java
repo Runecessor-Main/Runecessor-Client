@@ -2094,7 +2094,7 @@ public class Client extends RSApplet {
 		//addObjectCustom(23728, 3098, 3499, 4, 10, 0, 0, false);
 		//community gift
 		//addObjectCustom(26204, 3095, 3488, 4, 10, 0, 0, false);
-		addObjectCustom(6947, 3098, 3489, 1, 10, 0, 0, false);
+		//addObjectCustom(6947, 3098, 3489, 1, 10, 0, 0, false);
 		//
 		//addObjectCustom(28849, 3088, 3492, 1, 10, 0, 0, false);
 		//MENAPHOS HOME
@@ -2133,9 +2133,9 @@ public class Client extends RSApplet {
 		// Donator zone objects
 		addObjectCustom(29165, 2196, 3250, 0, 10, 0, 0, false); // Blood money stall
         addObjectCustom(-1, 2741, 3572, 3, 10, 0, 0, false);
-
-        //staff zone
-        addObjectCustom(9758, 3089, 3507, 0, 10, 0, 0, false); // Chest
+        
+      
+        //addObjectCustom(9758, 3089, 3507, 0, 10, 0, 0, false); // Chest
 
         addObjectCustom(312, 2948, 2801, 0, 10, 0, 0, false); // harry's potato plant
         addObjectCustom(3195, 2955, 2806, 0, 10, 0, 0, false); // Rotten tomatoes @ staffzone
