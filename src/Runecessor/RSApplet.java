@@ -741,6 +741,7 @@ public class RSApplet extends Applet implements Runnable, MouseListener, MouseMo
 	public int getClickMode3() {
 		return clickMode3;
 	}
+	
 
 	public void setClickMode3(int clickMode3) {
 		this.clickMode3 = clickMode3;

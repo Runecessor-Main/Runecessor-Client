@@ -241,7 +241,7 @@ public class LogInScreen {
 		if (Config.PVP) {
 			Client.cacheSprite[3].drawAdvancedSprite(0 + fullscreenXOffset, 0);
 		} else {
-			Client.cacheSprite[969].drawAdvancedSprite(202 + fullscreenXOffset, 173);
+			Client.cacheSprite[969].drawAdvancedSprite(160 + fullscreenXOffset, 75); // edit this for login box
 		}
 
 		if (ClientDebugConfiguration.FORCE_LOG_IN) {
@@ -267,7 +267,9 @@ public class LogInScreen {
 				}
 			}
 		}
-
+//nav bar
+		
+		
 		// Log-in.
 		if (Config.PVP) {
 			if (xHover >= 355 && xHover <= 403 && yHover >= 354 && yHover <= 368) {
@@ -279,10 +281,10 @@ public class LogInScreen {
 		} else {
 
 			// Log-in button		 xstart end ystart end
-			if (Client.isWithInClicked(295, 475, 380, 400, false) && appendLogIn) {
+			if (Client.isWithInClicked(295, 475, 360, 400, false) && appendLogIn) {
 				appendLogIn();
 			} else {
-				Client.cacheSprite[970].drawAdvancedSprite(335 + fullscreenXOffset, 380);
+				Client.cacheSprite[970].drawAdvancedSprite(335 + fullscreenXOffset, 380); // edit this for play now button pos
 			}
 
 			// Cancel button
@@ -329,7 +331,7 @@ public class LogInScreen {
 		} else {
 
 			// Click on username section to type username.
-			if (Client.isWithInClicked(271, 549, 237, 259, false)) {
+			if (Client.isWithInClicked(271, 549, 207, 225, false)) {
 				Client.instance.loginScreenCursorPos = 0;
 			}
 
@@ -342,18 +344,18 @@ public class LogInScreen {
 			Client.instance.newBoldFont.drawCenteredString("", 285 + fullscreenXOffset, 255, 0xffffff, 0x00000);
 			Client.instance.newBoldFont.drawCenteredString("", 307 + fullscreenXOffset, 300, 0xffffff, 0x00000);
 			// Error connecting to server text.
-			Client.instance.newBoldFont.drawCenteredString(Client.instance.getLoginMessage1(), 381 + fullscreenXOffset, 210, 0xFFFF00, 0x000000);
-			Client.instance.newBoldFont.drawCenteredString(Client.instance.getLoginMessage2(), 381 + fullscreenXOffset, 223, 0xFFFF00, 0x000000);
-			Client.instance.newBoldFont.drawCenteredString(Client.instance.getLoginMessage3(), 381 + fullscreenXOffset, 236, 0xFFFF00, 0x000000);
+			Client.instance.newBoldFont.drawCenteredString(Client.instance.getLoginMessage1(), 381 + fullscreenXOffset, 185, 0xFFFF00, 0x000000);
+			Client.instance.newBoldFont.drawCenteredString(Client.instance.getLoginMessage2(), 381 + fullscreenXOffset, 185, 0xFFFF00, 0x000000);
+			Client.instance.newBoldFont.drawCenteredString(Client.instance.getLoginMessage3(), 381 + fullscreenXOffset, 185, 0xFFFF00, 0x000000);
 			// Username.
-			Client.instance.chatTextDrawingArea.method389(true, 280 + fullscreenXOffset, 0xffffff, usernameText, 251);
+			Client.instance.chatTextDrawingArea.method389(true, 290 + fullscreenXOffset, 0xFFC900, usernameText, 222); // edit this for username
 			// Password.
-			Client.instance.chatTextDrawingArea.method389(true, 290 + fullscreenXOffset, 0xffffff, passwordText, 297);
+			Client.instance.chatTextDrawingArea.method389(true, 290 + fullscreenXOffset, 0xFFC900, passwordText, 271); // edit this for password
 
 			// Remember me button
-						if (xHover >= 326 && xHover <= 413 && yHover >= 339 && yHover <= 355) {
-							Client.cacheSprite[Client.rememberMe ? 974 : 972].drawAdvancedSprite(326 + fullscreenXOffset, 339);
-							if (Client.isWithInClicked(326, 413, 339, 355, false)) {
+						if (xHover >= 326 && xHover <= 413 && yHover >= 289 && yHover <= 335) {
+							Client.cacheSprite[Client.rememberMe ? 974 : 972].drawAdvancedSprite(326 + fullscreenXOffset, 293);
+							if (Client.isWithInClicked(326, 413, 293, 335, false)) { //edit this line and 2 above for save info box.
 								Client.rememberMe = !Client.rememberMe;
 								if (!Client.rememberMe) {
 									Client.savedUsername = "";
@@ -361,9 +363,9 @@ public class LogInScreen {
 								}
 							}
 						} else {
-							Client.cacheSprite[Client.rememberMe ? 973 : 971].drawAdvancedSprite(325 + fullscreenXOffset, 339);
+							Client.cacheSprite[Client.rememberMe ? 973 : 971].drawAdvancedSprite(325 + fullscreenXOffset, 293); //edit this line for save info box
 						}
-						Client.instance.smallText.method389(true, 346 + fullscreenXOffset, 0xFFFF00, "Save My Login Info", 352);
+						Client.instance.smallText.method389(true, 346 + fullscreenXOffset, 0xFFFF00, "Save My Login Info", 306);
 
 					}
 					if (appendLogIn) {
@@ -453,7 +455,7 @@ public class LogInScreen {
 
 				LogInScreen.logInScreenSecondPage(false);
 				if (Client.instance.aRSImageProducer_1109 != null) {
-					Client.instance.aRSImageProducer_1109.drawGraphics(0, Client.instance.graphics, 0);
+					Client.instance.aRSImageProducer_1109.drawGraphics(0, Client.instance.graphics, -5);
 				}
 				Client.instance.login(Client.instance.myUsername, Client.instance.myPassword, false);
 			} else {
