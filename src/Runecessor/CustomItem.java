@@ -5926,7 +5926,7 @@ public class CustomItem {
 				itemDefinition.modelColourToEdit[1] = -22386;
 				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22386 : colour;
 				break;
-			case 20528:
+			case 19515:
 				itemInstance = ItemDefinition.forId(6607);
 				itemDefinition.inventoryOptions = new String[]
 						{null, "Wield", null, null, null};
@@ -5947,7 +5947,7 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[4] = null;
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
 				break;
-			case 20529:
+			case 19517:
 				itemInstance = ItemDefinition.forId(6609);
 				itemDefinition.inventoryOptions = new String[]
 						{null, "Wield", null, null, null};

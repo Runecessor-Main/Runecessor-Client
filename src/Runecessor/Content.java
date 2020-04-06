@@ -125,13 +125,13 @@ public class Content {
 				break;
 			// Panel tab on the Eco Quest Interface.
 			case 22989:
-				Client.instance.sendFrame126("Panels", 22984);
+				Client.instance.sendFrame126("Tools & More", 22984);
 				Client.instance.setSidebarInterface(2, 23089);
 				Client.questTabOpenedTab = 2;
 				break;
 			// Activities tab on the Eco Quest Interface.
 			case 22993:
-				Client.instance.sendFrame126("Activities", 22984);
+				Client.instance.sendFrame126("Activities & Events", 22984);
 				Client.instance.setSidebarInterface(2, 23180);
 				Client.questTabOpenedTab = 3;
 				break;

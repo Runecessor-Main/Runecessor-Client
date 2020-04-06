@@ -5679,7 +5679,7 @@ public class Interfaces {
 		buttonSpacing += buttonSpacingIncrease;
 
 		// Panel button icon
-		RSInterface.addSpriteComplete(interfaceId, child, 827, 63 + xOffset, 13 + yOffset, interfaces,
+		RSInterface.addSpriteComplete(interfaceId, child, 1333, 63 + xOffset, 13 + yOffset, interfaces,
 				true);
 		interfaceId++;
 		child++;
@@ -5706,7 +5706,7 @@ public class Interfaces {
 		child += 2;
 
 		// Quest button icon
-		RSInterface.addSpriteComplete(interfaceId, child, 87, 152 + xOffset, 12 + yOffset, interfaces,
+		RSInterface.addSpriteComplete(interfaceId, child, 1334, 152 + xOffset, 12 + yOffset, interfaces,
 				true);
 		interfaceId++;
 		child++;
@@ -5845,7 +5845,7 @@ public class Interfaces {
 		child++;
 
 		String[] buttonNames =
-		{"Achievements", "Titles", "Profile", "Npc drops", "Presets", "Pets", "Guide"};
+		{"Achievements", "Drop Table", "My Profile", "Discord", "Forum", "Donate", "Hiscores", "Vote", "YouTube", "Guide Book"};
 		int[][] iconData = {
 				// @formatter:off
 				{
@@ -5853,20 +5853,30 @@ public class Interfaces {
 						838, // Runecessor.Sprite id
 						12, 6 // Icon location
 				}, {
-						// Titles
-						843, 12, 6 },
+						// Npc Drops
+					1323, 13, 7 },
+					//841, 12, 6 }, 843
 				{
-						// Profile
-						840, 13, 9 },
+						// My Profile
+						1324, 11, 6 },
 				{
-						// Npc drops
-						841, 11, 5 },
+						// Discord
+							1329, 13, 7 },
 				{
-						// Presets
-						842, 14, 9 },
+						// Forum
+						1322, 14, 9 },
 				{
-						// Pets
-						839, 10, 7 },
+						// Donate
+						1299, 9, 4 },
+				{
+						// Hiscores
+						1006, 12, 6 },
+				{
+						// Vote
+						1300, 9, 3 },
+				{
+						// YouTube
+						1331, 12, 6 },
 				{
 						// Guide
 						844, 12, 6 }, };

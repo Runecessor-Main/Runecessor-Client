@@ -12,6 +12,11 @@ public class MiniMap {
 			{3080, 3509},
 			{3090, 3504},
 			{3096, 3511},
+			{3077, 3489},
+			{3077, 3496},
+			{3095, 3515},
+			{3114, 3516},
+			{3109, 3516},
 			{3092, 3491},
 			{3095, 3492},
 			{3084, 3502},
@@ -29,13 +34,44 @@ public class MiniMap {
 	 * Custom icon locations.
 	 */
 	private final static int[][] customMapIconLocations = {
+			
+			{10, 2978, 3233},
+			{0, 3080, 3510},
+			{51, 3079, 3494},
+			{26, 3086, 3500},
+			{38, 3089, 3490},
+			{64, 3093, 3488},
+			/* ICON DEFS
+			0 - General Store
+			1 - Weapons Store
+			2 - Runes Store
+			3 - Battle Axe Store
+			4 - Helmet Store
+			5 - Bank
+			6 - Quest
+			7 - 
+			
+			19 - Altar
+			20 - Herblore 
+			21 - Jewlrey Store
+			
+			26 - Fishing Spot
+			38 - Minigame
+			51 - Slayer
+			64 - Poll Booth
+			END */ 
+			
+			
 			// Altar.
 			{19, 3096, 3511},
+			{19, 2981, 3236},
+			{0, 2969, 3244},
+			//
+			
 			// Bank at Edgeville wild
 			//{5, 3080, 3515},
 			//Bank at Edgeville wild
-			{5, 2974, 2796},
-			{5, 3094, 3494},
+	
 			// Rare tree @ entrana
 			{34, 2853, 3337},
 			{51, 2990, 2780},
@@ -59,7 +95,7 @@ public class MiniMap {
 			{71, 3203, 3437},
 			{0, 2955, 2782},
 			
-			
+			{66, 2982, 3231},
 			// Bank @ fally market
 			{5, 3004, 3383},
 			// Holiday event icon at home
@@ -75,6 +111,8 @@ public class MiniMap {
 			//
 			// Bank @ entrana
 		{5, 2861, 3337},
+		{5, 2982, 3244},
+		{26, 2971, 3231},
 		// Bank @ dz
 		{5, 2529, 2720},
 		// Donator dungeon @ dz
@@ -83,14 +121,17 @@ public class MiniMap {
 		{11, 2528, 2729},
 		// Rare tree @ dz
 		{34, 2510, 2709},
+		{34, 2990, 3236},
 		{34, 2520, 2712},
 		// Fishing spot @ dz
 		{26, 2526, 2710},
 		{26, 2534, 2712},
 		// Mining spot @ dz
 		{8, 2533, 2737},
+		{8, 2997, 3230},
 		// Furnace @ dz
 		{9, 2539, 2721},
+		{9, 2978, 3230},
 		// Agility @ dz
 		{49, 2552, 2712},};
 
@@ -99,9 +140,9 @@ public class MiniMap {
 	 */
 	private final static int[][] customMapIconLocationsPvpOnly = {
 			// Bank at Edgeville wild
-			{5, 3095, 3515},
+			//{5, 3095, 3515},
 			// Bank at Edgeville wild
-			{5, 3113, 3516},};
+			{5, 1, 1},};
 			// Makeover mage icon inside Edgeville bank, too crowded if i enable it.
 			// {54, 3090, 3495},
 			// Slayer master icon inside Edgeville bank
@@ -113,6 +154,7 @@ public class MiniMap {
 	private final static int[][] customMapIconLocationsEcoOnly = {
 			// guide npc at home
 		//	{55, 3089, 3503},
+			
 			// quest start home
 			// {6, 3102, 3494},
 			// Slayer master icon @ home
