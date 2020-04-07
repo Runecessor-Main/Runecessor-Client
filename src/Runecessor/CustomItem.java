@@ -5968,7 +5968,23 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[4] = null;
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
 				break;
-
+			case 16907:
+				itemDefinition.name = "Volatile Nightmare Staff";
+				itemDefinition.femaleModel = 39066;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.inventoryModel = 65339;
+				itemDefinition.maleModel = 65340;
+				itemDefinition.zoom = 2400;
+				itemDefinition.rotationX = 1150;
+				itemDefinition.rotationY = 0;
+				itemDefinition.inventoryY = 20;
+				itemDefinition.inventoryX = -30;
+				break;
 case 16210:
 				itemDefinition.name = "Vampyre claws";
 				itemDefinition.femaleModel = 29191;
