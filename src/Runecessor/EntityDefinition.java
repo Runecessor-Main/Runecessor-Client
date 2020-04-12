@@ -123,8 +123,126 @@ public final class EntityDefinition {
 			npc.showOnMinimap = true;
 			npc.scaleZ = 70;
 			npc.scaleX = 70;
-			npc.combatLevel = 121;
+			npc.combatLevel = 999;
 			break;
+case 11216:
+			
+			data = forId(762);
+			npc.name = "Yveltal's Offspring";
+			npc.size = 1;
+			npc.actions = new String[5];
+			npc.actions[0] = "Return";
+			npc.actions[1] = null;
+			npc.actions[2] = null;
+			npc.actions[3] = null;
+			npc.actions[4] = null;
+			npc.models = new int[1];
+			npc.models[0] = 40043;
+			npc.standAnim = data.standAnim;
+			npc.walkAnim = data.walkAnim;
+			npc.turn180Sequence = data.walkAnim;
+			npc.turnLeftSequence = data.walkAnim;
+			npc.turnRightSequence = data.walkAnim;
+			npc.showOnMinimap = true;
+			npc.scaleZ = 25;
+			npc.scaleX = 25;
+			npc.combatLevel = 999;
+			break;
+case 11217:
+	
+	data = forId(762);
+	npc.name = "Yveltal's Offspring";
+	npc.size = 1;
+	npc.actions = new String[5];
+	npc.actions[0] = "Return";
+	npc.actions[1] = null;
+	npc.actions[2] = null;
+	npc.actions[3] = null;
+	npc.actions[4] = null;
+	npc.models = new int[1];
+	npc.models[0] = 65351;
+	npc.standAnim = data.standAnim;
+	npc.walkAnim = data.walkAnim;
+	npc.turn180Sequence = data.walkAnim;
+	npc.turnLeftSequence = data.walkAnim;
+	npc.turnRightSequence = data.walkAnim;
+	npc.showOnMinimap = true;
+	npc.scaleZ = 25;
+	npc.scaleX = 25;
+	npc.combatLevel = 999;
+	break;
+case 385:
+	npc.name = "Bad Bunny";
+	npc.walkAnim = 1660;
+	npc.standAnim = 11973;
+	npc.models = new int[9];
+	npc.models[0] = 65347; //HEAD
+	npc.models[1] = 246; //JAW
+	npc.models[2] = 31188; //CHEST
+	npc.models[3] = 29316; //CAPE
+	npc.models[4] = 31187; //ARM
+	npc.models[5] = 31185; //HAND
+	npc.models[6] = 65343; //WEP
+	npc.models[7] = 31186; //LEG
+	npc.models[8] = 29189; //BOOT
+	npc.actions = new String[5];
+	npc.actions[0] = null;
+	npc.actions[1] = "Attack";
+	npc.actions[2] = null;
+	npc.actions[3] = null;
+	npc.actions[4] = null;
+	npc.combatLevel = 420;
+	npc.scaleZ = 350;
+	npc.scaleX = 350;
+	break;
+case 539:
+	npc.name = "Bunny Slayer";
+	npc.walkAnim = 1660;
+	npc.standAnim = 11973;
+	npc.models = new int[9];
+	npc.models[0] = 65345; //HEAD
+	npc.models[1] = 246; //JAW
+	npc.models[2] = 27644; //CHEST
+	npc.models[3] = 31234; //CAPE
+	npc.models[4] = 28827; //ARM
+	npc.models[5] = 356; //HAND
+	npc.models[6] = 26281; //WEP
+	npc.models[7] = 27640; //LEG
+	npc.models[8] = 19951; //BOOT
+	npc.actions = new String[5];
+	npc.actions[0] = "Speak With";
+	npc.actions[1] = null;
+	npc.actions[2] = "Trade";
+	npc.actions[3] = null;
+	npc.actions[4] = null;
+	npc.combatLevel = 126;
+	npc.scaleZ = 130;
+	npc.scaleX = 130;
+	break;
+case 300:
+	npc.name = "Eggcelent Guardian";
+	npc.walkAnim = 1660;
+	npc.standAnim = 11973;
+	npc.models = new int[9];
+	npc.models[0] = 6695; //HEAD
+	npc.models[1] = 246; //JAW
+	npc.models[2] = 28534; //CHEST
+	npc.models[3] = 3189; //CAPE
+	npc.models[4] = 28532; //ARM
+	npc.models[5] = 179; //HAND
+	npc.models[6] = 65343; //WEP
+	npc.models[7] = 28531; //LEG
+	npc.models[8] = 16009; //BOOT
+	npc.actions = new String[5];
+	npc.actions[0] = null;
+	npc.actions[1] = "Whoop";
+	npc.actions[2] = null;
+	npc.actions[3] = null;
+	npc.actions[4] = null;
+	npc.combatLevel = 95;
+	npc.scaleZ = 130;
+	npc.scaleX = 130;
+	break;
 			case 11214 :
 				data = forId(7531);
 				npc.name = "Vespula";
@@ -3102,28 +3220,22 @@ public final class EntityDefinition {
 				npc.combatLevel = 147;
 				npc.size = 2;
 				npc.actions = new String[5];
-				npc.actions[0] = "Talk To";
+				npc.actions[0] = "Pickup";
 				npc.actions[1] = null;
-				npc.actions[2] = "Pickup";
+				npc.actions[2] = null;
 				npc.actions[3] = null;
 				npc.actions[4] = null;
 				break;
-			case 16890:
-				data = forId(114);
-				npc.name = "Ajax Pet";
+			case 3665:
+				npc.name = "Rabbit Pet";
+				npc.combatLevel = 1;
+				npc.size = 2;
 				npc.actions = new String[5];
-				npc.actions[0] = "Pick-up";
-				npc.models = new int[1];
-				npc.models = data.models;
-				npc.standAnim = data.standAnim;
-				npc.walkAnim = data.walkAnim;
-				npc.turn180Sequence = data.walkAnim;
-				npc.turnLeftSequence = data.walkAnim;
-				npc.turnRightSequence = data.walkAnim;
-				npc.showOnMinimap = false;
-				npc.scaleZ = 80;
-				npc.scaleX = 80;
-				npc.combatLevel = 126;
+				npc.actions[0] = "Pickup";
+				npc.actions[1] = null;
+				npc.actions[2] = null;
+				npc.actions[3] = null;
+				npc.actions[4] = null;
 				break;
 			case 11113: // Santa on sledge
 				npc.name = "Santa";
@@ -3632,7 +3744,28 @@ public final class EntityDefinition {
 				npc.models[4] = 14797;
 				npc.models[5] = 14796;
 				break;
-
+			case 16219:
+				data = forId(1852);
+				npc.size = 3;
+				npc.name = "Guard Rabbit";
+				npc.actions = new String[5];
+				npc.actions[0] = null;
+				npc.actions[1] = "Attack";
+				npc.actions[2] = null;
+				npc.actions[3] = null;
+				npc.actions[4] = null;
+				npc.models = new int[1];
+				npc.models[0] = 65351;
+				npc.standAnim = data.standAnim;
+				npc.turn180Sequence = data.walkAnim;
+				npc.turnLeftSequence = data.walkAnim;
+				npc.turnRightSequence = data.walkAnim;
+				npc.scaleZ = 75;
+				npc.scaleX = 75;
+				npc.showOnMinimap = true;
+				npc.walkAnim = data.walkAnim;
+				npc.combatLevel = 0;
+				break;
 			case 3542:
 				npc.name = "Ali the Snake Charmer";
 				npc.size = 1;

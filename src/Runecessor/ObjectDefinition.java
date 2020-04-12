@@ -639,7 +639,20 @@ public final class ObjectDefinition {
 				objectDef.actions = new String[]
 				{"Climb-down", null, null, null, null};
 				break;
-
+			// 2020 EASTER EVENT
+			case 13289:
+				objectDef.name = "Bunny Slayer's Loot Chest";
+				objectDef.hasActions = true;
+				objectDef.actions = new String[]
+				{"Unlock", null, null, null, null};
+				break;
+			case 19337:
+				objectDef.name = "Rabbit Hole";
+				objectDef.hasActions = true;
+				objectDef.actions = new String[]
+				{"Look Down", null, null, null, null};
+				break;
+			// END OF 2020 EASTER EVENT
 			case 15271:
 				objectDef.models = new int[]
 				{1208};

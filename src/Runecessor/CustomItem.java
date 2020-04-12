@@ -5713,9 +5713,9 @@ public class CustomItem {
 				break;
 			case 16890:
 				npcInstance = EntityDefinition.forId(114);
-				itemDefinition.name = npcInstance.name + " pet";
+				itemDefinition.name = "Ajax Pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+				{null, null, null, null, "Leash"};
 				itemDefinition.zoom = 2400;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 200;
@@ -5979,13 +5979,219 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[4] = null;
 				itemDefinition.inventoryModel = 65339;
 				itemDefinition.maleModel = 65340;
-				itemDefinition.zoom = 2400;
-				itemDefinition.rotationX = 1150;
-				itemDefinition.rotationY = 0;
-				itemDefinition.inventoryY = 20;
-				itemDefinition.inventoryX = -30;
+				itemDefinition.zoom = 2064;
+				itemDefinition.rotationX = 1050;
+				itemDefinition.rotationY = 404;
+				itemDefinition.inventoryY = 13;
+				itemDefinition.inventoryX = -5;
 				break;
-case 16210:
+			case 16908:
+				itemDefinition.name = "24-Carat Sword";
+				itemDefinition.femaleModel = 65342;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.inventoryModel = 65344;
+				itemDefinition.maleModel = 65343;
+				itemDefinition.zoom = 1894;
+				itemDefinition.rotationX = 989;
+				itemDefinition.rotationY = 323;
+				itemDefinition.inventoryY = 33;
+				itemDefinition.inventoryX = 6;
+				itemDefinition.modelColourToEdit = new int[]
+						{5838, 5830, 5821};
+				itemDefinition.newModelColourProduced = new int[]
+						{9143, 9139, 9133};
+				break;
+			
+			case 16909:
+				itemDefinition.name = "Carrot Sword";
+				itemDefinition.femaleModel = 65342;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.inventoryModel = 65344;
+				itemDefinition.maleModel = 65343;
+				itemDefinition.zoom = 1894;
+				itemDefinition.rotationX = 989;
+				itemDefinition.rotationY = 323;
+				itemDefinition.inventoryY = 33;
+				itemDefinition.inventoryX = 6;
+				break;
+			
+			case 16910:
+				itemDefinition.name = "Bunnyman Mask";
+				itemDefinition.femaleModel = 65345;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.inventoryModel = 65346;
+				itemDefinition.maleModel = 65347;
+				itemDefinition.zoom = 1621;
+				itemDefinition.rotationX = 202;
+				itemDefinition.rotationY = 0;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryX = 5;
+				break;
+				
+			case 16911:
+				itemDefinition.name = "Painted Fake Magic Egg";
+				itemDefinition.inventoryModel = 65348;
+				itemDefinition.zoom = 1080;
+				itemDefinition.rotationX = 20;
+				itemDefinition.rotationY = 2044;
+				break;
+				
+			case 16912:
+				itemDefinition.name = "Unainted Fake Magic Egg";
+				itemDefinition.inventoryModel = 65348;
+				itemDefinition.zoom = 1080;
+				itemDefinition.rotationX = 20;
+				itemDefinition.rotationY = 2044;
+				itemDefinition.modelColourToEdit = new int[]
+						{7859, 7874, 7876, 7878, 7872};
+				itemDefinition.newModelColourProduced = new int[]
+						{10343, 10345, 111, 115, 10345};
+				break;
+			
+			case 16913:
+				itemDefinition.name = "Bunnyman Mask (w)";
+				itemDefinition.femaleModel = 65345;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.inventoryModel = 65346;
+				itemDefinition.maleModel = 65347;
+				itemDefinition.zoom = 1621;
+				itemDefinition.rotationX = 202;
+				itemDefinition.rotationY = 0;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryX = 5;
+				itemDefinition.modelColourToEdit = new int[]
+						{2378};
+				itemDefinition.newModelColourProduced = new int[]
+						{90};
+				break;
+				
+			case 16914:
+				itemDefinition.name = "Bunnyman Mask (b)";
+				itemDefinition.femaleModel = 65345;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.inventoryModel = 65346;
+				itemDefinition.maleModel = 65347;
+				itemDefinition.zoom = 1621;
+				itemDefinition.rotationX = 202;
+				itemDefinition.rotationY = 0;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryX = 5;
+				itemDefinition.modelColourToEdit = new int[]
+						{2378};
+				itemDefinition.newModelColourProduced = new int[]
+						{900};
+				break;
+				
+			case 16915:
+				itemDefinition.name = "Bunnyman Mask (r)";
+				itemDefinition.femaleModel = 65345;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.inventoryModel = 65346;
+				itemDefinition.maleModel = 65347;
+				itemDefinition.zoom = 1621;
+				itemDefinition.rotationX = 202;
+				itemDefinition.rotationY = 0;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryX = 5;
+				itemDefinition.modelColourToEdit = new int[]
+						{2378};
+				itemDefinition.newModelColourProduced = new int[]
+						{800};
+				break;
+				
+			case 16916:
+				itemDefinition.name = "Bunnyman Mask (y)";
+				itemDefinition.femaleModel = 65345;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.inventoryModel = 65346;
+				itemDefinition.maleModel = 65347;
+				itemDefinition.zoom = 1621;
+				itemDefinition.rotationX = 202;
+				itemDefinition.rotationY = 0;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryX = 5;
+				itemDefinition.modelColourToEdit = new int[]
+						{2378};
+				itemDefinition.newModelColourProduced = new int[]
+						{9139};
+				break;	
+			case 16917:
+				npcInstance = EntityDefinition.forId(762);
+				itemDefinition.name = "Yveltal Pet";
+				itemDefinition.inventoryOptions = new String[]
+				{null, null, null, null, "Choose"};
+				itemDefinition.zoom = 3320;
+				itemDefinition.rotationY = 160;
+				itemDefinition.rotationX = 350;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = -8;
+				itemDefinition.inventoryModel = 65349;
+				break;
+			case 16918:
+				npcInstance = EntityDefinition.forId(762);
+				itemDefinition.name = "Yveltal Pet";
+				itemDefinition.inventoryOptions = new String[]
+				{null, null, null, null, "Choose"};
+				itemDefinition.zoom = 3320;
+				itemDefinition.rotationY = 160;
+				itemDefinition.rotationX = 350;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryModel = 65349;
+				break;
+			case 16919:
+				npcInstance = EntityDefinition.forId(3665);
+				itemDefinition.name = "Pet Rabbit";
+				itemDefinition.inventoryOptions = new String[]
+				{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 950;
+				itemDefinition.rotationY = 160;
+				itemDefinition.rotationX = 350;
+				itemDefinition.inventoryX = -5;
+				itemDefinition.inventoryY = -9;
+				itemDefinition.inventoryModel = 23901;
+				itemDefinition.modelColourToEdit = new int[]
+						{5413, 5417, 5421};
+				itemDefinition.newModelColourProduced = new int[]
+						{5210, 5330, 5322};
+				break;
+			
+				case 16210:
 				itemDefinition.name = "Vampyre claws";
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
@@ -15790,9 +15996,8 @@ case 16210:
 			case 7478:
 				itemDefinition.name = "Donator tokens";
 				itemDefinition.inventoryOptions = new String[5];
-				
 				break;
-
+	
 			case 11863:
 				itemDefinition.inventoryOptions = new String[5];
 				itemDefinition.inventoryOptions[1] = "Wear";
