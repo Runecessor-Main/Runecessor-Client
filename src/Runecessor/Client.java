@@ -2568,8 +2568,9 @@ public class Client extends RSApplet {
     }
 
     public Socket openSocket(int port) throws IOException {
-     
-    return new Socket(InetAddress.getByName("127.0.0.1"), 5555);//serverip
+    
+   return new Socket(InetAddress.getByName("127.0.0.1"), 5555);//serverip
+  //  return new Socket(InetAddress.getByName("162.252.11.137"), 43594);//serverip
     }
     private boolean processMenuClick() {
         if (activeInterfaceType != 0) {
@@ -5349,9 +5350,9 @@ public class Client extends RSApplet {
 
         KeyBoardAction.handleKeyboard();
         super.idleTime++;
-        if (super.idleTime > 4500) {
+        if (super.idleTime > 15800) {
             logoutCycle = 250;
-            super.idleTime -= 500;
+            super.idleTime -= 16000;
             stream.createFrame(202);
         }
         heartbeatCycle++;
@@ -5373,7 +5374,7 @@ public class Client extends RSApplet {
         }
         catch (Exception e) {
             e.printStackTrace();
-            Utility.print("Kicked5 due to Exception: " + getLoadingStage());
+            Utility.print("Kicked due to Exception: " + getLoadingStage());
             logOutUpdate();
         }
     }

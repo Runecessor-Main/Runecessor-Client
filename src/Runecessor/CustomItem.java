@@ -6190,7 +6190,43 @@ public class CustomItem {
 				itemDefinition.newModelColourProduced = new int[]
 						{5210, 5330, 5322};
 				break;
-			
+			case 16920:
+				itemDefinition.name = "void top";
+				itemDefinition.inventoryModel = 65352;
+				itemDefinition.maleModel = 65352;
+				itemDefinition.maleEquip2 = -1;
+				itemDefinition.zoom = 1690;
+				itemDefinition.rotationX = 9;
+				itemDefinition.rotationY = 435;
+				itemDefinition.inventoryX = -1;
+				itemDefinition.inventoryY = 7;
+				itemDefinition.brightness = 30;
+				itemDefinition.contrast = 100;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				break;
+			case 16921:
+				itemDefinition.name = "void robe";
+				itemDefinition.inventoryModel = 65353;
+				itemDefinition.maleModel = 65353;
+				itemDefinition.zoom = 1690;
+				itemDefinition.rotationX = 9;
+				itemDefinition.rotationY = 435;
+				itemDefinition.inventoryX = -1;
+				itemDefinition.inventoryY = 7;
+				itemDefinition.brightness = 30;
+				itemDefinition.contrast = 100;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				break;
 				case 16210:
 				itemDefinition.name = "Vampyre claws";
 				itemDefinition.femaleModel = 29191;
