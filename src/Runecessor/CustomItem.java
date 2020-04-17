@@ -1,8 +1,10 @@
 package Runecessor;
 
+import Runecessor.phantasye.CustomItemManager;
+
 /**
  * Custom items.
- * 
+ *
  * @author Lava, created on 21-03-2015.
  */
 public class CustomItem {
@@ -29,7 +31,10 @@ public class CustomItem {
 			model.printAllColours(0);
 		}
 		*/
-
+		method_6(itemDefinition,itemId);
+		method_5(itemDefinition,itemId);
+		method_4(itemDefinition,itemId);
+		method_3(itemDefinition,itemId);
 		applyCustomItemsSecondMethodFirstExceeds64KBOsrs(itemDefinition, itemId);
 		applyCustomItemsOsrs(itemDefinition, itemId);
 
@@ -48,1757 +53,14 @@ public class CustomItem {
 		int yellow = -1;
 		int blue = -1;
 		switch (itemId) {
-			
-		/* case 10548:
-			itemDefinition.name = "Meh Hat";
-			itemDefinition.inventoryModel = 55486;
-			itemDefinition.zoom = 789;
-			itemDefinition.rotationY = 96;
-			itemDefinition.rotationX = 2039;
-			itemDefinition.inventoryX = 2;
-			itemDefinition.inventoryY = -7;
-			itemDefinition.maleModel = 55487;
-			itemDefinition.femaleModel = 55487;
-			itemDefinition.manHead0 = 35976;
-			itemDefinition.manHead1 = 63;
-			itemDefinition.womanHead0 = 35976;
-			itemDefinition.womanHead1 = 120;
-			itemDefinition.groundOptions = new String[]
-			{null, null, "Take", null, null};
-			itemDefinition.inventoryOptions = new String[]
-			{null, "Wear", null, null, "Destroy"};
-			break;
-			*/
-		
-			case 16437 :
-				itemDefinition.unNotedId = itemDefinition.itemId - 1;
-				itemDefinition.notedItemTemplate = 799;
-				break;
-			case 13190:
-				itemDefinition.name = "$10 Bond";
-				break;
-			case 1464:
-				itemDefinition.name = "Boss Ticket";
-				break;
-			case 16488:
-				itemDefinition.name = "Spin Ticket";
-				itemDefinition.inventoryModel = 1464;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = "Open";
-				itemDefinition.inventoryOptions[1] = null;
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-				break;
-			case 13161:
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = "Open";
-				itemDefinition.inventoryOptions[1] = null;
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-				break;
-			case 16436:
-				itemDefinition.name = "Mega Mystery box";
-				itemDefinition.inventoryModel = 2426;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 1180;
-				itemDefinition.rotationX = 172;
-				itemDefinition.rotationY = 160;
-				itemDefinition.inventoryY = -14;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = "Open";
-				itemDefinition.inventoryOptions[1] = null;
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-				itemDefinition.modelColourToEdit = new int[2];
-				itemDefinition.modelColourToEdit[0] = 2999;
-				itemDefinition.modelColourToEdit[1] = 22410;
-				itemDefinition.newModelColourProduced = new int[2];
-				itemDefinition.newModelColourProduced[0] = 935;
-				itemDefinition.newModelColourProduced[1] = 2;
-				break;
-			case 16500:
-				itemDefinition.name = "Blood Money Box";
-				itemDefinition.inventoryModel = 2426;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 1180;
-				itemDefinition.rotationX = 172;
-				itemDefinition.rotationY = 160;
-				itemDefinition.inventoryY = -14;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = "Open";
-				itemDefinition.inventoryOptions[1] = null;
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-				itemDefinition.modelColourToEdit = new int[2];
-				itemDefinition.modelColourToEdit[0] = 2999;
-				itemDefinition.modelColourToEdit[1] = 22410;
-				itemDefinition.newModelColourProduced = new int[2];
-				itemDefinition.newModelColourProduced[0] = 92770;
-				itemDefinition.newModelColourProduced[1] = 926;
-				break;
-				
-			case 16501:
-				itemDefinition.name = "Event Key";
-				itemInstance = ItemDefinition.forId(20767); //ruby key
-				itemDefinition.inventoryModel = itemInstance.inventoryModel;
-				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Destroy"};
-				itemDefinition.zoom = itemInstance.zoom;
-				itemDefinition.rotationY = itemInstance.rotationY;
-				itemDefinition.rotationX = itemInstance.rotationX;
-				itemDefinition.inventoryX = itemInstance.inventoryX;
-				itemDefinition.inventoryY = itemInstance.inventoryY;
-				itemDefinition.modelColourToEdit = new int[]
-				{8128};
-				itemDefinition.newModelColourProduced = new int[]
-				{347770};
-				break;
-			
-			case 16502:
-				itemDefinition.name = "Easter Key";
-				itemInstance = ItemDefinition.forId(20767); //ruby key
-				itemDefinition.inventoryModel = itemInstance.inventoryModel;
-				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Destroy"};
-				itemDefinition.zoom = itemInstance.zoom;
-				itemDefinition.rotationY = itemInstance.rotationY;
-				itemDefinition.rotationX = itemInstance.rotationX;
-				itemDefinition.inventoryX = itemInstance.inventoryX;
-				itemDefinition.inventoryY = itemInstance.inventoryY;
-				itemDefinition.modelColourToEdit = new int[]
-				{8128};
-				itemDefinition.newModelColourProduced = new int[]
-				{296770};
-				break;
-			case 16429 :
-				itemDefinition.name = "Vespula";
-				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
-				itemDefinition.zoom = 8000;
-				itemDefinition.rotationY = 100;
-				itemDefinition.rotationX = 200;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = -30;
-				npcInstance = EntityDefinition.forId(7531);
-				itemDefinition.inventoryModel = npcInstance.models[0];
 
-				itemDefinition.modelColourToEdit = new int[25];
-				itemDefinition.newModelColourProduced = new int[25];
-
-				// Originally red.
-				colour = ItemColours.PURPLE + 2;
-				itemDefinition.modelColourToEdit[3] = 920;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? 920 : colour;
-
-				colour = ItemColours.PURPLE + 4;
-				itemDefinition.modelColourToEdit[23] = 922;
-				itemDefinition.newModelColourProduced[23] = colour == -1 ? 922 : colour;
-
-				colour = ItemColours.PURPLE + 6;
-				itemDefinition.modelColourToEdit[14] = 924;
-				itemDefinition.newModelColourProduced[14] = colour == -1 ? 924 : colour;
-
-				colour = ItemColours.PURPLE + 8;
-				itemDefinition.modelColourToEdit[1] = 926;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 926 : colour;
-
-				colour = ItemColours.PURPLE + 10;
-				itemDefinition.modelColourToEdit[7] = 929;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? 929 : colour;
-
-				colour = ItemColours.PURPLE + 12;
-				itemDefinition.modelColourToEdit[19] = 931;
-				itemDefinition.newModelColourProduced[19] = colour == -1 ? 931 : colour;
-
-				colour = ItemColours.PURPLE + 14;
-				itemDefinition.modelColourToEdit[20] = 933;
-				itemDefinition.newModelColourProduced[20] = colour == -1 ? 933 : colour;
-
-				// Originally black
-
-				colour = -1;
-				itemDefinition.modelColourToEdit[4] = 0;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 0 : colour;
-
-				colour = -1;
-				itemDefinition.modelColourToEdit[22] = 8;
-				itemDefinition.newModelColourProduced[22] = colour == -1 ? 8 : colour;
-
-				colour = -1;
-				itemDefinition.modelColourToEdit[24] = 16;
-				itemDefinition.newModelColourProduced[24] = colour == -1 ? 16 : colour;
-
-				colour = -1;
-				itemDefinition.modelColourToEdit[13] = 24;
-				itemDefinition.newModelColourProduced[13] = colour == -1 ? 24 : colour;
-
-				// Originally green/yellow
-
-				colour = ItemColours.GOLD + 1;
-				itemDefinition.modelColourToEdit[0] = 14292;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 14292 : colour;
-
-				colour = ItemColours.GOLD + 2;
-				itemDefinition.modelColourToEdit[2] = 798;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 798 : colour;
-
-				colour = ItemColours.GOLD + 4;
-				itemDefinition.modelColourToEdit[5] = 794;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? 794 : colour;
-
-				colour = ItemColours.GOLD + 6;
-				itemDefinition.modelColourToEdit[6] = 15273;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? 15273 : colour;
-
-				colour = ItemColours.GOLD + 8;
-				itemDefinition.modelColourToEdit[8] = 14284;
-				itemDefinition.newModelColourProduced[8] = colour == -1 ? 14284 : colour;
-
-				colour = ItemColours.GOLD + 10;
-				itemDefinition.modelColourToEdit[9] = 16270;
-				itemDefinition.newModelColourProduced[9] = colour == -1 ? 16270 : colour;
-
-				colour = ItemColours.GOLD + 13;
-				itemDefinition.modelColourToEdit[10] = 11216;
-				itemDefinition.newModelColourProduced[10] = colour == -1 ? 11216 : colour;
-
-				colour = ItemColours.GOLD + 15;
-				itemDefinition.modelColourToEdit[11] = 11187;
-				itemDefinition.newModelColourProduced[11] = colour == -1 ? 11187 : colour;
-
-				colour = ItemColours.GOLD + 18;
-				itemDefinition.modelColourToEdit[12] = 22424;
-				itemDefinition.newModelColourProduced[12] = colour == -1 ? 22424 : colour;
-
-				colour = ItemColours.GOLD + 20;
-				itemDefinition.modelColourToEdit[15] = 15250;
-				itemDefinition.newModelColourProduced[15] = colour == -1 ? 15250 : colour;
-
-				colour = ItemColours.GOLD + 24;
-				itemDefinition.modelColourToEdit[16] = 14259;
-				itemDefinition.newModelColourProduced[16] = colour == -1 ? 14259 : colour;
-
-				colour = ItemColours.GOLD + 26;
-				itemDefinition.modelColourToEdit[17] = 14230;
-				itemDefinition.newModelColourProduced[17] = colour == -1 ? 14230 : colour;
-
-				colour = ItemColours.GOLD + 28;
-				itemDefinition.modelColourToEdit[18] = 7068;
-				itemDefinition.newModelColourProduced[18] = colour == -1 ? 7068 : colour;
-
-				colour = ItemColours.GOLD + 30;
-				itemDefinition.modelColourToEdit[21] = 18314;
-				itemDefinition.newModelColourProduced[21] = colour == -1 ? 18314 : colour;
-				break;
-			case 16414:
-				itemDefinition.name = "Noon (red)";
-				itemDefinition.inventoryModel = 34184;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 8978;
-				itemDefinition.rotationX = 66;
-				itemDefinition.rotationY = 1995;
-				itemDefinition.inventoryX = 36;
-				itemDefinition.inventoryY = 16;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = null;
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = "Drop";
-				itemDefinition.modelColourToEdit = new int[14];
-				itemDefinition.newModelColourProduced = new int[14];
-				colour = 127;
-				itemDefinition.modelColourToEdit[0] = -19498;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -19498 : colour;
-
-				colour = 934;
-				itemDefinition.modelColourToEdit[1] = -19500;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -19500 : colour;
-
-				colour = 124;
-				itemDefinition.modelColourToEdit[2] = 22464;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 22464 : colour;
-
-				colour = 120;
-				itemDefinition.modelColourToEdit[3] = -21568;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -21568 : colour;
-
-				colour = 115;
-				itemDefinition.modelColourToEdit[4] = 960;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 960 : colour;
-
-				colour = 110;
-				itemDefinition.modelColourToEdit[5] = 21526;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? 21526 : colour;
-
-				itemDefinition.modelColourToEdit[6] = 21530;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? 21530 : colour;
-
-				itemDefinition.modelColourToEdit[7] = 21522;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? 21522 : colour;
-
-				itemDefinition.modelColourToEdit[8] = 21534;
-				itemDefinition.newModelColourProduced[8] = colour == -1 ? 21534 : colour;
-
-				colour = 926;
-				itemDefinition.modelColourToEdit[9] = -20037;
-				itemDefinition.newModelColourProduced[9] = colour == -1 ? -20037 : colour;
-
-				colour = 920;
-				itemDefinition.modelColourToEdit[10] = -21046;
-				itemDefinition.newModelColourProduced[10] = colour == -1 ? -21046 : colour;
-
-				colour = 105;
-				itemDefinition.modelColourToEdit[11] = 0;
-				itemDefinition.newModelColourProduced[11] = colour == -1 ? 0 : colour;
-
-				colour = 120;
-				itemDefinition.modelColourToEdit[12] = -19520;
-				itemDefinition.newModelColourProduced[12] = colour == -1 ? -19520 : colour;
-
-				colour = 127;
-				itemDefinition.modelColourToEdit[13] = -17454;
-				itemDefinition.newModelColourProduced[13] = colour == -1 ? -17454 : colour;
-				break;
-			case 16402:
-				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
-				itemDefinition.name = "Elysian spirit shield";
-				itemDefinition.inventoryModel = 11072;
-				itemDefinition.zoom = 1789;
-				itemDefinition.rotationY = 431;
-				itemDefinition.rotationX = 27;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = 11;
-				itemDefinition.maleModel = 11048;
-				itemDefinition.femaleModel = 11048;
-
-				itemDefinition.modelColourToEdit = new int[6];
-				itemDefinition.newModelColourProduced = new int[6];
-
-				// Sigil colour
-				colour = 947;
-				itemDefinition.modelColourToEdit[1] = 127;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 127 : colour;
-
-				// Shield colour
-				colour = 127;
-				itemDefinition.modelColourToEdit[0] = -28716;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -28716 : colour;
-
-				// Trim colour
-				colour = 947;
-				itemDefinition.modelColourToEdit[2] = -29116;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -29116 : colour;
-
-				itemDefinition.modelColourToEdit[3] = -29019;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -29019 : colour;
-
-				itemDefinition.modelColourToEdit[4] = -29125;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -29125 : colour;
-
-				itemDefinition.modelColourToEdit[5] = -29110;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -29110 : colour;
-				break;
-			case 16401:
-				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", "Dismantle", null, null};
-				itemDefinition.name = "Armadyl godsword";
-				itemDefinition.inventoryModel = 28075;
-				itemDefinition.zoom = 1957;
-				itemDefinition.rotationY = 498;
-				itemDefinition.rotationX = 484;
-				itemDefinition.inventoryX = -1;
-				itemDefinition.inventoryY = -1;
-				itemDefinition.maleModel = 27649;
-				itemDefinition.femaleModel = 27649;
-
-				itemDefinition.modelColourToEdit = new int[10];
-				itemDefinition.newModelColourProduced = new int[10];
-
-				// Hilt section where the hands are wrapped around
-				colour = 0;
-				itemDefinition.modelColourToEdit[0] = -22208;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -22208 : colour;
-
-				// Hilt top section
-				itemDefinition.modelColourToEdit[1] = -22477;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22477 : colour;
-
-				// Hilt section various sides
-				itemDefinition.modelColourToEdit[2] = -22464;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22464 : colour;
-
-				// Hilt section, the bottom part, half of the furs
-				itemDefinition.modelColourToEdit[3] = -24279;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -24279 : colour;
-
-				// Hilt section, the bottom part, rest of the furs
-				itemDefinition.modelColourToEdit[4] = -24271;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -24271 : colour;
-
-				// Blade, left side
-				colour = 461770;
-				itemDefinition.modelColourToEdit[5] = -22444;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22444 : colour;
-
-				colour = 461770;
-				// Blade, right side
-				itemDefinition.modelColourToEdit[6] = -22423;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22423 : colour;
-
-				colour = 461770;
-				// Blade decoration on the right
-				itemDefinition.modelColourToEdit[7] = -22415;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22415 : colour;
-
-				// Blade tip on the right
-				itemDefinition.modelColourToEdit[8] = -22419;
-				itemDefinition.newModelColourProduced[8] = colour == -1 ? -22419 : colour;
-
-				// Blade at the tip, inventory model only.
-				itemDefinition.modelColourToEdit[9] = -22440;
-				itemDefinition.newModelColourProduced[9] = colour == -1 ? -22440 : colour;
-				break;
-			case 16400:
-				itemDefinition.name = "Ghrazi rapier";
-				itemDefinition.inventoryModel = 35739;
-				itemDefinition.maleModel = 35374;
-				itemDefinition.femaleModel = 35369;
-				itemDefinition.zoom = 2064;
-				itemDefinition.rotationX = 1603;
-				itemDefinition.rotationZ = 552;
-				itemDefinition.inventoryX = 5;
-				itemDefinition.inventoryY = -18;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wield";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = "Drop";
-
-				itemDefinition.modelColourToEdit = new int[8];
-				itemDefinition.newModelColourProduced = new int[8];
-
-				// Grey
-				colour = 17350;
-				itemDefinition.modelColourToEdit[2] = -22446;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22446 : colour;
-
-				// White
-				colour = 17350;
-				itemDefinition.modelColourToEdit[4] = -22423;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22423 : colour;
-
-				// Dark grey
-				colour = 380760;
-				itemDefinition.modelColourToEdit[1] = -22386;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22386 : colour;
-
-				// Red
-				colour = 380770;
-				itemDefinition.modelColourToEdit[0] = -1122;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -1122 : colour;
-
-				// Dark grey
-				itemDefinition.modelColourToEdit[3] = -22502;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22502 : colour;
-
-				// Grey
-				itemDefinition.modelColourToEdit[6] = -22477;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22477 : colour;
-
-				// Light grey
-				itemDefinition.modelColourToEdit[7] = -22506;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22506 : colour;
-
-				// Dark grey
-				colour = 380780;
-				itemDefinition.modelColourToEdit[5] = -22489;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22489 : colour;
-				break;
-			case 16399:
-				itemDefinition.name = "Nocturnal Yoshi pet";
-				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
-				itemDefinition.zoom = 750;
-				itemDefinition.rotationY = 100;
-				itemDefinition.rotationX = 250;
-				itemDefinition.inventoryX = 10;
-				itemDefinition.inventoryY = 100;
-				npcInstance = EntityDefinition.forId(11212);
-				itemDefinition.inventoryModel = npcInstance.models[0];
-				break;
-			case 16398 :
-				itemDefinition.name = "Death pet";
-				itemDefinition.inventoryOptions = new String[]{
-						null,
-						null,
-						null,
-						null,
-						"Drop"
-				};
-				itemDefinition.zoom = 650;
-				itemDefinition.rotationY = 0;
-				itemDefinition.rotationX = 0;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = 80;
-				npcInstance = EntityDefinition.forId(5567);
-				itemDefinition.inventoryModel = npcInstance.models[0];
-				itemDefinition.modelColourToEdit = new int[13];
-				itemDefinition.newModelColourProduced = new int[13];
-
-				// Black
-				colour = 127;
-				itemDefinition.modelColourToEdit[0] = 0;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 0 : colour;
-
-				colour = -1;
-				itemDefinition.modelColourToEdit[1] = 5231;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 5231 : colour;
-
-				// White
-				colour = 58325;
-				itemDefinition.modelColourToEdit[2] = 5353;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 5353 : colour;
-
-				colour = 58350;
-				itemDefinition.modelColourToEdit[3] = 8741;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? 8741 : colour;
-
-				colour = -1;
-				itemDefinition.modelColourToEdit[4] = 4550;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 4550 : colour;
-
-				colour = -1;
-				itemDefinition.modelColourToEdit[5] = 8741;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? 8741 : colour;
-
-				colour = -1;
-				itemDefinition.modelColourToEdit[6] = 10004;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? 10004 : colour;
-
-				colour = 127;
-				itemDefinition.modelColourToEdit[7] = 25238;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? 25238 : colour;
-
-				colour = -1;
-				itemDefinition.modelColourToEdit[8] = 0;
-				itemDefinition.newModelColourProduced[8] = colour == -1 ? 0 : colour;
-
-				colour = -1;
-				itemDefinition.modelColourToEdit[9] = 908;
-				itemDefinition.newModelColourProduced[9] = colour == -1 ? 908 : colour;
-
-				colour = -1;
-				itemDefinition.modelColourToEdit[10] = 5541;
-				itemDefinition.newModelColourProduced[10] = colour == -1 ? 5541 : colour;
-
-				colour = -1;
-				itemDefinition.modelColourToEdit[11] = 7073;
-				itemDefinition.newModelColourProduced[11] = colour == -1 ? 7073 : colour;
-
-				colour = -1;
-				itemDefinition.modelColourToEdit[12] = 61;
-				itemDefinition.newModelColourProduced[12] = colour == -1 ? 61 : colour;
-				break;
-		
-			case 16397 :
-				itemDefinition.inventoryOptions = new String[]{
-						null,
-						"Wield",
-						null,
-						null,
-						null
-				};
-				itemDefinition.name = "Elysian spirit shield";
-				itemDefinition.inventoryModel = 11072;
-				itemDefinition.zoom = 1789;
-				itemDefinition.rotationY = 431;
-				itemDefinition.rotationX = 27;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = 11;
-				itemDefinition.maleModel = 11048;
-				itemDefinition.femaleModel = 11048;
-
-				itemDefinition.modelColourToEdit = new int[6];
-				itemDefinition.newModelColourProduced = new int[6];
-
-				// Sigil colour
-				colour = 302800;
-				itemDefinition.modelColourToEdit[1] = 127;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 127 : colour;
-
-				// Shield colour
-				colour = 127;
-				itemDefinition.modelColourToEdit[0] = -28716;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -28716 : colour;
-
-				// Trim colour
-				colour = 127;
-				itemDefinition.modelColourToEdit[2] = -29116;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -29116 : colour;
-
-				itemDefinition.modelColourToEdit[3] = -29019;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -29019 : colour;
-
-				itemDefinition.modelColourToEdit[4] = -29125;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -29125 : colour;
-
-				itemDefinition.modelColourToEdit[5] = -29110;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -29110 : colour;
-				break;
-			case 16379 :
-				itemDefinition.inventoryOptions = new String[]{
-						null,
-						"Wield",
-						null,
-						null,
-						null
-				};
-				itemDefinition.name = "Elysian spirit shield";
-				itemDefinition.inventoryModel = 11072;
-				itemDefinition.zoom = 1789;
-				itemDefinition.rotationY = 431;
-				itemDefinition.rotationX = 27;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = 11;
-				itemDefinition.maleModel = 11048;
-				itemDefinition.femaleModel = 11048;
-
-				itemDefinition.modelColourToEdit = new int[6];
-				itemDefinition.newModelColourProduced = new int[6];
-
-				// Sigil colour
-				colour = 927;
-				itemDefinition.modelColourToEdit[1] = 127;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 127 : colour;
-
-				// Shield colour
-				colour = 302770;
-				itemDefinition.modelColourToEdit[0] = -28716;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -28716 : colour;
-
-				// Trim colour
-				colour = 127;
-				itemDefinition.modelColourToEdit[2] = -29116;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -29116 : colour;
-
-				itemDefinition.modelColourToEdit[3] = -29019;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -29019 : colour;
-
-				itemDefinition.modelColourToEdit[4] = -29125;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -29125 : colour;
-
-				itemDefinition.modelColourToEdit[5] = -29110;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -29110 : colour;
-				break;
-			case 16380:
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wield", "Dismantle", null, null};
-				itemDefinition.name = "Armadyl godsword";
-				itemDefinition.inventoryModel = 28075;
-				itemDefinition.zoom = 1957;
-				itemDefinition.rotationY = 498;
-				itemDefinition.rotationX = 484;
-				itemDefinition.inventoryX = -1;
-				itemDefinition.inventoryY = -1;
-				itemDefinition.maleModel = 27649;
-				itemDefinition.femaleModel = 27649;
-
-				itemDefinition.modelColourToEdit = new int[10];
-				itemDefinition.newModelColourProduced = new int[10];
-
-				// Hilt section where the hands are wrapped around
-				colour = 927;
-				itemDefinition.modelColourToEdit[0] = -22208;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -22208 : colour;
-
-				// Hilt top section
-				itemDefinition.modelColourToEdit[1] = -22477;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22477 : colour;
-
-				// Hilt section various sides
-				itemDefinition.modelColourToEdit[2] = -22464;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22464 : colour;
-
-				// Hilt section, the bottom part, half of the furs
-				itemDefinition.modelColourToEdit[3] = -24279;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -24279 : colour;
-
-				// Hilt section, the bottom part, rest of the furs
-				itemDefinition.modelColourToEdit[4] = -24271;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -24271 : colour;
-
-				// Blade, left side
-				colour = 127;
-				itemDefinition.modelColourToEdit[5] = -22444;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22444 : colour;
-
-				colour = 302800;
-				// Blade, right side
-				itemDefinition.modelColourToEdit[6] = -22423;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22423 : colour;
-
-				colour = 127;
-				// Blade decoration on the right
-				itemDefinition.modelColourToEdit[7] = -22415;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22415 : colour;
-
-				// Blade tip on the right
-				itemDefinition.modelColourToEdit[8] = -22419;
-				itemDefinition.newModelColourProduced[8] = colour == -1 ? -22419 : colour;
-
-				// Blade at the tip, inventory model only.
-				itemDefinition.modelColourToEdit[9] = -22440;
-				itemDefinition.newModelColourProduced[9] = colour == -1 ? -22440 : colour;
-				break;
-			case 16381:
-				itemDefinition.name = "Primordial boots";
-				itemDefinition.inventoryModel = 29397;
-				itemDefinition.maleModel = 29250;
-				itemDefinition.femaleModel = 29255;
-				itemDefinition.zoom = 976;
-				itemDefinition.rotationX = 279;
-				itemDefinition.rotationY = 147;
-				itemDefinition.inventoryX = 5;
-				itemDefinition.inventoryY = -5;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wear";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-				itemDefinition.modelColourToEdit = new int[8];
-				itemDefinition.newModelColourProduced = new int[8];
-
-				// Dark red
-				colour = 302770;
-				itemDefinition.modelColourToEdit[0] = 280;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 280 : colour;
-
-				// Red
-				colour = 302790;
-				itemDefinition.modelColourToEdit[1] = 924;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 924 : colour;
-
-				// Red
-				colour = 302790;
-				itemDefinition.modelColourToEdit[2] = 920;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 920 : colour;
-
-				// Very dark grey
-				colour = -1;
-				itemDefinition.modelColourToEdit[6] = 520;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? 520 : colour;
-
-				// Dark grey
-				colour = -1;
-				itemDefinition.modelColourToEdit[5] = -22380;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22380 : colour;
-
-
-				// Grey
-				colour = -1;
-				itemDefinition.modelColourToEdit[3] = -22370;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22370 : colour;
-
-				// Red
-				colour = 302790;
-				itemDefinition.modelColourToEdit[4] = 538;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 538 : colour;
-
-				colour = -1;
-				itemDefinition.modelColourToEdit[7] = 127;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? 127 : colour;
-				break;
-
-			case 16382 :
-				itemDefinition.name = "Amulet of torture";
-				itemDefinition.inventoryModel = 31524;
-				itemDefinition.maleModel = 31227;
-				itemDefinition.maleEquip2 = -1;
-				itemDefinition.femaleModel = 31233;
-				itemDefinition.femaleEquip2 = -1;
-				itemDefinition.zoom = 620;
-				itemDefinition.rotationX = 68;
-				itemDefinition.rotationY = 424;
-				itemDefinition.inventoryX = 1;
-				itemDefinition.inventoryY = 16;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wear";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-				itemDefinition.modelColourToEdit = new int[7];
-				itemDefinition.newModelColourProduced = new int[7];
-				
-				// Grey
-				colour = 302790;
-				itemDefinition.modelColourToEdit[0] = -22372;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -22372 : colour;
-
-				// Light grey
-				colour = 927;
-				itemDefinition.modelColourToEdit[1] = -22483;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22483 : colour;
-
-				// Light grey
-				colour = 927;
-				itemDefinition.modelColourToEdit[2] = -22475;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22475 : colour;
-
-				// Shade over the orange
-				colour = 927;
-				itemDefinition.modelColourToEdit[3] = 5056;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? 5056 : colour;
-
-				// Light grey
-				colour = 927;
-				itemDefinition.modelColourToEdit[4] = -22506;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22506 : colour;
-
-				// Black
-				colour = -1;
-				itemDefinition.modelColourToEdit[5] = 0;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? 0 : colour;
-
-				// Orange
-				colour = -1;
-				itemDefinition.modelColourToEdit[6] = 3008;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? 3008 : colour;
-				break;
-
-			case 16383 :
-				itemDefinition.name = "Ghrazi rapier";
-				itemDefinition.inventoryModel = 35739;
-				itemDefinition.maleModel = 35374;
-				itemDefinition.femaleModel = 35369;
-				itemDefinition.zoom = 2064;
-				itemDefinition.rotationX = 1603;
-				itemDefinition.rotationZ = 552;
-				itemDefinition.inventoryX = 5;
-				itemDefinition.inventoryY = -18;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wield";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = "Drop";
-
-				itemDefinition.modelColourToEdit = new int[8];
-				itemDefinition.newModelColourProduced = new int[8];
-
-				// Grey
-				colour = 302790;
-				itemDefinition.modelColourToEdit[2] = -22446;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22446 : colour;
-
-				// White
-				colour = 302790;
-				itemDefinition.modelColourToEdit[4] = -22423;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22423 : colour;
-
-				// Dark grey
-				colour = 910;
-				itemDefinition.modelColourToEdit[1] = -22386;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22386 : colour;
-
-				// Red
-				colour = 927;
-				itemDefinition.modelColourToEdit[0] = -1122;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -1122 : colour;
-
-				// Dark grey
-				itemDefinition.modelColourToEdit[3] = -22502;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22502 : colour;
-
-				// Grey
-				itemDefinition.modelColourToEdit[6] = -22477;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22477 : colour;
-
-				// Light grey
-				itemDefinition.modelColourToEdit[7] = -22506;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22506 : colour;
-
-				// Dark grey
-				colour = 935;
-				itemDefinition.modelColourToEdit[5] = -22489;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22489 : colour;
-				break;
-
-			case 16384 :
-				itemDefinition.name = "Ghrazi rapier";
-				itemDefinition.inventoryModel = 35739;
-				itemDefinition.maleModel = 35374;
-				itemDefinition.femaleModel = 35369;
-				itemDefinition.zoom = 2064;
-				itemDefinition.rotationX = 1603;
-				itemDefinition.rotationZ = 552;
-				itemDefinition.inventoryX = 5;
-				itemDefinition.inventoryY = -18;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wield";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = "Drop";
-
-				itemDefinition.modelColourToEdit = new int[8];
-				itemDefinition.newModelColourProduced = new int[8];
-
-				// Grey
-				colour = 127;
-				itemDefinition.modelColourToEdit[2] = -22446;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22446 : colour;
-
-				// White
-				colour = 127;
-				itemDefinition.modelColourToEdit[4] = -22423;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22423 : colour;
-
-				// Red
-				colour = 0;
-				itemDefinition.modelColourToEdit[0] = -1122;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -1122 : colour;
-
-				// Dark grey
-				colour = 51136;
-				itemDefinition.modelColourToEdit[3] = -22502;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22502 : colour;
-
-				// Grey
-				colour = 51136;
-				itemDefinition.modelColourToEdit[6] = -22477;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22477 : colour;
-
-				// Light grey
-				colour = 51130;
-				itemDefinition.modelColourToEdit[7] = -22506;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22506 : colour;
-
-				// Dark grey
-				colour = 51150;
-				itemDefinition.modelColourToEdit[5] = -22489;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22489 : colour;
-
-				// Dark grey
-				colour = 51136;
-				itemDefinition.modelColourToEdit[1] = -22386;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22386 : colour;
-				break;
-
-			case 16385 :
-				itemDefinition.name = "Ghrazi rapier";
-				itemDefinition.inventoryModel = 35739;
-				itemDefinition.maleModel = 35374;
-				itemDefinition.femaleModel = 35369;
-				itemDefinition.zoom = 2064;
-				itemDefinition.rotationX = 1603;
-				itemDefinition.rotationZ = 552;
-				itemDefinition.inventoryX = 5;
-				itemDefinition.inventoryY = -18;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wield";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = "Drop";
-
-				itemDefinition.modelColourToEdit = new int[8];
-				itemDefinition.newModelColourProduced = new int[8];
-
-				// Grey
-				colour = 34770;
-				itemDefinition.modelColourToEdit[2] = -22446;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22446 : colour;
-
-				// White
-				colour = 34770;
-				itemDefinition.modelColourToEdit[4] = -22423;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22423 : colour;
-
-				// Red
-				colour = 100;
-				itemDefinition.modelColourToEdit[0] = -1122;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -1122 : colour;
-
-				// Dark grey
-				colour = 127;
-				itemDefinition.modelColourToEdit[3] = -22502;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22502 : colour;
-
-				// Grey
-				colour = 127;
-				itemDefinition.modelColourToEdit[6] = -22477;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22477 : colour;
-
-				// Light grey
-				colour = 120;
-				itemDefinition.modelColourToEdit[7] = -22506;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22506 : colour;
-
-				// Dark grey
-				colour = 115;
-				itemDefinition.modelColourToEdit[5] = -22489;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22489 : colour;
-
-				// Dark grey
-				colour = 115;
-				itemDefinition.modelColourToEdit[1] = -22386;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22386 : colour;
-				break;
-			case 13116:
-                itemInstance = ItemDefinition.forId(13116);
-                itemDefinition.inventoryOptions = new String[]
-                        {"Check", null, null, null, null};
-                itemDefinition.name = itemInstance.name;
-                itemDefinition.zoom = itemInstance.zoom;
-                itemDefinition.maleEquip2 = itemInstance.maleEquip2;
-                itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
-                itemDefinition.rotationY = itemInstance.rotationY;
-                itemDefinition.rotationX = itemInstance.rotationX;
-                itemDefinition.inventoryY = itemInstance.inventoryY;
-                itemDefinition.maleModel = itemInstance.maleModel;
-                itemDefinition.femaleModel = itemInstance.femaleModel;
-                itemDefinition.inventoryOptions = new String[5];
-                itemDefinition.inventoryOptions[0] = "Check";
-                itemDefinition.inventoryOptions[1] = null;
-                itemDefinition.inventoryOptions[2] = null;
-                itemDefinition.inventoryOptions[3] = null;
-                itemDefinition.inventoryOptions[4] = null;
-                itemDefinition.inventoryModel = itemInstance.inventoryModel;
-                break;
-			case 22114:
-                itemInstance = ItemDefinition.forId(22114);
-                itemDefinition.name = itemInstance.name;
-                itemDefinition.zoom = itemInstance.zoom;
-                itemDefinition.maleEquip2 = itemInstance.maleEquip2;
-                itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
-                itemDefinition.rotationY = itemInstance.rotationY;
-                itemDefinition.rotationX = itemInstance.rotationX;
-                itemDefinition.inventoryY = itemInstance.inventoryY;
-                itemDefinition.maleModel = itemInstance.maleModel;
-                itemDefinition.femaleModel = itemInstance.femaleModel;
-                itemDefinition.inventoryOptions = new String[5];
-                itemDefinition.inventoryOptions[0] = null;
-                itemDefinition.inventoryOptions[1] = "Wear";
-                itemDefinition.inventoryOptions[2] = "Check-Charges";
-                itemDefinition.inventoryOptions[3] = null;
-                itemDefinition.inventoryOptions[4] = null;
-                itemDefinition.inventoryModel = itemInstance.inventoryModel;
-                break;
-			case 16386 :
-				itemDefinition.name = "Ghrazi rapier";
-				itemDefinition.inventoryModel = 35739;
-				itemDefinition.maleModel = 35374;
-				itemDefinition.femaleModel = 35369;
-				itemDefinition.zoom = 2064;
-				itemDefinition.rotationX = 1603;
-				itemDefinition.rotationZ = 552;
-				itemDefinition.inventoryX = 5;
-				itemDefinition.inventoryY = -18;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wield";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = "Drop";
-
-				itemDefinition.modelColourToEdit = new int[8];
-				itemDefinition.newModelColourProduced = new int[8];
-
-				// Grey
-				colour = 58325;
-				itemDefinition.modelColourToEdit[2] = -22446;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22446 : colour;
-
-				// White
-				colour = 58325;
-				itemDefinition.modelColourToEdit[4] = -22423;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22423 : colour;
-
-				// Red
-				colour = 34770;
-				itemDefinition.modelColourToEdit[0] = -1122;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -1122 : colour;
-
-				// Dark grey
-				colour = 34780;
-				itemDefinition.modelColourToEdit[3] = -22502;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22502 : colour;
-
-				// Grey
-				colour = 34790;
-				itemDefinition.modelColourToEdit[6] = -22477;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22477 : colour;
-
-				// Light grey
-				colour = 34790;
-				itemDefinition.modelColourToEdit[7] = -22506;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22506 : colour;
-
-				// Dark grey
-				colour = 34790;
-				itemDefinition.modelColourToEdit[5] = -22489;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22489 : colour;
-
-				// Dark grey
-				colour = 34780;
-				itemDefinition.modelColourToEdit[1] = -22386;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22386 : colour;
-				break;
-
-			case 16387 :
-				itemDefinition.name = "Ghrazi rapier";
-				itemDefinition.inventoryModel = 35739;
-				itemDefinition.maleModel = 35374;
-				itemDefinition.femaleModel = 35369;
-				itemDefinition.zoom = 2064;
-				itemDefinition.rotationX = 1603;
-				itemDefinition.rotationZ = 552;
-				itemDefinition.inventoryX = 5;
-				itemDefinition.inventoryY = -18;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wield";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = "Drop";
-
-				itemDefinition.modelColourToEdit = new int[8];
-				itemDefinition.newModelColourProduced = new int[8];
-
-				// Grey
-				colour = 0;
-				itemDefinition.modelColourToEdit[2] = -22446;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22446 : colour;
-
-				// White
-				colour = 0;
-				itemDefinition.modelColourToEdit[4] = -22423;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22423 : colour;
-
-				// Red
-				colour = 3;
-				itemDefinition.modelColourToEdit[0] = -1122;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -1122 : colour;
-
-				// Dark grey
-				colour = 461785;
-				itemDefinition.modelColourToEdit[3] = -22502;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22502 : colour;
-
-				// Grey
-				colour = 461785;
-				itemDefinition.modelColourToEdit[6] = -22477;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22477 : colour;
-
-				// Light grey
-				colour = 461765;
-				itemDefinition.modelColourToEdit[7] = -22506;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22506 : colour;
-
-				// Dark grey
-				colour = 461775;
-				itemDefinition.modelColourToEdit[5] = -22489;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22489 : colour;
-
-				// Dark grey
-				colour = 461795;
-				itemDefinition.modelColourToEdit[1] = -22386;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22386 : colour;
-				break;
-
-			case 16388 :
-				itemDefinition.name = "Dragon rapier";
-				itemDefinition.inventoryModel = 35739;
-				itemDefinition.maleModel = 35374;
-				itemDefinition.femaleModel = 35369;
-				itemDefinition.zoom = 2064;
-				itemDefinition.rotationX = 1603;
-				itemDefinition.rotationZ = 552;
-				itemDefinition.inventoryX = 5;
-				itemDefinition.inventoryY = -18;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wield";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = "Drop";
-
-				itemDefinition.modelColourToEdit = new int[8];
-				itemDefinition.newModelColourProduced = new int[8];
-
-				// Grey
-				colour = 927;
-				itemDefinition.modelColourToEdit[2] = -22446;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22446 : colour;
-
-				// White
-				itemDefinition.modelColourToEdit[4] = -22423;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22423 : colour;
-
-				// Red
-				colour = -1;
-				itemDefinition.modelColourToEdit[0] = -1122;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -1122 : colour;
-
-				// Dark grey
-				itemDefinition.modelColourToEdit[3] = -22502;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22502 : colour;
-
-				// Grey
-				itemDefinition.modelColourToEdit[6] = -22477;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22477 : colour;
-
-				// Light grey
-				itemDefinition.modelColourToEdit[7] = -22506;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22506 : colour;
-
-				// Dark grey
-				itemDefinition.modelColourToEdit[5] = -22489;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22489 : colour;
-
-				// Dark grey
-				itemDefinition.modelColourToEdit[1] = -22386;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22386 : colour;
-				break;
-		
-			case 16390 :
-				itemDefinition.name = "Heavy ballista";
-				itemDefinition.inventoryModel = 31523;
-				itemDefinition.maleModel = 31236;
-				itemDefinition.femaleModel = 31236;
-				itemDefinition.femaleEquipOffset = 6;
-				itemDefinition.zoom = 1284;
-				itemDefinition.rotationX = 148;
-				itemDefinition.rotationY = 189;
-				itemDefinition.inventoryX = 8;
-				itemDefinition.inventoryY = -18;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wield";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = "Drop";
-				itemDefinition.modelColourToEdit = new int[22];
-				itemDefinition.newModelColourProduced = new int[22];
-
-				colour = 90;
-				itemDefinition.modelColourToEdit[7] = 16;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? 16 : colour;
-
-				colour = 97;
-				itemDefinition.modelColourToEdit[4] = 20;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 20 : colour;
-
-				colour = 107;
-				itemDefinition.modelColourToEdit[2] = 24;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 24 : colour;
-
-				colour = 115;
-				itemDefinition.modelColourToEdit[3] = 28;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? 28 : colour;
-
-				colour = 122;
-				itemDefinition.modelColourToEdit[1] = 33;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 33 : colour;
-
-				colour = 125;
-				itemDefinition.modelColourToEdit[0] = 37;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 37 : colour;
-
-				colour = 127;
-				itemDefinition.modelColourToEdit[12] = 41;
-				itemDefinition.newModelColourProduced[12] = colour == -1 ? 41 : colour;
-
-				colour = 0;
-				itemDefinition.modelColourToEdit[5] = 10283;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? 10283 : colour;
-
-				colour = 5;
-				itemDefinition.modelColourToEdit[6] = 10275;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? 10275 : colour;
-
-				colour = 10;
-				itemDefinition.modelColourToEdit[8] = 5289;
-				itemDefinition.newModelColourProduced[8] = colour == -1 ? 5289 : colour;
-
-				colour = 15;
-				itemDefinition.modelColourToEdit[9] = 5409;
-				itemDefinition.newModelColourProduced[9] = colour == -1 ? 5409 : colour;
-
-				colour = 20;
-				itemDefinition.modelColourToEdit[10] = 10266;
-				itemDefinition.newModelColourProduced[10] = colour == -1 ? 10266 : colour;
-
-				colour = 6;
-				itemDefinition.modelColourToEdit[11] = 5524;
-				itemDefinition.newModelColourProduced[11] = colour == -1 ? 5524 : colour;
-
-				colour = 10;
-				itemDefinition.modelColourToEdit[13] = 5772;
-				itemDefinition.newModelColourProduced[13] = colour == -1 ? 5772 : colour;
-
-				colour = 15;
-				itemDefinition.modelColourToEdit[14] = 5400;
-				itemDefinition.newModelColourProduced[14] = colour == -1 ? 5400 : colour;
-
-				colour = 0;
-				itemDefinition.modelColourToEdit[15] = 5404;
-				itemDefinition.newModelColourProduced[15] = colour == -1 ? 5404 : colour;
-
-				colour = 3;
-				itemDefinition.modelColourToEdit[16] = 5285;
-				itemDefinition.newModelColourProduced[16] = colour == -1 ? 5285 : colour;
-
-				colour = 4;
-				itemDefinition.modelColourToEdit[17] = 1556;
-				itemDefinition.newModelColourProduced[17] = colour == -1 ? 1556 : colour;
-
-				colour = 0;
-				itemDefinition.modelColourToEdit[18] = 1560;
-				itemDefinition.newModelColourProduced[18] = colour == -1 ? 1560 : colour;
-
-				colour = 12;
-				itemDefinition.modelColourToEdit[19] = 3594;
-				itemDefinition.newModelColourProduced[19] = colour == -1 ? 3594 : colour;
-
-				colour = 14;
-				itemDefinition.modelColourToEdit[20] = 1808;
-				itemDefinition.newModelColourProduced[20] = colour == -1 ? 1808 : colour;
-
-				colour = 22;
-				itemDefinition.modelColourToEdit[21] = 1932;
-				itemDefinition.newModelColourProduced[21] = colour == -1 ? 1932 : colour;
-
-				break;
-
-			case 16391 :
-				itemDefinition.name = "Amulet of torture";
-				itemDefinition.inventoryModel = 31524;
-				itemDefinition.maleModel = 31227;
-				itemDefinition.femaleModel = 31233;
-				itemDefinition.zoom = 620;
-				itemDefinition.rotationX = 68;
-				itemDefinition.rotationY = 424;
-				itemDefinition.inventoryX = 1;
-				itemDefinition.inventoryY = 16;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wear";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = "Drop";
-				itemDefinition.modelColourToEdit = new int[7];
-				itemDefinition.newModelColourProduced = new int[7];
-
-				// Grey
-				colour = 0;
-				itemDefinition.modelColourToEdit[0] = -22372;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -22372 : colour;
-
-				// Light grey
-				colour = -1;
-				itemDefinition.modelColourToEdit[1] = -22483;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22483 : colour;
-
-				// Light grey
-				colour = -1;
-				itemDefinition.modelColourToEdit[2] = -22475;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22475 : colour;
-
-				// Shade over the orange
-				colour = 30;
-				itemDefinition.modelColourToEdit[3] = 5056;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? 5056 : colour;
-
-				// Light grey
-				colour = -1;
-				itemDefinition.modelColourToEdit[4] = -22506;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22506 : colour;
-
-				// Black
-				colour = -1;
-				itemDefinition.modelColourToEdit[5] = 0;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? 0 : colour;
-
-				// Orange
-				colour = -1;
-				itemDefinition.modelColourToEdit[6] = 3008;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? 3008 : colour;
-				break;
-
-			case 16392:
-				itemDefinition.name = "Defender icon";
-				itemDefinition.inventoryModel = 20578;
-				itemDefinition.maleModel = 19261;
-				itemDefinition.femaleModel = 20519;
-				itemDefinition.zoom = 1049;
-				itemDefinition.rotationX = 1010;
-				itemDefinition.rotationY = 526;
-				itemDefinition.inventoryX = 35;
-				itemDefinition.inventoryY = -30;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wear";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-				itemDefinition.modelColourToEdit = new int[5];
-				itemDefinition.modelColourToEdit[0] = 22439;
-				itemDefinition.newModelColourProduced = new int[5];
-				itemDefinition.newModelColourProduced[0] = 34770;
-
-				colour = 34775;
-				itemDefinition.modelColourToEdit[1] = 947;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 947 : colour;
-
-				colour = 34780;
-				itemDefinition.modelColourToEdit[2] = 11200;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 11200 : colour;
-
-				colour = 34785;
-				itemDefinition.modelColourToEdit[3] = -21581;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -21581 : colour;
-
-				colour = 34790;
-				itemDefinition.modelColourToEdit[4] = 22451;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 22451 : colour;
-				break;
-
-			case 16393 :
-				itemDefinition.name = "Justiciar faceguard";
-				itemDefinition.inventoryModel = 35751;
-				itemDefinition.maleModel = 35349;
-				itemDefinition.femaleModel = 35361;
-				itemDefinition.zoom = 777;
-				itemDefinition.rotationX = 1972;
-				itemDefinition.rotationY = 22;
-				itemDefinition.inventoryX = 1;
-				itemDefinition.inventoryY = -1;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wear";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = "Drop";
-				itemDefinition.modelColourToEdit = new int[9];
-				itemDefinition.newModelColourProduced = new int[9];
-
-				// Black
-				colour = 0;
-				itemDefinition.modelColourToEdit[4] = 0;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 0 : colour;
-
-				// Very Dark grey
-				colour = 3;
-				itemDefinition.modelColourToEdit[0] = -22242;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -22242 : colour;
-
-				// Dark grey
-				colour = 5;
-				itemDefinition.modelColourToEdit[5] = -6083;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -6083 : colour;
-
-				// Grey
-				colour = 8;
-				itemDefinition.modelColourToEdit[1] = -6095;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -6095 : colour;
-
-				// Grey
-				colour = 10;
-				itemDefinition.modelColourToEdit[2] = 6709;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 6709 : colour;
-
-				// Grey
-				colour = 10;
-				itemDefinition.modelColourToEdit[7] = -6070;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? -6070 : colour;
-
-				// Light yellow
-				colour = 6083;
-				itemDefinition.modelColourToEdit[3] = 6736;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? 6736 : colour;
-
-				// Yellow
-				colour = 6073;
-				itemDefinition.modelColourToEdit[6] = 6602;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? 6602 : colour;
-
-				// Nothing
-				colour = -1;
-				itemDefinition.modelColourToEdit[8] = 4550;
-				itemDefinition.newModelColourProduced[8] = colour == -1 ? 4550 : colour;
-				break;
-
-			case 16394 :
-				itemDefinition.name = "Justiciar chestguard";
-				itemDefinition.inventoryModel = 35750;
-				itemDefinition.maleModel = 35359;
-				itemDefinition.femaleModel = 35368;
-				itemDefinition.zoom = 1310;
-				itemDefinition.rotationY = 432;
-				itemDefinition.inventoryX = 1;
-				itemDefinition.inventoryY = 4;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wear";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = "Drop";
-				itemDefinition.modelColourToEdit = new int[15];
-				itemDefinition.newModelColourProduced = new int[15];
-				
-				
-				// Very very Dark grey
-				colour = 0;
-				itemDefinition.modelColourToEdit[0] = 12;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 12 : colour;
-
-				// Very dark grey
-				colour = 2;
-				itemDefinition.modelColourToEdit[13] = 268;
-				itemDefinition.newModelColourProduced[13] = colour == -1 ? 268 : colour;
-
-				// Very dark grey
-				colour = 4;
-				itemDefinition.modelColourToEdit[14] = 278;
-				itemDefinition.newModelColourProduced[14] = colour == -1 ? 278 : colour;
-
-				// Dark grey
-				colour = 6;
-				itemDefinition.modelColourToEdit[12] = 3346;
-				itemDefinition.newModelColourProduced[12] = colour == -1 ? 3346 : colour;
-
-				// Grey
-				colour = 8;
-				itemDefinition.modelColourToEdit[1] = -6070;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -6070 : colour;
-
-				// Grey
-				colour = 10;
-				itemDefinition.modelColourToEdit[2] = -6083;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -6083 : colour;
-
-				// Grey
-				colour = 12;
-				itemDefinition.modelColourToEdit[4] = -6095;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -6095 : colour;
-
-				// Light grey
-				colour = 14;
-				itemDefinition.modelColourToEdit[8] = 6699;
-				itemDefinition.newModelColourProduced[8] = colour == -1 ? 6699 : colour;
-
-				// Light grey
-				colour = 14;
-				itemDefinition.modelColourToEdit[11] = -6062;
-				itemDefinition.newModelColourProduced[11] = colour == -1 ? -6062 : colour;
-
-				// Yellow
-				colour = 6083;
-				itemDefinition.modelColourToEdit[3] = 6602;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? 6602 : colour;
-
-				// Darker yellow
-				colour = 6078;
-				itemDefinition.modelColourToEdit[7] = 6709;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? 6709 : colour;
-
-				// Darker yellow
-				colour = 6073;
-				itemDefinition.modelColourToEdit[9] = 6736;
-				itemDefinition.newModelColourProduced[9] = colour == -1 ? 6736 : colour;
-
-				// Blue
-				colour = 16;
-				itemDefinition.modelColourToEdit[5] = -22242;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22242 : colour;
-
-				// Blue
-				colour = 16;
-				itemDefinition.modelColourToEdit[6] = -22122;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22122 : colour;
-
-				// Blue
-				colour = 18;
-				itemDefinition.modelColourToEdit[10] = -22237;
-				itemDefinition.newModelColourProduced[10] = colour == -1 ? -22237 : colour;
-				break;
-
-			case 16395 :
-				itemDefinition.name = "Justiciar legguards";
-				itemDefinition.inventoryModel = 35752;
-				itemDefinition.maleModel = 35356;
-				itemDefinition.femaleModel = 35367;
-				itemDefinition.zoom = 1720;
-				itemDefinition.rotationY = 468;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wear";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = "Drop";
-				itemDefinition.modelColourToEdit = new int[16];
-				itemDefinition.newModelColourProduced = new int[16];
-				
-				// Very dark grey
-				colour = 0;
-				itemDefinition.modelColourToEdit[0] = 12;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 12 : colour;
-
-				// Dark grey
-				colour = 2;
-				itemDefinition.modelColourToEdit[1] = 268;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 268 : colour;
-
-				// Dark grey
-				colour = 4;
-				itemDefinition.modelColourToEdit[10] = 16;
-				itemDefinition.newModelColourProduced[10] = colour == -1 ? 16 : colour;
-
-				// Grey
-				colour = 6;
-				itemDefinition.modelColourToEdit[9] = 22;
-				itemDefinition.newModelColourProduced[9] = colour == -1 ? 22 : colour;
-
-				// Grey
-				colour = 8;
-				itemDefinition.modelColourToEdit[12] = -11229;
-				itemDefinition.newModelColourProduced[12] = colour == -1 ? -11229 : colour;
-
-				// Light grey
-				colour = 9;
-				itemDefinition.modelColourToEdit[2] = -6070;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -6070 : colour;
-
-				// Light grey
-				colour = 10;
-				itemDefinition.modelColourToEdit[14] = -6083;
-				itemDefinition.newModelColourProduced[14] = colour == -1 ? -6083 : colour;
-
-				// Light grey
-				colour = 11;
-				itemDefinition.modelColourToEdit[13] = -6091;
-				itemDefinition.newModelColourProduced[13] = colour == -1 ? -6091 : colour;
-
-				// Light grey
-				colour = 12;
-				itemDefinition.modelColourToEdit[3] = -6095;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -6095 : colour;
-
-				// Blue
-				colour = 13;
-				itemDefinition.modelColourToEdit[4] = -22242;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22242 : colour;
-
-				// Blue
-				colour = 15;
-				itemDefinition.modelColourToEdit[5] = -22237;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22237 : colour;
-
-				// Blue
-				colour = 17;
-				itemDefinition.modelColourToEdit[6] = -22233;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22233 : colour;
-
-				// Yellow
-				colour = 6082;
-				itemDefinition.modelColourToEdit[7] = 6602;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? 6602 : colour;
-
-				// Dark yellow
-				colour = 6077;
-				itemDefinition.modelColourToEdit[11] = 6699;
-				itemDefinition.newModelColourProduced[11] = colour == -1 ? 6699 : colour;
-
-				// Dark Yellow
-				colour = 6074;
-				itemDefinition.modelColourToEdit[15] = 6709;
-				itemDefinition.newModelColourProduced[15] = colour == -1 ? 6709 : colour;
-
-				// Dark yellow
-				colour = 6070;
-				itemDefinition.modelColourToEdit[8] = 6736;
-				itemDefinition.newModelColourProduced[8] = colour == -1 ? 6736 : colour;
-				break;
-			case 16396:
-				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", "Dismantle", null, null};
-				itemDefinition.name = "Armadyl godsword";
-				itemDefinition.inventoryModel = 28075;
-				itemDefinition.zoom = 1957;
-				itemDefinition.rotationY = 498;
-				itemDefinition.rotationX = 484;
-				itemDefinition.inventoryX = -1;
-				itemDefinition.inventoryY = -1;
-				itemDefinition.maleModel = 27649;
-				itemDefinition.femaleModel = 27649;
-
-				itemDefinition.modelColourToEdit = new int[10];
-				itemDefinition.newModelColourProduced = new int[10];
-
-				// Hilt section where the hands are wrapped around
-				colour = 926;
-				itemDefinition.modelColourToEdit[0] = -22208;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -22208 : colour;
-
-				// Hilt top section
-				itemDefinition.modelColourToEdit[1] = -22477;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22477 : colour;
-
-				// Hilt section various sides
-				itemDefinition.modelColourToEdit[2] = -22464;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22464 : colour;
-
-				colour = 930;
-				// Hilt section, the bottom part, half of the furs
-				itemDefinition.modelColourToEdit[3] = -24279;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -24279 : colour;
-
-				// Hilt section, the bottom part, rest of the furs
-				itemDefinition.modelColourToEdit[4] = -24271;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -24271 : colour;
-
-				// Blade, left side
-				colour = 920;
-				itemDefinition.modelColourToEdit[5] = -22444;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22444 : colour;
-
-				colour = 923;
-				// Blade, right side
-				itemDefinition.modelColourToEdit[6] = -22423;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22423 : colour;
-
-				// Blade decoration on the right
-				itemDefinition.modelColourToEdit[7] = -22415;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22415 : colour;
-
-				// Blade tip on the right
-				itemDefinition.modelColourToEdit[8] = -22419;
-				itemDefinition.newModelColourProduced[8] = colour == -1 ? -22419 : colour;
-
-				colour = 922;
-				// Blade at the tip, inventory model only.
-				itemDefinition.modelColourToEdit[9] = -22440;
-				itemDefinition.newModelColourProduced[9] = colour == -1 ? -22440 : colour;
-				break;
 			case 13764:
 				itemInstance = ItemDefinition.forId(3121); //ruby key
 				itemDefinition.name = "Rune claws";
 				itemDefinition.femaleModel = itemInstance.femaleModel;
 				itemDefinition.femaleEquipOffset = itemInstance.femaleEquipOffset;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, null};
+						{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
 				itemDefinition.maleModel = itemInstance.maleModel;
 				itemDefinition.rotationY = itemInstance.rotationY;
@@ -1812,7 +74,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, null};
+						{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -2004,7 +266,7 @@ public class CustomItem {
 				break;
 			case 16375:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -2333,7 +595,7 @@ public class CustomItem {
 				break;
 			case 16370:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -2576,7 +838,7 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[4] = null;
 				itemDefinition.modelColourToEdit = new int[12];
 				itemDefinition.newModelColourProduced = new int[12];
-				
+
 				// Light biege
 				colour = 51143;
 				itemDefinition.modelColourToEdit[0] = 6348;
@@ -3097,12 +1359,12 @@ public class CustomItem {
 				colour = 4;
 				itemDefinition.modelColourToEdit[5] = 8650;
 				itemDefinition.newModelColourProduced[5] = colour == -1 ? 8650 : colour;
-				
+
 				// Skin colour
 				colour = -1;
 				itemDefinition.modelColourToEdit[0] = 4550;
 				itemDefinition.newModelColourProduced[0] = colour == -1 ? 4550 : colour;
-				
+
 				colour = -1;
 				itemDefinition.modelColourToEdit[6] = 4550;
 				itemDefinition.newModelColourProduced[6] = colour == -1 ? 4550 : colour;
@@ -3798,7 +2060,7 @@ public class CustomItem {
 				break;
 			case 16333:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -3920,9 +2182,9 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[3] = "Uncharge";
 				itemDefinition.inventoryOptions[4] = null;
 				itemDefinition.modelColourToEdit = new int[]
-				{-22407, -23323, -22308, -21269, 9158, 9009, 11212};
+						{-22407, -23323, -22308, -21269, 9158, 9009, 11212};
 				itemDefinition.newModelColourProduced = new int[]
-				{17340, 58325, 17340, 461770, 461770, 461770, 461770};
+						{17340, 58325, 17340, 461770, 461770, 461770, 461770};
 				break;
 			case 16337:
 				itemDefinition.inventoryOptions = new String[]
@@ -4301,7 +2563,7 @@ public class CustomItem {
 				break;
 			case 16320:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -4342,7 +2604,7 @@ public class CustomItem {
 
 			case 16321:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -4443,7 +2705,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, null};
+						{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -4504,10 +2766,10 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[2] = null;
 				itemDefinition.inventoryOptions[3] = null;
 				itemDefinition.inventoryOptions[4] = null;
-				
+
 				itemDefinition.modelColourToEdit = new int[6];
 				itemDefinition.newModelColourProduced = new int[6];
-				
+
 				// Dark grey
 				colour = 100;
 				itemDefinition.modelColourToEdit[0] = -19153;
@@ -4540,7 +2802,7 @@ public class CustomItem {
 			case 16327:
 				itemDefinition.name = "Ce﻿lestial﻿ Yoshi pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 750;
 				itemDefinition.rotationY = 100;
 				itemDefinition.rotationX = 250;
@@ -4783,9 +3045,9 @@ public class CustomItem {
 				itemDefinition.inventoryModel = 65336;
 				itemDefinition.zoom = 890;
 				itemDefinition.groundOptions = new String[]
-				{null, null, "Take", null, null};
+						{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.description = "A Black & Orange Dye.".getBytes();
 				break;
 			case 16904:
@@ -4815,42 +3077,42 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[1] = "Wear";
 				break;
 			case 6075:
-                itemDefinition.name = "Magma blowpipe";
-                itemDefinition.zoom = 1158;
-                itemDefinition.rotationY = 768;
-                itemDefinition.rotationX = 189;
-                itemDefinition.inventoryX = -7;
-                itemDefinition.inventoryY = 4;
-                itemDefinition.inventoryOptions = new String[5];
-                itemDefinition.inventoryOptions[0] = null;
-                itemDefinition.inventoryOptions[1] = "Wield";
-                itemDefinition.inventoryOptions[2] = null;
-                itemDefinition.inventoryOptions[3] = null;
-                itemDefinition.inventoryOptions[4] = null;
-                itemDefinition.inventoryModel = 19219;
-                itemDefinition.maleModel = 14403;
-                itemDefinition.femaleModel = 14403;
-                break;
+				itemDefinition.name = "Magma blowpipe";
+				itemDefinition.zoom = 1158;
+				itemDefinition.rotationY = 768;
+				itemDefinition.rotationX = 189;
+				itemDefinition.inventoryX = -7;
+				itemDefinition.inventoryY = 4;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.inventoryModel = 19219;
+				itemDefinition.maleModel = 14403;
+				itemDefinition.femaleModel = 14403;
+				break;
 			case 6077:
-                itemDefinition.name = "Craw's Op";
-                itemInstance = ItemDefinition.forId(22550);
-                itemDefinition.inventoryModel = itemInstance.inventoryModel;
-                itemDefinition.maleEquip2 = itemInstance.maleEquip2;
-                itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
-                itemDefinition.maleModel = itemInstance.maleModel;
-                itemDefinition.femaleModel = itemInstance.femaleModel;
-                itemDefinition.zoom = itemInstance.zoom;
-                itemDefinition.rotationY = 768;
-                itemDefinition.rotationX = 189;
-                itemDefinition.inventoryX = itemInstance.inventoryX;
-                itemDefinition.inventoryY =itemInstance.inventoryY;
-                itemDefinition.inventoryOptions = new String[5];
-                itemDefinition.inventoryOptions[0] = null;
-                itemDefinition.inventoryOptions[1] = "Wield";
-                itemDefinition.inventoryOptions[2] = null;
-                itemDefinition.inventoryOptions[3] = null;
-                itemDefinition.inventoryOptions[4] = null;
-                break;
+				itemDefinition.name = "Craw's Op";
+				itemInstance = ItemDefinition.forId(22550);
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+				itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+				itemDefinition.maleModel = itemInstance.maleModel;
+				itemDefinition.femaleModel = itemInstance.femaleModel;
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.rotationY = 768;
+				itemDefinition.rotationX = 189;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY =itemInstance.inventoryY;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				break;
 			case 16906:
 				itemDefinition.name = "*!* GAMBLE *!* D-Tokens M-Box";
 				itemDefinition.description = "Payout Ranges From 175-5,000 Donator Tokens".getBytes();
@@ -4874,76 +3136,76 @@ public class CustomItem {
 				itemDefinition.newModelColourProduced[0] = 7445;
 				itemDefinition.newModelColourProduced[1] = 5548;
 				break;
-				case 7121:
-	                itemDefinition.name = "Slayer Ring (eternal)";
-	                itemInstance = ItemDefinition.forId(11866);
-	                itemDefinition.inventoryModel = itemInstance.inventoryModel;
-	                itemDefinition.maleEquip2 = itemInstance.maleEquip2;
-	                itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
-	                itemDefinition.maleModel = itemInstance.maleModel;
-	                itemDefinition.femaleModel = itemInstance.femaleModel;
-	                itemDefinition.zoom = itemInstance.zoom;
-	                itemDefinition.rotationX = itemInstance.rotationX;
-	                itemDefinition.rotationY = itemInstance.rotationY;
-	                itemDefinition.inventoryX = itemInstance.inventoryX;
-	                itemDefinition.inventoryY =itemInstance.inventoryY;
-	                itemDefinition.inventoryOptions = new String[5];
-	                itemDefinition.inventoryOptions[0] = null;
-	                itemDefinition.inventoryOptions[1] = "Wear";
-	                itemDefinition.inventoryOptions[2] = "Teleport";
-	                itemDefinition.inventoryOptions[3] = null;
-	                itemDefinition.inventoryOptions[4] = "Drop";
-	                break;
-			 case 7788:
-	                itemDefinition.name = itemDefinition.name + " 20k XP";
-	                break;
-	            case 7789:
-	                itemDefinition.name = itemDefinition.name + " 50k XP";
-	                break;
-	            case 7790:
-	                itemDefinition.name = itemDefinition.name + " 100k XP";
-	                break;
+			case 7121:
+				itemDefinition.name = "Slayer Ring (eternal)";
+				itemInstance = ItemDefinition.forId(11866);
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+				itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+				itemDefinition.maleModel = itemInstance.maleModel;
+				itemDefinition.femaleModel = itemInstance.femaleModel;
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY =itemInstance.inventoryY;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = "Teleport";
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = "Drop";
+				break;
+			case 7788:
+				itemDefinition.name = itemDefinition.name + " 20k XP";
+				break;
+			case 7789:
+				itemDefinition.name = itemDefinition.name + " 50k XP";
+				break;
+			case 7790:
+				itemDefinition.name = itemDefinition.name + " 100k XP";
+				break;
 			case 5562:
-                itemInstance = ItemDefinition.forId(13072);
-                itemDefinition.name = itemInstance.name + " (i)";
-                itemDefinition.inventoryModel = itemInstance.inventoryModel;
-                itemDefinition.maleEquip2 = itemInstance.maleEquip2;
-                itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
-                itemDefinition.maleModel = itemInstance.maleModel;
-                itemDefinition.femaleModel = itemInstance.femaleModel;
-                itemDefinition.zoom = itemInstance.zoom;
-                itemDefinition.rotationX = itemInstance.rotationX;
-                itemDefinition.rotationY = itemInstance.rotationY;
-                itemDefinition.inventoryX = itemInstance.inventoryX;
-                itemDefinition.inventoryY =itemInstance.inventoryY;
-                itemDefinition.inventoryOptions = new String[5];
-                itemDefinition.inventoryOptions[0] = null;
-                itemDefinition.inventoryOptions[1] = "Wear";
-                itemDefinition.inventoryOptions[2] = null;
-                itemDefinition.inventoryOptions[3] = null;
-                itemDefinition.inventoryOptions[4] = "Drop";
-                break;
+				itemInstance = ItemDefinition.forId(13072);
+				itemDefinition.name = itemInstance.name + " (i)";
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+				itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+				itemDefinition.maleModel = itemInstance.maleModel;
+				itemDefinition.femaleModel = itemInstance.femaleModel;
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY =itemInstance.inventoryY;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = "Drop";
+				break;
 			case 5563:
-                itemInstance = ItemDefinition.forId(13073);
-                itemDefinition.inventoryOptions = new String[]
-                        {null, "Wear", null, null, null};
-                itemDefinition.name = itemInstance.name + " (i)";
-                itemDefinition.zoom = itemInstance.zoom;
-                itemDefinition.maleEquip2 = itemInstance.maleEquip2;
-                itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
-                itemDefinition.rotationY = itemInstance.rotationY;
-                itemDefinition.rotationX = itemInstance.rotationX;
-                itemDefinition.inventoryY = itemInstance.inventoryY;
-                itemDefinition.maleModel = itemInstance.maleModel;
-                itemDefinition.femaleModel = itemInstance.femaleModel;
-                itemDefinition.inventoryOptions = new String[5];
-                itemDefinition.inventoryOptions[0] = null;
-                itemDefinition.inventoryOptions[1] = "Wear";
-                itemDefinition.inventoryOptions[2] = null;
-                itemDefinition.inventoryOptions[3] = null;
-                itemDefinition.inventoryOptions[4] = null;
-                itemDefinition.inventoryModel = itemInstance.inventoryModel;
-                break;
+				itemInstance = ItemDefinition.forId(13073);
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, null};
+				itemDefinition.name = itemInstance.name + " (i)";
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+				itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.maleModel = itemInstance.maleModel;
+				itemDefinition.femaleModel = itemInstance.femaleModel;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				break;
 			case 5065:
 				itemDefinition.name = "Book Of Wonder";
 				itemDefinition.newModelColourProduced = new int[]
@@ -5032,13 +3294,13 @@ public class CustomItem {
 			case 11016:
 				itemDefinition.groundOptions = new String[]
 						{null, null, "Take", null, null};
-						itemDefinition.inventoryOptions = new String[]
+				itemDefinition.inventoryOptions = new String[]
 						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 12817:
 				if (Client.toggleItems) {
 					itemDefinition.inventoryOptions = new String[]
-					{null, "Wield", null, null, null};
+							{null, "Wield", null, null, null};
 					itemDefinition.name = "Divine spirit shield";
 					itemDefinition.inventoryModel = 11072;
 					itemDefinition.zoom = 1789;
@@ -5089,9 +3351,9 @@ public class CustomItem {
 					itemDefinition.maleModel = 42626;
 					itemDefinition.femaleModel = 42643;
 					itemDefinition.groundOptions = new String[]
-					{null, null, "Take", null, null};
+							{null, null, "Take", null, null};
 					itemDefinition.inventoryOptions = new String[]
-					{null, "Wear", null, null, "Destroy"};
+							{null, "Wear", null, null, "Destroy"};
 				}
 				break;
 			case 4738:
@@ -5106,9 +3368,9 @@ public class CustomItem {
 					itemDefinition.maleModel = 42631;
 					itemDefinition.femaleModel = 42646;
 					itemDefinition.groundOptions = new String[]
-					{null, null, "Take", null, null};
+							{null, null, "Take", null, null};
 					itemDefinition.inventoryOptions = new String[]
-					{null, "Wear", null, null, "Destroy"};
+							{null, "Wear", null, null, "Destroy"};
 				}
 				break;
 			case 4732:
@@ -5123,9 +3385,9 @@ public class CustomItem {
 					itemDefinition.maleModel = 42636;
 					itemDefinition.femaleModel = 42652;
 					itemDefinition.groundOptions = new String[]
-					{null, null, "Take", null, null};
+							{null, null, "Take", null, null};
 					itemDefinition.inventoryOptions = new String[]
-					{null, "Wear", null, null, "Destroy"};
+							{null, "Wear", null, null, "Destroy"};
 				}
 				break;
 
@@ -5141,9 +3403,9 @@ public class CustomItem {
 					itemDefinition.maleModel = 42627;
 					itemDefinition.femaleModel = 42642;
 					itemDefinition.groundOptions = new String[]
-					{null, null, "Take", null, null};
+							{null, null, "Take", null, null};
 					itemDefinition.inventoryOptions = new String[]
-					{null, "Wear", null, null, "Destroy"};
+							{null, "Wear", null, null, "Destroy"};
 				}
 				break;
 			case 4714:
@@ -5158,9 +3420,9 @@ public class CustomItem {
 					itemDefinition.maleModel = 42634;
 					itemDefinition.femaleModel = 42645;
 					itemDefinition.groundOptions = new String[]
-					{null, null, "Take", null, null};
+							{null, null, "Take", null, null};
 					itemDefinition.inventoryOptions = new String[]
-					{null, "Wear", null, null, "Destroy"};
+							{null, "Wear", null, null, "Destroy"};
 				}
 				break;
 			case 4708:
@@ -5175,9 +3437,9 @@ public class CustomItem {
 					itemDefinition.maleModel = 42638;
 					itemDefinition.femaleModel = 42653;
 					itemDefinition.groundOptions = new String[]
-					{null, null, "Take", null, null};
+							{null, null, "Take", null, null};
 					itemDefinition.inventoryOptions = new String[]
-					{null, "Wear", null, null, "Destroy"};
+							{null, "Wear", null, null, "Destroy"};
 				}
 				break;
 			case 11832:
@@ -5192,9 +3454,9 @@ public class CustomItem {
 					itemDefinition.maleModel = 42624;
 					itemDefinition.femaleModel = 42644;
 					itemDefinition.groundOptions = new String[]
-					{null, null, "Take", null, null};
+							{null, null, "Take", null, null};
 					itemDefinition.inventoryOptions = new String[]
-					{null, "Wear", null, null, "Destroy"};
+							{null, "Wear", null, null, "Destroy"};
 				}
 				break;
 			case 11834:
@@ -5209,9 +3471,9 @@ public class CustomItem {
 					itemDefinition.maleModel = 42633;
 					itemDefinition.femaleModel = 42649;
 					itemDefinition.groundOptions = new String[]
-					{null, null, "Take", null, null};
+							{null, null, "Take", null, null};
 					itemDefinition.inventoryOptions = new String[]
-					{null, "Wear", null, null, "Destroy"};
+							{null, "Wear", null, null, "Destroy"};
 				}
 				break;
 			case 16308:
@@ -5255,7 +3517,7 @@ public class CustomItem {
 				break;
 			case 16307:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -5294,7 +3556,7 @@ public class CustomItem {
 				break;
 			case 16306:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -5333,7 +3595,7 @@ public class CustomItem {
 				break;
 			case 16305:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -5574,7 +3836,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, null};
+						{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -5605,7 +3867,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, null};
+						{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -5715,7 +3977,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(114);
 				itemDefinition.name = "Ajax Pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Leash"};
+						{null, null, null, null, "Leash"};
 				itemDefinition.zoom = 2400;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 200;
@@ -5725,7 +3987,7 @@ public class CustomItem {
 				break;
 			case 16298:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -5766,7 +4028,7 @@ public class CustomItem {
 
 			case 16299:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -6006,7 +4268,7 @@ public class CustomItem {
 				itemDefinition.newModelColourProduced = new int[]
 						{9143, 9139, 9133};
 				break;
-			
+
 			case 16909:
 				itemDefinition.name = "Carrot Sword";
 				itemDefinition.femaleModel = 65342;
@@ -6024,7 +4286,7 @@ public class CustomItem {
 				itemDefinition.inventoryY = 33;
 				itemDefinition.inventoryX = 6;
 				break;
-			
+
 			case 16910:
 				itemDefinition.name = "Bunnyman Mask";
 				itemDefinition.femaleModel = 65345;
@@ -6042,7 +4304,7 @@ public class CustomItem {
 				itemDefinition.inventoryY = 0;
 				itemDefinition.inventoryX = 5;
 				break;
-				
+
 			case 16911:
 				itemDefinition.name = "Painted Fake Magic Egg";
 				itemDefinition.inventoryModel = 65348;
@@ -6050,7 +4312,7 @@ public class CustomItem {
 				itemDefinition.rotationX = 20;
 				itemDefinition.rotationY = 2044;
 				break;
-				
+
 			case 16912:
 				itemDefinition.name = "Unainted Fake Magic Egg";
 				itemDefinition.inventoryModel = 65348;
@@ -6062,7 +4324,7 @@ public class CustomItem {
 				itemDefinition.newModelColourProduced = new int[]
 						{10343, 10345, 111, 115, 10345};
 				break;
-			
+
 			case 16913:
 				itemDefinition.name = "Bunnyman Mask (w)";
 				itemDefinition.femaleModel = 65345;
@@ -6084,7 +4346,7 @@ public class CustomItem {
 				itemDefinition.newModelColourProduced = new int[]
 						{90};
 				break;
-				
+
 			case 16914:
 				itemDefinition.name = "Bunnyman Mask (b)";
 				itemDefinition.femaleModel = 65345;
@@ -6106,7 +4368,7 @@ public class CustomItem {
 				itemDefinition.newModelColourProduced = new int[]
 						{900};
 				break;
-				
+
 			case 16915:
 				itemDefinition.name = "Bunnyman Mask (r)";
 				itemDefinition.femaleModel = 65345;
@@ -6128,7 +4390,7 @@ public class CustomItem {
 				itemDefinition.newModelColourProduced = new int[]
 						{800};
 				break;
-				
+
 			case 16916:
 				itemDefinition.name = "Bunnyman Mask (y)";
 				itemDefinition.femaleModel = 65345;
@@ -6149,12 +4411,12 @@ public class CustomItem {
 						{2378};
 				itemDefinition.newModelColourProduced = new int[]
 						{9139};
-				break;	
+				break;
 			case 16917:
 				npcInstance = EntityDefinition.forId(762);
 				itemDefinition.name = "Yveltal Pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Choose"};
+						{null, null, null, null, "Choose"};
 				itemDefinition.zoom = 3320;
 				itemDefinition.rotationY = 160;
 				itemDefinition.rotationX = 350;
@@ -6166,7 +4428,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(762);
 				itemDefinition.name = "Yveltal Pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Choose"};
+						{null, null, null, null, "Choose"};
 				itemDefinition.zoom = 3320;
 				itemDefinition.rotationY = 160;
 				itemDefinition.rotationX = 350;
@@ -6178,7 +4440,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(3665);
 				itemDefinition.name = "Pet Rabbit";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 950;
 				itemDefinition.rotationY = 160;
 				itemDefinition.rotationX = 350;
@@ -6227,7 +4489,7 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[3] = null;
 				itemDefinition.inventoryOptions[4] = null;
 				break;
-				case 16210:
+			case 16210:
 				itemDefinition.name = "Vampyre claws";
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
@@ -6245,7 +4507,7 @@ public class CustomItem {
 				itemDefinition.newModelColourProduced = new int[]
 						{5, 5, 5, 5};
 				break;
-			
+
 			case 16301:
 				itemDefinition.name = "Ancestral robe bottom";
 				itemDefinition.inventoryModel = 32787;
@@ -6427,7 +4689,7 @@ public class CustomItem {
 			// Dark purple Elysian shield
 			case 16296:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -6465,7 +4727,7 @@ public class CustomItem {
 			// Red Elysian spirit shield with white sigil and yellow trim
 			case 16295:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -6508,7 +4770,7 @@ public class CustomItem {
 			// Dark Blue Elysian Spirit Shield with Red sigal
 			case 16294:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -6596,1004 +4858,20 @@ public class CustomItem {
 				itemDefinition.modelColourToEdit[6] = 8390;
 				itemDefinition.newModelColourProduced[6] = colour == -1 ? 8390 : colour;
 				break;
-
-			case 16292:
-				itemDefinition.name = "Bandos chestplate";
-				itemDefinition.inventoryModel = 28042;
-				itemDefinition.maleModel = 27636;
-				itemDefinition.femaleModel = 27644;
-				itemDefinition.zoom = 984;
-				itemDefinition.rotationX = 6;
-				itemDefinition.rotationY = 501;
-				itemDefinition.inventoryX = 1;
-				itemDefinition.inventoryY = 4;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wear";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-				itemDefinition.modelColourToEdit = new int[15];
-				itemDefinition.newModelColourProduced = new int[15];
-
-				//Red yellow green blue
-
-				green = 34770;
-				red = 302770;
-				yellow = 8128;
-				blue = 927;
-				// Light brown
-				colour = green;
-				itemDefinition.modelColourToEdit[0] = 8367;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 8367 : colour;
-
-				// Light brown
-				colour = green;
-				itemDefinition.modelColourToEdit[1] = 8384;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 8384 : colour;
-
-				// Light brown
-				colour = green;
-				itemDefinition.modelColourToEdit[2] = 8375;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 8375 : colour;
-
-				// Brown
-				colour = blue;
-				itemDefinition.modelColourToEdit[3] = 10266;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? 10266 : colour;
-
-				// Light brown
-				colour = green;
-				itemDefinition.modelColourToEdit[4] = 9523;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 9523 : colour;
-
-				// Unknown
-				colour = -1;
-				itemDefinition.modelColourToEdit[5] = 10502;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? 10502 : colour;
-
-				// Light brown
-				colour = green;
-				itemDefinition.modelColourToEdit[6] = 9515;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? 9515 : colour;
-
-				// Unknown
-				colour = -1;
-				itemDefinition.modelColourToEdit[7] = 4550;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? 4550 : colour;
-
-				// Dark brown
-				colour = yellow;
-				itemDefinition.modelColourToEdit[8] = 142;
-				itemDefinition.newModelColourProduced[8] = colour == -1 ? 142 : colour;
-
-				// Brown
-				colour = yellow;
-				itemDefinition.modelColourToEdit[9] = 163;
-				itemDefinition.newModelColourProduced[9] = colour == -1 ? 163 : colour;
-
-				// Brown
-				colour = red;
-				itemDefinition.modelColourToEdit[10] = 22;
-				itemDefinition.newModelColourProduced[10] = colour == -1 ? 22 : colour;
-
-				colour = -1;
-				itemDefinition.modelColourToEdit[11] = 9403;
-				itemDefinition.newModelColourProduced[11] = colour == -1 ? 9403 : colour;
-
-				// Dark brown
-				colour = yellow;
-				itemDefinition.modelColourToEdit[12] = 8076;
-				itemDefinition.newModelColourProduced[12] = colour == -1 ? 8076 : colour;
-
-				// Brown
-				colour = green;
-				itemDefinition.modelColourToEdit[13] = 10275;
-				itemDefinition.newModelColourProduced[13] = colour == -1 ? 10275 : colour;
-
-				// Brown
-				colour = green;
-				itemDefinition.modelColourToEdit[14] = 8379;
-				itemDefinition.newModelColourProduced[14] = colour == -1 ? 8379 : colour;
-				break;
-			case 16291:
-				itemDefinition.name = "Dragon claws";
-				itemDefinition.femaleModel = 29191;
-				itemDefinition.femaleEquipOffset = 6;
-				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, null};
-				itemDefinition.inventoryModel = 32784;
-				itemDefinition.maleModel = 29191;
-				itemDefinition.rotationY = 349;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.rotationX = 15;
-				itemDefinition.inventoryY = 8;
-				itemDefinition.zoom = 886;
-
-				itemDefinition.modelColourToEdit = new int[4];
-				itemDefinition.newModelColourProduced = new int[4];
-				colour = 34770;
-				itemDefinition.modelColourToEdit[0] = 929;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 929 : colour;
-
-				colour = 0;
-				itemDefinition.modelColourToEdit[1] = 922;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 922 : colour;
-
-				colour = 34770;
-				itemDefinition.modelColourToEdit[2] = 918;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 918 : colour;
-
-				colour = 0;
-				itemDefinition.modelColourToEdit[3] = 914;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? 914 : colour;
-				break;
-			case 16290:
-				itemDefinition.name = "Primordial boots";
-				itemDefinition.inventoryModel = 29397;
-				itemDefinition.maleModel = 29250;
-				itemDefinition.maleEquip2 = -1;
-				itemDefinition.femaleModel = 29255;
-				itemDefinition.femaleEquip2 = -1;
-				itemDefinition.zoom = 976;
-				itemDefinition.rotationX = 279;
-				itemDefinition.rotationY = 147;
-				itemDefinition.inventoryX = 5;
-				itemDefinition.inventoryY = -5;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wear";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-				itemDefinition.modelColourToEdit = new int[8];
-				itemDefinition.newModelColourProduced = new int[8];
-
-				// Dark red
-				colour = 34750;
-				itemDefinition.modelColourToEdit[0] = 280;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 280 : colour;
-
-				// Red
-				colour = 34760;
-				itemDefinition.modelColourToEdit[1] = 924;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 924 : colour;
-
-				// Red
-				colour = 34770;
-				itemDefinition.modelColourToEdit[2] = 920;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 920 : colour;
-
-				// Very dark grey
-				colour = 5;
-				itemDefinition.modelColourToEdit[6] = 520;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? 520 : colour;
-
-				// Dark grey
-				colour = 10;
-				itemDefinition.modelColourToEdit[5] = -22380;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22380 : colour;
-
-
-				// Grey
-				colour = 15;
-				itemDefinition.modelColourToEdit[3] = -22370;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22370 : colour;
-
-				// Red
-				colour = -1;
-				itemDefinition.modelColourToEdit[4] = 538;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 538 : colour;
-
-				colour = -1;
-				itemDefinition.modelColourToEdit[7] = 127;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? 127 : colour;
-				break;
-			case 16289:
-				itemDefinition.name = "Ancestral hat";
-				itemDefinition.inventoryModel = 32794;
-				itemDefinition.maleModel = 32655;
-				itemDefinition.maleEquip2 = -1;
-				itemDefinition.femaleModel = 32663;
-				itemDefinition.femaleEquip2 = -1;
-				itemDefinition.zoom = 1236;
-				itemDefinition.rotationX = 10;
-				itemDefinition.rotationY = 118;
-				itemDefinition.inventoryY = -12;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wear";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-				itemDefinition.modelColourToEdit = new int[13];
-				itemDefinition.newModelColourProduced = new int[13];
-
-				// Orange
-				colour = 8128;
-				itemDefinition.modelColourToEdit[0] = 6973;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 6973 : colour;
-
-				// Dark grey
-				colour = -1;
-				itemDefinition.modelColourToEdit[1] = -21992;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -21992 : colour;
-
-				// Dark blue
-				colour = -1;
-				itemDefinition.modelColourToEdit[2] = -22235;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22235 : colour;
-
-				// Brown
-				colour = 0;
-				itemDefinition.modelColourToEdit[5] = 5268;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? 5268 : colour;
-
-				// Dark biege
-				colour = 34750;
-				itemDefinition.modelColourToEdit[3] = 6323;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? 6323 : colour;
-
-				// Biege
-				colour = 34760;
-				itemDefinition.modelColourToEdit[4] = 6331;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 6331 : colour;
-
-				// Biege
-				colour = 34765;
-				itemDefinition.modelColourToEdit[6] = 6340;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? 6340 : colour;
-
-				// Biege
-				colour = 34770;
-				itemDefinition.modelColourToEdit[7] = 6348;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? 6348 : colour;
-
-				// Biege
-				colour = 34775;
-				itemDefinition.modelColourToEdit[8] = 6356;
-				itemDefinition.newModelColourProduced[8] = colour == -1 ? 6356 : colour;
-
-				// Biege
-				colour = 34780;
-				itemDefinition.modelColourToEdit[9] = 6364;
-				itemDefinition.newModelColourProduced[9] = colour == -1 ? 6364 : colour;
-
-				// Biege
-				colour = 34780;
-				itemDefinition.modelColourToEdit[10] = 6798;
-				itemDefinition.newModelColourProduced[10] = colour == -1 ? 6798 : colour;
-
-				// Unknown
-				colour = -1;
-				itemDefinition.modelColourToEdit[11] = 4550;
-				itemDefinition.newModelColourProduced[11] = colour == -1 ? 4550 : colour;
-
-				// Unknown
-				colour = -1;
-				itemDefinition.modelColourToEdit[12] = 0;
-				itemDefinition.newModelColourProduced[12] = colour == -1 ? 0 : colour;
-				break;
-				case 16288:
-				itemDefinition.name = "Ancestral robe bottom";
-				itemDefinition.inventoryModel = 32787;
-				itemDefinition.maleModel = 32653;
-				itemDefinition.maleEquip2 = -1;
-				itemDefinition.femaleModel = 32662;
-				itemDefinition.femaleEquip2 = -1;
-				itemDefinition.zoom = 1690;
-				itemDefinition.rotationX = 9;
-				itemDefinition.rotationY = 435;
-				itemDefinition.inventoryX = -1;
-				itemDefinition.inventoryY = 7;
-				itemDefinition.brightness = 30;
-				itemDefinition.contrast = 100;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wear";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-				itemDefinition.modelColourToEdit = new int[10];
-				itemDefinition.newModelColourProduced = new int[10];
-
-				// Light biege
-				colour = 30;
-				itemDefinition.modelColourToEdit[0] = 6348;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 6348 : colour;
-
-				// Grey
-				colour = 20;
-				itemDefinition.modelColourToEdit[1] = -16318;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -16318 : colour;
-
-				// Biege
-				colour = 5;
-				itemDefinition.modelColourToEdit[2] = 6331;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 6331 : colour;
-
-				// Purple
-				colour = 34770;
-				itemDefinition.modelColourToEdit[3] = -22225;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22225 : colour;
-
-				// Orange
-				colour = 7114;
-				itemDefinition.modelColourToEdit[4] = 7108;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 7108 : colour;
-
-				// Dark purple
-				colour = 34770;
-				itemDefinition.modelColourToEdit[5] = -22235;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22235 : colour;
-
-				// Dark grey
-				colour = 5;
-				itemDefinition.modelColourToEdit[6] = -16327;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? -16327 : colour;
-
-				// Dark purple
-				colour = 34770;
-				itemDefinition.modelColourToEdit[7] = -22231;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? -16327 : colour;
-
-				// Dark grey
-				colour = 5;
-				itemDefinition.modelColourToEdit[8] = -16339;
-				itemDefinition.newModelColourProduced[8] = colour == -1 ? -16327 : colour;
-
-				// Biege stripe across chest from shoulders to waist
-				colour = 7114;
-				itemDefinition.modelColourToEdit[9] = 6323;
-				itemDefinition.newModelColourProduced[9] = colour == -1 ? -16327 : colour;
-				break;
-			case 16287:
-				itemDefinition.name = "Ancestral robe top";
-				itemDefinition.inventoryModel = 32790;
-				itemDefinition.maleModel = 32657;
-				itemDefinition.maleEquip2 = 32658;
-				itemDefinition.femaleModel = 32664;
-				itemDefinition.femaleEquip2 = 32665;
-				itemDefinition.femaleModel = 32664;
-				itemDefinition.zoom = 1358;
-				itemDefinition.rotationX = 2041;
-				itemDefinition.rotationY = 514;
-				itemDefinition.inventoryY = -3;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wear";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-				itemDefinition.modelColourToEdit = new int[11];
-				itemDefinition.newModelColourProduced = new int[11];
-
-				// Light biege
-				colour = 10;
-				itemDefinition.modelColourToEdit[0] = 6348;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 6348 : colour;
-
-				// Grey
-				colour = 0;
-				itemDefinition.modelColourToEdit[1] = -16318;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -16318 : colour;
-
-				// Biege
-				colour = 0;
-				itemDefinition.modelColourToEdit[2] = 6331;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 6331 : colour;
-
-				// Purple
-				colour = 34770;
-				itemDefinition.modelColourToEdit[3] = -22225;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22225 : colour;
-
-				// Orange
-				colour = 7114;
-				itemDefinition.modelColourToEdit[4] = 7108;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 7108 : colour;
-
-				// Dark purple
-				colour = 34770;
-				itemDefinition.modelColourToEdit[5] = -22235;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22235 : colour;
-
-				// Dark grey
-				colour = 0;
-				itemDefinition.modelColourToEdit[6] = -16327;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? -16327 : colour;
-
-				// Dark purple
-				colour = 34770;
-				itemDefinition.modelColourToEdit[7] = -22231;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? -16327 : colour;
-
-				// Dark grey
-				colour = 0;
-				itemDefinition.modelColourToEdit[8] = -16339;
-				itemDefinition.newModelColourProduced[8] = colour == -1 ? -16327 : colour;
-
-				// Biege stripe across chest from shoulders to waist
-				colour = 7114;
-				itemDefinition.modelColourToEdit[9] = 6323;
-				itemDefinition.newModelColourProduced[9] = colour == -1 ? -16327 : colour;
-
-				// Belt rope colour
-				colour = 20;
-				itemDefinition.modelColourToEdit[10] = 5268;
-				itemDefinition.newModelColourProduced[10] = colour == -1 ? -16327 : colour;
-				break;
-			case 16286:
-				itemDefinition.name = "Mythical cape";
-				itemDefinition.inventoryModel = 34418;
-				itemDefinition.maleModel = 34271;
-				itemDefinition.maleEquip2 = -1;
-				itemDefinition.femaleModel = 34288;
-				itemDefinition.femaleEquip2 = -1;
-				itemDefinition.zoom = 1960;
-				itemDefinition.rotationX = 1583;
-				itemDefinition.rotationY = 528;
-				itemDefinition.inventoryY = 2;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wear";
-				itemDefinition.inventoryOptions[2] = "Teleport";
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-				itemDefinition.modelColourToEdit = new int[5];
-				itemDefinition.newModelColourProduced = new int[5];
-				colour = 5;
-				itemDefinition.modelColourToEdit[0] = 929;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 929 : colour;
-
-				colour = 127;
-				itemDefinition.modelColourToEdit[1] = -918;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -918 : colour;
-
-				colour = 15;
-				itemDefinition.modelColourToEdit[2] = 922;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 922 : colour;
-
-				colour = -1;
-				itemDefinition.modelColourToEdit[3] = 914;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? 914 : colour;
-
-				colour = 10;
-				itemDefinition.modelColourToEdit[4] = 914;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 914 : colour;
-				break;
-			// Cyan Abyssal tentacle
-			case 16285:
-				itemDefinition.name = "Abyssal tentacle";
-				itemDefinition.inventoryModel = 28439;
-				itemDefinition.maleModel = 28446;
-				itemDefinition.femaleModel = 28446;
-				itemDefinition.zoom = 840;
-				itemDefinition.rotationX = 121;
-				itemDefinition.rotationY = 280;
-				itemDefinition.inventoryY = 56;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wield";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = "Check";
-				itemDefinition.inventoryOptions[4] = "Dissolve";
-
-				itemDefinition.modelColourToEdit = new int[3];
-				itemDefinition.newModelColourProduced = new int[3];
-
-				// Stripe colour
-				colour = 34770;
-				itemDefinition.modelColourToEdit[0] = 11150;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -22208 : colour;
-
-				// Not used
-				itemDefinition.modelColourToEdit[1] = 9108;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22477 : colour;
-
-				// Spikes colour
-				colour = 0;
-				itemDefinition.modelColourToEdit[2] = 10355;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22464 : colour;
-				break;
-
-			// Black Elysian spirit shield with cyan sigil
-			case 16284:
-				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
-				itemDefinition.name = "Elysian spirit shield";
-				itemDefinition.inventoryModel = 11072;
-				itemDefinition.zoom = 1789;
-				itemDefinition.rotationY = 431;
-				itemDefinition.rotationX = 27;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = 11;
-				itemDefinition.maleModel = 11048;
-				itemDefinition.femaleModel = 11048;
-
-				itemDefinition.modelColourToEdit = new int[6];
-				itemDefinition.newModelColourProduced = new int[6];
-
-				// Sigil colour
-				colour = 34770;
-				itemDefinition.modelColourToEdit[1] = 127;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 127 : colour;
-
-				// Shield colour
-				colour = 0;
-				itemDefinition.modelColourToEdit[0] = -28716;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -28716 : colour;
-
-				colour = 127;
-				itemDefinition.modelColourToEdit[2] = -29116;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -29116 : colour;
-
-				colour = 127;
-				itemDefinition.modelColourToEdit[3] = -29019;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -29019 : colour;
-
-				colour = 127;
-				itemDefinition.modelColourToEdit[4] = -29125;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -29125 : colour;
-
-				colour = 127;
-				itemDefinition.modelColourToEdit[5] = -29110;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -29110 : colour;
-				break;
-
-			// Purple shield and red sigil
-			case 16283:
-				itemDefinition.name = "Arcane spirit shield";
-				itemDefinition.inventoryModel = 11310;
-				itemDefinition.maleModel = 11050;
-				itemDefinition.femaleModel = 11050;
-				itemDefinition.zoom = 1600;
-				itemDefinition.rotationX = 27;
-				itemDefinition.rotationY = 396;
-				itemDefinition.inventoryX = 4;
-				itemDefinition.inventoryY = 13;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wield";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-
-				itemDefinition.modelColourToEdit = new int[6];
-				itemDefinition.newModelColourProduced = new int[6];
-				colour = 51166;
-				itemDefinition.modelColourToEdit[0] = 5594;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 5594 : colour;
-
-				itemDefinition.modelColourToEdit[1] = 7101;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 7101 : colour;
-
-				itemDefinition.modelColourToEdit[2] = 7079;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 7079 : colour;
-
-				itemDefinition.modelColourToEdit[3] = 7104;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? 7104 : colour;
-
-				itemDefinition.modelColourToEdit[4] = 7056;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 7056 : colour;
-
-				colour = 926;
-				itemDefinition.modelColourToEdit[5] = 111;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? 111 : colour;
-				break;
-			// White
-			case 16282:
-				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", "Dismantle", null, null};
-				itemDefinition.name = "Twisted bow";
-				itemDefinition.inventoryModel = 32799;
-				itemDefinition.maleModel = 32674;
-				itemDefinition.femaleModel = 32674;
-				itemDefinition.zoom = 2000;
-				itemDefinition.rotationX = 1500;
-				itemDefinition.rotationY = 720;
-				itemDefinition.inventoryX = -3;
-				itemDefinition.inventoryY = 1;
-				itemDefinition.scaleX = 128;
-				itemDefinition.scaleY = 128;
-				itemDefinition.scaleZ = 128;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wield";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-
-				itemDefinition.modelColourToEdit = new int[10];
-				itemDefinition.newModelColourProduced = new int[10];
-
-				// Green
-				colour = -1;
-				itemDefinition.modelColourToEdit[9] = 13223;
-				itemDefinition.newModelColourProduced[9] = colour == -1 ? 13223 : colour;
-
-				// Black
-				colour = 127;
-				itemDefinition.modelColourToEdit[1] = 8;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 8 : colour;
-
-				// Black
-				itemDefinition.modelColourToEdit[7] = 0;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? 0 : colour;
-
-				// Very dark grey
-				colour = 100;
-				itemDefinition.modelColourToEdit[0] = 16;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 16 : colour;
-
-				// Dark grey
-				colour = 115;
-				itemDefinition.modelColourToEdit[2] = 24;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 24 : colour;
-
-				// Grey
-				colour = 100;
-				itemDefinition.modelColourToEdit[3] = 33;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? 33 : colour;
-
-				// Grey
-				itemDefinition.modelColourToEdit[5] = 41;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? 41 : colour;
-
-				// Grey
-				itemDefinition.modelColourToEdit[8] = 14236;
-				itemDefinition.newModelColourProduced[8] = colour == -1 ? 14236 : colour;
-
-				// Light grey
-				colour = 15;
-				itemDefinition.modelColourToEdit[4] = 10318;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 10318 : colour;
-
-				// Light grey
-				itemDefinition.modelColourToEdit[6] = 10334;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? 10334 : colour;
-
-
-				break;
-			case 16281:
-				itemDefinition.name = "Dragon claws";
-				itemDefinition.femaleModel = 29191;
-				itemDefinition.femaleEquipOffset = 6;
-				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, null};
-				itemDefinition.inventoryModel = 32784;
-				itemDefinition.maleModel = 29191;
-				itemDefinition.rotationY = 349;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.rotationX = 15;
-				itemDefinition.inventoryY = 8;
-				itemDefinition.zoom = 886;
-				itemDefinition.modelColourToEdit = new int[]
-				{929, 922, 918, 914};
-				itemDefinition.newModelColourProduced = new int[]
-				{127, 127, 127, 127};
-				break;
-			// Gold
-			case 16280:
-				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
-				itemDefinition.name = "Elysian spirit shield";
-				itemDefinition.inventoryModel = 11072;
-				itemDefinition.zoom = 1789;
-				itemDefinition.rotationY = 431;
-				itemDefinition.rotationX = 27;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = 11;
-				itemDefinition.maleModel = 11048;
-				itemDefinition.femaleModel = 11048;
-
-				itemDefinition.modelColourToEdit = new int[6];
-				itemDefinition.newModelColourProduced = new int[6];
-
-				// Sigil colour
-				colour = 58325;
-				itemDefinition.modelColourToEdit[1] = 127;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 127 : colour;
-
-				colour = 7114;
-				itemDefinition.modelColourToEdit[0] = -28716;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -28716 : colour;
-
-				itemDefinition.modelColourToEdit[2] = -29116;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -29116 : colour;
-
-				itemDefinition.modelColourToEdit[3] = -29019;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -29019 : colour;
-
-				itemDefinition.modelColourToEdit[4] = -29125;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -29125 : colour;
-
-				itemDefinition.modelColourToEdit[5] = -29110;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -29110 : colour;
-				break;
-
-			// White
-			case 16279:
-				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
-				itemDefinition.name = "Elysian spirit shield";
-				itemDefinition.inventoryModel = 11072;
-				itemDefinition.zoom = 1789;
-				itemDefinition.rotationY = 431;
-				itemDefinition.rotationX = 27;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = 11;
-				itemDefinition.maleModel = 11048;
-				itemDefinition.femaleModel = 11048;
-
-				itemDefinition.modelColourToEdit = new int[6];
-				itemDefinition.newModelColourProduced = new int[6];
-
-				// Sigil colour
-				colour = 933;
-				itemDefinition.modelColourToEdit[1] = 127;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 127 : colour;
-
-				colour = 127;
-				itemDefinition.modelColourToEdit[0] = -28716;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -28716 : colour;
-
-				itemDefinition.modelColourToEdit[2] = -29116;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -29116 : colour;
-
-				itemDefinition.modelColourToEdit[3] = -29019;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -29019 : colour;
-
-				itemDefinition.modelColourToEdit[4] = -29125;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -29125 : colour;
-
-				itemDefinition.modelColourToEdit[5] = -29110;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -29110 : colour;
-				break;
-
-			// Black
-			case 16278:
-				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
-				itemDefinition.name = "Elysian spirit shield";
-				itemDefinition.inventoryModel = 11072;
-				itemDefinition.zoom = 1789;
-				itemDefinition.rotationY = 431;
-				itemDefinition.rotationX = 27;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = 11;
-				itemDefinition.maleModel = 11048;
-				itemDefinition.femaleModel = 11048;
-
-				itemDefinition.modelColourToEdit = new int[6];
-				itemDefinition.newModelColourProduced = new int[6];
-
-				// Sigil colour
-				colour = 58325;
-				itemDefinition.modelColourToEdit[1] = 127;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 127 : colour;
-
-				colour = 8;
-				itemDefinition.modelColourToEdit[0] = -28716;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -28716 : colour;
-
-				itemDefinition.modelColourToEdit[2] = -29116;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -29116 : colour;
-
-				itemDefinition.modelColourToEdit[3] = -29019;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -29019 : colour;
-
-				itemDefinition.modelColourToEdit[4] = -29125;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -29125 : colour;
-
-				itemDefinition.modelColourToEdit[5] = -29110;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -29110 : colour;
-				break;
-
-			// Purple
-			case 16277:
-				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
-				itemDefinition.name = "Elysian spirit shield";
-				itemDefinition.inventoryModel = 11072;
-				itemDefinition.zoom = 1789;
-				itemDefinition.rotationY = 431;
-				itemDefinition.rotationX = 27;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = 11;
-				itemDefinition.maleModel = 11048;
-				itemDefinition.femaleModel = 11048;
-
-				itemDefinition.modelColourToEdit = new int[6];
-				itemDefinition.newModelColourProduced = new int[6];
-
-				// Sigil colour
-				colour = 8128;
-				itemDefinition.modelColourToEdit[1] = 127;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? 127 : colour;
-
-				colour = 51136;
-				itemDefinition.modelColourToEdit[0] = -28716;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? -28716 : colour;
-
-				itemDefinition.modelColourToEdit[2] = -29116;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? -29116 : colour;
-
-				itemDefinition.modelColourToEdit[3] = -29019;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -29019 : colour;
-
-				itemDefinition.modelColourToEdit[4] = -29125;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? -29125 : colour;
-
-				itemDefinition.modelColourToEdit[5] = -29110;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -29110 : colour;
-				break;
-			case 20527:
-				itemDefinition.name = "Skilling token";
-				itemDefinition.description = "Tokens gained while skilling.".getBytes();
-				break;
-			case 16276:
-				itemDefinition.name = "Ancestral robe bottom";
-				itemDefinition.inventoryModel = 32787;
-				itemDefinition.maleModel = 32653;
-				itemDefinition.maleEquip2 = -1;
-				itemDefinition.femaleModel = 32662;
-				itemDefinition.femaleEquip2 = -1;
-				itemDefinition.zoom = 1690;
-				itemDefinition.rotationX = 9;
-				itemDefinition.rotationY = 435;
-				itemDefinition.inventoryX = -1;
-				itemDefinition.inventoryY = 7;
-				itemDefinition.brightness = 30;
-				itemDefinition.contrast = 100;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wear";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-				itemDefinition.modelColourToEdit = new int[10];
-				itemDefinition.newModelColourProduced = new int[10];
-
-				// Light biege
-				colour = 90;
-				itemDefinition.modelColourToEdit[0] = 6348;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 6348 : colour;
-
-				// Grey
-				colour = 60;
-				itemDefinition.modelColourToEdit[1] = -16318;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -16318 : colour;
-
-				// Biege
-				colour = 127;
-				itemDefinition.modelColourToEdit[2] = 6331;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 6331 : colour;
-
-				// Purple
-				colour = 5;
-				itemDefinition.modelColourToEdit[3] = -22225;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22225 : colour;
-
-				// Orange
-				colour = 7114;
-				itemDefinition.modelColourToEdit[4] = 7108;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 7108 : colour;
-
-				// Dark purple
-				colour = 5;
-				itemDefinition.modelColourToEdit[5] = -22235;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22235 : colour;
-
-				// Dark grey
-				colour = 127;
-				itemDefinition.modelColourToEdit[6] = -16327;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? -16327 : colour;
-
-				// Dark purple
-				colour = 5;
-				itemDefinition.modelColourToEdit[7] = -22231;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? -16327 : colour;
-
-				// Dark grey
-				colour = 127;
-				itemDefinition.modelColourToEdit[8] = -16339;
-				itemDefinition.newModelColourProduced[8] = colour == -1 ? -16327 : colour;
-
-				// Biege stripe across chest from shoulders to waist
-				colour = 7114;
-				itemDefinition.modelColourToEdit[9] = 6323;
-				itemDefinition.newModelColourProduced[9] = colour == -1 ? -16327 : colour;
-				break;
-			case 16275:
-				itemDefinition.name = "Ancestral robe top";
-				itemDefinition.inventoryModel = 32790;
-				itemDefinition.maleModel = 32657;
-				itemDefinition.maleEquip2 = 32658;
-				itemDefinition.femaleModel = 32664;
-				itemDefinition.femaleEquip2 = 32665;
-				itemDefinition.femaleModel = 32664;
-				itemDefinition.zoom = 1358;
-				itemDefinition.rotationX = 2041;
-				itemDefinition.rotationY = 514;
-				itemDefinition.inventoryY = -3;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = "Wear";
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = null;
-				itemDefinition.modelColourToEdit = new int[11];
-				itemDefinition.newModelColourProduced = new int[11];
-
-				// Light biege
-				colour = 90;
-				itemDefinition.modelColourToEdit[0] = 6348;
-				itemDefinition.newModelColourProduced[0] = colour == -1 ? 6348 : colour;
-
-				// Grey
-				colour = 127;
-				itemDefinition.modelColourToEdit[1] = -16318;
-				itemDefinition.newModelColourProduced[1] = colour == -1 ? -16318 : colour;
-
-				// Biege
-				colour = 127;
-				itemDefinition.modelColourToEdit[2] = 6331;
-				itemDefinition.newModelColourProduced[2] = colour == -1 ? 6331 : colour;
-
-				// Purple
-				colour = 5;
-				itemDefinition.modelColourToEdit[3] = -22225;
-				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22225 : colour;
-
-				// Orange
-				colour = 7114;
-				itemDefinition.modelColourToEdit[4] = 7108;
-				itemDefinition.newModelColourProduced[4] = colour == -1 ? 7108 : colour;
-
-				// Dark purple
-				colour = 5;
-				itemDefinition.modelColourToEdit[5] = -22235;
-				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22235 : colour;
-
-				// Dark grey
-				colour = 127;
-				itemDefinition.modelColourToEdit[6] = -16327;
-				itemDefinition.newModelColourProduced[6] = colour == -1 ? -16327 : colour;
-
-				// Dark purple
-				colour = 5;
-				itemDefinition.modelColourToEdit[7] = -22231;
-				itemDefinition.newModelColourProduced[7] = colour == -1 ? -16327 : colour;
-
-				// Dark grey
-				colour = 127;
-				itemDefinition.modelColourToEdit[8] = -16339;
-				itemDefinition.newModelColourProduced[8] = colour == -1 ? -16327 : colour;
-
-				// Biege stripe across chest from shoulders to waist
-				colour = 7114;
-				itemDefinition.modelColourToEdit[9] = 6323;
-				itemDefinition.newModelColourProduced[9] = colour == -1 ? -16327 : colour;
-
-				// Belt rope colour
-				colour = 80;
-				itemDefinition.modelColourToEdit[10] = 5268;
-				itemDefinition.newModelColourProduced[10] = colour == -1 ? -16327 : colour;
-				break;
 		}
 		if (itemId >= 14876 && itemId <= 14892) {
 			itemDefinition.inventoryOptions = new String[]
-			{"Redeem", null, null, null, "Drop"};
+					{"Redeem", null, null, null, "Drop"};
 		}
 		if (itemId >= 6865 && itemId <= 6867) {
 			itemDefinition.inventoryOptions = new String[]
-			{"Jump", null, "Bow", "Dance", "Destroy"};
+					{"Jump", null, "Bow", "Dance", "Destroy"};
 		}
 		if (itemId >= 6822 && itemId <= 6827) {
 			itemDefinition.inventoryOptions = new String[]
-			{"Smash", null, null, null, null};
+					{"Smash", null, null, null, null};
 		}
+		
 	}
 
 	public static void applyCustomItemsSecondMethodFirstExceeds64KBOsrs(ItemDefinition itemDefinition, int itemId) {
@@ -7610,6 +4888,1248 @@ public class CustomItem {
 		int blue = -1;
 
 		switch (itemId) {
+
+
+
+			case 21166:
+			case 21169:
+			case 21171:
+			case 21173:
+			case 21175:
+				itemDefinition.operateOptions = new String[]
+						{"Lava Maze", "Bandit Camp", "Chaos Temple", null, null};
+				break;
+
+			case 11238:
+			case 11240:
+			case 11242:
+			case 11244:
+			case 11246:
+			case 11248:
+			case 11250:
+			case 11252:
+			case 11254:
+			case 11256:
+				itemDefinition.inventoryOptions = new String[]
+						{"Loot", null, null, null, "Drop"};
+				break;
+
+			case 4079:
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				break;
+
+
+			case 11941:
+				itemDefinition.inventoryOptions[2] = "Withdraw";
+				break;
+			case 2740:
+				itemDefinition.name = "Clue casket (1st release)";
+				itemDefinition.inventoryOptions = new String[]
+						{"Open", null, null, null, "Drop"};
+				itemDefinition.modelColourToEdit = new int[1];
+				itemDefinition.modelColourToEdit[0] = -22477;
+				itemDefinition.newModelColourProduced = new int[1];
+				itemDefinition.newModelColourProduced[0] = 123456;
+				break;
+			case 2742:
+				itemDefinition.name = "Clue casket (2nd release)";
+				itemDefinition.inventoryOptions = new String[]
+						{"Open", null, null, null, "Drop"};
+				itemDefinition.modelColourToEdit = new int[1];
+				itemDefinition.modelColourToEdit[0] = -22477;
+				itemDefinition.newModelColourProduced = new int[1];
+				itemDefinition.newModelColourProduced[0] = 461770;
+				break;
+			case 2744:
+				itemDefinition.name = "Clue casket (3rd release)";
+				itemDefinition.inventoryOptions = new String[]
+						{"Open", null, null, null, "Drop"};
+				itemDefinition.modelColourToEdit = new int[1];
+				itemDefinition.modelColourToEdit[0] = -22477;
+				itemDefinition.newModelColourProduced = new int[1];
+				itemDefinition.newModelColourProduced[0] = 127;
+				break;
+
+			case 14011:
+				itemDefinition.inventoryModel = 65270;
+				itemDefinition.name = "Completionist cape";
+				itemDefinition.zoom = 1513;
+				itemDefinition.maleEquipOffset = 5;
+				itemDefinition.femaleEquipOffset = 9;
+				itemDefinition.femaleEquipOffsetOther = -2;
+				itemDefinition.rotationY = 279;
+				itemDefinition.rotationX = 948;
+				itemDefinition.inventoryX = -3;
+				itemDefinition.inventoryY = 24;
+				itemDefinition.maleModel = 65297;
+				itemDefinition.femaleModel = 65316;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", "Customise", null, "Drop"};
+				break;
+
+			case 14012:
+				itemDefinition.name = "Completionist hood";
+				itemDefinition.inventoryModel = 29629;
+				itemDefinition.zoom = 760;
+				itemDefinition.rotationY = 11;
+				itemDefinition.rotationX = 81;
+				itemDefinition.inventoryX = 1;
+				itemDefinition.inventoryY = -3;
+				itemDefinition.maleModel = 65292;
+				itemDefinition.femaleModel = 65310;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+
+			case 14013:
+				itemDefinition.name = "Veteran cape";
+				itemDefinition.inventoryModel = 65261;
+				itemDefinition.zoom = 1513;
+				itemDefinition.rotationY = 279;
+				itemDefinition.rotationX = 948;
+				itemDefinition.inventoryX = -3;
+				itemDefinition.inventoryY = 24;
+				itemDefinition.maleModel = 65305;
+				itemDefinition.femaleModel = 65318;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+
+			case 14014:
+				itemDefinition.name = "Veteran hood";
+				itemDefinition.zoom = 760;
+				itemDefinition.rotationY = 11;
+				itemDefinition.rotationX = 81;
+				itemDefinition.inventoryX = 1;
+				itemDefinition.inventoryY = -3;
+				itemDefinition.inventoryModel = 29629;
+				itemDefinition.maleModel = 29614;
+				itemDefinition.femaleModel = 29623;
+				itemDefinition.modelColourToEdit = new int[]
+						{668, 675, 784, 815, 673, 685};
+				itemDefinition.newModelColourProduced = new int[]
+						{115, 107, 7093, -22105, 0, 979};
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+
+			case 16013:
+				itemDefinition.name = "Camel";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemInstance = ItemDefinition.forId(7003);
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.rotationY = itemInstance.rotationX;
+				itemDefinition.rotationX = itemInstance.rotationY;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				break;
+			case 16014:
+				itemDefinition.name = "Skotos";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.inventoryModel = 65016;
+				itemDefinition.zoom = 1168;
+				itemDefinition.rotationY = 2012;
+				itemDefinition.rotationX = 0;
+				break;
+			case 16017:
+				itemDefinition.name = "Cerberus pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 6500;
+				itemDefinition.rotationY = 100;
+				itemDefinition.rotationX = 100;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 50;
+				npcInstance = EntityDefinition.forId(5866);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16018:
+				itemDefinition.name = "Blood money pet";
+				itemInstance = ItemDefinition.forId(13316);
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				itemDefinition.newModelColourProduced = itemInstance.newModelColourProduced;
+				itemDefinition.modelColourToEdit = itemInstance.modelColourToEdit;
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				break;
+			case 16504:
+				itemDefinition.inventoryModel = 3288;
+				itemDefinition.name = "Death Cape";
+				itemDefinition.description = "A cape worn by the Masters.".getBytes();
+				itemDefinition.zoom = 1579;
+				itemDefinition.inventoryY = -6;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.rotationY= 500;
+				itemDefinition.rotationX = 0;
+				itemDefinition.maleModel = 3287;
+				itemDefinition.femaleModel = 3287;
+				itemDefinition.groundOptions = new String[5];
+				itemDefinition.groundOptions[2] = "Take";
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[1] = "Wear";
+				break;
+			case 16506:
+				itemDefinition.inventoryModel = 65321;
+				itemDefinition.name = "Woodcutting 120 Cape";
+				itemDefinition.description = "A cape worn by the Masters of Masters.".getBytes();
+				itemDefinition.zoom = 2610;
+				itemDefinition.inventoryY = 5;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.rotationY= 500;
+				itemDefinition.rotationX = 1000;
+				itemDefinition.maleModel = 65320;
+				itemDefinition.femaleModel = 65320;
+				itemDefinition.groundOptions = new String[5];
+				itemDefinition.groundOptions[2] = "Take";
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[1] = "Wear";
+				break;
+			case 16508:
+				itemDefinition.inventoryModel = 50611;
+				itemDefinition.name = "Runecessor Cape";
+				itemDefinition.description = "A cape worn by the avid player.".getBytes();
+				itemDefinition.zoom = 2610;
+				itemDefinition.inventoryY = 5;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.rotationY= 500;
+				itemDefinition.rotationX = 1000;
+				itemDefinition.maleModel = 50610;
+				itemDefinition.femaleModel = 50610;
+				itemDefinition.groundOptions = new String[5];
+				itemDefinition.groundOptions[2] = "Take";
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[1] = "Wear";
+				break;
+			case 16505:
+				itemDefinition.name = "Tekton Ring";
+				itemInstance = ItemDefinition.forId(16076);
+				itemDefinition.newModelColourProduced = new int[]
+						{461770, 76770};
+				itemDefinition.modelColourToEdit = new int[]
+						{9152, 127};
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				itemDefinition.maleModel = itemInstance.maleModel;
+				itemDefinition.femaleModel = itemInstance.maleModel;
+				itemDefinition.description = "A Ring droped by Tekton give 7% droprate.".getBytes();
+				itemDefinition.groundOptions = new String[5];
+				itemDefinition.groundOptions[2] = "Take";
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[1] = "Wear";
+				break;
+			case 16019:
+				itemDefinition.name = "Tekton pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 8000;
+				itemDefinition.rotationY = 100;
+				itemDefinition.rotationX = 100;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 0;
+				npcInstance = EntityDefinition.forId(7544);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16020:
+				itemDefinition.name = "Yoshi pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 750;
+				itemDefinition.rotationY = 100;
+				itemDefinition.rotationX = 250;
+				itemDefinition.inventoryX = 10;
+				itemDefinition.inventoryY = 100;
+				npcInstance = EntityDefinition.forId(1873);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				itemDefinition.modelColourToEdit = new int[1];
+				itemDefinition.newModelColourProduced = new int[1];
+
+				itemDefinition.modelColourToEdit= new int[14];
+				itemDefinition.newModelColourProduced = new int[14];
+				colour = 51136;
+				itemDefinition.modelColourToEdit[0] = 29976;
+				itemDefinition.newModelColourProduced[0] = 419770;
+
+				colour = 419770;
+				itemDefinition.modelColourToEdit[1] = 7502;
+				itemDefinition.newModelColourProduced[1] = 356770 ;
+
+				colour = 419770;
+				itemDefinition.modelColourToEdit[2] = 27819;
+				itemDefinition.newModelColourProduced[2] = 356770 ;
+
+				colour = 419770;
+				itemDefinition.modelColourToEdit[3] = 0;
+				itemDefinition.newModelColourProduced[3] =   0 ;
+
+				colour = 419770;
+				itemDefinition.modelColourToEdit[4] = 29980;
+				itemDefinition.newModelColourProduced[4] =419770;
+
+				colour = 419770;
+				itemDefinition.modelColourToEdit[5] = 28302;
+				itemDefinition.newModelColourProduced[5] =  419770;
+
+				colour = 419770;
+				itemDefinition.modelColourToEdit[6] = 29980;
+				itemDefinition.newModelColourProduced[6] = 419770;
+
+				colour = 419770;
+				itemDefinition.modelColourToEdit[7] = 27934;
+				itemDefinition.newModelColourProduced[7] = 419770;
+
+				// Circle on the ground, most inner first circle
+				colour = 419770;
+				itemDefinition.modelColourToEdit[8] = -26214;
+				itemDefinition.newModelColourProduced[8] = 419770;
+
+				// Second circle
+				colour = 419770;
+				itemDefinition.modelColourToEdit[9] = -26218;
+				itemDefinition.newModelColourProduced[9] = 419770;
+
+				// Third circle
+				colour = 419770;
+				itemDefinition.modelColourToEdit[10] = -26094;
+				itemDefinition.newModelColourProduced[10] = 356770 ;
+
+				// Fourth circle
+				colour = 419770;
+				itemDefinition.modelColourToEdit[11] = -25970;
+				itemDefinition.newModelColourProduced[11] = 356770 ;
+
+				// Fifth circle
+				colour = 419770;
+				itemDefinition.modelColourToEdit[12] = -25718;
+				itemDefinition.newModelColourProduced[12] = 356770 ;
+
+				// Sixth circle
+				colour = 419770;
+				itemDefinition.modelColourToEdit[13] = -23672;
+				itemDefinition.newModelColourProduced[13] = 356770 ;
+
+
+
+				break;
+			case 13302:
+				itemDefinition.name = "Mini blood key";
+				break;
+			case 20526:
+				itemDefinition.name = "Blood key";
+				break;
+			case 16016:
+				itemDefinition.name = "Corporeal beast pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 3700;
+				itemDefinition.rotationY = 100;
+				itemDefinition.rotationX = 100;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 0;
+				npcInstance = EntityDefinition.forId(319);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16015:
+				itemDefinition.name = "Dharok pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 1000;
+				itemDefinition.rotationY = 100;
+				itemDefinition.rotationX = 100;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 100;
+				npcInstance = EntityDefinition.forId(1673);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16012:
+				itemDefinition.name = "Vespula";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 8000;
+				itemDefinition.rotationY = 100;
+				itemDefinition.rotationX = 200;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = -30;
+				npcInstance = EntityDefinition.forId(7531);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16011:
+				itemDefinition.name = "Vasa Nistirio";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 11500;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = -30;
+				npcInstance = EntityDefinition.forId(7566);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16010:
+				itemDefinition.name = "The Night Beast";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 6500;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = -30;
+				itemDefinition.inventoryModel = 32933;
+				break;
+			// This item id is used to fix herblore animation.
+			case 3:
+				itemDefinition.maleModel = 506;
+				itemDefinition.femaleModel = 506;
+				break;
+
+			case 16007:
+				itemDefinition.name = "Tormented demon pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 7300;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = -140;
+				itemDefinition.inventoryModel = 44733;
+				break;
+			case 16008:
+				itemDefinition.name = "Ice strykewyrm pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 7500;
+				itemDefinition.rotationY = 30;
+				itemDefinition.rotationX = 70;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryModel = 51847;
+				break;
+
+			case 7478:
+				itemDefinition.name = "Donator tokens";
+				itemDefinition.inventoryOptions = new String[5];
+				break;
+
+			case 11863:
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = "Dismantle";
+				break;
+
+			// Monkey greegree.
+			case 4024:
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = "Transform into...";
+				itemDefinition.inventoryOptions[1] = null;
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				break;
+			// Christmas cracker.
+			case 962:
+				itemDefinition.inventoryOptions = new String[]
+						{"Open", null, null, null, "Drop"};
+				break;
+			case 4067:
+				itemDefinition.name = "Vote ticket";
+				break;
+			case 13146:
+				itemDefinition.name = "Xp lamp 1 million";
+				break;
+			case 16005:
+				itemDefinition.name = "Soul talisman";
+				itemDefinition.inventoryModel = 2496;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1160;
+				itemDefinition.rotationX = 160;
+				itemDefinition.rotationY = 352;
+				itemDefinition.inventoryX = 2;
+				itemDefinition.inventoryY = 20;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = null;
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = "Locate";
+				itemDefinition.inventoryOptions[4] = null;
+				break;
+
+			case 16006:
+				itemDefinition.name = "Blood talisman";
+				itemDefinition.inventoryModel = 2475;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1160;
+				itemDefinition.rotationX = 160;
+				itemDefinition.rotationY = 352;
+				itemDefinition.inventoryX = 2;
+				itemDefinition.inventoryY = 20;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = null;
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = "Locate";
+				itemDefinition.inventoryOptions[4] = null;
+				break;
+
+			case 16004:
+				itemDefinition.name = "Dice (up to 100)";
+				itemDefinition.inventoryOptions = new String[]
+						{"Roll", null, "Withdraw seeds", null, null};
+				itemDefinition.inventoryModel = 65004;
+				itemDefinition.rotationX = 94;
+				itemDefinition.rotationY = 215;
+				itemDefinition.zoom = 1104;
+				itemDefinition.inventoryX = 1;
+				itemDefinition.inventoryY = 0;
+				break;
+			case 16002:
+				itemInstance = ItemDefinition.forId(13316);
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				itemDefinition.newModelColourProduced = itemInstance.newModelColourProduced;
+				itemDefinition.modelColourToEdit = itemInstance.modelColourToEdit;
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				itemDefinition.name = "Blood money " + WebsiteRead.voteReward;
+				break;
+			case 16003:
+				itemInstance = ItemDefinition.forId(13316);
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				itemDefinition.newModelColourProduced = itemInstance.newModelColourProduced;
+				itemDefinition.modelColourToEdit = itemInstance.modelColourToEdit;
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				itemDefinition.name = "Blood money 10k";
+				break;
+			case 16000:
+				itemDefinition.unNotedId = 16002;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 16001:
+				itemDefinition.unNotedId = 16003;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			// Dark crabs cooked, burnt, raw.
+			case 11936:
+			case 11938:
+			case 11934:
+				itemDefinition.inventoryX = 10;
+				break;
+			case 14876:
+				itemDefinition.name = "Ancient statuette";
+				itemDefinition.inventoryModel = 47258;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1513;
+				itemDefinition.rotationX = 202;
+				itemDefinition.rotationY = 0;
+				itemDefinition.inventoryX = 43;
+				itemDefinition.inventoryY = -1;
+				break;
+			case 14877:
+				itemDefinition.name = "Seren statuette";
+				itemDefinition.inventoryModel = 47257;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1360;
+				itemDefinition.rotationX = 337;
+				itemDefinition.rotationY = 81;
+				itemDefinition.inventoryX = 8;
+				itemDefinition.inventoryY = -22;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = null;
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = "Drop";
+				break;
+			case 14878:
+				itemDefinition.name = "Armadyl statuette";
+				itemDefinition.inventoryModel = 47256;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1360;
+				itemDefinition.rotationX = 148;
+				itemDefinition.rotationY = 0;
+				itemDefinition.inventoryX = -30;
+				itemDefinition.inventoryY = 0;
+				break;
+			case 14879:
+				itemDefinition.name = "Zamorak statuette";
+				itemDefinition.inventoryModel = 47250;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 976;
+				itemDefinition.rotationX = 75;
+				itemDefinition.rotationY = 0;
+				itemDefinition.inventoryX = 33;
+				itemDefinition.inventoryY = 0;
+				break;
+			case 14880:
+				itemDefinition.name = "Saradomin statuette";
+				itemDefinition.inventoryModel = 47248;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1488;
+				itemDefinition.rotationX = 94;
+				itemDefinition.rotationY = 75;
+				itemDefinition.inventoryX = 37;
+				itemDefinition.inventoryY = -14;
+				break;
+			case 14881:
+				itemDefinition.name = "Bandos statuette";
+				itemDefinition.inventoryModel = 47244;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1360;
+				itemDefinition.rotationX = 1841;
+				itemDefinition.rotationY = 153;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = -47;
+				break;
+			case 14882:
+				itemDefinition.name = "Ruby chalice";
+				itemDefinition.inventoryModel = 47247;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 720;
+				itemDefinition.rotationX = 1653;
+				itemDefinition.rotationY = 105;
+				itemDefinition.inventoryX = 57;
+				itemDefinition.inventoryY = -4;
+				break;
+			case 14883:
+				itemDefinition.name = "Guthixian brazier";
+				itemDefinition.inventoryModel = 47252;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1300;
+				itemDefinition.rotationX = 1949;
+				itemDefinition.rotationY = 141;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 0;
+				break;
+			case 14884:
+				itemDefinition.name = "Armadyl totem";
+				itemDefinition.inventoryModel = 47251;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1032;
+				itemDefinition.rotationX = 1872;
+				itemDefinition.rotationY = 364;
+				itemDefinition.inventoryX = 5;
+				itemDefinition.inventoryY = 3;
+				break;
+			case 14885:
+				itemDefinition.name = "Zamorak medallion";
+				itemDefinition.inventoryModel = 47259;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 724;
+				itemDefinition.rotationX = 916;
+				itemDefinition.rotationY = 377;
+				itemDefinition.inventoryX = -1;
+				itemDefinition.inventoryY = 0;
+				break;
+			case 14886:
+				itemDefinition.name = "Saradomin carving";
+				itemDefinition.inventoryModel = 47246;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1744;
+				itemDefinition.rotationX = 0;
+				itemDefinition.rotationY = 0;
+				itemDefinition.inventoryX = -25;
+				itemDefinition.inventoryY = 2;
+				break;
+			case 14887:
+				itemDefinition.name = "Bandos scrimshaw";
+				itemDefinition.inventoryModel = 47245;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 921;
+				itemDefinition.rotationX = 94;
+				itemDefinition.rotationY = 552;
+				itemDefinition.inventoryX = 1;
+				itemDefinition.inventoryY = 0;
+				break;
+			case 14888:
+				itemDefinition.name = "Saradomin amphora";
+				itemDefinition.inventoryModel = 47254;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1347;
+				itemDefinition.rotationX = 1670;
+				itemDefinition.rotationY = 81;
+				itemDefinition.inventoryX = 12;
+				itemDefinition.inventoryY = 21;
+				break;
+			case 14889:
+				itemDefinition.name = "Ancient psaltery bridge";
+				itemDefinition.inventoryModel = 47249;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 848;
+				itemDefinition.rotationX = 1347;
+				itemDefinition.rotationY = 111;
+				itemDefinition.inventoryX = -5;
+				itemDefinition.inventoryY = 0;
+				break;
+			case 14890:
+				itemDefinition.name = "Bronzed dragon claw";
+				itemDefinition.inventoryModel = 47255;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 835;
+				itemDefinition.rotationX = 13;
+				itemDefinition.rotationY = 512;
+				itemDefinition.inventoryX = -1;
+				itemDefinition.inventoryY = -1;
+				break;
+			case 14891:
+				itemDefinition.name = "Third age carafe";
+				itemDefinition.inventoryModel = 47243;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1104;
+				itemDefinition.rotationX = 1820;
+				itemDefinition.rotationY = 130;
+				itemDefinition.inventoryX = -9;
+				itemDefinition.inventoryY = 29;
+				break;
+			case 14892:
+				itemDefinition.name = "Broken statue headdress";
+				itemDefinition.inventoryModel = 47253;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1360;
+				itemDefinition.rotationX = 417;
+				itemDefinition.rotationY = 512;
+				itemDefinition.inventoryX = -9;
+				itemDefinition.inventoryY = 0;
+				break;
+
+			case 14893:
+				itemDefinition.unNotedId = 14876;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14894:
+				itemDefinition.unNotedId = 14877;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14895:
+				itemDefinition.unNotedId = 14878;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14896:
+				itemDefinition.unNotedId = 14879;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14897:
+				itemDefinition.unNotedId = 14880;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14898:
+				itemDefinition.unNotedId = 14881;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14899:
+				itemDefinition.unNotedId = 14882;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14900:
+				itemDefinition.unNotedId = 14883;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14901:
+				itemDefinition.unNotedId = 14884;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14902:
+				itemDefinition.unNotedId = 14885;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14903:
+				itemDefinition.unNotedId = 14886;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14904:
+				itemDefinition.unNotedId = 14887;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14905:
+				itemDefinition.unNotedId = 14888;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14906:
+				itemDefinition.unNotedId = 14889;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14907:
+				itemDefinition.unNotedId = 14890;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14908:
+				itemDefinition.unNotedId = 14891;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 14909:
+				itemDefinition.unNotedId = 14892;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+		}
+		
+	}
+
+	public static void method_4(ItemDefinition itemDefinition, int itemId) {
+		if (Config.PRE_EOC) {
+			return;
+		}
+		ItemDefinition itemInstance = null;
+		EntityDefinition npcInstance = null;
+		ObjectDefinition objectInstance = null;
+		int colour = -1;
+		int green = -1;
+		int red = -1;
+		int yellow = -1;
+		int blue = -1;
+
+		switch (itemId) {
+			case 16391 :
+				itemDefinition.name = "Amulet of torture";
+				itemDefinition.inventoryModel = 31524;
+				itemDefinition.maleModel = 31227;
+				itemDefinition.femaleModel = 31233;
+				itemDefinition.zoom = 620;
+				itemDefinition.rotationX = 68;
+				itemDefinition.rotationY = 424;
+				itemDefinition.inventoryX = 1;
+				itemDefinition.inventoryY = 16;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = "Drop";
+				itemDefinition.modelColourToEdit = new int[7];
+				itemDefinition.newModelColourProduced = new int[7];
+
+				// Grey
+				colour = 0;
+				itemDefinition.modelColourToEdit[0] = -22372;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -22372 : colour;
+
+				// Light grey
+				colour = -1;
+				itemDefinition.modelColourToEdit[1] = -22483;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22483 : colour;
+
+				// Light grey
+				colour = -1;
+				itemDefinition.modelColourToEdit[2] = -22475;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22475 : colour;
+
+				// Shade over the orange
+				colour = 30;
+				itemDefinition.modelColourToEdit[3] = 5056;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? 5056 : colour;
+
+				// Light grey
+				colour = -1;
+				itemDefinition.modelColourToEdit[4] = -22506;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22506 : colour;
+
+				// Black
+				colour = -1;
+				itemDefinition.modelColourToEdit[5] = 0;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? 0 : colour;
+
+				// Orange
+				colour = -1;
+				itemDefinition.modelColourToEdit[6] = 3008;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? 3008 : colour;
+				break;
+
+			case 16392:
+				itemDefinition.name = "Defender icon";
+				itemDefinition.inventoryModel = 20578;
+				itemDefinition.maleModel = 19261;
+				itemDefinition.femaleModel = 20519;
+				itemDefinition.zoom = 1049;
+				itemDefinition.rotationX = 1010;
+				itemDefinition.rotationY = 526;
+				itemDefinition.inventoryX = 35;
+				itemDefinition.inventoryY = -30;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.modelColourToEdit = new int[5];
+				itemDefinition.modelColourToEdit[0] = 22439;
+				itemDefinition.newModelColourProduced = new int[5];
+				itemDefinition.newModelColourProduced[0] = 34770;
+
+				colour = 34775;
+				itemDefinition.modelColourToEdit[1] = 947;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 947 : colour;
+
+				colour = 34780;
+				itemDefinition.modelColourToEdit[2] = 11200;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 11200 : colour;
+
+				colour = 34785;
+				itemDefinition.modelColourToEdit[3] = -21581;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -21581 : colour;
+
+				colour = 34790;
+				itemDefinition.modelColourToEdit[4] = 22451;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 22451 : colour;
+				break;
+
+			case 16393 :
+				itemDefinition.name = "Justiciar faceguard";
+				itemDefinition.inventoryModel = 35751;
+				itemDefinition.maleModel = 35349;
+				itemDefinition.femaleModel = 35361;
+				itemDefinition.zoom = 777;
+				itemDefinition.rotationX = 1972;
+				itemDefinition.rotationY = 22;
+				itemDefinition.inventoryX = 1;
+				itemDefinition.inventoryY = -1;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = "Drop";
+				itemDefinition.modelColourToEdit = new int[9];
+				itemDefinition.newModelColourProduced = new int[9];
+
+				// Black
+				colour = 0;
+				itemDefinition.modelColourToEdit[4] = 0;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 0 : colour;
+
+				// Very Dark grey
+				colour = 3;
+				itemDefinition.modelColourToEdit[0] = -22242;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -22242 : colour;
+
+				// Dark grey
+				colour = 5;
+				itemDefinition.modelColourToEdit[5] = -6083;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -6083 : colour;
+
+				// Grey
+				colour = 8;
+				itemDefinition.modelColourToEdit[1] = -6095;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -6095 : colour;
+
+				// Grey
+				colour = 10;
+				itemDefinition.modelColourToEdit[2] = 6709;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 6709 : colour;
+
+				// Grey
+				colour = 10;
+				itemDefinition.modelColourToEdit[7] = -6070;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? -6070 : colour;
+
+				// Light yellow
+				colour = 6083;
+				itemDefinition.modelColourToEdit[3] = 6736;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? 6736 : colour;
+
+				// Yellow
+				colour = 6073;
+				itemDefinition.modelColourToEdit[6] = 6602;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? 6602 : colour;
+
+				// Nothing
+				colour = -1;
+				itemDefinition.modelColourToEdit[8] = 4550;
+				itemDefinition.newModelColourProduced[8] = colour == -1 ? 4550 : colour;
+				break;
+
+			case 16394 :
+				itemDefinition.name = "Justiciar chestguard";
+				itemDefinition.inventoryModel = 35750;
+				itemDefinition.maleModel = 35359;
+				itemDefinition.femaleModel = 35368;
+				itemDefinition.zoom = 1310;
+				itemDefinition.rotationY = 432;
+				itemDefinition.inventoryX = 1;
+				itemDefinition.inventoryY = 4;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = "Drop";
+				itemDefinition.modelColourToEdit = new int[15];
+				itemDefinition.newModelColourProduced = new int[15];
+
+
+				// Very very Dark grey
+				colour = 0;
+				itemDefinition.modelColourToEdit[0] = 12;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 12 : colour;
+
+				// Very dark grey
+				colour = 2;
+				itemDefinition.modelColourToEdit[13] = 268;
+				itemDefinition.newModelColourProduced[13] = colour == -1 ? 268 : colour;
+
+				// Very dark grey
+				colour = 4;
+				itemDefinition.modelColourToEdit[14] = 278;
+				itemDefinition.newModelColourProduced[14] = colour == -1 ? 278 : colour;
+
+				// Dark grey
+				colour = 6;
+				itemDefinition.modelColourToEdit[12] = 3346;
+				itemDefinition.newModelColourProduced[12] = colour == -1 ? 3346 : colour;
+
+				// Grey
+				colour = 8;
+				itemDefinition.modelColourToEdit[1] = -6070;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -6070 : colour;
+
+				// Grey
+				colour = 10;
+				itemDefinition.modelColourToEdit[2] = -6083;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -6083 : colour;
+
+				// Grey
+				colour = 12;
+				itemDefinition.modelColourToEdit[4] = -6095;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -6095 : colour;
+
+				// Light grey
+				colour = 14;
+				itemDefinition.modelColourToEdit[8] = 6699;
+				itemDefinition.newModelColourProduced[8] = colour == -1 ? 6699 : colour;
+
+				// Light grey
+				colour = 14;
+				itemDefinition.modelColourToEdit[11] = -6062;
+				itemDefinition.newModelColourProduced[11] = colour == -1 ? -6062 : colour;
+
+				// Yellow
+				colour = 6083;
+				itemDefinition.modelColourToEdit[3] = 6602;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? 6602 : colour;
+
+				// Darker yellow
+				colour = 6078;
+				itemDefinition.modelColourToEdit[7] = 6709;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? 6709 : colour;
+
+				// Darker yellow
+				colour = 6073;
+				itemDefinition.modelColourToEdit[9] = 6736;
+				itemDefinition.newModelColourProduced[9] = colour == -1 ? 6736 : colour;
+
+				// Blue
+				colour = 16;
+				itemDefinition.modelColourToEdit[5] = -22242;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22242 : colour;
+
+				// Blue
+				colour = 16;
+				itemDefinition.modelColourToEdit[6] = -22122;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22122 : colour;
+
+				// Blue
+				colour = 18;
+				itemDefinition.modelColourToEdit[10] = -22237;
+				itemDefinition.newModelColourProduced[10] = colour == -1 ? -22237 : colour;
+				break;
+
+			case 16395 :
+				itemDefinition.name = "Justiciar legguards";
+				itemDefinition.inventoryModel = 35752;
+				itemDefinition.maleModel = 35356;
+				itemDefinition.femaleModel = 35367;
+				itemDefinition.zoom = 1720;
+				itemDefinition.rotationY = 468;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = "Drop";
+				itemDefinition.modelColourToEdit = new int[16];
+				itemDefinition.newModelColourProduced = new int[16];
+
+				// Very dark grey
+				colour = 0;
+				itemDefinition.modelColourToEdit[0] = 12;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 12 : colour;
+
+				// Dark grey
+				colour = 2;
+				itemDefinition.modelColourToEdit[1] = 268;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 268 : colour;
+
+				// Dark grey
+				colour = 4;
+				itemDefinition.modelColourToEdit[10] = 16;
+				itemDefinition.newModelColourProduced[10] = colour == -1 ? 16 : colour;
+
+				// Grey
+				colour = 6;
+				itemDefinition.modelColourToEdit[9] = 22;
+				itemDefinition.newModelColourProduced[9] = colour == -1 ? 22 : colour;
+
+				// Grey
+				colour = 8;
+				itemDefinition.modelColourToEdit[12] = -11229;
+				itemDefinition.newModelColourProduced[12] = colour == -1 ? -11229 : colour;
+
+				// Light grey
+				colour = 9;
+				itemDefinition.modelColourToEdit[2] = -6070;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -6070 : colour;
+
+				// Light grey
+				colour = 10;
+				itemDefinition.modelColourToEdit[14] = -6083;
+				itemDefinition.newModelColourProduced[14] = colour == -1 ? -6083 : colour;
+
+				// Light grey
+				colour = 11;
+				itemDefinition.modelColourToEdit[13] = -6091;
+				itemDefinition.newModelColourProduced[13] = colour == -1 ? -6091 : colour;
+
+				// Light grey
+				colour = 12;
+				itemDefinition.modelColourToEdit[3] = -6095;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -6095 : colour;
+
+				// Blue
+				colour = 13;
+				itemDefinition.modelColourToEdit[4] = -22242;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22242 : colour;
+
+				// Blue
+				colour = 15;
+				itemDefinition.modelColourToEdit[5] = -22237;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22237 : colour;
+
+				// Blue
+				colour = 17;
+				itemDefinition.modelColourToEdit[6] = -22233;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22233 : colour;
+
+				// Yellow
+				colour = 6082;
+				itemDefinition.modelColourToEdit[7] = 6602;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? 6602 : colour;
+
+				// Dark yellow
+				colour = 6077;
+				itemDefinition.modelColourToEdit[11] = 6699;
+				itemDefinition.newModelColourProduced[11] = colour == -1 ? 6699 : colour;
+
+				// Dark Yellow
+				colour = 6074;
+				itemDefinition.modelColourToEdit[15] = 6709;
+				itemDefinition.newModelColourProduced[15] = colour == -1 ? 6709 : colour;
+
+				// Dark yellow
+				colour = 6070;
+				itemDefinition.modelColourToEdit[8] = 6736;
+				itemDefinition.newModelColourProduced[8] = colour == -1 ? 6736 : colour;
+				break;
+			case 16396:
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wield", "Dismantle", null, null};
+				itemDefinition.name = "Armadyl godsword";
+				itemDefinition.inventoryModel = 28075;
+				itemDefinition.zoom = 1957;
+				itemDefinition.rotationY = 498;
+				itemDefinition.rotationX = 484;
+				itemDefinition.inventoryX = -1;
+				itemDefinition.inventoryY = -1;
+				itemDefinition.maleModel = 27649;
+				itemDefinition.femaleModel = 27649;
+
+				itemDefinition.modelColourToEdit = new int[10];
+				itemDefinition.newModelColourProduced = new int[10];
+
+				// Hilt section where the hands are wrapped around
+				colour = 926;
+				itemDefinition.modelColourToEdit[0] = -22208;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -22208 : colour;
+
+				// Hilt top section
+				itemDefinition.modelColourToEdit[1] = -22477;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22477 : colour;
+
+				// Hilt section various sides
+				itemDefinition.modelColourToEdit[2] = -22464;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22464 : colour;
+
+				colour = 930;
+				// Hilt section, the bottom part, half of the furs
+				itemDefinition.modelColourToEdit[3] = -24279;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -24279 : colour;
+
+				// Hilt section, the bottom part, rest of the furs
+				itemDefinition.modelColourToEdit[4] = -24271;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -24271 : colour;
+
+				// Blade, left side
+				colour = 920;
+				itemDefinition.modelColourToEdit[5] = -22444;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22444 : colour;
+
+				colour = 923;
+				// Blade, right side
+				itemDefinition.modelColourToEdit[6] = -22423;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22423 : colour;
+
+				// Blade decoration on the right
+				itemDefinition.modelColourToEdit[7] = -22415;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22415 : colour;
+
+				// Blade tip on the right
+				itemDefinition.modelColourToEdit[8] = -22419;
+				itemDefinition.newModelColourProduced[8] = colour == -1 ? -22419 : colour;
+
+				colour = 922;
+				// Blade at the tip, inventory model only.
+				itemDefinition.modelColourToEdit[9] = -22440;
+				itemDefinition.newModelColourProduced[9] = colour == -1 ? -22440 : colour;
+				break;
+
+
+
+
+
+
+
+
+
+
 			case 22653:
 				itemDefinition.name = "Zuriel's robe top";
 				itemDefinition.inventoryModel = 42591;
@@ -7619,7 +6139,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 0;
 				itemDefinition.inventoryY = -7;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13860:
 				itemDefinition.name = "Zuriel's robe top (deg)";
@@ -7632,9 +6152,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35952;
 				itemDefinition.femaleModel = 35966;
 				itemDefinition.groundOptions = new String[]
-				{null, null, "Take", null, null};
+						{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22656:
 				itemDefinition.name = "Zuriel's robe bottom";
@@ -7645,7 +6165,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 2;
 				itemDefinition.inventoryY = -9;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13863:
 				itemDefinition.name = "Zuriel's robe bottom (deg)";
@@ -7658,9 +6178,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35949;
 				itemDefinition.femaleModel = 35962;
 				itemDefinition.groundOptions = new String[]
-				{null, null, "Take", null, null};
+						{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22650:
 				itemDefinition.name = "Zuriel's hood";
@@ -7671,7 +6191,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 1;
 				itemDefinition.inventoryY = 1;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13866:
 				itemDefinition.name = "Zuriel's hood (deg)";
@@ -7688,9 +6208,9 @@ public class CustomItem {
 				itemDefinition.womanHead0 = 35975;
 				itemDefinition.womanHead1 = 120;
 				itemDefinition.groundOptions = new String[]
-				{null, null, "Take", null, null};
+						{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 
 			case 22641:
@@ -7702,7 +6222,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = -2;
 				itemDefinition.inventoryY = 5;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13872:
 				itemDefinition.name = "Morrigan's leather body (deg)";
@@ -7715,9 +6235,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35954;
 				itemDefinition.femaleModel = 35963;
 				itemDefinition.groundOptions = new String[]
-				{null, null, "Take", null, null};
+						{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22644:
 				itemDefinition.name = "Morrigan's leather chaps";
@@ -7732,7 +6252,7 @@ public class CustomItem {
 				//itemDefinition.maleModel = 42631;
 				//itemDefinition.femaleModel = 42646;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13875:
 				itemDefinition.name = "Morrigan's leather chaps (deg)";
@@ -7745,9 +6265,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 42631;
 				itemDefinition.femaleModel = 42646;
 				itemDefinition.groundOptions = new String[]
-				{null, null, "Take", null, null};
+						{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22638:
 				itemDefinition.name = "Morrigan's coif";
@@ -7758,7 +6278,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = -3;
 				itemDefinition.inventoryY = 6;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13878:
 				itemDefinition.name = "Morrigan's coif (deg)";
@@ -7775,9 +6295,9 @@ public class CustomItem {
 				itemDefinition.womanHead0 = 35974;
 				itemDefinition.womanHead1 = 120;
 				itemDefinition.groundOptions = new String[]
-				{null, null, "Take", null, null};
+						{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 
 			case 22628:
@@ -7789,7 +6309,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = -2;
 				itemDefinition.inventoryY = 39;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13886:
 				itemDefinition.name = "Statius's platebody (deg)";
@@ -7802,9 +6322,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35951;
 				itemDefinition.femaleModel = 35964;
 				itemDefinition.groundOptions = new String[]
-				{null, null, "Take", null, null};
+						{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22616:
 				itemDefinition.name = "Vesta's chainbody";
@@ -7815,7 +6335,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 4;
 				itemDefinition.inventoryY = 5;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13889:
 				itemDefinition.name = "Vesta's chainbody (deg)";
@@ -7828,9 +6348,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35953;
 				itemDefinition.femaleModel = 35965;
 				itemDefinition.groundOptions = new String[]
-				{null, null, "Take", null, null};
+						{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22631:
 				itemDefinition.name = "Statius's platelegs";
@@ -7841,7 +6361,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 0;
 				itemDefinition.inventoryY = -11;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13892:
 				itemDefinition.name = "Statius's platelegs (deg)";
@@ -7854,9 +6374,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35947;
 				itemDefinition.femaleModel = 35961;
 				itemDefinition.groundOptions = new String[]
-				{null, null, "Take", null, null};
+						{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22619:
 				itemDefinition.name = "Vesta's plateskirt";
@@ -7867,7 +6387,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = -3;
 				itemDefinition.inventoryY = 11;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				// Pre-eoc version
 				itemDefinition.maleModel = 42633;
 				itemDefinition.femaleModel = 42649;
@@ -7883,9 +6403,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35950;
 				itemDefinition.femaleModel = 35960;
 				itemDefinition.groundOptions = new String[]
-				{null, null, "Take", null, null};
+						{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22625:
 				itemDefinition.name = "Statius's full helm";
@@ -7896,7 +6416,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 2;
 				itemDefinition.inventoryY = -7;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 13898:
 				itemDefinition.name = "Statius' full helm (deg)";
@@ -7913,9 +6433,9 @@ public class CustomItem {
 				itemDefinition.womanHead0 = 35976;
 				itemDefinition.womanHead1 = 120;
 				itemDefinition.groundOptions = new String[]
-				{null, null, "Take", null, null};
+						{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, "Destroy"};
+						{null, "Wear", null, null, "Destroy"};
 				break;
 			case 22622:
 				itemDefinition.name = "Statius's warhammer";
@@ -7926,7 +6446,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 7;
 				itemDefinition.inventoryY = 6;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, "Destroy"};
+						{null, "Wield", null, null, "Destroy"};
 				break;
 			case 13904:
 				itemDefinition.name = "Statius's warhammer (deg)";
@@ -7939,9 +6459,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35968;
 				itemDefinition.femaleModel = 35968;
 				itemDefinition.groundOptions = new String[]
-				{null, null, "Take", null, null};
+						{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, "Destroy"};
+						{null, "Wield", null, null, "Destroy"};
 				break;
 			case 22610:
 				itemDefinition.name = "Vesta's spear";
@@ -7951,7 +6471,7 @@ public class CustomItem {
 				itemDefinition.rotationY = 480;
 				itemDefinition.inventoryY = 5;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, "Destroy"};
+						{null, "Wield", null, null, "Destroy"};
 				break;
 			case 13907:
 				itemDefinition.name = "Vesta's spear (deg)";
@@ -7963,9 +6483,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35973;
 				itemDefinition.femaleModel = 35973;
 				itemDefinition.groundOptions = new String[]
-				{null, null, "Take", null, null};
+						{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, "Destroy"};
+						{null, "Wield", null, null, "Destroy"};
 				break;
 			case 22613:
 				itemDefinition.name = "Vesta's longsword";
@@ -7974,7 +6494,7 @@ public class CustomItem {
 				itemDefinition.rotationX = 1985;
 				itemDefinition.rotationY = 738;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, "Destroy"};
+						{null, "Wield", null, null, "Destroy"};
 				break;
 			case 9083:
 				itemDefinition.name = "Mace Windu's Lightsaber";
@@ -7985,10 +6505,10 @@ public class CustomItem {
 				itemDefinition.maleModel = 50561;
 				itemDefinition.femaleModel = 50561;
 				itemDefinition.groundOptions = new String[]
-				{null, null, "Take", null, null};
+						{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, "Destroy"};
-				break; 
+						{null, "Wield", null, null, "Destroy"};
+				break;
 			/*case 9087:
                 itemDef.actions = new String[5];
                 itemDef.actions[1] = "Wear";
@@ -8013,9 +6533,9 @@ public class CustomItem {
 				itemDefinition.maleModel = 35969;
 				itemDefinition.femaleModel = 35969;
 				itemDefinition.groundOptions = new String[]
-				{null, null, "Take", null, null};
+						{null, null, "Take", null, null};
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, "Destroy"};
+						{null, "Wield", null, null, "Destroy"};
 				break;
 			case 22647:
 				itemDefinition.name = "Zuriel's staff";
@@ -8024,7 +6544,7 @@ public class CustomItem {
 				itemDefinition.rotationX = 3;
 				itemDefinition.rotationY = 366;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, "Destroy"};
+						{null, "Wield", null, null, "Destroy"};
 				break;
 			case 13869:
 				itemDefinition.name = "Zuriel's staff (deg)";
@@ -8033,11 +6553,11 @@ public class CustomItem {
 				itemDefinition.rotationX = 3;
 				itemDefinition.rotationY = 366;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, "Destroy"};
+						{null, "Wield", null, null, "Destroy"};
 				itemDefinition.maleModel = 35971;
 				itemDefinition.femaleModel = 35971;
 				itemDefinition.groundOptions = new String[]
-				{null, null, "Take", null, null};
+						{null, null, "Take", null, null};
 				break;
 			case 22634:
 				itemDefinition.name = "Morrigan's throwing axe";
@@ -8048,7 +6568,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = -5;
 				itemDefinition.inventoryY = 4;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, "Destroy"};
+						{null, "Wield", null, null, "Destroy"};
 				break;
 			case 22636:
 				itemDefinition.name = "Morrigan's javelin";
@@ -8057,11 +6577,11 @@ public class CustomItem {
 				itemDefinition.rotationX = 2009;
 				itemDefinition.rotationY = 282;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, "Destroy"};
+						{null, "Wield", null, null, "Destroy"};
 				break;
 			case 16435:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", "Dismantle", null, null};
+						{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -8150,7 +6670,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, null};
+						{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -8407,6 +6927,1335 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[3] = null;
 				itemDefinition.inventoryOptions[4] = null;
 				break;
+			case 16437 :
+				itemDefinition.unNotedId = itemDefinition.itemId - 1;
+				itemDefinition.notedItemTemplate = 799;
+				break;
+			case 13190:
+				itemDefinition.name = "$10 Bond";
+				break;
+			case 1464:
+				itemDefinition.name = "Boss Ticket";
+				break;
+			case 16488:
+				itemDefinition.name = "Spin Ticket";
+				itemDefinition.inventoryModel = 1464;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = "Open";
+				itemDefinition.inventoryOptions[1] = null;
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				break;
+			case 13161:
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = "Open";
+				itemDefinition.inventoryOptions[1] = null;
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				break;
+			case 16436:
+				itemDefinition.name = "Mega Mystery box";
+				itemDefinition.inventoryModel = 2426;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1180;
+				itemDefinition.rotationX = 172;
+				itemDefinition.rotationY = 160;
+				itemDefinition.inventoryY = -14;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = "Open";
+				itemDefinition.inventoryOptions[1] = null;
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.modelColourToEdit = new int[2];
+				itemDefinition.modelColourToEdit[0] = 2999;
+				itemDefinition.modelColourToEdit[1] = 22410;
+				itemDefinition.newModelColourProduced = new int[2];
+				itemDefinition.newModelColourProduced[0] = 935;
+				itemDefinition.newModelColourProduced[1] = 2;
+				break;
+			case 16500:
+				itemDefinition.name = "Blood Money Box";
+				itemDefinition.inventoryModel = 2426;
+				itemDefinition.maleModel = -1;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 1180;
+				itemDefinition.rotationX = 172;
+				itemDefinition.rotationY = 160;
+				itemDefinition.inventoryY = -14;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = "Open";
+				itemDefinition.inventoryOptions[1] = null;
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.modelColourToEdit = new int[2];
+				itemDefinition.modelColourToEdit[0] = 2999;
+				itemDefinition.modelColourToEdit[1] = 22410;
+				itemDefinition.newModelColourProduced = new int[2];
+				itemDefinition.newModelColourProduced[0] = 92770;
+				itemDefinition.newModelColourProduced[1] = 926;
+				break;
+
+			case 16501:
+				itemDefinition.name = "Event Key";
+				itemInstance = ItemDefinition.forId(20767); //ruby key
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Destroy"};
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.modelColourToEdit = new int[]
+						{8128};
+				itemDefinition.newModelColourProduced = new int[]
+						{347770};
+				break;
+
+			case 16502:
+				itemDefinition.name = "Easter Key";
+				itemInstance = ItemDefinition.forId(20767); //ruby key
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Destroy"};
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.modelColourToEdit = new int[]
+						{8128};
+				itemDefinition.newModelColourProduced = new int[]
+						{296770};
+				break;
+			case 16429 :
+				itemDefinition.name = "Vespula";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 8000;
+				itemDefinition.rotationY = 100;
+				itemDefinition.rotationX = 200;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = -30;
+				npcInstance = EntityDefinition.forId(7531);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+
+				itemDefinition.modelColourToEdit = new int[25];
+				itemDefinition.newModelColourProduced = new int[25];
+
+				// Originally red.
+				colour = ItemColours.PURPLE + 2;
+				itemDefinition.modelColourToEdit[3] = 920;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? 920 : colour;
+
+				colour = ItemColours.PURPLE + 4;
+				itemDefinition.modelColourToEdit[23] = 922;
+				itemDefinition.newModelColourProduced[23] = colour == -1 ? 922 : colour;
+
+				colour = ItemColours.PURPLE + 6;
+				itemDefinition.modelColourToEdit[14] = 924;
+				itemDefinition.newModelColourProduced[14] = colour == -1 ? 924 : colour;
+
+				colour = ItemColours.PURPLE + 8;
+				itemDefinition.modelColourToEdit[1] = 926;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 926 : colour;
+
+				colour = ItemColours.PURPLE + 10;
+				itemDefinition.modelColourToEdit[7] = 929;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? 929 : colour;
+
+				colour = ItemColours.PURPLE + 12;
+				itemDefinition.modelColourToEdit[19] = 931;
+				itemDefinition.newModelColourProduced[19] = colour == -1 ? 931 : colour;
+
+				colour = ItemColours.PURPLE + 14;
+				itemDefinition.modelColourToEdit[20] = 933;
+				itemDefinition.newModelColourProduced[20] = colour == -1 ? 933 : colour;
+
+				// Originally black
+
+				colour = -1;
+				itemDefinition.modelColourToEdit[4] = 0;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 0 : colour;
+
+				colour = -1;
+				itemDefinition.modelColourToEdit[22] = 8;
+				itemDefinition.newModelColourProduced[22] = colour == -1 ? 8 : colour;
+
+				colour = -1;
+				itemDefinition.modelColourToEdit[24] = 16;
+				itemDefinition.newModelColourProduced[24] = colour == -1 ? 16 : colour;
+
+				colour = -1;
+				itemDefinition.modelColourToEdit[13] = 24;
+				itemDefinition.newModelColourProduced[13] = colour == -1 ? 24 : colour;
+
+				// Originally green/yellow
+
+				colour = ItemColours.GOLD + 1;
+				itemDefinition.modelColourToEdit[0] = 14292;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 14292 : colour;
+
+				colour = ItemColours.GOLD + 2;
+				itemDefinition.modelColourToEdit[2] = 798;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 798 : colour;
+
+				colour = ItemColours.GOLD + 4;
+				itemDefinition.modelColourToEdit[5] = 794;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? 794 : colour;
+
+				colour = ItemColours.GOLD + 6;
+				itemDefinition.modelColourToEdit[6] = 15273;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? 15273 : colour;
+
+				colour = ItemColours.GOLD + 8;
+				itemDefinition.modelColourToEdit[8] = 14284;
+				itemDefinition.newModelColourProduced[8] = colour == -1 ? 14284 : colour;
+
+				colour = ItemColours.GOLD + 10;
+				itemDefinition.modelColourToEdit[9] = 16270;
+				itemDefinition.newModelColourProduced[9] = colour == -1 ? 16270 : colour;
+
+				colour = ItemColours.GOLD + 13;
+				itemDefinition.modelColourToEdit[10] = 11216;
+				itemDefinition.newModelColourProduced[10] = colour == -1 ? 11216 : colour;
+
+				colour = ItemColours.GOLD + 15;
+				itemDefinition.modelColourToEdit[11] = 11187;
+				itemDefinition.newModelColourProduced[11] = colour == -1 ? 11187 : colour;
+
+				colour = ItemColours.GOLD + 18;
+				itemDefinition.modelColourToEdit[12] = 22424;
+				itemDefinition.newModelColourProduced[12] = colour == -1 ? 22424 : colour;
+
+				colour = ItemColours.GOLD + 20;
+				itemDefinition.modelColourToEdit[15] = 15250;
+				itemDefinition.newModelColourProduced[15] = colour == -1 ? 15250 : colour;
+
+				colour = ItemColours.GOLD + 24;
+				itemDefinition.modelColourToEdit[16] = 14259;
+				itemDefinition.newModelColourProduced[16] = colour == -1 ? 14259 : colour;
+
+				colour = ItemColours.GOLD + 26;
+				itemDefinition.modelColourToEdit[17] = 14230;
+				itemDefinition.newModelColourProduced[17] = colour == -1 ? 14230 : colour;
+
+				colour = ItemColours.GOLD + 28;
+				itemDefinition.modelColourToEdit[18] = 7068;
+				itemDefinition.newModelColourProduced[18] = colour == -1 ? 7068 : colour;
+
+				colour = ItemColours.GOLD + 30;
+				itemDefinition.modelColourToEdit[21] = 18314;
+				itemDefinition.newModelColourProduced[21] = colour == -1 ? 18314 : colour;
+				break;
+			case 16414:
+				itemDefinition.name = "Noon (red)";
+				itemDefinition.inventoryModel = 34184;
+				itemDefinition.femaleModel = -1;
+				itemDefinition.zoom = 8978;
+				itemDefinition.rotationX = 66;
+				itemDefinition.rotationY = 1995;
+				itemDefinition.inventoryX = 36;
+				itemDefinition.inventoryY = 16;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = null;
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = "Drop";
+				itemDefinition.modelColourToEdit = new int[14];
+				itemDefinition.newModelColourProduced = new int[14];
+				colour = 127;
+				itemDefinition.modelColourToEdit[0] = -19498;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -19498 : colour;
+
+				colour = 934;
+				itemDefinition.modelColourToEdit[1] = -19500;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -19500 : colour;
+
+				colour = 124;
+				itemDefinition.modelColourToEdit[2] = 22464;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 22464 : colour;
+
+				colour = 120;
+				itemDefinition.modelColourToEdit[3] = -21568;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -21568 : colour;
+
+				colour = 115;
+				itemDefinition.modelColourToEdit[4] = 960;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 960 : colour;
+
+				colour = 110;
+				itemDefinition.modelColourToEdit[5] = 21526;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? 21526 : colour;
+
+				itemDefinition.modelColourToEdit[6] = 21530;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? 21530 : colour;
+
+				itemDefinition.modelColourToEdit[7] = 21522;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? 21522 : colour;
+
+				itemDefinition.modelColourToEdit[8] = 21534;
+				itemDefinition.newModelColourProduced[8] = colour == -1 ? 21534 : colour;
+
+				colour = 926;
+				itemDefinition.modelColourToEdit[9] = -20037;
+				itemDefinition.newModelColourProduced[9] = colour == -1 ? -20037 : colour;
+
+				colour = 920;
+				itemDefinition.modelColourToEdit[10] = -21046;
+				itemDefinition.newModelColourProduced[10] = colour == -1 ? -21046 : colour;
+
+				colour = 105;
+				itemDefinition.modelColourToEdit[11] = 0;
+				itemDefinition.newModelColourProduced[11] = colour == -1 ? 0 : colour;
+
+				colour = 120;
+				itemDefinition.modelColourToEdit[12] = -19520;
+				itemDefinition.newModelColourProduced[12] = colour == -1 ? -19520 : colour;
+
+				colour = 127;
+				itemDefinition.modelColourToEdit[13] = -17454;
+				itemDefinition.newModelColourProduced[13] = colour == -1 ? -17454 : colour;
+				break;
+			case 16402:
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wield", null, null, null};
+				itemDefinition.name = "Elysian spirit shield";
+				itemDefinition.inventoryModel = 11072;
+				itemDefinition.zoom = 1789;
+				itemDefinition.rotationY = 431;
+				itemDefinition.rotationX = 27;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.maleModel = 11048;
+				itemDefinition.femaleModel = 11048;
+
+				itemDefinition.modelColourToEdit = new int[6];
+				itemDefinition.newModelColourProduced = new int[6];
+
+				// Sigil colour
+				colour = 947;
+				itemDefinition.modelColourToEdit[1] = 127;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 127 : colour;
+
+				// Shield colour
+				colour = 127;
+				itemDefinition.modelColourToEdit[0] = -28716;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -28716 : colour;
+
+				// Trim colour
+				colour = 947;
+				itemDefinition.modelColourToEdit[2] = -29116;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -29116 : colour;
+
+				itemDefinition.modelColourToEdit[3] = -29019;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -29019 : colour;
+
+				itemDefinition.modelColourToEdit[4] = -29125;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -29125 : colour;
+
+				itemDefinition.modelColourToEdit[5] = -29110;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -29110 : colour;
+				break;
+			case 16401:
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wield", "Dismantle", null, null};
+				itemDefinition.name = "Armadyl godsword";
+				itemDefinition.inventoryModel = 28075;
+				itemDefinition.zoom = 1957;
+				itemDefinition.rotationY = 498;
+				itemDefinition.rotationX = 484;
+				itemDefinition.inventoryX = -1;
+				itemDefinition.inventoryY = -1;
+				itemDefinition.maleModel = 27649;
+				itemDefinition.femaleModel = 27649;
+
+				itemDefinition.modelColourToEdit = new int[10];
+				itemDefinition.newModelColourProduced = new int[10];
+
+				// Hilt section where the hands are wrapped around
+				colour = 0;
+				itemDefinition.modelColourToEdit[0] = -22208;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -22208 : colour;
+
+				// Hilt top section
+				itemDefinition.modelColourToEdit[1] = -22477;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22477 : colour;
+
+				// Hilt section various sides
+				itemDefinition.modelColourToEdit[2] = -22464;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22464 : colour;
+
+				// Hilt section, the bottom part, half of the furs
+				itemDefinition.modelColourToEdit[3] = -24279;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -24279 : colour;
+
+				// Hilt section, the bottom part, rest of the furs
+				itemDefinition.modelColourToEdit[4] = -24271;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -24271 : colour;
+
+				// Blade, left side
+				colour = 461770;
+				itemDefinition.modelColourToEdit[5] = -22444;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22444 : colour;
+
+				colour = 461770;
+				// Blade, right side
+				itemDefinition.modelColourToEdit[6] = -22423;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22423 : colour;
+
+				colour = 461770;
+				// Blade decoration on the right
+				itemDefinition.modelColourToEdit[7] = -22415;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22415 : colour;
+
+				// Blade tip on the right
+				itemDefinition.modelColourToEdit[8] = -22419;
+				itemDefinition.newModelColourProduced[8] = colour == -1 ? -22419 : colour;
+
+				// Blade at the tip, inventory model only.
+				itemDefinition.modelColourToEdit[9] = -22440;
+				itemDefinition.newModelColourProduced[9] = colour == -1 ? -22440 : colour;
+				break;
+			case 16400:
+				itemDefinition.name = "Ghrazi rapier";
+				itemDefinition.inventoryModel = 35739;
+				itemDefinition.maleModel = 35374;
+				itemDefinition.femaleModel = 35369;
+				itemDefinition.zoom = 2064;
+				itemDefinition.rotationX = 1603;
+				itemDefinition.rotationZ = 552;
+				itemDefinition.inventoryX = 5;
+				itemDefinition.inventoryY = -18;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = "Drop";
+
+				itemDefinition.modelColourToEdit = new int[8];
+				itemDefinition.newModelColourProduced = new int[8];
+
+				// Grey
+				colour = 17350;
+				itemDefinition.modelColourToEdit[2] = -22446;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22446 : colour;
+
+				// White
+				colour = 17350;
+				itemDefinition.modelColourToEdit[4] = -22423;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22423 : colour;
+
+				// Dark grey
+				colour = 380760;
+				itemDefinition.modelColourToEdit[1] = -22386;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22386 : colour;
+
+				// Red
+				colour = 380770;
+				itemDefinition.modelColourToEdit[0] = -1122;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -1122 : colour;
+
+				// Dark grey
+				itemDefinition.modelColourToEdit[3] = -22502;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22502 : colour;
+
+				// Grey
+				itemDefinition.modelColourToEdit[6] = -22477;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22477 : colour;
+
+				// Light grey
+				itemDefinition.modelColourToEdit[7] = -22506;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22506 : colour;
+
+				// Dark grey
+				colour = 380780;
+				itemDefinition.modelColourToEdit[5] = -22489;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22489 : colour;
+				break;
+			case 16399:
+				itemDefinition.name = "Nocturnal Yoshi pet";
+				itemDefinition.inventoryOptions = new String[]
+						{null, null, null, null, "Drop"};
+				itemDefinition.zoom = 750;
+				itemDefinition.rotationY = 100;
+				itemDefinition.rotationX = 250;
+				itemDefinition.inventoryX = 10;
+				itemDefinition.inventoryY = 100;
+				npcInstance = EntityDefinition.forId(11212);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				break;
+			case 16398 :
+				itemDefinition.name = "Death pet";
+				itemDefinition.inventoryOptions = new String[]{
+						null,
+						null,
+						null,
+						null,
+						"Drop"
+				};
+				itemDefinition.zoom = 650;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationX = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 80;
+				npcInstance = EntityDefinition.forId(5567);
+				itemDefinition.inventoryModel = npcInstance.models[0];
+				itemDefinition.modelColourToEdit = new int[13];
+				itemDefinition.newModelColourProduced = new int[13];
+
+				// Black
+				colour = 127;
+				itemDefinition.modelColourToEdit[0] = 0;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 0 : colour;
+
+				colour = -1;
+				itemDefinition.modelColourToEdit[1] = 5231;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 5231 : colour;
+
+				// White
+				colour = 58325;
+				itemDefinition.modelColourToEdit[2] = 5353;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 5353 : colour;
+
+				colour = 58350;
+				itemDefinition.modelColourToEdit[3] = 8741;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? 8741 : colour;
+
+				colour = -1;
+				itemDefinition.modelColourToEdit[4] = 4550;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 4550 : colour;
+
+				colour = -1;
+				itemDefinition.modelColourToEdit[5] = 8741;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? 8741 : colour;
+
+				colour = -1;
+				itemDefinition.modelColourToEdit[6] = 10004;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? 10004 : colour;
+
+				colour = 127;
+				itemDefinition.modelColourToEdit[7] = 25238;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? 25238 : colour;
+
+				colour = -1;
+				itemDefinition.modelColourToEdit[8] = 0;
+				itemDefinition.newModelColourProduced[8] = colour == -1 ? 0 : colour;
+
+				colour = -1;
+				itemDefinition.modelColourToEdit[9] = 908;
+				itemDefinition.newModelColourProduced[9] = colour == -1 ? 908 : colour;
+
+				colour = -1;
+				itemDefinition.modelColourToEdit[10] = 5541;
+				itemDefinition.newModelColourProduced[10] = colour == -1 ? 5541 : colour;
+
+				colour = -1;
+				itemDefinition.modelColourToEdit[11] = 7073;
+				itemDefinition.newModelColourProduced[11] = colour == -1 ? 7073 : colour;
+
+				colour = -1;
+				itemDefinition.modelColourToEdit[12] = 61;
+				itemDefinition.newModelColourProduced[12] = colour == -1 ? 61 : colour;
+				break;
+
+			case 16397 :
+				itemDefinition.inventoryOptions = new String[]{
+						null,
+						"Wield",
+						null,
+						null,
+						null
+				};
+				itemDefinition.name = "Elysian spirit shield";
+				itemDefinition.inventoryModel = 11072;
+				itemDefinition.zoom = 1789;
+				itemDefinition.rotationY = 431;
+				itemDefinition.rotationX = 27;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.maleModel = 11048;
+				itemDefinition.femaleModel = 11048;
+
+				itemDefinition.modelColourToEdit = new int[6];
+				itemDefinition.newModelColourProduced = new int[6];
+
+				// Sigil colour
+				colour = 302800;
+				itemDefinition.modelColourToEdit[1] = 127;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 127 : colour;
+
+				// Shield colour
+				colour = 127;
+				itemDefinition.modelColourToEdit[0] = -28716;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -28716 : colour;
+
+				// Trim colour
+				colour = 127;
+				itemDefinition.modelColourToEdit[2] = -29116;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -29116 : colour;
+
+				itemDefinition.modelColourToEdit[3] = -29019;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -29019 : colour;
+
+				itemDefinition.modelColourToEdit[4] = -29125;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -29125 : colour;
+
+				itemDefinition.modelColourToEdit[5] = -29110;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -29110 : colour;
+				break;
+			case 16379 :
+				itemDefinition.inventoryOptions = new String[]{
+						null,
+						"Wield",
+						null,
+						null,
+						null
+				};
+				itemDefinition.name = "Elysian spirit shield";
+				itemDefinition.inventoryModel = 11072;
+				itemDefinition.zoom = 1789;
+				itemDefinition.rotationY = 431;
+				itemDefinition.rotationX = 27;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.maleModel = 11048;
+				itemDefinition.femaleModel = 11048;
+
+				itemDefinition.modelColourToEdit = new int[6];
+				itemDefinition.newModelColourProduced = new int[6];
+
+				// Sigil colour
+				colour = 927;
+				itemDefinition.modelColourToEdit[1] = 127;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 127 : colour;
+
+				// Shield colour
+				colour = 302770;
+				itemDefinition.modelColourToEdit[0] = -28716;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -28716 : colour;
+
+				// Trim colour
+				colour = 127;
+				itemDefinition.modelColourToEdit[2] = -29116;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -29116 : colour;
+
+				itemDefinition.modelColourToEdit[3] = -29019;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -29019 : colour;
+
+				itemDefinition.modelColourToEdit[4] = -29125;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -29125 : colour;
+
+				itemDefinition.modelColourToEdit[5] = -29110;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -29110 : colour;
+				break;
+			case 16380:
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wield", "Dismantle", null, null};
+				itemDefinition.name = "Armadyl godsword";
+				itemDefinition.inventoryModel = 28075;
+				itemDefinition.zoom = 1957;
+				itemDefinition.rotationY = 498;
+				itemDefinition.rotationX = 484;
+				itemDefinition.inventoryX = -1;
+				itemDefinition.inventoryY = -1;
+				itemDefinition.maleModel = 27649;
+				itemDefinition.femaleModel = 27649;
+
+				itemDefinition.modelColourToEdit = new int[10];
+				itemDefinition.newModelColourProduced = new int[10];
+
+				// Hilt section where the hands are wrapped around
+				colour = 927;
+				itemDefinition.modelColourToEdit[0] = -22208;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -22208 : colour;
+
+				// Hilt top section
+				itemDefinition.modelColourToEdit[1] = -22477;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22477 : colour;
+
+				// Hilt section various sides
+				itemDefinition.modelColourToEdit[2] = -22464;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22464 : colour;
+
+				// Hilt section, the bottom part, half of the furs
+				itemDefinition.modelColourToEdit[3] = -24279;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -24279 : colour;
+
+				// Hilt section, the bottom part, rest of the furs
+				itemDefinition.modelColourToEdit[4] = -24271;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -24271 : colour;
+
+				// Blade, left side
+				colour = 127;
+				itemDefinition.modelColourToEdit[5] = -22444;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22444 : colour;
+
+				colour = 302800;
+				// Blade, right side
+				itemDefinition.modelColourToEdit[6] = -22423;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22423 : colour;
+
+				colour = 127;
+				// Blade decoration on the right
+				itemDefinition.modelColourToEdit[7] = -22415;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22415 : colour;
+
+				// Blade tip on the right
+				itemDefinition.modelColourToEdit[8] = -22419;
+				itemDefinition.newModelColourProduced[8] = colour == -1 ? -22419 : colour;
+
+				// Blade at the tip, inventory model only.
+				itemDefinition.modelColourToEdit[9] = -22440;
+				itemDefinition.newModelColourProduced[9] = colour == -1 ? -22440 : colour;
+				break;
+			case 16381:
+				itemDefinition.name = "Primordial boots";
+				itemDefinition.inventoryModel = 29397;
+				itemDefinition.maleModel = 29250;
+				itemDefinition.femaleModel = 29255;
+				itemDefinition.zoom = 976;
+				itemDefinition.rotationX = 279;
+				itemDefinition.rotationY = 147;
+				itemDefinition.inventoryX = 5;
+				itemDefinition.inventoryY = -5;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.modelColourToEdit = new int[8];
+				itemDefinition.newModelColourProduced = new int[8];
+
+				// Dark red
+				colour = 302770;
+				itemDefinition.modelColourToEdit[0] = 280;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 280 : colour;
+
+				// Red
+				colour = 302790;
+				itemDefinition.modelColourToEdit[1] = 924;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 924 : colour;
+
+				// Red
+				colour = 302790;
+				itemDefinition.modelColourToEdit[2] = 920;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 920 : colour;
+
+				// Very dark grey
+				colour = -1;
+				itemDefinition.modelColourToEdit[6] = 520;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? 520 : colour;
+
+				// Dark grey
+				colour = -1;
+				itemDefinition.modelColourToEdit[5] = -22380;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22380 : colour;
+
+
+				// Grey
+				colour = -1;
+				itemDefinition.modelColourToEdit[3] = -22370;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22370 : colour;
+
+				// Red
+				colour = 302790;
+				itemDefinition.modelColourToEdit[4] = 538;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 538 : colour;
+
+				colour = -1;
+				itemDefinition.modelColourToEdit[7] = 127;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? 127 : colour;
+				break;
+
+			case 16382 :
+				itemDefinition.name = "Amulet of torture";
+				itemDefinition.inventoryModel = 31524;
+				itemDefinition.maleModel = 31227;
+				itemDefinition.maleEquip2 = -1;
+				itemDefinition.femaleModel = 31233;
+				itemDefinition.femaleEquip2 = -1;
+				itemDefinition.zoom = 620;
+				itemDefinition.rotationX = 68;
+				itemDefinition.rotationY = 424;
+				itemDefinition.inventoryX = 1;
+				itemDefinition.inventoryY = 16;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.modelColourToEdit = new int[7];
+				itemDefinition.newModelColourProduced = new int[7];
+
+				// Grey
+				colour = 302790;
+				itemDefinition.modelColourToEdit[0] = -22372;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -22372 : colour;
+
+				// Light grey
+				colour = 927;
+				itemDefinition.modelColourToEdit[1] = -22483;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22483 : colour;
+
+				// Light grey
+				colour = 927;
+				itemDefinition.modelColourToEdit[2] = -22475;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22475 : colour;
+
+				// Shade over the orange
+				colour = 927;
+				itemDefinition.modelColourToEdit[3] = 5056;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? 5056 : colour;
+
+				// Light grey
+				colour = 927;
+				itemDefinition.modelColourToEdit[4] = -22506;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22506 : colour;
+
+				// Black
+				colour = -1;
+				itemDefinition.modelColourToEdit[5] = 0;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? 0 : colour;
+
+				// Orange
+				colour = -1;
+				itemDefinition.modelColourToEdit[6] = 3008;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? 3008 : colour;
+				break;
+
+			case 16383 :
+				itemDefinition.name = "Ghrazi rapier";
+				itemDefinition.inventoryModel = 35739;
+				itemDefinition.maleModel = 35374;
+				itemDefinition.femaleModel = 35369;
+				itemDefinition.zoom = 2064;
+				itemDefinition.rotationX = 1603;
+				itemDefinition.rotationZ = 552;
+				itemDefinition.inventoryX = 5;
+				itemDefinition.inventoryY = -18;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = "Drop";
+
+				itemDefinition.modelColourToEdit = new int[8];
+				itemDefinition.newModelColourProduced = new int[8];
+
+				// Grey
+				colour = 302790;
+				itemDefinition.modelColourToEdit[2] = -22446;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22446 : colour;
+
+				// White
+				colour = 302790;
+				itemDefinition.modelColourToEdit[4] = -22423;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22423 : colour;
+
+				// Dark grey
+				colour = 910;
+				itemDefinition.modelColourToEdit[1] = -22386;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22386 : colour;
+
+				// Red
+				colour = 927;
+				itemDefinition.modelColourToEdit[0] = -1122;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -1122 : colour;
+
+				// Dark grey
+				itemDefinition.modelColourToEdit[3] = -22502;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22502 : colour;
+
+				// Grey
+				itemDefinition.modelColourToEdit[6] = -22477;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22477 : colour;
+
+				// Light grey
+				itemDefinition.modelColourToEdit[7] = -22506;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22506 : colour;
+
+				// Dark grey
+				colour = 935;
+				itemDefinition.modelColourToEdit[5] = -22489;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22489 : colour;
+				break;
+
+			case 16384 :
+				itemDefinition.name = "Ghrazi rapier";
+				itemDefinition.inventoryModel = 35739;
+				itemDefinition.maleModel = 35374;
+				itemDefinition.femaleModel = 35369;
+				itemDefinition.zoom = 2064;
+				itemDefinition.rotationX = 1603;
+				itemDefinition.rotationZ = 552;
+				itemDefinition.inventoryX = 5;
+				itemDefinition.inventoryY = -18;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = "Drop";
+
+				itemDefinition.modelColourToEdit = new int[8];
+				itemDefinition.newModelColourProduced = new int[8];
+
+				// Grey
+				colour = 127;
+				itemDefinition.modelColourToEdit[2] = -22446;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22446 : colour;
+
+				// White
+				colour = 127;
+				itemDefinition.modelColourToEdit[4] = -22423;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22423 : colour;
+
+				// Red
+				colour = 0;
+				itemDefinition.modelColourToEdit[0] = -1122;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -1122 : colour;
+
+				// Dark grey
+				colour = 51136;
+				itemDefinition.modelColourToEdit[3] = -22502;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22502 : colour;
+
+				// Grey
+				colour = 51136;
+				itemDefinition.modelColourToEdit[6] = -22477;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22477 : colour;
+
+				// Light grey
+				colour = 51130;
+				itemDefinition.modelColourToEdit[7] = -22506;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22506 : colour;
+
+				// Dark grey
+				colour = 51150;
+				itemDefinition.modelColourToEdit[5] = -22489;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22489 : colour;
+
+				// Dark grey
+				colour = 51136;
+				itemDefinition.modelColourToEdit[1] = -22386;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22386 : colour;
+				break;
+
+			case 16385 :
+				itemDefinition.name = "Ghrazi rapier";
+				itemDefinition.inventoryModel = 35739;
+				itemDefinition.maleModel = 35374;
+				itemDefinition.femaleModel = 35369;
+				itemDefinition.zoom = 2064;
+				itemDefinition.rotationX = 1603;
+				itemDefinition.rotationZ = 552;
+				itemDefinition.inventoryX = 5;
+				itemDefinition.inventoryY = -18;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = "Drop";
+
+				itemDefinition.modelColourToEdit = new int[8];
+				itemDefinition.newModelColourProduced = new int[8];
+
+				// Grey
+				colour = 34770;
+				itemDefinition.modelColourToEdit[2] = -22446;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22446 : colour;
+
+				// White
+				colour = 34770;
+				itemDefinition.modelColourToEdit[4] = -22423;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22423 : colour;
+
+				// Red
+				colour = 100;
+				itemDefinition.modelColourToEdit[0] = -1122;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -1122 : colour;
+
+				// Dark grey
+				colour = 127;
+				itemDefinition.modelColourToEdit[3] = -22502;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22502 : colour;
+
+				// Grey
+				colour = 127;
+				itemDefinition.modelColourToEdit[6] = -22477;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22477 : colour;
+
+				// Light grey
+				colour = 120;
+				itemDefinition.modelColourToEdit[7] = -22506;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22506 : colour;
+
+				// Dark grey
+				colour = 115;
+				itemDefinition.modelColourToEdit[5] = -22489;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22489 : colour;
+
+				// Dark grey
+				colour = 115;
+				itemDefinition.modelColourToEdit[1] = -22386;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22386 : colour;
+				break;
+			case 13116:
+				itemInstance = ItemDefinition.forId(13116);
+				itemDefinition.inventoryOptions = new String[]
+						{"Check", null, null, null, null};
+				itemDefinition.name = itemInstance.name;
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+				itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.maleModel = itemInstance.maleModel;
+				itemDefinition.femaleModel = itemInstance.femaleModel;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = "Check";
+				itemDefinition.inventoryOptions[1] = null;
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				break;
+			case 22114:
+				itemInstance = ItemDefinition.forId(22114);
+				itemDefinition.name = itemInstance.name;
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+				itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.maleModel = itemInstance.maleModel;
+				itemDefinition.femaleModel = itemInstance.femaleModel;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = "Check-Charges";
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.inventoryModel = itemInstance.inventoryModel;
+				break;
+			case 16386 :
+				itemDefinition.name = "Ghrazi rapier";
+				itemDefinition.inventoryModel = 35739;
+				itemDefinition.maleModel = 35374;
+				itemDefinition.femaleModel = 35369;
+				itemDefinition.zoom = 2064;
+				itemDefinition.rotationX = 1603;
+				itemDefinition.rotationZ = 552;
+				itemDefinition.inventoryX = 5;
+				itemDefinition.inventoryY = -18;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = "Drop";
+
+				itemDefinition.modelColourToEdit = new int[8];
+				itemDefinition.newModelColourProduced = new int[8];
+
+				// Grey
+				colour = 58325;
+				itemDefinition.modelColourToEdit[2] = -22446;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22446 : colour;
+
+				// White
+				colour = 58325;
+				itemDefinition.modelColourToEdit[4] = -22423;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22423 : colour;
+
+				// Red
+				colour = 34770;
+				itemDefinition.modelColourToEdit[0] = -1122;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -1122 : colour;
+
+				// Dark grey
+				colour = 34780;
+				itemDefinition.modelColourToEdit[3] = -22502;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22502 : colour;
+
+				// Grey
+				colour = 34790;
+				itemDefinition.modelColourToEdit[6] = -22477;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22477 : colour;
+
+				// Light grey
+				colour = 34790;
+				itemDefinition.modelColourToEdit[7] = -22506;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22506 : colour;
+
+				// Dark grey
+				colour = 34790;
+				itemDefinition.modelColourToEdit[5] = -22489;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22489 : colour;
+
+				// Dark grey
+				colour = 34780;
+				itemDefinition.modelColourToEdit[1] = -22386;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22386 : colour;
+				break;
+
+			case 16387 :
+				itemDefinition.name = "Ghrazi rapier";
+				itemDefinition.inventoryModel = 35739;
+				itemDefinition.maleModel = 35374;
+				itemDefinition.femaleModel = 35369;
+				itemDefinition.zoom = 2064;
+				itemDefinition.rotationX = 1603;
+				itemDefinition.rotationZ = 552;
+				itemDefinition.inventoryX = 5;
+				itemDefinition.inventoryY = -18;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = "Drop";
+
+				itemDefinition.modelColourToEdit = new int[8];
+				itemDefinition.newModelColourProduced = new int[8];
+
+				// Grey
+				colour = 0;
+				itemDefinition.modelColourToEdit[2] = -22446;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22446 : colour;
+
+				// White
+				colour = 0;
+				itemDefinition.modelColourToEdit[4] = -22423;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22423 : colour;
+
+				// Red
+				colour = 3;
+				itemDefinition.modelColourToEdit[0] = -1122;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -1122 : colour;
+
+				// Dark grey
+				colour = 461785;
+				itemDefinition.modelColourToEdit[3] = -22502;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22502 : colour;
+
+				// Grey
+				colour = 461785;
+				itemDefinition.modelColourToEdit[6] = -22477;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22477 : colour;
+
+				// Light grey
+				colour = 461765;
+				itemDefinition.modelColourToEdit[7] = -22506;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22506 : colour;
+
+				// Dark grey
+				colour = 461775;
+				itemDefinition.modelColourToEdit[5] = -22489;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22489 : colour;
+
+				// Dark grey
+				colour = 461795;
+				itemDefinition.modelColourToEdit[1] = -22386;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22386 : colour;
+				break;
+
+			case 16388 :
+				itemDefinition.name = "Dragon rapier";
+				itemDefinition.inventoryModel = 35739;
+				itemDefinition.maleModel = 35374;
+				itemDefinition.femaleModel = 35369;
+				itemDefinition.zoom = 2064;
+				itemDefinition.rotationX = 1603;
+				itemDefinition.rotationZ = 552;
+				itemDefinition.inventoryX = 5;
+				itemDefinition.inventoryY = -18;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = "Drop";
+
+				itemDefinition.modelColourToEdit = new int[8];
+				itemDefinition.newModelColourProduced = new int[8];
+
+				// Grey
+				colour = 927;
+				itemDefinition.modelColourToEdit[2] = -22446;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22446 : colour;
+
+				// White
+				itemDefinition.modelColourToEdit[4] = -22423;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -22423 : colour;
+
+				// Red
+				colour = -1;
+				itemDefinition.modelColourToEdit[0] = -1122;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -1122 : colour;
+
+				// Dark grey
+				itemDefinition.modelColourToEdit[3] = -22502;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22502 : colour;
+
+				// Grey
+				itemDefinition.modelColourToEdit[6] = -22477;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? -22477 : colour;
+
+				// Light grey
+				itemDefinition.modelColourToEdit[7] = -22506;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? -22506 : colour;
+
+				// Dark grey
+				itemDefinition.modelColourToEdit[5] = -22489;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22489 : colour;
+
+				// Dark grey
+				itemDefinition.modelColourToEdit[1] = -22386;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22386 : colour;
+				break;
+
+			case 16390 :
+				itemDefinition.name = "Heavy ballista";
+				itemDefinition.inventoryModel = 31523;
+				itemDefinition.maleModel = 31236;
+				itemDefinition.femaleModel = 31236;
+				itemDefinition.femaleEquipOffset = 6;
+				itemDefinition.zoom = 1284;
+				itemDefinition.rotationX = 148;
+				itemDefinition.rotationY = 189;
+				itemDefinition.inventoryX = 8;
+				itemDefinition.inventoryY = -18;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = "Drop";
+				itemDefinition.modelColourToEdit = new int[22];
+				itemDefinition.newModelColourProduced = new int[22];
+
+				colour = 90;
+				itemDefinition.modelColourToEdit[7] = 16;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? 16 : colour;
+
+				colour = 97;
+				itemDefinition.modelColourToEdit[4] = 20;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 20 : colour;
+
+				colour = 107;
+				itemDefinition.modelColourToEdit[2] = 24;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 24 : colour;
+
+				colour = 115;
+				itemDefinition.modelColourToEdit[3] = 28;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? 28 : colour;
+
+				colour = 122;
+				itemDefinition.modelColourToEdit[1] = 33;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 33 : colour;
+
+				colour = 125;
+				itemDefinition.modelColourToEdit[0] = 37;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 37 : colour;
+
+				colour = 127;
+				itemDefinition.modelColourToEdit[12] = 41;
+				itemDefinition.newModelColourProduced[12] = colour == -1 ? 41 : colour;
+
+				colour = 0;
+				itemDefinition.modelColourToEdit[5] = 10283;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? 10283 : colour;
+
+				colour = 5;
+				itemDefinition.modelColourToEdit[6] = 10275;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? 10275 : colour;
+
+				colour = 10;
+				itemDefinition.modelColourToEdit[8] = 5289;
+				itemDefinition.newModelColourProduced[8] = colour == -1 ? 5289 : colour;
+
+				colour = 15;
+				itemDefinition.modelColourToEdit[9] = 5409;
+				itemDefinition.newModelColourProduced[9] = colour == -1 ? 5409 : colour;
+
+				colour = 20;
+				itemDefinition.modelColourToEdit[10] = 10266;
+				itemDefinition.newModelColourProduced[10] = colour == -1 ? 10266 : colour;
+
+				colour = 6;
+				itemDefinition.modelColourToEdit[11] = 5524;
+				itemDefinition.newModelColourProduced[11] = colour == -1 ? 5524 : colour;
+
+				colour = 10;
+				itemDefinition.modelColourToEdit[13] = 5772;
+				itemDefinition.newModelColourProduced[13] = colour == -1 ? 5772 : colour;
+
+				colour = 15;
+				itemDefinition.modelColourToEdit[14] = 5400;
+				itemDefinition.newModelColourProduced[14] = colour == -1 ? 5400 : colour;
+
+				colour = 0;
+				itemDefinition.modelColourToEdit[15] = 5404;
+				itemDefinition.newModelColourProduced[15] = colour == -1 ? 5404 : colour;
+
+				colour = 3;
+				itemDefinition.modelColourToEdit[16] = 5285;
+				itemDefinition.newModelColourProduced[16] = colour == -1 ? 5285 : colour;
+
+				colour = 4;
+				itemDefinition.modelColourToEdit[17] = 1556;
+				itemDefinition.newModelColourProduced[17] = colour == -1 ? 1556 : colour;
+
+				colour = 0;
+				itemDefinition.modelColourToEdit[18] = 1560;
+				itemDefinition.newModelColourProduced[18] = colour == -1 ? 1560 : colour;
+
+				colour = 12;
+				itemDefinition.modelColourToEdit[19] = 3594;
+				itemDefinition.newModelColourProduced[19] = colour == -1 ? 3594 : colour;
+
+				colour = 14;
+				itemDefinition.modelColourToEdit[20] = 1808;
+				itemDefinition.newModelColourProduced[20] = colour == -1 ? 1808 : colour;
+
+				colour = 22;
+				itemDefinition.modelColourToEdit[21] = 1932;
+				itemDefinition.newModelColourProduced[21] = colour == -1 ? 1932 : colour;
+
+				break;
+		}
+		
+	}
+
+	public static void method_5(ItemDefinition itemDefinition, int itemId) {
+		if (Config.PRE_EOC) {
+			return;
+		}
+		ItemDefinition itemInstance = null;
+		EntityDefinition npcInstance = null;
+		ObjectDefinition objectInstance = null;
+		int colour = -1;
+		int green = -1;
+		int red = -1;
+		int yellow = -1;
+		int blue = -1;
+
+		switch (itemId) {
 			case 16891:
 				itemDefinition.name = "Jack O Lantern Whip";
 				itemDefinition.inventoryModel = 65323;
@@ -8427,7 +8276,7 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[3] = null;
 				itemDefinition.inventoryOptions[4] = null;
 				break;
-				case 16427:
+			case 16427:
 				itemDefinition.name = "Armadyl crossbow";
 				itemDefinition.inventoryModel = 19967;
 				itemDefinition.maleModel = 19839;
@@ -8464,7 +8313,7 @@ public class CustomItem {
 				break;
 			case 16426:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", "Dismantle", null, null};
+						{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -8527,7 +8376,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, null};
+						{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -8555,7 +8404,7 @@ public class CustomItem {
 				break;
 			case 16424:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", "Dismantle", null, null};
+						{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -8716,7 +8565,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, null};
+						{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -8745,7 +8594,7 @@ public class CustomItem {
 			case 16420:
 				itemDefinition.name = "R&b partyhat";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.inventoryModel = 16252;
 				itemDefinition.zoom = 440;
 				itemDefinition.rotationX = 1852;
@@ -8809,7 +8658,7 @@ public class CustomItem {
 			case 16511:
 				itemDefinition.name = "Strong Pink partyhat";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.inventoryModel = 16252;
 				itemDefinition.zoom = 440;
 				itemDefinition.rotationX = 1852;
@@ -8873,7 +8722,7 @@ public class CustomItem {
 			case 16513:
 				itemDefinition.name = "Gilded partyhat";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.inventoryModel = 16252;
 				itemDefinition.zoom = 440;
 				itemDefinition.rotationX = 1852;
@@ -8937,7 +8786,7 @@ public class CustomItem {
 			case 16512:
 				itemDefinition.name = "Forest partyhat";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.inventoryModel = 16252;
 				itemDefinition.zoom = 440;
 				itemDefinition.rotationX = 1852;
@@ -9000,7 +8849,7 @@ public class CustomItem {
 				break;
 			case 16419:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -9265,7 +9114,7 @@ public class CustomItem {
 				break;
 			case 16415:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", "Dismantle", null, null};
+						{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -9415,7 +9264,7 @@ public class CustomItem {
 				break;
 			case 16411:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", "Dismantle", null, null};
+						{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -9527,7 +9376,7 @@ public class CustomItem {
 				break;
 			case 16409:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", "Dismantle", null, null};
+						{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -9587,7 +9436,7 @@ public class CustomItem {
 				break;
 			case 16408:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -9682,8 +9531,8 @@ public class CustomItem {
 				itemDefinition.modelColourToEdit[5] = -22489;
 				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22489 : colour;
 				break;
-			
-		
+
+
 			case 16406:
 				itemDefinition.name = "Bandos chestplate";
 				itemDefinition.inventoryModel = 28042;
@@ -9850,7 +9699,7 @@ public class CustomItem {
 				break;
 			case 16404:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", "Dismantle", null, null};
+						{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -9913,7 +9762,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, null};
+						{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -9941,7 +9790,7 @@ public class CustomItem {
 				break;
 			case 16274:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -10111,7 +9960,7 @@ public class CustomItem {
 				break;
 			case 16271:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", "Dismantle", null, null};
+						{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -10172,7 +10021,7 @@ public class CustomItem {
 				break;
 			case 16270:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -10209,7 +10058,7 @@ public class CustomItem {
 				break;
 			case 16269:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -10246,7 +10095,7 @@ public class CustomItem {
 				break;
 			case 16268:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -10283,7 +10132,7 @@ public class CustomItem {
 				break;
 			case 16267:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -10340,6 +10189,24 @@ public class CustomItem {
 				itemDefinition.newModelColourProduced[0] = 926;
 				itemDefinition.description = "Consume scroll to wear Infernal, Max capes, Imbued God capes and 99 capes.".getBytes();
 				break;
+		}
+		
+	}
+
+	public static void method_6(ItemDefinition itemDefinition, int itemId) {
+		if (Config.PRE_EOC) {
+			return;
+		}
+		ItemDefinition itemInstance = null;
+		EntityDefinition npcInstance = null;
+		ObjectDefinition objectInstance = null;
+		int colour = -1;
+		int green = -1;
+		int red = -1;
+		int yellow = -1;
+		int blue = -1;
+
+		switch (itemId) {
 			case 16265:
 				itemDefinition.name = "Veteran cape (broken)";
 				itemDefinition.inventoryModel = 65261;
@@ -10352,7 +10219,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 65318;
 				itemDefinition.brightness = -45;
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				break;
 
 			case 16264:
@@ -10367,11 +10234,11 @@ public class CustomItem {
 				itemDefinition.femaleModel = 65316;
 				itemDefinition.brightness = -45;
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				break;
 			case 16263:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -10409,7 +10276,7 @@ public class CustomItem {
 			case 16262:
 				itemDefinition.name = "Nocturnal Yoshi";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 750;
 				itemDefinition.rotationY = 100;
 				itemDefinition.rotationX = 250;
@@ -10457,7 +10324,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(6768);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2400;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -10468,7 +10335,7 @@ public class CustomItem {
 
 			case 16260:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", "Dismantle", null, null};
+						{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -10608,7 +10475,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, null};
+						{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -10617,9 +10484,9 @@ public class CustomItem {
 				itemDefinition.inventoryY = 8;
 				itemDefinition.zoom = 886;
 				itemDefinition.modelColourToEdit = new int[]
-				{929, 922, 918, 914};
+						{929, 922, 918, 914};
 				itemDefinition.newModelColourProduced = new int[]
-				{34770, 34770, 34770, 34770};
+						{34770, 34770, 34770, 34770};
 				break;
 			case 16257:
 				itemDefinition.name = "Abyssal tentacle";
@@ -10655,7 +10522,7 @@ public class CustomItem {
 				break;
 			case 16256:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -10792,7 +10659,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(2510);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 1500;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -10852,7 +10719,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(6636);
 				itemDefinition.name = "White prince black dragon pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -10940,7 +10807,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(762);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 200;
@@ -10952,7 +10819,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(548);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 1300;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -10964,7 +10831,7 @@ public class CustomItem {
 				objectInstance = ObjectDefinition.forId(8091);
 				itemDefinition.name = objectInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 5000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -10976,7 +10843,7 @@ public class CustomItem {
 				objectInstance = ObjectDefinition.forId(29146);
 				itemDefinition.name = objectInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 200;
@@ -10988,7 +10855,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(404);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 1750;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -11000,7 +10867,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(3837);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 1000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -11012,7 +10879,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(1241);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 1000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -11024,7 +10891,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(2474);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -11036,7 +10903,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(7039);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 3000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 213;
@@ -11047,7 +10914,7 @@ public class CustomItem {
 			case 16233:
 				itemDefinition.name = "Blue Tekton pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 8000;
 				itemDefinition.rotationY = 100;
 				itemDefinition.rotationX = 100;
@@ -11393,9 +11260,9 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[3] = "Uncharge";
 				itemDefinition.inventoryOptions[4] = null;
 				itemDefinition.modelColourToEdit = new int[]
-				{-22407, -23323, -22308, -21269, 9158, 9009, 11212};
+						{-22407, -23323, -22308, -21269, 9158, 9009, 11212};
 				itemDefinition.newModelColourProduced = new int[]
-				{17350, 17350, 17350, 17350, 17350, 17350, 17350};
+						{17350, 17350, 17350, 17350, 17350, 17350, 17350};
 				break;
 			case 16226:
 				itemDefinition.name = "Abyssal tentacle";
@@ -11469,13 +11336,13 @@ public class CustomItem {
 
 			case 19564:
 				itemDefinition.inventoryOptions = new String[]
-				{"Commune", null, "Toggle", null, "Destroy"};
+						{"Commune", null, "Toggle", null, "Destroy"};
 				break;
 			case 16319:
 				objectInstance = ObjectDefinition.forId(8091);
 				itemDefinition.name = objectInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 5000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -11511,9 +11378,9 @@ public class CustomItem {
 				itemDefinition.inventoryY = 18;
 				itemDefinition.brightness = 25;
 				itemDefinition.modelColourToEdit = new int[]
-				{6806, 6439, 6558};
+						{6806, 6439, 6558};
 				itemDefinition.newModelColourProduced = new int[]
-				{7114, 7110, 7120};
+						{7114, 7110, 7120};
 				break;
 			case 16315:
 				itemDefinition.name = "Armadyl godsword (or)";
@@ -11716,7 +11583,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(1277);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 3000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -11746,7 +11613,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 1;
 				itemDefinition.inventoryY = 1;
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.modelColourToEdit = new int[1];
 				itemDefinition.modelColourToEdit[0] = 926;
 				itemDefinition.newModelColourProduced = new int[1];
@@ -11781,7 +11648,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(7792);
 				itemDefinition.name = npcInstance.name + " pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 4000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 200;
@@ -11882,7 +11749,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 1;
 				itemDefinition.inventoryY = 1;
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.modelColourToEdit = new int[1];
 				itemDefinition.modelColourToEdit[0] = 926;
 				itemDefinition.newModelColourProduced = new int[1];
@@ -11894,7 +11761,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, null};
+						{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -11903,9 +11770,9 @@ public class CustomItem {
 				itemDefinition.inventoryY = 8;
 				itemDefinition.zoom = 886;
 				itemDefinition.modelColourToEdit = new int[]
-				{929, 922, 918, 914};
+						{929, 922, 918, 914};
 				itemDefinition.newModelColourProduced = new int[]
-				{5, 5, 5, 5};
+						{5, 5, 5, 5};
 				break;
 			case 16209:
 				itemDefinition.name = "Cyan Toxic staff of the dead";
@@ -12080,7 +11947,7 @@ public class CustomItem {
 
 			case 16206:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", "Dismantle", null, null};
+						{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -12235,7 +12102,7 @@ public class CustomItem {
 				break;
 			case 21864:
 				itemDefinition.inventoryOptions = new String[]
-				{"Absorb-energy", null, null, null, "Drop"};
+						{"Absorb-energy", null, null, null, "Drop"};
 				break;
 			case 16198:
 				npcInstance = EntityDefinition.forId(11167);
@@ -12370,7 +12237,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = 1;
 				itemDefinition.inventoryY = 1;
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.modelColourToEdit = new int[1];
 				itemDefinition.modelColourToEdit[0] = 926;
 				itemDefinition.newModelColourProduced = new int[1];
@@ -12440,7 +12307,7 @@ public class CustomItem {
 				break;
 			case 16186:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", null, null, null};
+						{null, "Wield", null, null, null};
 				itemDefinition.name = "Elysian spirit shield";
 				itemDefinition.inventoryModel = 11072;
 				itemDefinition.zoom = 1789;
@@ -12483,7 +12350,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(2592);
 				itemDefinition.name = "Mogre pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 500;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -12505,7 +12372,7 @@ public class CustomItem {
 				break;
 			case 16183:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", "Dismantle", null, null};
+						{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Armadyl godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -12609,7 +12476,7 @@ public class CustomItem {
 			case 16175:
 				itemDefinition.name = "Twisted bow pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.inventoryModel = 32799;
 				itemDefinition.maleModel = 32674;
 				itemDefinition.femaleModel = 32674;
@@ -12624,7 +12491,7 @@ public class CustomItem {
 				itemDefinition.name = "Barbarian guard pet";
 				npcInstance = EntityDefinition.forId(7285);
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 1000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -12648,7 +12515,7 @@ public class CustomItem {
 				itemDefinition.name = "Witch's experiment pet";
 				npcInstance = EntityDefinition.forId(3996);
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 3000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -12674,7 +12541,7 @@ public class CustomItem {
 				itemDefinition.name = "Novice pet";
 				npcInstance = EntityDefinition.forId(7055);
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 4000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -12686,7 +12553,7 @@ public class CustomItem {
 				itemDefinition.name = "Steve pet";
 				npcInstance = EntityDefinition.forId(6798);
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 700;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -12736,7 +12603,7 @@ public class CustomItem {
 				itemDefinition.name = "Dragonkin pet";
 				npcInstance = EntityDefinition.forId(11126);
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 5000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -12749,7 +12616,7 @@ public class CustomItem {
 				break;
 			case 16163:
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wield", "Dismantle", null, null};
+						{null, "Wield", "Dismantle", null, null};
 				itemDefinition.name = "Deaths Godsword";
 				itemDefinition.inventoryModel = 28075;
 				itemDefinition.zoom = 1957;
@@ -12793,9 +12660,9 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Torva full helm";
 				itemDefinition.inventoryModel = 40000;
-			itemDefinition.maleModel = 40001;
-			itemDefinition.femaleModel = 40001;
-			break;
+				itemDefinition.maleModel = 40001;
+				itemDefinition.femaleModel = 40001;
+				break;
 			case 2023://arlo
 				itemInstance = ItemDefinition.forId(20794);
 				itemDefinition.zoom = itemInstance.zoom;
@@ -12805,11 +12672,11 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Torva platebody";
 				itemDefinition.inventoryModel = 40002;
-			itemDefinition.maleModel = 40003;
-			itemDefinition.femaleModel = 40003;
-			itemDefinition.inventoryOptions = new String[]
-			{null, "Wear", null, null, "Drop"};
-			break;
+				itemDefinition.maleModel = 40003;
+				itemDefinition.femaleModel = 40003;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
 			case 4898://arlo
 				itemInstance = ItemDefinition.forId(20796);
 				itemDefinition.zoom = 1800;
@@ -12819,9 +12686,9 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Torva platelegs";
 				itemDefinition.inventoryModel = 40004;
-			itemDefinition.maleModel = 40005;
-			itemDefinition.femaleModel = 40005;
-			break;
+				itemDefinition.maleModel = 40005;
+				itemDefinition.femaleModel = 40005;
+				break;
 			case 20920://arlo
 				itemInstance = ItemDefinition.forId(2577);
 				itemDefinition.zoom = 400;
@@ -12831,11 +12698,11 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Primal boot";
 				itemDefinition.inventoryModel = 40046;
-			itemDefinition.maleModel = 40046;
-			itemDefinition.femaleModel = 40046;
-			itemDefinition.inventoryOptions = new String[]
-					{null, "Wear", null, null, "Drop"};
-			break;
+				itemDefinition.maleModel = 40046;
+				itemDefinition.femaleModel = 40046;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
 			case 20921://arlo
 				itemInstance = ItemDefinition.forId(7459);
 				itemDefinition.zoom = 400;
@@ -12845,11 +12712,11 @@ public class CustomItem {
 				itemDefinition.inventoryY = 1;
 				itemDefinition.name = "Primal gauntlets";
 				itemDefinition.inventoryModel = 40047;
-			itemDefinition.maleModel = 40048;
-			itemDefinition.femaleModel = 40048;
-			itemDefinition.inventoryOptions = new String[]
-					{null, "Wear", null, null, "Drop"};
-			break;
+				itemDefinition.maleModel = 40048;
+				itemDefinition.femaleModel = 40048;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
 			case 20917://arlo
 				itemInstance = ItemDefinition.forId(20792);
 				itemDefinition.zoom = 400;
@@ -12859,12 +12726,12 @@ public class CustomItem {
 				//itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Primal full helm";
 				itemDefinition.inventoryModel = 40037;
-			itemDefinition.maleModel = 40038;
-			itemDefinition.femaleModel = 40038;
-			itemDefinition.inventoryY = 1;
-			itemDefinition.inventoryOptions = new String[]
-					{null, "Wear", null, null, "Drop"};
-			break;
+				itemDefinition.maleModel = 40038;
+				itemDefinition.femaleModel = 40038;
+				itemDefinition.inventoryY = 1;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
 			case 20918://arlo
 				itemInstance = ItemDefinition.forId(20794);
 				itemDefinition.zoom = 700;
@@ -12874,11 +12741,11 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Primal platebody";
 				itemDefinition.inventoryModel = 40039;
-			itemDefinition.maleModel = 40040;
-			itemDefinition.femaleModel = 40040;
-			itemDefinition.inventoryOptions = new String[]
-			{null, "Wear", null, null, "Drop"};
-			break;
+				itemDefinition.maleModel = 40040;
+				itemDefinition.femaleModel = 40040;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
 			case 20919://arlo
 				itemInstance = ItemDefinition.forId(20796);
 				itemDefinition.zoom = 780;
@@ -12888,12 +12755,12 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Primal platelegs";
 				itemDefinition.inventoryModel = 40041;
-			itemDefinition.maleModel = 40042;
-			itemDefinition.femaleModel = 40042;
-			itemDefinition.inventoryOptions = new String[]
-					{null, "Wear", null, null, "Drop"};
-			break;
-			
+				itemDefinition.maleModel = 40042;
+				itemDefinition.femaleModel = 40042;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+
 			case 10859://arlo
 				itemInstance = ItemDefinition.forId(20792);
 				itemDefinition.zoom = 400;
@@ -12903,12 +12770,12 @@ public class CustomItem {
 				//itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Primal full helm";
 				itemDefinition.inventoryModel = 40049;
-			itemDefinition.maleModel = 40050;
-			itemDefinition.femaleModel = 40050;
-			itemDefinition.inventoryY = 1;
-			itemDefinition.inventoryOptions = new String[]
-					{null, "Wear", null, null, "Drop"};
-			break;
+				itemDefinition.maleModel = 40050;
+				itemDefinition.femaleModel = 40050;
+				itemDefinition.inventoryY = 1;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
 			case 10860://arlo
 				itemInstance = ItemDefinition.forId(20794);
 				itemDefinition.zoom = 700;
@@ -12918,11 +12785,11 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Primal platebody";
 				itemDefinition.inventoryModel = 40051;
-			itemDefinition.maleModel = 40052;
-			itemDefinition.femaleModel = 40052;
-			itemDefinition.inventoryOptions = new String[]
-			{null, "Wear", null, null, "Drop"};
-			break;
+				itemDefinition.maleModel = 40052;
+				itemDefinition.femaleModel = 40052;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
 			case 10861://arlo
 				itemInstance = ItemDefinition.forId(20796);
 				itemDefinition.zoom = 780;
@@ -12932,11 +12799,11 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Primal platelegs";
 				itemDefinition.inventoryModel = 40053;
-			itemDefinition.maleModel = 40054;
-			itemDefinition.femaleModel = 40054;
-			itemDefinition.inventoryOptions = new String[]
-					{null, "Wear", null, null, "Drop"};
-			break;
+				itemDefinition.maleModel = 40054;
+				itemDefinition.femaleModel = 40054;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
 			case 1905://arlo
 				itemInstance = ItemDefinition.forId(20792);
 				itemDefinition.zoom = 400;
@@ -12946,12 +12813,12 @@ public class CustomItem {
 				//itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Fire torva gloves";
 				itemDefinition.inventoryModel = 40055;
-			itemDefinition.maleModel = 40056;
-			itemDefinition.femaleModel = 40056;
-			itemDefinition.inventoryY = 1;
-			itemDefinition.inventoryOptions = new String[]
-					{null, "Wear", null, null, "Drop"};
-			break;
+				itemDefinition.maleModel = 40056;
+				itemDefinition.femaleModel = 40056;
+				itemDefinition.inventoryY = 1;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
 			case 4616://arlo
 				itemInstance = ItemDefinition.forId(20794);
 				itemDefinition.zoom = 700;
@@ -12961,11 +12828,11 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Fire torva boots";
 				itemDefinition.inventoryModel = 40057;
-			itemDefinition.maleModel = 40057;
-			itemDefinition.femaleModel = 40057;
-			itemDefinition.inventoryOptions = new String[]
-			{null, "Wear", null, null, "Drop"};
-			break;
+				itemDefinition.maleModel = 40057;
+				itemDefinition.femaleModel = 40057;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
 			case 5066://arlo
 				itemInstance = ItemDefinition.forId(20796);
 				itemDefinition.zoom = 780;
@@ -12975,11 +12842,11 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Fire torva whip";
 				itemDefinition.inventoryModel = 40058;
-			itemDefinition.maleModel = 40059;
-			itemDefinition.femaleModel = 40059;
-			itemDefinition.inventoryOptions = new String[]
-					{null, "Wear", null, null, "Drop"};
-			break;
+				itemDefinition.maleModel = 40059;
+				itemDefinition.femaleModel = 40059;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
 			case 4857://arlo
 				itemInstance = ItemDefinition.forId(20792);
 				itemDefinition.zoom = 800;
@@ -12989,23 +12856,23 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Ganodermic visor";
 				itemDefinition.inventoryModel = 40006;
-			itemDefinition.maleModel = 40007;
-			itemDefinition.femaleModel = 40007;
-			break;
+				itemDefinition.maleModel = 40007;
+				itemDefinition.femaleModel = 40007;
+				break;
 			case 2026://arlo
 				itemDefinition.name = "Ganodermic poncho";
 				itemDefinition.inventoryModel = 40008;
-			itemDefinition.maleModel = 40009;
-			itemDefinition.femaleModel = 40009;
-			itemInstance = ItemDefinition.forId(20794);
-			itemDefinition.zoom = itemInstance.zoom;
-			itemDefinition.rotationY = itemInstance.rotationY;
-			itemDefinition.rotationX = itemInstance.rotationX;
-			itemDefinition.inventoryX = itemInstance.inventoryX;
-			itemDefinition.inventoryY = itemInstance.inventoryY;
-			itemDefinition.inventoryOptions = new String[]
-			{null, "Wear", null, null, "Drop"};
-			break;
+				itemDefinition.maleModel = 40009;
+				itemDefinition.femaleModel = 40009;
+				itemInstance = ItemDefinition.forId(20794);
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
 			case 4875://arlo
 				itemInstance = ItemDefinition.forId(20796);
 				itemDefinition.zoom = 1800;
@@ -13015,9 +12882,9 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Ganodermic leggings";
 				itemDefinition.inventoryModel = 40010;
-			itemDefinition.maleModel = 40011;
-			itemDefinition.femaleModel = 40011;
-			break;
+				itemDefinition.maleModel = 40011;
+				itemDefinition.femaleModel = 40011;
+				break;
 			case 4858://arlo
 				itemInstance = ItemDefinition.forId(20792);
 				itemDefinition.zoom = 800;
@@ -13027,23 +12894,23 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Virtus mask";
 				itemDefinition.inventoryModel = 40012;
-			itemDefinition.maleModel = 40013;
-			itemDefinition.femaleModel = 40013;
-			break;
+				itemDefinition.maleModel = 40013;
+				itemDefinition.femaleModel = 40013;
+				break;
 			case 2028://arlo
 				itemDefinition.name = "Virtus robe top";
 				itemDefinition.inventoryModel = 40014;
-			itemDefinition.maleModel = 40015;
-			itemDefinition.femaleModel = 40015;
-			itemInstance = ItemDefinition.forId(20794);
-			itemDefinition.zoom = itemInstance.zoom;
-			itemDefinition.rotationY = itemInstance.rotationY;
-			itemDefinition.rotationX = itemInstance.rotationX;
-			itemDefinition.inventoryX = itemInstance.inventoryX;
-			itemDefinition.inventoryY = itemInstance.inventoryY;
-			itemDefinition.inventoryOptions = new String[]
-			{null, "Wear", null, null, "Drop"};
-			break;
+				itemDefinition.maleModel = 40015;
+				itemDefinition.femaleModel = 40015;
+				itemInstance = ItemDefinition.forId(20794);
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
 			case 4877://arlo
 				itemInstance = ItemDefinition.forId(20796);
 				itemDefinition.zoom = 1800;
@@ -13053,9 +12920,9 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Virtus robe legs";
 				itemDefinition.inventoryModel = 40016;
-			itemDefinition.maleModel = 40017;
-			itemDefinition.femaleModel = 40017;
-			break;
+				itemDefinition.maleModel = 40017;
+				itemDefinition.femaleModel = 40017;
+				break;
 			case 4928://arlo
 				itemInstance = ItemDefinition.forId(20792);
 				itemDefinition.zoom = 800;
@@ -13065,23 +12932,23 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Pernix cowl";
 				itemDefinition.inventoryModel = 40018;
-			itemDefinition.maleModel = 40019;
-			itemDefinition.femaleModel = 40019;
-			break;
+				itemDefinition.maleModel = 40019;
+				itemDefinition.femaleModel = 40019;
+				break;
 			case 2030://arlo
 				itemDefinition.name = "Pernix body";
 				itemDefinition.inventoryModel = 40020;
-			itemDefinition.maleModel = 40021;
-			itemDefinition.femaleModel = 40021;
-			itemInstance = ItemDefinition.forId(20794);
-			itemDefinition.zoom = itemInstance.zoom;
-			itemDefinition.rotationY = itemInstance.rotationY;
-			itemDefinition.rotationX = itemInstance.rotationX;
-			itemDefinition.inventoryX = itemInstance.inventoryX;
-			itemDefinition.inventoryY = itemInstance.inventoryY;
-			itemDefinition.inventoryOptions = new String[]
-			{null, "Wear", null, null, "Drop"};
-			break;
+				itemDefinition.maleModel = 40021;
+				itemDefinition.femaleModel = 40021;
+				itemInstance = ItemDefinition.forId(20794);
+				itemDefinition.zoom = itemInstance.zoom;
+				itemDefinition.rotationY = itemInstance.rotationY;
+				itemDefinition.rotationX = itemInstance.rotationX;
+				itemDefinition.inventoryX = itemInstance.inventoryX;
+				itemDefinition.inventoryY = itemInstance.inventoryY;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
 			case 4946://arlo
 				itemInstance = ItemDefinition.forId(20796);
 				itemDefinition.zoom = 1800;
@@ -13091,63 +12958,63 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.name = "Pernix chaps";
 				itemDefinition.inventoryModel = 40022;
-			itemDefinition.maleModel = 40023;
-			itemDefinition.femaleModel = 40023;
-			break;
+				itemDefinition.maleModel = 40023;
+				itemDefinition.femaleModel = 40023;
+				break;
 			case 6605://arlo
 				itemDefinition.name = "Chaotic rapier";
 				itemDefinition.inventoryModel = 40032;
-			itemDefinition.maleModel = 40033;
-			itemDefinition.femaleModel = 40033;
-			itemDefinition.zoom = 1425;
-			itemDefinition.rotationY = 700;
-			itemDefinition.rotationX = 1300;
-			break;
+				itemDefinition.maleModel = 40033;
+				itemDefinition.femaleModel = 40033;
+				itemDefinition.zoom = 1425;
+				itemDefinition.rotationY = 700;
+				itemDefinition.rotationX = 1300;
+				break;
 			case 6607://arlo
 				itemDefinition.name = "Chaotic longsword";
 				itemDefinition.inventoryModel = 40028;
-			itemDefinition.maleModel = 40029;
-			itemDefinition.femaleModel = 40029;
-			itemDefinition.zoom = 1650;
-			itemDefinition.rotationY = 498;
-			itemDefinition.rotationX = 1300;
-			break;
+				itemDefinition.maleModel = 40029;
+				itemDefinition.femaleModel = 40029;
+				itemDefinition.zoom = 1650;
+				itemDefinition.rotationY = 498;
+				itemDefinition.rotationX = 1300;
+				break;
 			case 6609://arlo
 				itemDefinition.name = "Chaotic maul";
 				itemDefinition.inventoryModel = 40030;
-			itemDefinition.maleModel = 40031;
-			itemDefinition.femaleModel = 40031;
-			itemDefinition.zoom = 1360;
-			itemDefinition.rotationY = 498;
-			itemDefinition.rotationX = 354;
-			break;
+				itemDefinition.maleModel = 40031;
+				itemDefinition.femaleModel = 40031;
+				itemDefinition.zoom = 1360;
+				itemDefinition.rotationY = 498;
+				itemDefinition.rotationX = 354;
+				break;
 			case 9084://arlo
 				itemDefinition.name = "Chaotic staff";
 				itemDefinition.inventoryModel = 40034;
-			itemDefinition.maleModel = 40035;
-			itemDefinition.femaleModel = 40035;
-			itemDefinition.zoom = 1711;
-			itemDefinition.rotationY = 350;
-			itemDefinition.rotationX = 365;
-			break;
+				itemDefinition.maleModel = 40035;
+				itemDefinition.femaleModel = 40035;
+				itemDefinition.zoom = 1711;
+				itemDefinition.rotationY = 350;
+				itemDefinition.rotationX = 365;
+				break;
 			case 11165://arlo
 				itemDefinition.name = "Chaotic crossbow";
 				itemDefinition.inventoryModel = 40024;
-			itemDefinition.maleModel = 40025;
-			itemDefinition.femaleModel = 40025;
-			itemDefinition.zoom = 1650;
-			itemDefinition.rotationY = 498;
-			itemDefinition.rotationX = 700;
-			break;
+				itemDefinition.maleModel = 40025;
+				itemDefinition.femaleModel = 40025;
+				itemDefinition.zoom = 1650;
+				itemDefinition.rotationY = 498;
+				itemDefinition.rotationX = 700;
+				break;
 			case 6593://arlo
 				itemDefinition.name = "Korasi sword";
 				itemDefinition.inventoryModel = 40026;
-			itemDefinition.maleModel = 40027;
-			itemDefinition.femaleModel = 40027;
-			itemDefinition.zoom = 1650;
-			itemDefinition.rotationY = 498;
-			itemDefinition.rotationX = 500;
-			break;
+				itemDefinition.maleModel = 40027;
+				itemDefinition.femaleModel = 40027;
+				itemDefinition.zoom = 1650;
+				itemDefinition.rotationY = 498;
+				itemDefinition.rotationX = 500;
+				break;
 			case 16160:
 				itemDefinition.name = "Pig pet";
 				itemDefinition.inventoryOptions = new String[]
@@ -13160,6 +13027,25 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(2812);
 				itemDefinition.inventoryModel = npcInstance.models[0];
 				break;
+		}
+		
+	}
+
+	public static void method_3(ItemDefinition itemDefinition, int itemId) {
+		if (Config.PRE_EOC) {
+			return;
+		}
+		ItemDefinition itemInstance = null;
+		EntityDefinition npcInstance = null;
+		ObjectDefinition objectInstance = null;
+		int colour = -1;
+		int green = -1;
+		int red = -1;
+		int yellow = -1;
+		int blue = -1;
+
+		switch (itemId) {
+
 			case 16159:
 				itemDefinition.name = "Nurse Tafani pet";
 				itemDefinition.inventoryOptions = new String[]
@@ -13289,7 +13175,7 @@ public class CustomItem {
 			case 16154:
 				itemDefinition.name = "Troll child pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 3500;
 				itemDefinition.rotationY = 100;
 				itemDefinition.rotationX = 300;
@@ -13303,7 +13189,7 @@ public class CustomItem {
 				itemInstance = ItemDefinition.forId(20784);
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = itemInstance.zoom;
 				itemDefinition.rotationY = itemInstance.rotationY;
 				itemDefinition.rotationX = itemInstance.rotationX;
@@ -13313,7 +13199,7 @@ public class CustomItem {
 			case 16152:
 				itemDefinition.name = "Sea snake pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 11000;
 				itemDefinition.rotationY = 250;
 				itemDefinition.rotationX = 100;
@@ -13368,7 +13254,7 @@ public class CustomItem {
 			case 16149:
 				itemDefinition.name = "Tree spirit pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2500;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -13380,7 +13266,7 @@ public class CustomItem {
 			case 16148:
 				itemDefinition.name = "Clerris pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 3500;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -13392,7 +13278,7 @@ public class CustomItem {
 			case 16147:
 				itemDefinition.name = "Fairy Godfather pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -13404,7 +13290,7 @@ public class CustomItem {
 			case 16146:
 				itemDefinition.name = "Nieve pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 750;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -13422,32 +13308,32 @@ public class CustomItem {
 				itemInstance = ItemDefinition.forId(20767); //ruby key
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Destroy"};
+						{null, null, null, null, "Destroy"};
 				itemDefinition.zoom = itemInstance.zoom;
 				itemDefinition.rotationY = itemInstance.rotationY;
 				itemDefinition.rotationX = itemInstance.rotationX;
 				itemDefinition.inventoryX = itemInstance.inventoryX;
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.modelColourToEdit = new int[]
-				{8128};
+						{8128};
 				itemDefinition.newModelColourProduced = new int[]
-				{560};
+						{560};
 				break;
 			case 4273:
 				itemDefinition.name = "Key of Tokens";
 				itemInstance = ItemDefinition.forId(20767); //ruby key
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Destroy"};
+						{null, null, null, null, "Destroy"};
 				itemDefinition.zoom = itemInstance.zoom;
 				itemDefinition.rotationY = itemInstance.rotationY;
 				itemDefinition.rotationX = itemInstance.rotationX;
 				itemDefinition.inventoryX = itemInstance.inventoryX;
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.modelColourToEdit = new int[]
-				{8128};
+						{8128};
 				itemDefinition.newModelColourProduced = new int[]
-				{123770};
+						{123770};
 				break;
 
 			case 16145:
@@ -13455,22 +13341,22 @@ public class CustomItem {
 				itemInstance = ItemDefinition.forId(21079); //ruby key
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
 				itemDefinition.inventoryOptions = new String[]
-				{"Read", null, null, null, "Drop"};
+						{"Read", null, null, null, "Drop"};
 				itemDefinition.zoom = itemInstance.zoom;
 				itemDefinition.rotationY = itemInstance.rotationY;
 				itemDefinition.rotationX = itemInstance.rotationX;
 				itemDefinition.inventoryX = itemInstance.inventoryX;
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.modelColourToEdit = new int[]
-				{5563};
+						{5563};
 				itemDefinition.newModelColourProduced = new int[]
-				{560};
+						{560};
 				break;
 
 			case 16139:
 				itemDefinition.name = "Pet chair";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2500;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 340;
@@ -13484,7 +13370,7 @@ public class CustomItem {
 				itemDefinition.femaleModel = 29191;
 				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-				{null, "Wear", null, null, null};
+						{null, "Wear", null, null, null};
 				itemDefinition.inventoryModel = 32784;
 				itemDefinition.maleModel = 29191;
 				itemDefinition.rotationY = 349;
@@ -13493,16 +13379,16 @@ public class CustomItem {
 				itemDefinition.inventoryY = 8;
 				itemDefinition.zoom = 886;
 				itemDefinition.modelColourToEdit = new int[]
-				{929, 922, 918, 914};
+						{929, 922, 918, 914};
 				itemDefinition.newModelColourProduced = new int[]
-				{8128, 8128, 8128, 8128};
+						{8128, 8128, 8128, 8128};
 				break;
 
 			case 16137:
 				itemInstance = ItemDefinition.forId(20269);
 				itemDefinition.name = "Hopleez pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = itemInstance.zoom;
 				itemDefinition.rotationY = itemInstance.rotationY;
 				itemDefinition.rotationX = itemInstance.rotationX;
@@ -13529,7 +13415,7 @@ public class CustomItem {
 			case 16135:
 				itemDefinition.name = "Mcribb pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2200;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -13594,9 +13480,9 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[3] = "Uncharge";
 				itemDefinition.inventoryOptions[4] = null;
 				itemDefinition.modelColourToEdit = new int[]
-				{-22407, -23323, -22308, -21269, 9158, 9009, 11212};
+						{-22407, -23323, -22308, -21269, 9158, 9009, 11212};
 				itemDefinition.newModelColourProduced = new int[]
-				{34770, 34770, 34770, 34770, 34770, 34770, 34770};
+						{34770, 34770, 34770, 34770, 34770, 34770, 34770};
 				break;
 			case 16133:
 				itemDefinition.name = "Cyan h'ween mask";
@@ -13624,7 +13510,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(412);
 				itemDefinition.name = "Gargoyle pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 6400;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -13636,7 +13522,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(2041);
 				itemDefinition.name = "Broken Handz pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 1500;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -13648,7 +13534,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(7668);
 				itemDefinition.name = "Voice of Yama pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 4000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 0;
@@ -13660,7 +13546,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(6077);
 				itemDefinition.name = "Gnome child pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 700;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 300;
@@ -13672,7 +13558,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(998);
 				itemDefinition.name = "Guard pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 900;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 150;
@@ -13692,7 +13578,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(2207);
 				itemDefinition.name = "Growler pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 3700;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 300;
@@ -13705,7 +13591,7 @@ public class CustomItem {
 				npcInstance = EntityDefinition.forId(465);
 				itemDefinition.name = "Skeletal wyvern pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 3000;
 				itemDefinition.rotationY = 0;
 				itemDefinition.rotationX = 300;
@@ -13729,7 +13615,7 @@ public class CustomItem {
 			case 16125:
 				itemDefinition.name = "Glod pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 9000;
 				itemDefinition.rotationY = 100;
 				itemDefinition.rotationX = 100;
@@ -13759,7 +13645,7 @@ public class CustomItem {
 			case 16123:
 				itemDefinition.name = "Karil pet";
 				itemDefinition.inventoryOptions = new String[]
-				{null, null, null, null, "Drop"};
+						{null, null, null, null, "Drop"};
 				itemDefinition.zoom = 2500;
 				itemDefinition.rotationY = 100;
 				itemDefinition.rotationX = 100;
@@ -13939,7 +13825,7 @@ public class CustomItem {
 				break;
 			case 11996:
 				itemDefinition.inventoryOptions = new String[]
-				{"Spawn Item", null, "Check Uses", null, "Destroy"};
+						{"Spawn Item", null, "Check Uses", null, "Destroy"};
 				break;
 			case 16113:
 				itemDefinition.inventoryOptions = new String[]
@@ -14173,7 +14059,7 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[0] = null;
 				itemDefinition.inventoryOptions[1] = "Wear";
 				break;
-			
+
 			case 3761:
 				itemDefinition.name = "Zulrah's Wings";
 				itemDefinition.inventoryModel = 50113;
@@ -14516,7 +14402,7 @@ public class CustomItem {
 				itemDefinition.newModelColourProduced[0] = 0;
 				itemDefinition.newModelColourProduced[1] = 130770;
 				break;
-			    case 16088:
+			case 16088:
 				itemDefinition.name = "Legendary Mystery box";
 				itemDefinition.inventoryModel = 2426;
 				itemDefinition.maleModel = -1;
@@ -14627,7 +14513,7 @@ public class CustomItem {
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
 				itemDefinition.name = "Infernal Stone";
-			
+
 				break;
 			case 16082:
 				itemDefinition.name = "Fear reaper pet";
@@ -14640,7 +14526,7 @@ public class CustomItem {
 				itemDefinition.inventoryX = itemInstance.inventoryX;
 				itemDefinition.inventoryY = itemInstance.inventoryY;
 				itemDefinition.inventoryModel = itemInstance.inventoryModel;
-				
+
 				break;
 			case 16081:
 				itemDefinition.name = "Anti-santa pet";
@@ -15604,809 +15490,992 @@ public class CustomItem {
 				itemDefinition.operateOptions = new String[]
 						{"Al Kharid", "Draynor", "Karamja", "Edgeville"};
 				break;
-
-			case 21166:
-			case 21169:
-			case 21171:
-			case 21173:
-			case 21175:
-				itemDefinition.operateOptions = new String[]
-						{"Lava Maze", "Bandit Camp", "Chaos Temple", null, null};
-				break;
-
-			case 11238:
-			case 11240:
-			case 11242:
-			case 11244:
-			case 11246:
-			case 11248:
-			case 11250:
-			case 11252:
-			case 11254:
-			case 11256:
-				itemDefinition.inventoryOptions = new String[]
-						{"Loot", null, null, null, "Drop"};
-				break;
-
-			case 4079:
-				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
-				break;
-
-
-			case 11941:
-				itemDefinition.inventoryOptions[2] = "Withdraw";
-				break;
-			case 2740:
-				itemDefinition.name = "Clue casket (1st release)";
-				itemDefinition.inventoryOptions = new String[]
-						{"Open", null, null, null, "Drop"};
-				itemDefinition.modelColourToEdit = new int[1];
-				itemDefinition.modelColourToEdit[0] = -22477;
-				itemDefinition.newModelColourProduced = new int[1];
-				itemDefinition.newModelColourProduced[0] = 123456;
-				break;
-			case 2742:
-				itemDefinition.name = "Clue casket (2nd release)";
-				itemDefinition.inventoryOptions = new String[]
-						{"Open", null, null, null, "Drop"};
-				itemDefinition.modelColourToEdit = new int[1];
-				itemDefinition.modelColourToEdit[0] = -22477;
-				itemDefinition.newModelColourProduced = new int[1];
-				itemDefinition.newModelColourProduced[0] = 461770;
-				break;
-			case 2744:
-				itemDefinition.name = "Clue casket (3rd release)";
-				itemDefinition.inventoryOptions = new String[]
-						{"Open", null, null, null, "Drop"};
-				itemDefinition.modelColourToEdit = new int[1];
-				itemDefinition.modelColourToEdit[0] = -22477;
-				itemDefinition.newModelColourProduced = new int[1];
-				itemDefinition.newModelColourProduced[0] = 127;
-				break;
-
-			case 14011:
-				itemDefinition.inventoryModel = 65270;
-				itemDefinition.name = "Completionist cape";
-				itemDefinition.zoom = 1513;
-				itemDefinition.maleEquipOffset = 5;
-				itemDefinition.femaleEquipOffset = 9;
-				itemDefinition.femaleEquipOffsetOther = -2;
-				itemDefinition.rotationY = 279;
-				itemDefinition.rotationX = 948;
-				itemDefinition.inventoryX = -3;
-				itemDefinition.inventoryY = 24;
-				itemDefinition.maleModel = 65297;
-				itemDefinition.femaleModel = 65316;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", "Customise", null, "Drop"};
-				break;
-
-			case 14012:
-				itemDefinition.name = "Completionist hood";
-				itemDefinition.inventoryModel = 29629;
-				itemDefinition.zoom = 760;
-				itemDefinition.rotationY = 11;
-				itemDefinition.rotationX = 81;
+			case 16292:
+				itemDefinition.name = "Bandos chestplate";
+				itemDefinition.inventoryModel = 28042;
+				itemDefinition.maleModel = 27636;
+				itemDefinition.femaleModel = 27644;
+				itemDefinition.zoom = 984;
+				itemDefinition.rotationX = 6;
+				itemDefinition.rotationY = 501;
 				itemDefinition.inventoryX = 1;
-				itemDefinition.inventoryY = -3;
-				itemDefinition.maleModel = 65292;
-				itemDefinition.femaleModel = 65310;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
-
-			case 14013:
-				itemDefinition.name = "Veteran cape";
-				itemDefinition.inventoryModel = 65261;
-				itemDefinition.zoom = 1513;
-				itemDefinition.rotationY = 279;
-				itemDefinition.rotationX = 948;
-				itemDefinition.inventoryX = -3;
-				itemDefinition.inventoryY = 24;
-				itemDefinition.maleModel = 65305;
-				itemDefinition.femaleModel = 65318;
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
-
-			case 14014:
-				itemDefinition.name = "Veteran hood";
-				itemDefinition.zoom = 760;
-				itemDefinition.rotationY = 11;
-				itemDefinition.rotationX = 81;
-				itemDefinition.inventoryX = 1;
-				itemDefinition.inventoryY = -3;
-				itemDefinition.inventoryModel = 29629;
-				itemDefinition.maleModel = 29614;
-				itemDefinition.femaleModel = 29623;
-				itemDefinition.modelColourToEdit = new int[]
-						{668, 675, 784, 815, 673, 685};
-				itemDefinition.newModelColourProduced = new int[]
-						{115, 107, 7093, -22105, 0, 979};
-				itemDefinition.inventoryOptions = new String[]
-						{null, "Wear", null, null, "Drop"};
-				break;
-
-			case 16013:
-				itemDefinition.name = "Camel";
-				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
-				itemInstance = ItemDefinition.forId(7003);
-				itemDefinition.zoom = itemInstance.zoom;
-				itemDefinition.rotationY = itemInstance.rotationX;
-				itemDefinition.rotationX = itemInstance.rotationY;
-				itemDefinition.inventoryX = itemInstance.inventoryX;
-				itemDefinition.inventoryY = itemInstance.inventoryY;
-				itemDefinition.inventoryModel = itemInstance.inventoryModel;
-				break;
-			case 16014:
-				itemDefinition.name = "Skotos";
-				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
-				itemDefinition.inventoryModel = 65016;
-				itemDefinition.zoom = 1168;
-				itemDefinition.rotationY = 2012;
-				itemDefinition.rotationX = 0;
-				break;
-			case 16017:
-				itemDefinition.name = "Cerberus pet";
-				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
-				itemDefinition.zoom = 6500;
-				itemDefinition.rotationY = 100;
-				itemDefinition.rotationX = 100;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = 50;
-				npcInstance = EntityDefinition.forId(5866);
-				itemDefinition.inventoryModel = npcInstance.models[0];
-				break;
-			case 16018:
-				itemDefinition.name = "Blood money pet";
-				itemInstance = ItemDefinition.forId(13316);
-				itemDefinition.inventoryModel = itemInstance.inventoryModel;
-				itemDefinition.newModelColourProduced = itemInstance.newModelColourProduced;
-				itemDefinition.modelColourToEdit = itemInstance.modelColourToEdit;
-				itemDefinition.zoom = itemInstance.zoom;
-				itemDefinition.inventoryX = itemInstance.inventoryX;
-				itemDefinition.inventoryY = itemInstance.inventoryY;
-				itemDefinition.rotationX = itemInstance.rotationX;
-				itemDefinition.rotationY = itemInstance.rotationY;
-				break;
-			case 16504:
-				itemDefinition.inventoryModel = 3288;
-				itemDefinition.name = "Death Cape";
-				itemDefinition.description = "A cape worn by the Masters.".getBytes();
-				itemDefinition.zoom = 1579;
-				itemDefinition.inventoryY = -6;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.rotationY= 500;
-				itemDefinition.rotationX = 0;
-				itemDefinition.maleModel = 3287;
-				itemDefinition.femaleModel = 3287;
-				itemDefinition.groundOptions = new String[5];
-				itemDefinition.groundOptions[2] = "Take";
+				itemDefinition.inventoryY = 4;
 				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
 				itemDefinition.inventoryOptions[1] = "Wear";
-				break;
-			case 16506:
-				itemDefinition.inventoryModel = 65321;
-				itemDefinition.name = "Woodcutting 120 Cape";
-				itemDefinition.description = "A cape worn by the Masters of Masters.".getBytes();
-				itemDefinition.zoom = 2610;
-				itemDefinition.inventoryY = 5;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.rotationY= 500;
-				itemDefinition.rotationX = 1000;
-				itemDefinition.maleModel = 65320;
-				itemDefinition.femaleModel = 65320;
-				itemDefinition.groundOptions = new String[5];
-				itemDefinition.groundOptions[2] = "Take";
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[1] = "Wear";
-				break;
-			case 16508:
-				itemDefinition.inventoryModel = 50611;
-				itemDefinition.name = "Runecessor Cape";
-				itemDefinition.description = "A cape worn by the avid player.".getBytes();
-				itemDefinition.zoom = 2610;
-				itemDefinition.inventoryY = 5;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.rotationY= 500;
-				itemDefinition.rotationX = 1000;
-				itemDefinition.maleModel = 50610;
-				itemDefinition.femaleModel = 50610;
-				itemDefinition.groundOptions = new String[5];
-				itemDefinition.groundOptions[2] = "Take";
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[1] = "Wear";
-				break;
-			case 16505:
-				itemDefinition.name = "Tekton Ring";
-				itemInstance = ItemDefinition.forId(16076);
-				itemDefinition.newModelColourProduced = new int[]
-						{461770, 76770};
-				itemDefinition.modelColourToEdit = new int[]
-						{9152, 127};
-				itemDefinition.zoom = itemInstance.zoom;
-				itemDefinition.rotationY = itemInstance.rotationY;
-				itemDefinition.rotationX = itemInstance.rotationX;
-				itemDefinition.inventoryX = itemInstance.inventoryX;
-				itemDefinition.inventoryY = itemInstance.inventoryY;
-				itemDefinition.inventoryModel = itemInstance.inventoryModel;
-				itemDefinition.maleModel = itemInstance.maleModel;
-				itemDefinition.femaleModel = itemInstance.maleModel;
-				itemDefinition.description = "A Ring droped by Tekton give 7% droprate.".getBytes();
-				itemDefinition.groundOptions = new String[5];
-				itemDefinition.groundOptions[2] = "Take";
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[1] = "Wear";
-                break;
-			case 16019:
-				itemDefinition.name = "Tekton pet";
-				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
-				itemDefinition.zoom = 8000;
-				itemDefinition.rotationY = 100;
-				itemDefinition.rotationX = 100;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = 0;
-				npcInstance = EntityDefinition.forId(7544);
-				itemDefinition.inventoryModel = npcInstance.models[0];
-				break;
-			case 16020:
-				itemDefinition.name = "Yoshi pet";
-				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
-				itemDefinition.zoom = 750;
-				itemDefinition.rotationY = 100;
-				itemDefinition.rotationX = 250;
-				itemDefinition.inventoryX = 10;
-				itemDefinition.inventoryY = 100;
-				npcInstance = EntityDefinition.forId(1873);
-				itemDefinition.inventoryModel = npcInstance.models[0];
-				itemDefinition.modelColourToEdit = new int[1];
-				itemDefinition.newModelColourProduced = new int[1];
-
-				itemDefinition.modelColourToEdit= new int[14];
-				itemDefinition.newModelColourProduced = new int[14];
-				colour = 51136;
-				itemDefinition.modelColourToEdit[0] = 29976;
-				itemDefinition.newModelColourProduced[0] = 419770;
-
-				colour = 419770;
-				itemDefinition.modelColourToEdit[1] = 7502;
-				itemDefinition.newModelColourProduced[1] = 356770 ;
-
-				colour = 419770;
-				itemDefinition.modelColourToEdit[2] = 27819;
-				itemDefinition.newModelColourProduced[2] = 356770 ;
-
-				colour = 419770;
-				itemDefinition.modelColourToEdit[3] = 0;
-				itemDefinition.newModelColourProduced[3] =   0 ;
-
-				colour = 419770;
-				itemDefinition.modelColourToEdit[4] = 29980;
-				itemDefinition.newModelColourProduced[4] =419770;
-
-				colour = 419770;
-				itemDefinition.modelColourToEdit[5] = 28302;
-				itemDefinition.newModelColourProduced[5] =  419770;
-
-				colour = 419770;
-				itemDefinition.modelColourToEdit[6] = 29980;
-				itemDefinition.newModelColourProduced[6] = 419770;
-
-				colour = 419770;
-				itemDefinition.modelColourToEdit[7] = 27934;
-				itemDefinition.newModelColourProduced[7] = 419770;
-				
-				// Circle on the ground, most inner first circle
-				colour = 419770;
-				itemDefinition.modelColourToEdit[8] = -26214;
-				itemDefinition.newModelColourProduced[8] = 419770;
-
-				// Second circle
-				colour = 419770;
-				itemDefinition.modelColourToEdit[9] = -26218;
-				itemDefinition.newModelColourProduced[9] = 419770;
-
-				// Third circle
-				colour = 419770;
-				itemDefinition.modelColourToEdit[10] = -26094;
-				itemDefinition.newModelColourProduced[10] = 356770 ;
-
-				// Fourth circle
-				colour = 419770;
-				itemDefinition.modelColourToEdit[11] = -25970;
-				itemDefinition.newModelColourProduced[11] = 356770 ;
-
-				// Fifth circle
-				colour = 419770;
-				itemDefinition.modelColourToEdit[12] = -25718;
-				itemDefinition.newModelColourProduced[12] = 356770 ;
-
-				// Sixth circle
-				colour = 419770;
-				itemDefinition.modelColourToEdit[13] = -23672;
-				itemDefinition.newModelColourProduced[13] = 356770 ;
-
-
-			
-				break;
-			case 13302:
-				itemDefinition.name = "Mini blood key";
-				break;
-			case 20526:
-				itemDefinition.name = "Blood key";
-				break;
-			case 16016:
-				itemDefinition.name = "Corporeal beast pet";
-				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
-				itemDefinition.zoom = 3700;
-				itemDefinition.rotationY = 100;
-				itemDefinition.rotationX = 100;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = 0;
-				npcInstance = EntityDefinition.forId(319);
-				itemDefinition.inventoryModel = npcInstance.models[0];
-				break;
-			case 16015:
-				itemDefinition.name = "Dharok pet";
-				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
-				itemDefinition.zoom = 1000;
-				itemDefinition.rotationY = 100;
-				itemDefinition.rotationX = 100;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = 100;
-				npcInstance = EntityDefinition.forId(1673);
-				itemDefinition.inventoryModel = npcInstance.models[0];
-				break;
-			case 16012:
-				itemDefinition.name = "Vespula";
-				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
-				itemDefinition.zoom = 8000;
-				itemDefinition.rotationY = 100;
-				itemDefinition.rotationX = 200;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = -30;
-				npcInstance = EntityDefinition.forId(7531);
-				itemDefinition.inventoryModel = npcInstance.models[0];
-				break;
-			case 16011:
-				itemDefinition.name = "Vasa Nistirio";
-				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
-				itemDefinition.zoom = 11500;
-				itemDefinition.rotationY = 0;
-				itemDefinition.rotationX = 0;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = -30;
-				npcInstance = EntityDefinition.forId(7566);
-				itemDefinition.inventoryModel = npcInstance.models[0];
-				break;
-			case 16010:
-				itemDefinition.name = "The Night Beast";
-				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
-				itemDefinition.zoom = 6500;
-				itemDefinition.rotationY = 0;
-				itemDefinition.rotationX = 0;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = -30;
-				itemDefinition.inventoryModel = 32933;
-				break;
-			// This item id is used to fix herblore animation.
-			case 3:
-				itemDefinition.maleModel = 506;
-				itemDefinition.femaleModel = 506;
-				break;
-
-			case 16007:
-				itemDefinition.name = "Tormented demon pet";
-				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
-				itemDefinition.zoom = 7300;
-				itemDefinition.rotationY = 0;
-				itemDefinition.rotationX = 0;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = -140;
-				itemDefinition.inventoryModel = 44733;
-				break;
-			case 16008:
-				itemDefinition.name = "Ice strykewyrm pet";
-				itemDefinition.inventoryOptions = new String[]
-						{null, null, null, null, "Drop"};
-				itemDefinition.zoom = 7500;
-				itemDefinition.rotationY = 30;
-				itemDefinition.rotationX = 70;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = 0;
-				itemDefinition.inventoryModel = 51847;
-				break;
-
-			case 7478:
-				itemDefinition.name = "Donator tokens";
-				itemDefinition.inventoryOptions = new String[5];
-				break;
-	
-			case 11863:
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[1] = "Wear";
-				itemDefinition.inventoryOptions[2] = "Dismantle";
-				break;
-
-			// Monkey greegree.
-			case 4024:
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = "Transform into...";
-				itemDefinition.inventoryOptions[1] = null;
 				itemDefinition.inventoryOptions[2] = null;
 				itemDefinition.inventoryOptions[3] = null;
-				break;
-			// Christmas cracker.
-			case 962:
-				itemDefinition.inventoryOptions = new String[]
-						{"Open", null, null, null, "Drop"};
-				break;
-			case 4067:
-				itemDefinition.name = "Vote ticket";
-				break;
-			case 13146:
-				itemDefinition.name = "Xp lamp 1 million";
-				break;
-			case 16005:
-				itemDefinition.name = "Soul talisman";
-				itemDefinition.inventoryModel = 2496;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 1160;
-				itemDefinition.rotationX = 160;
-				itemDefinition.rotationY = 352;
-				itemDefinition.inventoryX = 2;
-				itemDefinition.inventoryY = 20;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = null;
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = "Locate";
 				itemDefinition.inventoryOptions[4] = null;
-				break;
+				itemDefinition.modelColourToEdit = new int[15];
+				itemDefinition.newModelColourProduced = new int[15];
 
-			case 16006:
-				itemDefinition.name = "Blood talisman";
-				itemDefinition.inventoryModel = 2475;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 1160;
-				itemDefinition.rotationX = 160;
-				itemDefinition.rotationY = 352;
-				itemDefinition.inventoryX = 2;
-				itemDefinition.inventoryY = 20;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = null;
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = "Locate";
-				itemDefinition.inventoryOptions[4] = null;
-				break;
+				//Red yellow green blue
 
-			case 16004:
-				itemDefinition.name = "Dice (up to 100)";
+				green = 34770;
+				red = 302770;
+				yellow = 8128;
+				blue = 927;
+				// Light brown
+				colour = green;
+				itemDefinition.modelColourToEdit[0] = 8367;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 8367 : colour;
+
+				// Light brown
+				colour = green;
+				itemDefinition.modelColourToEdit[1] = 8384;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 8384 : colour;
+
+				// Light brown
+				colour = green;
+				itemDefinition.modelColourToEdit[2] = 8375;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 8375 : colour;
+
+				// Brown
+				colour = blue;
+				itemDefinition.modelColourToEdit[3] = 10266;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? 10266 : colour;
+
+				// Light brown
+				colour = green;
+				itemDefinition.modelColourToEdit[4] = 9523;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 9523 : colour;
+
+				// Unknown
+				colour = -1;
+				itemDefinition.modelColourToEdit[5] = 10502;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? 10502 : colour;
+
+				// Light brown
+				colour = green;
+				itemDefinition.modelColourToEdit[6] = 9515;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? 9515 : colour;
+
+				// Unknown
+				colour = -1;
+				itemDefinition.modelColourToEdit[7] = 4550;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? 4550 : colour;
+
+				// Dark brown
+				colour = yellow;
+				itemDefinition.modelColourToEdit[8] = 142;
+				itemDefinition.newModelColourProduced[8] = colour == -1 ? 142 : colour;
+
+				// Brown
+				colour = yellow;
+				itemDefinition.modelColourToEdit[9] = 163;
+				itemDefinition.newModelColourProduced[9] = colour == -1 ? 163 : colour;
+
+				// Brown
+				colour = red;
+				itemDefinition.modelColourToEdit[10] = 22;
+				itemDefinition.newModelColourProduced[10] = colour == -1 ? 22 : colour;
+
+				colour = -1;
+				itemDefinition.modelColourToEdit[11] = 9403;
+				itemDefinition.newModelColourProduced[11] = colour == -1 ? 9403 : colour;
+
+				// Dark brown
+				colour = yellow;
+				itemDefinition.modelColourToEdit[12] = 8076;
+				itemDefinition.newModelColourProduced[12] = colour == -1 ? 8076 : colour;
+
+				// Brown
+				colour = green;
+				itemDefinition.modelColourToEdit[13] = 10275;
+				itemDefinition.newModelColourProduced[13] = colour == -1 ? 10275 : colour;
+
+				// Brown
+				colour = green;
+				itemDefinition.modelColourToEdit[14] = 8379;
+				itemDefinition.newModelColourProduced[14] = colour == -1 ? 8379 : colour;
+				break;
+			case 16291:
+				itemDefinition.name = "Dragon claws";
+				itemDefinition.femaleModel = 29191;
+				itemDefinition.femaleEquipOffset = 6;
 				itemDefinition.inventoryOptions = new String[]
-						{"Roll", null, "Withdraw seeds", null, null};
-				itemDefinition.inventoryModel = 65004;
-				itemDefinition.rotationX = 94;
-				itemDefinition.rotationY = 215;
-				itemDefinition.zoom = 1104;
-				itemDefinition.inventoryX = 1;
-				itemDefinition.inventoryY = 0;
+						{null, "Wear", null, null, null};
+				itemDefinition.inventoryModel = 32784;
+				itemDefinition.maleModel = 29191;
+				itemDefinition.rotationY = 349;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.rotationX = 15;
+				itemDefinition.inventoryY = 8;
+				itemDefinition.zoom = 886;
+
+				itemDefinition.modelColourToEdit = new int[4];
+				itemDefinition.newModelColourProduced = new int[4];
+				colour = 34770;
+				itemDefinition.modelColourToEdit[0] = 929;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 929 : colour;
+
+				colour = 0;
+				itemDefinition.modelColourToEdit[1] = 922;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 922 : colour;
+
+				colour = 34770;
+				itemDefinition.modelColourToEdit[2] = 918;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 918 : colour;
+
+				colour = 0;
+				itemDefinition.modelColourToEdit[3] = 914;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? 914 : colour;
 				break;
-			case 16002:
-				itemInstance = ItemDefinition.forId(13316);
-				itemDefinition.inventoryModel = itemInstance.inventoryModel;
-				itemDefinition.newModelColourProduced = itemInstance.newModelColourProduced;
-				itemDefinition.modelColourToEdit = itemInstance.modelColourToEdit;
-				itemDefinition.zoom = itemInstance.zoom;
-				itemDefinition.inventoryX = itemInstance.inventoryX;
-				itemDefinition.inventoryY = itemInstance.inventoryY;
-				itemDefinition.rotationX = itemInstance.rotationX;
-				itemDefinition.rotationY = itemInstance.rotationY;
-				itemDefinition.name = "Blood money " + WebsiteRead.voteReward;
-				break;
-			case 16003:
-				itemInstance = ItemDefinition.forId(13316);
-				itemDefinition.inventoryModel = itemInstance.inventoryModel;
-				itemDefinition.newModelColourProduced = itemInstance.newModelColourProduced;
-				itemDefinition.modelColourToEdit = itemInstance.modelColourToEdit;
-				itemDefinition.zoom = itemInstance.zoom;
-				itemDefinition.inventoryX = itemInstance.inventoryX;
-				itemDefinition.inventoryY = itemInstance.inventoryY;
-				itemDefinition.rotationX = itemInstance.rotationX;
-				itemDefinition.rotationY = itemInstance.rotationY;
-				itemDefinition.name = "Blood money 10k";
-				break;
-			case 16000:
-				itemDefinition.unNotedId = 16002;
-				itemDefinition.notedItemTemplate = 799;
-				break;
-			case 16001:
-				itemDefinition.unNotedId = 16003;
-				itemDefinition.notedItemTemplate = 799;
-				break;
-			// Dark crabs cooked, burnt, raw.
-			case 11936:
-			case 11938:
-			case 11934:
-				itemDefinition.inventoryX = 10;
-				break;
-			case 14876:
-				itemDefinition.name = "Ancient statuette";
-				itemDefinition.inventoryModel = 47258;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 1513;
-				itemDefinition.rotationX = 202;
-				itemDefinition.rotationY = 0;
-				itemDefinition.inventoryX = 43;
-				itemDefinition.inventoryY = -1;
-				break;
-			case 14877:
-				itemDefinition.name = "Seren statuette";
-				itemDefinition.inventoryModel = 47257;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 1360;
-				itemDefinition.rotationX = 337;
-				itemDefinition.rotationY = 81;
-				itemDefinition.inventoryX = 8;
-				itemDefinition.inventoryY = -22;
-				itemDefinition.inventoryOptions = new String[5];
-				itemDefinition.inventoryOptions[0] = null;
-				itemDefinition.inventoryOptions[1] = null;
-				itemDefinition.inventoryOptions[2] = null;
-				itemDefinition.inventoryOptions[3] = null;
-				itemDefinition.inventoryOptions[4] = "Drop";
-				break;
-			case 14878:
-				itemDefinition.name = "Armadyl statuette";
-				itemDefinition.inventoryModel = 47256;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 1360;
-				itemDefinition.rotationX = 148;
-				itemDefinition.rotationY = 0;
-				itemDefinition.inventoryX = -30;
-				itemDefinition.inventoryY = 0;
-				break;
-			case 14879:
-				itemDefinition.name = "Zamorak statuette";
-				itemDefinition.inventoryModel = 47250;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
+			case 16290:
+				itemDefinition.name = "Primordial boots";
+				itemDefinition.inventoryModel = 29397;
+				itemDefinition.maleModel = 29250;
+				itemDefinition.maleEquip2 = -1;
+				itemDefinition.femaleModel = 29255;
+				itemDefinition.femaleEquip2 = -1;
 				itemDefinition.zoom = 976;
-				itemDefinition.rotationX = 75;
-				itemDefinition.rotationY = 0;
-				itemDefinition.inventoryX = 33;
-				itemDefinition.inventoryY = 0;
-				break;
-			case 14880:
-				itemDefinition.name = "Saradomin statuette";
-				itemDefinition.inventoryModel = 47248;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 1488;
-				itemDefinition.rotationX = 94;
-				itemDefinition.rotationY = 75;
-				itemDefinition.inventoryX = 37;
-				itemDefinition.inventoryY = -14;
-				break;
-			case 14881:
-				itemDefinition.name = "Bandos statuette";
-				itemDefinition.inventoryModel = 47244;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 1360;
-				itemDefinition.rotationX = 1841;
-				itemDefinition.rotationY = 153;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = -47;
-				break;
-			case 14882:
-				itemDefinition.name = "Ruby chalice";
-				itemDefinition.inventoryModel = 47247;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 720;
-				itemDefinition.rotationX = 1653;
-				itemDefinition.rotationY = 105;
-				itemDefinition.inventoryX = 57;
-				itemDefinition.inventoryY = -4;
-				break;
-			case 14883:
-				itemDefinition.name = "Guthixian brazier";
-				itemDefinition.inventoryModel = 47252;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 1300;
-				itemDefinition.rotationX = 1949;
-				itemDefinition.rotationY = 141;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.inventoryY = 0;
-				break;
-			case 14884:
-				itemDefinition.name = "Armadyl totem";
-				itemDefinition.inventoryModel = 47251;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 1032;
-				itemDefinition.rotationX = 1872;
-				itemDefinition.rotationY = 364;
+				itemDefinition.rotationX = 279;
+				itemDefinition.rotationY = 147;
 				itemDefinition.inventoryX = 5;
-				itemDefinition.inventoryY = 3;
+				itemDefinition.inventoryY = -5;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.modelColourToEdit = new int[8];
+				itemDefinition.newModelColourProduced = new int[8];
+
+				// Dark red
+				colour = 34750;
+				itemDefinition.modelColourToEdit[0] = 280;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 280 : colour;
+
+				// Red
+				colour = 34760;
+				itemDefinition.modelColourToEdit[1] = 924;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 924 : colour;
+
+				// Red
+				colour = 34770;
+				itemDefinition.modelColourToEdit[2] = 920;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 920 : colour;
+
+				// Very dark grey
+				colour = 5;
+				itemDefinition.modelColourToEdit[6] = 520;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? 520 : colour;
+
+				// Dark grey
+				colour = 10;
+				itemDefinition.modelColourToEdit[5] = -22380;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22380 : colour;
+
+
+				// Grey
+				colour = 15;
+				itemDefinition.modelColourToEdit[3] = -22370;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22370 : colour;
+
+				// Red
+				colour = -1;
+				itemDefinition.modelColourToEdit[4] = 538;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 538 : colour;
+
+				colour = -1;
+				itemDefinition.modelColourToEdit[7] = 127;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? 127 : colour;
 				break;
-			case 14885:
-				itemDefinition.name = "Zamorak medallion";
-				itemDefinition.inventoryModel = 47259;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 724;
-				itemDefinition.rotationX = 916;
-				itemDefinition.rotationY = 377;
+			case 16289:
+				itemDefinition.name = "Ancestral hat";
+				itemDefinition.inventoryModel = 32794;
+				itemDefinition.maleModel = 32655;
+				itemDefinition.maleEquip2 = -1;
+				itemDefinition.femaleModel = 32663;
+				itemDefinition.femaleEquip2 = -1;
+				itemDefinition.zoom = 1236;
+				itemDefinition.rotationX = 10;
+				itemDefinition.rotationY = 118;
+				itemDefinition.inventoryY = -12;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.modelColourToEdit = new int[13];
+				itemDefinition.newModelColourProduced = new int[13];
+
+				// Orange
+				colour = 8128;
+				itemDefinition.modelColourToEdit[0] = 6973;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 6973 : colour;
+
+				// Dark grey
+				colour = -1;
+				itemDefinition.modelColourToEdit[1] = -21992;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -21992 : colour;
+
+				// Dark blue
+				colour = -1;
+				itemDefinition.modelColourToEdit[2] = -22235;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22235 : colour;
+
+				// Brown
+				colour = 0;
+				itemDefinition.modelColourToEdit[5] = 5268;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? 5268 : colour;
+
+				// Dark biege
+				colour = 34750;
+				itemDefinition.modelColourToEdit[3] = 6323;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? 6323 : colour;
+
+				// Biege
+				colour = 34760;
+				itemDefinition.modelColourToEdit[4] = 6331;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 6331 : colour;
+
+				// Biege
+				colour = 34765;
+				itemDefinition.modelColourToEdit[6] = 6340;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? 6340 : colour;
+
+				// Biege
+				colour = 34770;
+				itemDefinition.modelColourToEdit[7] = 6348;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? 6348 : colour;
+
+				// Biege
+				colour = 34775;
+				itemDefinition.modelColourToEdit[8] = 6356;
+				itemDefinition.newModelColourProduced[8] = colour == -1 ? 6356 : colour;
+
+				// Biege
+				colour = 34780;
+				itemDefinition.modelColourToEdit[9] = 6364;
+				itemDefinition.newModelColourProduced[9] = colour == -1 ? 6364 : colour;
+
+				// Biege
+				colour = 34780;
+				itemDefinition.modelColourToEdit[10] = 6798;
+				itemDefinition.newModelColourProduced[10] = colour == -1 ? 6798 : colour;
+
+				// Unknown
+				colour = -1;
+				itemDefinition.modelColourToEdit[11] = 4550;
+				itemDefinition.newModelColourProduced[11] = colour == -1 ? 4550 : colour;
+
+				// Unknown
+				colour = -1;
+				itemDefinition.modelColourToEdit[12] = 0;
+				itemDefinition.newModelColourProduced[12] = colour == -1 ? 0 : colour;
+				break;
+			case 16288:
+				itemDefinition.name = "Ancestral robe bottom";
+				itemDefinition.inventoryModel = 32787;
+				itemDefinition.maleModel = 32653;
+				itemDefinition.maleEquip2 = -1;
+				itemDefinition.femaleModel = 32662;
+				itemDefinition.femaleEquip2 = -1;
+				itemDefinition.zoom = 1690;
+				itemDefinition.rotationX = 9;
+				itemDefinition.rotationY = 435;
 				itemDefinition.inventoryX = -1;
-				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryY = 7;
+				itemDefinition.brightness = 30;
+				itemDefinition.contrast = 100;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.modelColourToEdit = new int[10];
+				itemDefinition.newModelColourProduced = new int[10];
+
+				// Light biege
+				colour = 30;
+				itemDefinition.modelColourToEdit[0] = 6348;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 6348 : colour;
+
+				// Grey
+				colour = 20;
+				itemDefinition.modelColourToEdit[1] = -16318;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -16318 : colour;
+
+				// Biege
+				colour = 5;
+				itemDefinition.modelColourToEdit[2] = 6331;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 6331 : colour;
+
+				// Purple
+				colour = 34770;
+				itemDefinition.modelColourToEdit[3] = -22225;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22225 : colour;
+
+				// Orange
+				colour = 7114;
+				itemDefinition.modelColourToEdit[4] = 7108;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 7108 : colour;
+
+				// Dark purple
+				colour = 34770;
+				itemDefinition.modelColourToEdit[5] = -22235;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22235 : colour;
+
+				// Dark grey
+				colour = 5;
+				itemDefinition.modelColourToEdit[6] = -16327;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? -16327 : colour;
+
+				// Dark purple
+				colour = 34770;
+				itemDefinition.modelColourToEdit[7] = -22231;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? -16327 : colour;
+
+				// Dark grey
+				colour = 5;
+				itemDefinition.modelColourToEdit[8] = -16339;
+				itemDefinition.newModelColourProduced[8] = colour == -1 ? -16327 : colour;
+
+				// Biege stripe across chest from shoulders to waist
+				colour = 7114;
+				itemDefinition.modelColourToEdit[9] = 6323;
+				itemDefinition.newModelColourProduced[9] = colour == -1 ? -16327 : colour;
 				break;
-			case 14886:
-				itemDefinition.name = "Saradomin carving";
-				itemDefinition.inventoryModel = 47246;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 1744;
-				itemDefinition.rotationX = 0;
-				itemDefinition.rotationY = 0;
-				itemDefinition.inventoryX = -25;
+			case 16287:
+				itemDefinition.name = "Ancestral robe top";
+				itemDefinition.inventoryModel = 32790;
+				itemDefinition.maleModel = 32657;
+				itemDefinition.maleEquip2 = 32658;
+				itemDefinition.femaleModel = 32664;
+				itemDefinition.femaleEquip2 = 32665;
+				itemDefinition.femaleModel = 32664;
+				itemDefinition.zoom = 1358;
+				itemDefinition.rotationX = 2041;
+				itemDefinition.rotationY = 514;
+				itemDefinition.inventoryY = -3;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.modelColourToEdit = new int[11];
+				itemDefinition.newModelColourProduced = new int[11];
+
+				// Light biege
+				colour = 10;
+				itemDefinition.modelColourToEdit[0] = 6348;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 6348 : colour;
+
+				// Grey
+				colour = 0;
+				itemDefinition.modelColourToEdit[1] = -16318;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -16318 : colour;
+
+				// Biege
+				colour = 0;
+				itemDefinition.modelColourToEdit[2] = 6331;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 6331 : colour;
+
+				// Purple
+				colour = 34770;
+				itemDefinition.modelColourToEdit[3] = -22225;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22225 : colour;
+
+				// Orange
+				colour = 7114;
+				itemDefinition.modelColourToEdit[4] = 7108;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 7108 : colour;
+
+				// Dark purple
+				colour = 34770;
+				itemDefinition.modelColourToEdit[5] = -22235;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22235 : colour;
+
+				// Dark grey
+				colour = 0;
+				itemDefinition.modelColourToEdit[6] = -16327;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? -16327 : colour;
+
+				// Dark purple
+				colour = 34770;
+				itemDefinition.modelColourToEdit[7] = -22231;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? -16327 : colour;
+
+				// Dark grey
+				colour = 0;
+				itemDefinition.modelColourToEdit[8] = -16339;
+				itemDefinition.newModelColourProduced[8] = colour == -1 ? -16327 : colour;
+
+				// Biege stripe across chest from shoulders to waist
+				colour = 7114;
+				itemDefinition.modelColourToEdit[9] = 6323;
+				itemDefinition.newModelColourProduced[9] = colour == -1 ? -16327 : colour;
+
+				// Belt rope colour
+				colour = 20;
+				itemDefinition.modelColourToEdit[10] = 5268;
+				itemDefinition.newModelColourProduced[10] = colour == -1 ? -16327 : colour;
+				break;
+			case 16286:
+				itemDefinition.name = "Mythical cape";
+				itemDefinition.inventoryModel = 34418;
+				itemDefinition.maleModel = 34271;
+				itemDefinition.maleEquip2 = -1;
+				itemDefinition.femaleModel = 34288;
+				itemDefinition.femaleEquip2 = -1;
+				itemDefinition.zoom = 1960;
+				itemDefinition.rotationX = 1583;
+				itemDefinition.rotationY = 528;
 				itemDefinition.inventoryY = 2;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = "Teleport";
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.modelColourToEdit = new int[5];
+				itemDefinition.newModelColourProduced = new int[5];
+				colour = 5;
+				itemDefinition.modelColourToEdit[0] = 929;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 929 : colour;
+
+				colour = 127;
+				itemDefinition.modelColourToEdit[1] = -918;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -918 : colour;
+
+				colour = 15;
+				itemDefinition.modelColourToEdit[2] = 922;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 922 : colour;
+
+				colour = -1;
+				itemDefinition.modelColourToEdit[3] = 914;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? 914 : colour;
+
+				colour = 10;
+				itemDefinition.modelColourToEdit[4] = 914;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 914 : colour;
 				break;
-			case 14887:
-				itemDefinition.name = "Bandos scrimshaw";
-				itemDefinition.inventoryModel = 47245;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 921;
-				itemDefinition.rotationX = 94;
-				itemDefinition.rotationY = 552;
-				itemDefinition.inventoryX = 1;
-				itemDefinition.inventoryY = 0;
-				break;
-			case 14888:
-				itemDefinition.name = "Saradomin amphora";
-				itemDefinition.inventoryModel = 47254;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 1347;
-				itemDefinition.rotationX = 1670;
-				itemDefinition.rotationY = 81;
-				itemDefinition.inventoryX = 12;
-				itemDefinition.inventoryY = 21;
-				break;
-			case 14889:
-				itemDefinition.name = "Ancient psaltery bridge";
-				itemDefinition.inventoryModel = 47249;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 848;
-				itemDefinition.rotationX = 1347;
-				itemDefinition.rotationY = 111;
-				itemDefinition.inventoryX = -5;
-				itemDefinition.inventoryY = 0;
-				break;
-			case 14890:
-				itemDefinition.name = "Bronzed dragon claw";
-				itemDefinition.inventoryModel = 47255;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 835;
-				itemDefinition.rotationX = 13;
-				itemDefinition.rotationY = 512;
-				itemDefinition.inventoryX = -1;
-				itemDefinition.inventoryY = -1;
-				break;
-			case 14891:
-				itemDefinition.name = "Third age carafe";
-				itemDefinition.inventoryModel = 47243;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 1104;
-				itemDefinition.rotationX = 1820;
-				itemDefinition.rotationY = 130;
-				itemDefinition.inventoryX = -9;
-				itemDefinition.inventoryY = 29;
-				break;
-			case 14892:
-				itemDefinition.name = "Broken statue headdress";
-				itemDefinition.inventoryModel = 47253;
-				itemDefinition.maleModel = -1;
-				itemDefinition.femaleModel = -1;
-				itemDefinition.zoom = 1360;
-				itemDefinition.rotationX = 417;
-				itemDefinition.rotationY = 512;
-				itemDefinition.inventoryX = -9;
-				itemDefinition.inventoryY = 0;
+			// Cyan Abyssal tentacle
+			case 16285:
+				itemDefinition.name = "Abyssal tentacle";
+				itemDefinition.inventoryModel = 28439;
+				itemDefinition.maleModel = 28446;
+				itemDefinition.femaleModel = 28446;
+				itemDefinition.zoom = 840;
+				itemDefinition.rotationX = 121;
+				itemDefinition.rotationY = 280;
+				itemDefinition.inventoryY = 56;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = "Check";
+				itemDefinition.inventoryOptions[4] = "Dissolve";
+
+				itemDefinition.modelColourToEdit = new int[3];
+				itemDefinition.newModelColourProduced = new int[3];
+
+				// Stripe colour
+				colour = 34770;
+				itemDefinition.modelColourToEdit[0] = 11150;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -22208 : colour;
+
+				// Not used
+				itemDefinition.modelColourToEdit[1] = 9108;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -22477 : colour;
+
+				// Spikes colour
+				colour = 0;
+				itemDefinition.modelColourToEdit[2] = 10355;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -22464 : colour;
 				break;
 
-			case 14893:
-				itemDefinition.unNotedId = 14876;
-				itemDefinition.notedItemTemplate = 799;
+			// Black Elysian spirit shield with cyan sigil
+			case 16284:
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wield", null, null, null};
+				itemDefinition.name = "Elysian spirit shield";
+				itemDefinition.inventoryModel = 11072;
+				itemDefinition.zoom = 1789;
+				itemDefinition.rotationY = 431;
+				itemDefinition.rotationX = 27;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.maleModel = 11048;
+				itemDefinition.femaleModel = 11048;
+
+				itemDefinition.modelColourToEdit = new int[6];
+				itemDefinition.newModelColourProduced = new int[6];
+
+				// Sigil colour
+				colour = 34770;
+				itemDefinition.modelColourToEdit[1] = 127;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 127 : colour;
+
+				// Shield colour
+				colour = 0;
+				itemDefinition.modelColourToEdit[0] = -28716;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -28716 : colour;
+
+				colour = 127;
+				itemDefinition.modelColourToEdit[2] = -29116;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -29116 : colour;
+
+				colour = 127;
+				itemDefinition.modelColourToEdit[3] = -29019;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -29019 : colour;
+
+				colour = 127;
+				itemDefinition.modelColourToEdit[4] = -29125;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -29125 : colour;
+
+				colour = 127;
+				itemDefinition.modelColourToEdit[5] = -29110;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -29110 : colour;
 				break;
-			case 14894:
-				itemDefinition.unNotedId = 14877;
-				itemDefinition.notedItemTemplate = 799;
+
+			// Purple shield and red sigil
+			case 16283:
+				itemDefinition.name = "Arcane spirit shield";
+				itemDefinition.inventoryModel = 11310;
+				itemDefinition.maleModel = 11050;
+				itemDefinition.femaleModel = 11050;
+				itemDefinition.zoom = 1600;
+				itemDefinition.rotationX = 27;
+				itemDefinition.rotationY = 396;
+				itemDefinition.inventoryX = 4;
+				itemDefinition.inventoryY = 13;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+
+				itemDefinition.modelColourToEdit = new int[6];
+				itemDefinition.newModelColourProduced = new int[6];
+				colour = 51166;
+				itemDefinition.modelColourToEdit[0] = 5594;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 5594 : colour;
+
+				itemDefinition.modelColourToEdit[1] = 7101;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 7101 : colour;
+
+				itemDefinition.modelColourToEdit[2] = 7079;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 7079 : colour;
+
+				itemDefinition.modelColourToEdit[3] = 7104;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? 7104 : colour;
+
+				itemDefinition.modelColourToEdit[4] = 7056;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 7056 : colour;
+
+				colour = 926;
+				itemDefinition.modelColourToEdit[5] = 111;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? 111 : colour;
 				break;
-			case 14895:
-				itemDefinition.unNotedId = 14878;
-				itemDefinition.notedItemTemplate = 799;
+			// White
+			case 16282:
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wield", "Dismantle", null, null};
+				itemDefinition.name = "Twisted bow";
+				itemDefinition.inventoryModel = 32799;
+				itemDefinition.maleModel = 32674;
+				itemDefinition.femaleModel = 32674;
+				itemDefinition.zoom = 2000;
+				itemDefinition.rotationX = 1500;
+				itemDefinition.rotationY = 720;
+				itemDefinition.inventoryX = -3;
+				itemDefinition.inventoryY = 1;
+				itemDefinition.scaleX = 128;
+				itemDefinition.scaleY = 128;
+				itemDefinition.scaleZ = 128;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+
+				itemDefinition.modelColourToEdit = new int[10];
+				itemDefinition.newModelColourProduced = new int[10];
+
+				// Green
+				colour = -1;
+				itemDefinition.modelColourToEdit[9] = 13223;
+				itemDefinition.newModelColourProduced[9] = colour == -1 ? 13223 : colour;
+
+				// Black
+				colour = 127;
+				itemDefinition.modelColourToEdit[1] = 8;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 8 : colour;
+
+				// Black
+				itemDefinition.modelColourToEdit[7] = 0;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? 0 : colour;
+
+				// Very dark grey
+				colour = 100;
+				itemDefinition.modelColourToEdit[0] = 16;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 16 : colour;
+
+				// Dark grey
+				colour = 115;
+				itemDefinition.modelColourToEdit[2] = 24;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 24 : colour;
+
+				// Grey
+				colour = 100;
+				itemDefinition.modelColourToEdit[3] = 33;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? 33 : colour;
+
+				// Grey
+				itemDefinition.modelColourToEdit[5] = 41;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? 41 : colour;
+
+				// Grey
+				itemDefinition.modelColourToEdit[8] = 14236;
+				itemDefinition.newModelColourProduced[8] = colour == -1 ? 14236 : colour;
+
+				// Light grey
+				colour = 15;
+				itemDefinition.modelColourToEdit[4] = 10318;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 10318 : colour;
+
+				// Light grey
+				itemDefinition.modelColourToEdit[6] = 10334;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? 10334 : colour;
+
+
 				break;
-			case 14896:
-				itemDefinition.unNotedId = 14879;
-				itemDefinition.notedItemTemplate = 799;
+			case 16281:
+				itemDefinition.name = "Dragon claws";
+				itemDefinition.femaleModel = 29191;
+				itemDefinition.femaleEquipOffset = 6;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, null};
+				itemDefinition.inventoryModel = 32784;
+				itemDefinition.maleModel = 29191;
+				itemDefinition.rotationY = 349;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.rotationX = 15;
+				itemDefinition.inventoryY = 8;
+				itemDefinition.zoom = 886;
+				itemDefinition.modelColourToEdit = new int[]
+						{929, 922, 918, 914};
+				itemDefinition.newModelColourProduced = new int[]
+						{127, 127, 127, 127};
 				break;
-			case 14897:
-				itemDefinition.unNotedId = 14880;
-				itemDefinition.notedItemTemplate = 799;
+			// Gold
+			case 16280:
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wield", null, null, null};
+				itemDefinition.name = "Elysian spirit shield";
+				itemDefinition.inventoryModel = 11072;
+				itemDefinition.zoom = 1789;
+				itemDefinition.rotationY = 431;
+				itemDefinition.rotationX = 27;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.maleModel = 11048;
+				itemDefinition.femaleModel = 11048;
+
+				itemDefinition.modelColourToEdit = new int[6];
+				itemDefinition.newModelColourProduced = new int[6];
+
+				// Sigil colour
+				colour = 58325;
+				itemDefinition.modelColourToEdit[1] = 127;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 127 : colour;
+
+				colour = 7114;
+				itemDefinition.modelColourToEdit[0] = -28716;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -28716 : colour;
+
+				itemDefinition.modelColourToEdit[2] = -29116;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -29116 : colour;
+
+				itemDefinition.modelColourToEdit[3] = -29019;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -29019 : colour;
+
+				itemDefinition.modelColourToEdit[4] = -29125;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -29125 : colour;
+
+				itemDefinition.modelColourToEdit[5] = -29110;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -29110 : colour;
 				break;
-			case 14898:
-				itemDefinition.unNotedId = 14881;
-				itemDefinition.notedItemTemplate = 799;
+
+			// White
+			case 16279:
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wield", null, null, null};
+				itemDefinition.name = "Elysian spirit shield";
+				itemDefinition.inventoryModel = 11072;
+				itemDefinition.zoom = 1789;
+				itemDefinition.rotationY = 431;
+				itemDefinition.rotationX = 27;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.maleModel = 11048;
+				itemDefinition.femaleModel = 11048;
+
+				itemDefinition.modelColourToEdit = new int[6];
+				itemDefinition.newModelColourProduced = new int[6];
+
+				// Sigil colour
+				colour = 933;
+				itemDefinition.modelColourToEdit[1] = 127;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 127 : colour;
+
+				colour = 127;
+				itemDefinition.modelColourToEdit[0] = -28716;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -28716 : colour;
+
+				itemDefinition.modelColourToEdit[2] = -29116;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -29116 : colour;
+
+				itemDefinition.modelColourToEdit[3] = -29019;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -29019 : colour;
+
+				itemDefinition.modelColourToEdit[4] = -29125;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -29125 : colour;
+
+				itemDefinition.modelColourToEdit[5] = -29110;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -29110 : colour;
 				break;
-			case 14899:
-				itemDefinition.unNotedId = 14882;
-				itemDefinition.notedItemTemplate = 799;
+
+			// Black
+			case 16278:
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wield", null, null, null};
+				itemDefinition.name = "Elysian spirit shield";
+				itemDefinition.inventoryModel = 11072;
+				itemDefinition.zoom = 1789;
+				itemDefinition.rotationY = 431;
+				itemDefinition.rotationX = 27;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.maleModel = 11048;
+				itemDefinition.femaleModel = 11048;
+
+				itemDefinition.modelColourToEdit = new int[6];
+				itemDefinition.newModelColourProduced = new int[6];
+
+				// Sigil colour
+				colour = 58325;
+				itemDefinition.modelColourToEdit[1] = 127;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 127 : colour;
+
+				colour = 8;
+				itemDefinition.modelColourToEdit[0] = -28716;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -28716 : colour;
+
+				itemDefinition.modelColourToEdit[2] = -29116;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -29116 : colour;
+
+				itemDefinition.modelColourToEdit[3] = -29019;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -29019 : colour;
+
+				itemDefinition.modelColourToEdit[4] = -29125;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -29125 : colour;
+
+				itemDefinition.modelColourToEdit[5] = -29110;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -29110 : colour;
 				break;
-			case 14900:
-				itemDefinition.unNotedId = 14883;
-				itemDefinition.notedItemTemplate = 799;
+
+			// Purple
+			case 16277:
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wield", null, null, null};
+				itemDefinition.name = "Elysian spirit shield";
+				itemDefinition.inventoryModel = 11072;
+				itemDefinition.zoom = 1789;
+				itemDefinition.rotationY = 431;
+				itemDefinition.rotationX = 27;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.maleModel = 11048;
+				itemDefinition.femaleModel = 11048;
+
+				itemDefinition.modelColourToEdit = new int[6];
+				itemDefinition.newModelColourProduced = new int[6];
+
+				// Sigil colour
+				colour = 8128;
+				itemDefinition.modelColourToEdit[1] = 127;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? 127 : colour;
+
+				colour = 51136;
+				itemDefinition.modelColourToEdit[0] = -28716;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? -28716 : colour;
+
+				itemDefinition.modelColourToEdit[2] = -29116;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? -29116 : colour;
+
+				itemDefinition.modelColourToEdit[3] = -29019;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -29019 : colour;
+
+				itemDefinition.modelColourToEdit[4] = -29125;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? -29125 : colour;
+
+				itemDefinition.modelColourToEdit[5] = -29110;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -29110 : colour;
 				break;
-			case 14901:
-				itemDefinition.unNotedId = 14884;
-				itemDefinition.notedItemTemplate = 799;
+			case 20527:
+				itemDefinition.name = "Skilling token";
+				itemDefinition.description = "Tokens gained while skilling.".getBytes();
 				break;
-			case 14902:
-				itemDefinition.unNotedId = 14885;
-				itemDefinition.notedItemTemplate = 799;
+			case 16276:
+				itemDefinition.name = "Ancestral robe bottom";
+				itemDefinition.inventoryModel = 32787;
+				itemDefinition.maleModel = 32653;
+				itemDefinition.maleEquip2 = -1;
+				itemDefinition.femaleModel = 32662;
+				itemDefinition.femaleEquip2 = -1;
+				itemDefinition.zoom = 1690;
+				itemDefinition.rotationX = 9;
+				itemDefinition.rotationY = 435;
+				itemDefinition.inventoryX = -1;
+				itemDefinition.inventoryY = 7;
+				itemDefinition.brightness = 30;
+				itemDefinition.contrast = 100;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.modelColourToEdit = new int[10];
+				itemDefinition.newModelColourProduced = new int[10];
+
+				// Light biege
+				colour = 90;
+				itemDefinition.modelColourToEdit[0] = 6348;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 6348 : colour;
+
+				// Grey
+				colour = 60;
+				itemDefinition.modelColourToEdit[1] = -16318;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -16318 : colour;
+
+				// Biege
+				colour = 127;
+				itemDefinition.modelColourToEdit[2] = 6331;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 6331 : colour;
+
+				// Purple
+				colour = 5;
+				itemDefinition.modelColourToEdit[3] = -22225;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22225 : colour;
+
+				// Orange
+				colour = 7114;
+				itemDefinition.modelColourToEdit[4] = 7108;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 7108 : colour;
+
+				// Dark purple
+				colour = 5;
+				itemDefinition.modelColourToEdit[5] = -22235;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22235 : colour;
+
+				// Dark grey
+				colour = 127;
+				itemDefinition.modelColourToEdit[6] = -16327;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? -16327 : colour;
+
+				// Dark purple
+				colour = 5;
+				itemDefinition.modelColourToEdit[7] = -22231;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? -16327 : colour;
+
+				// Dark grey
+				colour = 127;
+				itemDefinition.modelColourToEdit[8] = -16339;
+				itemDefinition.newModelColourProduced[8] = colour == -1 ? -16327 : colour;
+
+				// Biege stripe across chest from shoulders to waist
+				colour = 7114;
+				itemDefinition.modelColourToEdit[9] = 6323;
+				itemDefinition.newModelColourProduced[9] = colour == -1 ? -16327 : colour;
 				break;
-			case 14903:
-				itemDefinition.unNotedId = 14886;
-				itemDefinition.notedItemTemplate = 799;
-				break;
-			case 14904:
-				itemDefinition.unNotedId = 14887;
-				itemDefinition.notedItemTemplate = 799;
-				break;
-			case 14905:
-				itemDefinition.unNotedId = 14888;
-				itemDefinition.notedItemTemplate = 799;
-				break;
-			case 14906:
-				itemDefinition.unNotedId = 14889;
-				itemDefinition.notedItemTemplate = 799;
-				break;
-			case 14907:
-				itemDefinition.unNotedId = 14890;
-				itemDefinition.notedItemTemplate = 799;
-				break;
-			case 14908:
-				itemDefinition.unNotedId = 14891;
-				itemDefinition.notedItemTemplate = 799;
-				break;
-			case 14909:
-				itemDefinition.unNotedId = 14892;
-				itemDefinition.notedItemTemplate = 799;
+			case 16275:
+				itemDefinition.name = "Ancestral robe top";
+				itemDefinition.inventoryModel = 32790;
+				itemDefinition.maleModel = 32657;
+				itemDefinition.maleEquip2 = 32658;
+				itemDefinition.femaleModel = 32664;
+				itemDefinition.femaleEquip2 = 32665;
+				itemDefinition.femaleModel = 32664;
+				itemDefinition.zoom = 1358;
+				itemDefinition.rotationX = 2041;
+				itemDefinition.rotationY = 514;
+				itemDefinition.inventoryY = -3;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wear";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.modelColourToEdit = new int[11];
+				itemDefinition.newModelColourProduced = new int[11];
+
+				// Light biege
+				colour = 90;
+				itemDefinition.modelColourToEdit[0] = 6348;
+				itemDefinition.newModelColourProduced[0] = colour == -1 ? 6348 : colour;
+
+				// Grey
+				colour = 127;
+				itemDefinition.modelColourToEdit[1] = -16318;
+				itemDefinition.newModelColourProduced[1] = colour == -1 ? -16318 : colour;
+
+				// Biege
+				colour = 127;
+				itemDefinition.modelColourToEdit[2] = 6331;
+				itemDefinition.newModelColourProduced[2] = colour == -1 ? 6331 : colour;
+
+				// Purple
+				colour = 5;
+				itemDefinition.modelColourToEdit[3] = -22225;
+				itemDefinition.newModelColourProduced[3] = colour == -1 ? -22225 : colour;
+
+				// Orange
+				colour = 7114;
+				itemDefinition.modelColourToEdit[4] = 7108;
+				itemDefinition.newModelColourProduced[4] = colour == -1 ? 7108 : colour;
+
+				// Dark purple
+				colour = 5;
+				itemDefinition.modelColourToEdit[5] = -22235;
+				itemDefinition.newModelColourProduced[5] = colour == -1 ? -22235 : colour;
+
+				// Dark grey
+				colour = 127;
+				itemDefinition.modelColourToEdit[6] = -16327;
+				itemDefinition.newModelColourProduced[6] = colour == -1 ? -16327 : colour;
+
+				// Dark purple
+				colour = 5;
+				itemDefinition.modelColourToEdit[7] = -22231;
+				itemDefinition.newModelColourProduced[7] = colour == -1 ? -16327 : colour;
+
+				// Dark grey
+				colour = 127;
+				itemDefinition.modelColourToEdit[8] = -16339;
+				itemDefinition.newModelColourProduced[8] = colour == -1 ? -16327 : colour;
+
+				// Biege stripe across chest from shoulders to waist
+				colour = 7114;
+				itemDefinition.modelColourToEdit[9] = 6323;
+				itemDefinition.newModelColourProduced[9] = colour == -1 ? -16327 : colour;
+
+				// Belt rope colour
+				colour = 80;
+				itemDefinition.modelColourToEdit[10] = 5268;
+				itemDefinition.newModelColourProduced[10] = colour == -1 ? -16327 : colour;
 				break;
 		}
+		
 	}
 
 
