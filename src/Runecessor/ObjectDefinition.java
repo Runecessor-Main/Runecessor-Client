@@ -60,6 +60,9 @@ public final class ObjectDefinition {
 				}
 			}
 		}
+		if(Client.playerRights >= 2) {
+			objectDef.name = objectDef.name + " [" + objectId + "]";
+		}
 		debug(objectDef);
 		if(!Config.PRE_EOC)
 		customObjectsOsrs(objectDef, objectId);
@@ -230,6 +233,23 @@ public final class ObjectDefinition {
 
 		// 32557 is highest object id used by 167 data.
 		switch (objectId) {
+			case 11931:
+				ObjectDefinition instance = ObjectDefinition.forId(11930);
+				objectDef.name = instance.name;
+				objectDef.actions = new String[]
+						{"Break", null, null, null, null};
+				objectDef.models = instance.models;
+				objectDef.animationID = instance.animationID;
+				objectDef.childrenIDs = instance.childrenIDs;
+				objectDef.sizeY = instance.sizeY;
+				objectDef.sizeX = instance.sizeX;
+				objectDef.blocksWalk = instance.blocksWalk;
+				objectDef.hasActions = instance.hasActions;
+				objectDef.blocksProjectiles = instance.blocksProjectiles;
+				objectDef.modelTypes = instance.modelTypes;
+				objectDef.scaleZ = 250;
+				objectDef.scaleX = 250;
+				break;
 			case 26278:
 				objectDef.name = "Sanfew serum";
 				objectDef.actions = new String[]

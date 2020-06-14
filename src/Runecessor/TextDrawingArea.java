@@ -93,13 +93,17 @@ public final class TextDrawingArea extends DrawingArea {
 		}
 		k -= anInt1497;
 		for (int i1 = 0; i1 < s.length(); i1++) {
-			char c = s.charAt(i1);
-			if (c != ' ') {
-				if (flag1)
-					method392(aByteArrayArray1491[c], x + anIntArray1494[c] + 1, k + anIntArray1495[c] + 1, anIntArray1492[c], anIntArray1493[c], 0);
-				method392(aByteArrayArray1491[c], x + anIntArray1494[c], k + anIntArray1495[c], anIntArray1492[c], anIntArray1493[c], j);
+			try {
+				char c = s.charAt(i1);
+				if (c != ' ') {
+					if (flag1)
+						method392(aByteArrayArray1491[c], x + anIntArray1494[c] + 1, k + anIntArray1495[c] + 1, anIntArray1492[c], anIntArray1493[c], 0);
+					method392(aByteArrayArray1491[c], x + anIntArray1494[c], k + anIntArray1495[c], anIntArray1492[c], anIntArray1493[c], j);
+				}
+				x += anIntArray1496[c];
+			} catch (ArrayIndexOutOfBoundsException e) {
+				System.out.println("GAY");
 			}
-			x += anIntArray1496[c];
 		}
 		if (aBoolean1499) {
 			DrawingArea.method339(k + (int) ((double) anInt1497 * 0.69999999999999996D), 0x800000, x - l, l);

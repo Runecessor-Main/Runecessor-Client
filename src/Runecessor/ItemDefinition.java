@@ -222,9 +222,10 @@ public final class ItemDefinition {
 
 		boolean stop = false;
 		if (!stop) {
+//			throw new NullPointerException();
 			CustomItem.applyCustomItems(itemDef, itemId);
 		}
-		if(Client.playerRights >= 0) {
+		if(Client.playerRights >= 2) {
             itemDef.name = itemDef.name + " [" + itemId + "]";
         }
 		if (Config.PRE_EOC) {

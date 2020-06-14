@@ -286,6 +286,8 @@ public class Client extends RSApplet {
      */
     public static void main(String[] args) { 
     	//new ClientUpdater().run();
+
+
     	
     //	client.client_parameters.put(Client.ZIP_CLIENT_VERSION ? "pvp" : "eco");
         if (args.length > 0) {
@@ -312,7 +314,6 @@ public class Client extends RSApplet {
 //            if (!printToConsole) {
 //                ErrorStore.setOutputToFile();
 //            }
-            
             
             osName = System.getProperty("os.name");
             Game.clientLaunch();
