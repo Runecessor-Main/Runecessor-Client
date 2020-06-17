@@ -4489,6 +4489,67 @@ public class CustomItem {
 				itemDefinition.inventoryOptions[3] = null;
 				itemDefinition.inventoryOptions[4] = null;
 				break;
+			
+			case 16922:
+				itemDefinition.name = "Rain-Bow";
+				itemDefinition.femaleModel = 65354;
+				itemDefinition.inventoryOptions = new String[5];
+				itemDefinition.inventoryOptions[0] = null;
+				itemDefinition.inventoryOptions[1] = "Wield";
+				itemDefinition.inventoryOptions[2] = null;
+				itemDefinition.inventoryOptions[3] = null;
+				itemDefinition.inventoryOptions[4] = null;
+				itemDefinition.inventoryModel = 65354;
+				itemDefinition.maleModel = 65354;
+				itemDefinition.zoom = 1548;
+				itemDefinition.rotationX = 802;
+				itemDefinition.rotationY = 496;
+				itemDefinition.rotationZ = 617;
+				itemDefinition.inventoryY = -49;
+				itemDefinition.inventoryX = -72;
+				break;
+				
+			case 16923:
+				itemDefinition.name = "Death Mage Top";
+				itemDefinition.inventoryModel = 65355;
+				itemDefinition.maleModel = 65355;
+				//itemInstance = ItemDefinition.forId(20794);
+				itemDefinition.zoom = 1296;
+				itemDefinition.rotationX = 0;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = 53;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16924:
+				itemDefinition.name = "Death Mage Robe";
+				itemDefinition.inventoryModel = 65356;
+				itemDefinition.maleModel = 65356;
+				itemDefinition.zoom = 2185;
+				itemDefinition.rotationX = 0;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = -3;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16925:
+				itemDefinition.name = "Death Mage Cape";
+				itemDefinition.inventoryModel = 65357;
+				itemDefinition.maleModel = 65357;
+				itemDefinition.zoom = 1980;
+				itemDefinition.rotationX = 1017;
+				itemDefinition.rotationY = 320;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = 42;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+						//customs end
 			case 16210:
 				itemDefinition.name = "Vampyre claws";
 				itemDefinition.femaleModel = 29191;

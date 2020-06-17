@@ -44,13 +44,13 @@ public class MiniMap {
 			{38, 3089, 3490},
 			{64, 3093, 3488},
 			{76, 3085, 3506},
-			// 2020 EASTER EVENT
+			/* 2020 EASTER EVENT
 			{57, 3081, 3485},
 			{74, 3078, 3488},
 			{5, 3096, 3497},
 			{12, 3076, 3485},
 			{12, 3079, 3482},
-			// END 2020 EASTER EVENT
+			*/ //END 2020 EASTER EVENT
 			{56, 3089, 3495}, // Transportation icon
 			{73, 3093, 3492}, // Membership bond icon
 			{72, 3078, 3506}, // Ironman icon
