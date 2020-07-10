@@ -4510,9 +4510,10 @@ public class CustomItem {
 				break;
 				
 			case 16923:
-				itemDefinition.name = "Death Mage Top";
+				itemDefinition.name = "Corrupted Body (Perfected)";
 				itemDefinition.inventoryModel = 65355;
 				itemDefinition.maleModel = 65355;
+				itemDefinition.femaleModel = 65469;
 				//itemInstance = ItemDefinition.forId(20794);
 				itemDefinition.zoom = 1296;
 				itemDefinition.rotationX = 0;
@@ -4524,9 +4525,10 @@ public class CustomItem {
 						{null, "Wear", null, null, "Drop"};
 				break;
 			case 16924:
-				itemDefinition.name = "Death Mage Robe";
+				itemDefinition.name = "Corrupted Legs (Perfected)";
 				itemDefinition.inventoryModel = 65356;
 				itemDefinition.maleModel = 65356;
+				itemDefinition.femaleModel = 65470;
 				itemDefinition.zoom = 2185;
 				itemDefinition.rotationX = 0;
 				itemDefinition.rotationY = 0;
@@ -4537,7 +4539,7 @@ public class CustomItem {
 						{null, "Wear", null, null, "Drop"};
 				break;
 			case 16925:
-				itemDefinition.name = "Death Mage Cape";
+				itemDefinition.name = "Gauntlet Cape";
 				itemDefinition.inventoryModel = 65357;
 				itemDefinition.maleModel = 65357;
 				itemDefinition.zoom = 1980;
@@ -4549,7 +4551,1290 @@ public class CustomItem {
 				itemDefinition.inventoryOptions = new String[]
 						{null, "Wear", null, null, "Drop"};
 				break;
-						//customs end
+			case 16926:
+				itemDefinition.name = "Zamorakian Blow Pipe";
+				itemDefinition.inventoryModel = 65359;
+				itemDefinition.maleModel = 65360;
+				itemDefinition.zoom = 1158;
+				itemDefinition.rotationY = 768;
+				itemDefinition.rotationX = 189;
+				itemDefinition.inventoryX = -7;
+				itemDefinition.inventoryY = 4;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16927:
+				itemDefinition.name = "Old School Runescape Helm";
+				itemDefinition.inventoryModel = 65361;
+				itemDefinition.maleModel = 65361;
+				itemDefinition.zoom = 1980;
+				itemDefinition.rotationX = 1017;
+				itemDefinition.rotationY = 320;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = 42;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16928:
+				itemDefinition.name = "Unused Bow (Ice)";
+				itemDefinition.inventoryModel = 65362;
+				itemDefinition.maleModel = 65362;
+				itemDefinition.zoom = 1980;
+				itemDefinition.rotationX = 1017;
+				itemDefinition.rotationY = 320;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = 42;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16929:
+				itemDefinition.name = "Unused Bow (Blood)";
+				itemDefinition.inventoryModel = 65363;
+				itemDefinition.maleModel = 65363;
+				itemDefinition.zoom = 1980;
+				itemDefinition.rotationX = 1017;
+				itemDefinition.rotationY = 320;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = 42;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16953:
+				itemDefinition.name = "Vorkath Helm";
+				itemDefinition.inventoryModel = 65412;
+				itemDefinition.maleModel = 65413;
+				itemDefinition.femaleModel = 65414;
+				itemDefinition.zoom = 757;
+				itemDefinition.rotationX = 113;
+				itemDefinition.rotationY = 183;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = -14;
+				itemDefinition.inventoryX = 1;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16954:
+				itemDefinition.name = "Vorkath Platebody";
+				itemDefinition.inventoryModel = 65415;
+				itemDefinition.maleModel = 65416;
+				itemDefinition.femaleModel = 65417;
+				itemDefinition.zoom = 1452;
+				itemDefinition.rotationX = 0;
+				itemDefinition.rotationY = 650;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = 1;
+				itemDefinition.inventoryX = -2;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16955:
+				itemDefinition.name = "Vorkath Gloves";
+				itemDefinition.inventoryModel = 65418;
+				itemDefinition.maleModel = 65419;
+				itemDefinition.femaleModel = 65420;
+				itemDefinition.zoom = 791;
+				itemDefinition.rotationX = 617;
+				itemDefinition.rotationY = 478;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.inventoryX = -2;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16956:
+				itemDefinition.name = "Vorkath Platelegs";
+				itemDefinition.inventoryModel = 65421;
+				itemDefinition.maleModel = 65422;
+				itemDefinition.femaleModel = 65423;
+				itemDefinition.zoom = 1626;
+				itemDefinition.rotationX = 0;
+				itemDefinition.rotationY = 650;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = 4;
+				itemDefinition.inventoryX = -1;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16957:
+				itemDefinition.name = "Vorkath Boots";
+				itemDefinition.inventoryModel = 65427;
+				itemDefinition.maleModel = 65427;
+				itemDefinition.femaleModel = 65426;
+				itemDefinition.zoom = 700;
+				itemDefinition.rotationX = 150;
+				itemDefinition.rotationY = 130;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = -8;
+				itemDefinition.inventoryX = 2;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16958:
+				itemDefinition.name = "Black Scarf";
+				itemDefinition.inventoryModel = 65428;
+				itemDefinition.maleModel = 65428;
+				itemDefinition.femaleModel = 65428;
+				itemDefinition.zoom = 896;
+				itemDefinition.rotationX = 78;
+				itemDefinition.rotationY = 43;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = 70;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16959:
+				itemDefinition.name = "Elite Dragon Platebody";
+				itemDefinition.inventoryModel = 65429;
+				itemDefinition.maleModel = 65429;
+				itemDefinition.femaleModel = 65429;
+				itemDefinition.zoom = 1678;
+				itemDefinition.rotationX = 0;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = 51;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16960:
+				itemDefinition.name = "Elite Dragon Platelegs";
+				itemDefinition.inventoryModel = 65430;
+				itemDefinition.maleModel = 65430;
+				itemDefinition.femaleModel = 65430;
+				itemDefinition.zoom = 1939;
+				itemDefinition.rotationX = 0;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = 5;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16961:
+				itemDefinition.name = "Elite Dragon Helm";
+				itemDefinition.inventoryModel = 65431;
+				itemDefinition.maleModel = 65431;
+				itemDefinition.femaleModel = 65431;
+				itemDefinition.zoom = 896;
+				itemDefinition.rotationX = 78;
+				itemDefinition.rotationY = 43;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = 70;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16962:
+				itemDefinition.name = "Elite Dragon Gloves";
+				itemDefinition.inventoryModel = 65432;
+				itemDefinition.maleModel = 65432;
+				itemDefinition.femaleModel = 65432;
+				itemDefinition.zoom = 896;
+				itemDefinition.rotationX = 78;
+				itemDefinition.rotationY = 43;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = 70;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16963:
+				itemDefinition.name = "Elite Dragon Boots";
+				itemDefinition.inventoryModel = 65433;
+				itemDefinition.maleModel = 65433;
+				itemDefinition.femaleModel = 65433;
+				itemDefinition.zoom = 896;
+				itemDefinition.rotationX = 78;
+				itemDefinition.rotationY = 43;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = 70;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16964:
+				itemDefinition.name = "Elite Dragon Sword";
+				itemDefinition.inventoryModel = 65434;
+				itemDefinition.maleModel = 65434;
+				itemDefinition.femaleModel = 65434;
+				itemDefinition.zoom = 896;
+				itemDefinition.rotationX = 78;
+				itemDefinition.rotationY = 43;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = 70;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16965:
+				itemDefinition.name = "Lordmarshal Top";
+				itemDefinition.inventoryModel = 65435;
+				itemDefinition.maleModel = 65436;
+				itemDefinition.femaleModel = 65436;
+				itemDefinition.zoom = 1435;
+				itemDefinition.rotationX = 0;
+				itemDefinition.rotationY = 500;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = -2;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16966:
+				itemDefinition.name = "Lordmarshal Gloves";
+				itemDefinition.inventoryModel = 65437;
+				itemDefinition.maleModel = 65438;
+				itemDefinition.femaleModel = 65438;
+				itemDefinition.zoom = 1678;
+				itemDefinition.rotationX = 0;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = 51;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16967:
+				itemDefinition.name = "Lordmarshal Boots";
+				itemDefinition.inventoryModel = 65439;
+				itemDefinition.maleModel = 65440;
+				itemDefinition.femaleModel = 65440;
+				itemDefinition.zoom = 1678;
+				itemDefinition.rotationX = 0;
+				itemDefinition.rotationY = 0;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = 51;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16968:
+				itemDefinition.name = "Lordmarshal Bottoms";
+				itemDefinition.inventoryModel = 65441;
+				itemDefinition.maleModel = 65442;
+				itemDefinition.femaleModel = 65442;
+				itemDefinition.zoom = 1800;
+				itemDefinition.rotationX = 0;
+				itemDefinition.rotationY = 350;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = -5;
+				itemDefinition.inventoryX = 2;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			case 16969:
+				itemDefinition.name = "Lordmarshal Hat";
+				itemDefinition.inventoryModel = 65443;
+				itemDefinition.maleModel = 65443;
+				itemDefinition.femaleModel = 65443;
+				itemDefinition.zoom = 1626;
+				itemDefinition.rotationX = 304;
+				itemDefinition.rotationY = 277;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryY = -550;
+				itemDefinition.inventoryX = -1;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			// my capes
+			case 16970:
+				itemDefinition.name = "#1 Hiscores Cape";
+				itemDefinition.inventoryModel = 65444;
+				itemDefinition.maleModel = 65445;
+				itemDefinition.femaleModel = 65445;
+				itemDefinition.zoom = 2478;
+				itemDefinition.rotationX = 1122;
+				itemDefinition.rotationY = 652;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.rotationZ = 2009;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "A prestigious Gift for being #1.".getBytes();
+				break;
+			case 16971:
+				itemDefinition.name = "Ironman Cape";
+				itemDefinition.inventoryModel = 65446;
+				itemDefinition.maleModel = 65447;
+				itemDefinition.femaleModel = 65447;
+				itemDefinition.zoom = 2478;
+				itemDefinition.rotationX = 1122;
+				itemDefinition.rotationY = 652;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.rotationZ = 2009;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "I finally maxed as an Ironman... What now?".getBytes();
+				break;
+			case 16972:
+				itemDefinition.name = "Runecessor Cape";
+				itemDefinition.inventoryModel = 65448;
+				itemDefinition.maleModel = 65449;
+				itemDefinition.femaleModel = 65449;
+				itemDefinition.zoom = 2478;
+				itemDefinition.rotationX = 1122;
+				itemDefinition.rotationY = 652;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.rotationZ = 2009;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "Happy Birthday Runecessor!".getBytes();
+				break;
+			case 16973:
+				itemDefinition.name = "Donator Cape";
+				itemDefinition.inventoryModel = 65450;
+				itemDefinition.maleModel = 65451;
+				itemDefinition.femaleModel = 65451;
+				itemDefinition.zoom = 2478;
+				itemDefinition.rotationX = 1122;
+				itemDefinition.rotationY = 652;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.rotationZ = 2009;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "Thank you for your Support!!".getBytes();
+				break;
+			case 16974:
+				itemDefinition.name = "YouTuber's Cape";
+				itemDefinition.inventoryModel = 65452;
+				itemDefinition.maleModel = 65453;
+				itemDefinition.femaleModel = 65453;
+				itemDefinition.zoom = 2478;
+				itemDefinition.rotationX = 1122;
+				itemDefinition.rotationY = 652;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.rotationZ = 2009;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "Pewdie Pie Ain't Got S**t On Me!".getBytes();
+				break;
+			case 16975:
+				itemDefinition.name = "Extreme Donator Cape";
+				itemDefinition.inventoryModel = 65455;
+				itemDefinition.maleModel = 65454;
+				itemDefinition.femaleModel = 65454;
+				itemDefinition.zoom = 2478;
+				itemDefinition.rotationX = 1122;
+				itemDefinition.rotationY = 652;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.rotationZ = 2009;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "Thank you for your Support!!".getBytes();
+				break;
+			case 16976:
+				itemDefinition.name = "Super Donator Cape";
+				itemDefinition.inventoryModel = 65456;
+				itemDefinition.maleModel = 65457;
+				itemDefinition.femaleModel = 65457;
+				itemDefinition.zoom = 2478;
+				itemDefinition.rotationX = 1122;
+				itemDefinition.rotationY = 652;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.rotationZ = 2009;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "Thank you for your Support!!".getBytes();
+				break;
+			case 16977:
+				itemDefinition.name = "Legendary Donator Cape";
+				itemDefinition.inventoryModel = 65458;
+				itemDefinition.maleModel = 65459;
+				itemDefinition.femaleModel = 65459;
+				itemDefinition.zoom = 2478;
+				itemDefinition.rotationX = 1122;
+				itemDefinition.rotationY = 652;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.rotationZ = 2009;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "Thank you for your Support!!".getBytes();
+				break;
+			case 16978:
+				itemDefinition.name = "Ultimate Donator Cape";
+				itemDefinition.inventoryModel = 65460;
+				itemDefinition.maleModel = 65461;
+				itemDefinition.femaleModel = 65461;
+				itemDefinition.zoom = 2478;
+				itemDefinition.rotationX = 1122;
+				itemDefinition.rotationY = 652;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.rotationZ = 2009;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "Thank you for your Support!!".getBytes();
+				break;
+			case 16979:
+				itemDefinition.name = "Uber Donator Cape";
+				itemDefinition.inventoryModel = 65462;
+				itemDefinition.maleModel = 65463;
+				itemDefinition.femaleModel = 65463;
+				itemDefinition.zoom = 2478;
+				itemDefinition.rotationX = 1122;
+				itemDefinition.rotationY = 652;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.rotationZ = 2009;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "Thank you for your Support!!".getBytes();
+				break;
+			case 16980:
+				itemDefinition.name = "HC Ironman Cape (B)";
+				itemDefinition.inventoryModel = 65464;
+				itemDefinition.maleModel = 65465;
+				itemDefinition.femaleModel = 65465;
+				itemDefinition.zoom = 2478;
+				itemDefinition.rotationX = 1122;
+				itemDefinition.rotationY = 652;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.rotationZ = 2009;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "I don't know how.. But I did it..".getBytes();
+				break;
+			case 16981:
+				itemDefinition.name = "HC Ironman Cape (W)";
+				itemDefinition.inventoryModel = 65466;
+				itemDefinition.maleModel = 65467;
+				itemDefinition.femaleModel = 65467;
+				itemDefinition.zoom = 2478;
+				itemDefinition.rotationX = 1122;
+				itemDefinition.rotationY = 652;
+				itemDefinition.inventoryY = 0;
+				itemDefinition.rotationZ = 2009;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "I don't know how.. But I did it..".getBytes();
+				break;
+			case 16982:
+				itemDefinition.name = "Corrupted Helm (Perfected)";
+				itemDefinition.inventoryModel = 65475;
+				itemDefinition.maleModel = 65469;
+				itemDefinition.femaleModel = 65470;
+				itemDefinition.zoom = 716;
+				itemDefinition.rotationX = 157;
+				itemDefinition.rotationY = 103;
+				itemDefinition.inventoryY = 3;
+				itemDefinition.rotationZ = 13;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				break;
+			// my capes end
+			//customs end
+			case 16983:
+				itemDefinition.name = "Cooking Master Cape";
+				itemDefinition.inventoryModel = 65471;
+				itemDefinition.maleModel = 65472;
+				itemDefinition.femaleModel = 65472;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "When worn, no warrior guild tokens are needed to access the cyclopes within the Warriors' Guild.".getBytes();
+				break;
+				
+
+			 case 16984:
+				itemDefinition.name = "Uncle Sam's Top Hat";
+				itemDefinition.inventoryModel = 65474;
+				itemDefinition.maleModel = 65473;
+				itemDefinition.femaleModel = 65473;
+				itemDefinition.zoom = 722;
+				itemDefinition.rotationX = 1887;
+				itemDefinition.rotationY = 165;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = -3;
+				itemDefinition.inventoryY = -15;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "This has to be the Most American thing I have ever seen.. Wait.. What's America?".getBytes();
+				break;
+			// Armor
+			 case 16985:
+				itemDefinition.name = "Dragon Slayer Helm";
+				itemDefinition.inventoryModel = 65476;
+				itemDefinition.maleModel = 65477;
+				itemDefinition.femaleModel = 65477;
+				itemDefinition.zoom = 687;
+				itemDefinition.rotationX = 165;
+				itemDefinition.rotationY = 43;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 2;
+				itemDefinition.inventoryY = -5;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "It's rumored there are only 3 in exsistance.".getBytes();
+				break;
+			 case 16986:
+					itemDefinition.name = "Dragon Slayer Platebody";
+					itemDefinition.inventoryModel = 65478;
+					itemDefinition.maleModel = 65479;
+					itemDefinition.femaleModel = 65479;
+					itemDefinition.zoom = 1296;
+					itemDefinition.rotationX = 0;
+					itemDefinition.rotationY = 500;
+					itemDefinition.rotationZ = 0;
+					itemDefinition.inventoryX = 0;
+					itemDefinition.inventoryY = 3;
+					itemDefinition.inventoryOptions = new String[]
+							{null, "Wear", null, null, "Drop"};
+					itemDefinition.description = "It's rumored there are only 3 in exsistance.".getBytes();
+					break;
+			 case 16987:
+					itemDefinition.name = "Dragon Slayer Platelegs";
+					itemDefinition.inventoryModel = 65480;
+					itemDefinition.maleModel = 65481;
+					itemDefinition.femaleModel = 65481;
+					itemDefinition.zoom = 1522;
+					itemDefinition.rotationX = 0;
+					itemDefinition.rotationY = 500;
+					itemDefinition.rotationZ = 0;
+					itemDefinition.inventoryX = 0;
+					itemDefinition.inventoryY = 1;
+					itemDefinition.inventoryOptions = new String[]
+							{null, "Wear", null, null, "Drop"};
+					itemDefinition.description = "It's rumored there are only 3 in exsistance.".getBytes();
+					break;
+			 case 16988:
+					itemDefinition.name = "Dragon Slayer Boots";
+					itemDefinition.inventoryModel = 65482;
+					itemDefinition.maleModel = 65483;
+					itemDefinition.femaleModel = 65483;
+					itemDefinition.zoom = 722;
+					itemDefinition.rotationX = 304;
+					itemDefinition.rotationY = 130;
+					itemDefinition.rotationZ = 0;
+					itemDefinition.inventoryX = 0;
+					itemDefinition.inventoryY = -1;
+					itemDefinition.inventoryOptions = new String[]
+							{null, "Wear", null, null, "Drop"};
+					itemDefinition.description = "It's rumored there are only 3 in exsistance.".getBytes();
+					break;
+			 case 16989:
+					itemDefinition.name = "Slain Dragon Wings";
+					itemDefinition.inventoryModel = 65484;
+					itemDefinition.maleModel = 65485;
+					itemDefinition.femaleModel = 65485;
+					itemDefinition.zoom = 1487;
+					itemDefinition.rotationX = 1296;
+					itemDefinition.rotationY = 1487;
+					itemDefinition.rotationZ = 0;
+					itemDefinition.inventoryX = -6;
+					itemDefinition.inventoryY = -9;
+					itemDefinition.inventoryOptions = new String[]
+							{null, "Wear", null, null, "Drop"};
+					itemDefinition.description = "Wings pulled straight from the back of a slain beast.".getBytes();
+					break;
+			// End
+				case 16994:
+					itemInstance = ItemDefinition.forId(20838); // Elite Void 
+					itemDefinition.name = "Ice Warrior Heml";
+					itemDefinition.inventoryModel = itemInstance.inventoryModel;
+					itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+					itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+					itemDefinition.maleModel = itemInstance.maleModel;
+					itemDefinition.femaleModel = itemInstance.femaleModel;
+					itemDefinition.zoom = itemInstance.zoom;
+					itemDefinition.rotationX = itemInstance.rotationX;
+					itemDefinition.rotationY = itemInstance.rotationY;
+					itemDefinition.inventoryX = itemInstance.inventoryX;
+					itemDefinition.inventoryY =itemInstance.inventoryY;
+					itemDefinition.inventoryOptions = new String[5];
+					itemDefinition.inventoryOptions[0] = null;
+					itemDefinition.inventoryOptions[1] = "Wear";
+					itemDefinition.inventoryOptions[2] = null;
+					itemDefinition.inventoryOptions[3] = null;
+					itemDefinition.inventoryOptions[4] = "Drop";
+					itemDefinition.modelColourToEdit = new int[]
+							{61, 926};
+					itemDefinition.newModelColourProduced = new int[]
+							{-29744, -29744};
+					break;
+				case 16995:
+					itemInstance = ItemDefinition.forId(20840); // Elite Void 
+					itemDefinition.name = "Ice Warrior Platebody";
+					itemDefinition.inventoryModel = itemInstance.inventoryModel;
+					itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+					itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+					itemDefinition.maleModel = itemInstance.maleModel;
+					itemDefinition.femaleModel = itemInstance.femaleModel;
+					itemDefinition.zoom = itemInstance.zoom;
+					itemDefinition.rotationX = itemInstance.rotationX;
+					itemDefinition.rotationY = itemInstance.rotationY;
+					itemDefinition.inventoryX = itemInstance.inventoryX;
+					itemDefinition.inventoryY =itemInstance.inventoryY;
+					itemDefinition.inventoryOptions = new String[5];
+					itemDefinition.inventoryOptions[0] = null;
+					itemDefinition.inventoryOptions[1] = "Wear";
+					itemDefinition.inventoryOptions[2] = null;
+					itemDefinition.inventoryOptions[3] = null;
+					itemDefinition.inventoryOptions[4] = "Drop";
+					itemDefinition.modelColourToEdit = new int[]
+							{24, 61, 41};
+					itemDefinition.newModelColourProduced = new int[]
+							{-29744, -29744, -29744};
+					break;
+				case 16996:
+					itemInstance = ItemDefinition.forId(20842); // Elite Void 
+					itemDefinition.name = "Ice Warrior Platelegs";
+					itemDefinition.inventoryModel = itemInstance.inventoryModel;
+					itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+					itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+					itemDefinition.maleModel = itemInstance.maleModel;
+					itemDefinition.femaleModel = itemInstance.femaleModel;
+					itemDefinition.zoom = itemInstance.zoom;
+					itemDefinition.rotationX = itemInstance.rotationX;
+					itemDefinition.rotationY = itemInstance.rotationY;
+					itemDefinition.inventoryX = itemInstance.inventoryX;
+					itemDefinition.inventoryY =itemInstance.inventoryY;
+					itemDefinition.inventoryOptions = new String[5];
+					itemDefinition.inventoryOptions[0] = null;
+					itemDefinition.inventoryOptions[1] = "Wear";
+					itemDefinition.inventoryOptions[2] = null;
+					itemDefinition.inventoryOptions[3] = null;
+					itemDefinition.inventoryOptions[4] = "Drop";
+					itemDefinition.modelColourToEdit = new int[]
+							{61, 41, 57};
+					itemDefinition.newModelColourProduced = new int[]
+							{-29744, -29744, -29744};
+					break;
+				case 16997:
+					itemInstance = ItemDefinition.forId(6629); // Elite Void 
+					itemDefinition.name = "Ice Warrior Gloves";
+					itemDefinition.inventoryModel = itemInstance.inventoryModel;
+					itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+					itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+					itemDefinition.maleModel = itemInstance.maleModel;
+					itemDefinition.femaleModel = itemInstance.femaleModel;
+					itemDefinition.zoom = itemInstance.zoom;
+					itemDefinition.rotationX = itemInstance.rotationX;
+					itemDefinition.rotationY = itemInstance.rotationY;
+					itemDefinition.inventoryX = itemInstance.inventoryX;
+					itemDefinition.inventoryY =itemInstance.inventoryY;
+					itemDefinition.inventoryOptions = new String[5];
+					itemDefinition.inventoryOptions[0] = null;
+					itemDefinition.inventoryOptions[1] = "Wear";
+					itemDefinition.inventoryOptions[2] = null;
+					itemDefinition.inventoryOptions[3] = null;
+					itemDefinition.inventoryOptions[4] = "Drop";
+					itemDefinition.modelColourToEdit = new int[]
+							{10004};
+					itemDefinition.newModelColourProduced = new int[]
+							{-29744};
+					break;
+				case 16998:
+					itemInstance = ItemDefinition.forId(6069); // Elite Void 
+					itemDefinition.name = "Ice Warrior Boots";
+					itemDefinition.inventoryModel = itemInstance.inventoryModel;
+					itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+					itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+					itemDefinition.maleModel = itemInstance.maleModel;
+					itemDefinition.femaleModel = itemInstance.femaleModel;
+					itemDefinition.zoom = itemInstance.zoom;
+					itemDefinition.rotationX = itemInstance.rotationX;
+					itemDefinition.rotationY = itemInstance.rotationY;
+					itemDefinition.inventoryX = itemInstance.inventoryX;
+					itemDefinition.inventoryY =itemInstance.inventoryY;
+					itemDefinition.inventoryOptions = new String[5];
+					itemDefinition.inventoryOptions[0] = null;
+					itemDefinition.inventoryOptions[1] = "Wear";
+					itemDefinition.inventoryOptions[2] = null;
+					itemDefinition.inventoryOptions[3] = null;
+					itemDefinition.inventoryOptions[4] = "Drop";
+					itemDefinition.modelColourToEdit = new int[]
+							{4626};
+					itemDefinition.newModelColourProduced = new int[]
+							{-29744};
+					break;
+				case 16999:
+					itemInstance = ItemDefinition.forId(12389); // Elite Void 
+					itemDefinition.name = "Ice Warrior Scimitar";
+					itemDefinition.inventoryModel = itemInstance.inventoryModel;
+					itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+					itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+					itemDefinition.maleModel = itemInstance.maleModel;
+					itemDefinition.femaleModel = itemInstance.femaleModel;
+					itemDefinition.zoom = itemInstance.zoom;
+					itemDefinition.rotationX = itemInstance.rotationX;
+					itemDefinition.rotationY = itemInstance.rotationY;
+					itemDefinition.inventoryX = itemInstance.inventoryX;
+					itemDefinition.inventoryY =itemInstance.inventoryY;
+					itemDefinition.inventoryOptions = new String[5];
+					itemDefinition.inventoryOptions[0] = null;
+					itemDefinition.inventoryOptions[1] = "Wear";
+					itemDefinition.inventoryOptions[2] = null;
+					itemDefinition.inventoryOptions[3] = null;
+					itemDefinition.inventoryOptions[4] = "Drop";
+					itemDefinition.modelColourToEdit = new int[]
+							{61};
+					itemDefinition.newModelColourProduced = new int[]
+							{-29744};
+					break;
+				case 17000:
+					itemInstance = ItemDefinition.forId(20421); // Elite Void 
+					itemDefinition.name = "Blood Warrior Platebody";
+					itemDefinition.inventoryModel = itemInstance.inventoryModel;
+					itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+					itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+					itemDefinition.maleModel = itemInstance.maleModel;
+					itemDefinition.femaleModel = itemInstance.femaleModel;
+					itemDefinition.zoom = itemInstance.zoom;
+					itemDefinition.rotationX = itemInstance.rotationX;
+					itemDefinition.rotationY = itemInstance.rotationY;
+					itemDefinition.inventoryX = itemInstance.inventoryX;
+					itemDefinition.inventoryY =itemInstance.inventoryY;
+					itemDefinition.inventoryOptions = new String[5];
+					itemDefinition.inventoryOptions[0] = null;
+					itemDefinition.inventoryOptions[1] = "Wear";
+					itemDefinition.inventoryOptions[2] = null;
+					itemDefinition.inventoryOptions[3] = null;
+					itemDefinition.inventoryOptions[4] = "Drop";
+					itemDefinition.modelColourToEdit = new int[]
+							{24, 61, 41};
+					itemDefinition.newModelColourProduced = new int[]
+							{61, 133, 805};
+					break;
+				case 17001:
+					itemInstance = ItemDefinition.forId(20422); // Elite Void 
+					itemDefinition.name = "Blood Warrior Platelegs";
+					itemDefinition.inventoryModel = itemInstance.inventoryModel;
+					itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+					itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+					itemDefinition.maleModel = itemInstance.maleModel;
+					itemDefinition.femaleModel = itemInstance.femaleModel;
+					itemDefinition.zoom = itemInstance.zoom;
+					itemDefinition.rotationX = itemInstance.rotationX;
+					itemDefinition.rotationY = itemInstance.rotationY;
+					itemDefinition.inventoryX = itemInstance.inventoryX;
+					itemDefinition.inventoryY =itemInstance.inventoryY;
+					itemDefinition.inventoryOptions = new String[5];
+					itemDefinition.inventoryOptions[0] = null;
+					itemDefinition.inventoryOptions[1] = "Wear";
+					itemDefinition.inventoryOptions[2] = null;
+					itemDefinition.inventoryOptions[3] = null;
+					itemDefinition.inventoryOptions[4] = "Drop";
+					itemDefinition.modelColourToEdit = new int[]
+							{61, 41, 57};
+					itemDefinition.newModelColourProduced = new int[]
+							{133, 133, 805};
+					break;
+				case 17002:
+					itemInstance = ItemDefinition.forId(1163); // Elite Void 
+					itemDefinition.name = "Blood Warrior Heml";
+					itemDefinition.inventoryModel = itemInstance.inventoryModel;
+					itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+					itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+					itemDefinition.maleModel = itemInstance.maleModel;
+					itemDefinition.femaleModel = itemInstance.femaleModel;
+					itemDefinition.zoom = itemInstance.zoom;
+					itemDefinition.rotationX = itemInstance.rotationX;
+					itemDefinition.rotationY = itemInstance.rotationY;
+					itemDefinition.inventoryX = itemInstance.inventoryX;
+					itemDefinition.inventoryY =itemInstance.inventoryY;
+					itemDefinition.inventoryOptions = new String[5];
+					itemDefinition.inventoryOptions[0] = null;
+					itemDefinition.inventoryOptions[1] = "Wear";
+					itemDefinition.inventoryOptions[2] = null;
+					itemDefinition.inventoryOptions[3] = null;
+					itemDefinition.inventoryOptions[4] = "Drop";
+					itemDefinition.modelColourToEdit = new int[]
+							{61, 926};
+					itemDefinition.newModelColourProduced = new int[]
+							{134, 805};
+					break;
+				case 17003:
+					itemInstance = ItemDefinition.forId(6629); // Elite Void 
+					itemDefinition.name = "Blood Warrior Gloves";
+					itemDefinition.inventoryModel = itemInstance.inventoryModel;
+					itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+					itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+					itemDefinition.maleModel = itemInstance.maleModel;
+					itemDefinition.femaleModel = itemInstance.femaleModel;
+					itemDefinition.zoom = itemInstance.zoom;
+					itemDefinition.rotationX = itemInstance.rotationX;
+					itemDefinition.rotationY = itemInstance.rotationY;
+					itemDefinition.inventoryX = itemInstance.inventoryX;
+					itemDefinition.inventoryY =itemInstance.inventoryY;
+					itemDefinition.inventoryOptions = new String[5];
+					itemDefinition.inventoryOptions[0] = null;
+					itemDefinition.inventoryOptions[1] = "Wear";
+					itemDefinition.inventoryOptions[2] = null;
+					itemDefinition.inventoryOptions[3] = null;
+					itemDefinition.inventoryOptions[4] = "Drop";
+					itemDefinition.modelColourToEdit = new int[]
+							{10004};
+					itemDefinition.newModelColourProduced = new int[]
+							{805};
+					break;
+				case 17004:
+					itemInstance = ItemDefinition.forId(6069); // Elite Void 
+					itemDefinition.name = "Blood Warrior Boots";
+					itemDefinition.inventoryModel = itemInstance.inventoryModel;
+					itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+					itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+					itemDefinition.maleModel = itemInstance.maleModel;
+					itemDefinition.femaleModel = itemInstance.femaleModel;
+					itemDefinition.zoom = itemInstance.zoom;
+					itemDefinition.rotationX = itemInstance.rotationX;
+					itemDefinition.rotationY = itemInstance.rotationY;
+					itemDefinition.inventoryX = itemInstance.inventoryX;
+					itemDefinition.inventoryY =itemInstance.inventoryY;
+					itemDefinition.inventoryOptions = new String[5];
+					itemDefinition.inventoryOptions[0] = null;
+					itemDefinition.inventoryOptions[1] = "Wear";
+					itemDefinition.inventoryOptions[2] = null;
+					itemDefinition.inventoryOptions[3] = null;
+					itemDefinition.inventoryOptions[4] = "Drop";
+					itemDefinition.modelColourToEdit = new int[]
+							{4626};
+					itemDefinition.newModelColourProduced = new int[]
+							{805};
+					break;
+			// Tri Void
+				case 16990:
+					itemInstance = ItemDefinition.forId(13072); // Elite Void 
+					itemDefinition.name = "Elite Void Top (Tri)";
+					itemDefinition.inventoryModel = itemInstance.inventoryModel;
+					itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+					itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+					itemDefinition.maleModel = itemInstance.maleModel;
+					itemDefinition.femaleModel = itemInstance.femaleModel;
+					itemDefinition.zoom = itemInstance.zoom;
+					itemDefinition.rotationX = itemInstance.rotationX;
+					itemDefinition.rotationY = itemInstance.rotationY;
+					itemDefinition.inventoryX = itemInstance.inventoryX;
+					itemDefinition.inventoryY =itemInstance.inventoryY;
+					itemDefinition.inventoryOptions = new String[5];
+					itemDefinition.inventoryOptions[0] = null;
+					itemDefinition.inventoryOptions[1] = "Wear";
+					itemDefinition.inventoryOptions[2] = null;
+					itemDefinition.inventoryOptions[3] = null;
+					itemDefinition.inventoryOptions[4] = "Drop";
+					break;
+				case 16991:
+					itemInstance = ItemDefinition.forId(13073); // Elite Void
+					itemDefinition.name = "Elite Void Robe (Tri)";
+					itemDefinition.inventoryModel = itemInstance.inventoryModel;
+					itemDefinition.maleEquip2 = itemInstance.maleEquip2;
+					itemDefinition.femaleEquip2 = itemInstance.femaleEquip2;
+					itemDefinition.maleModel = itemInstance.maleModel;
+					itemDefinition.femaleModel = itemInstance.femaleModel;
+					itemDefinition.zoom = itemInstance.zoom;
+					itemDefinition.rotationX = itemInstance.rotationX;
+					itemDefinition.rotationY = itemInstance.rotationY;
+					itemDefinition.inventoryX = itemInstance.inventoryX;
+					itemDefinition.inventoryY =itemInstance.inventoryY;
+					itemDefinition.inventoryOptions = new String[5];
+					itemDefinition.inventoryOptions[0] = null;
+					itemDefinition.inventoryOptions[1] = "Wear";
+					itemDefinition.inventoryOptions[2] = null;
+					itemDefinition.inventoryOptions[3] = null;
+					itemDefinition.inventoryOptions[4] = "Drop";
+					break;	
+			// End Tri Void
+				case 17005:
+					itemDefinition.name = "Sotetseg Pet";
+					itemDefinition.inventoryOptions = new String[]
+							{null, null, null, null, "Drop"};
+					itemDefinition.zoom = 4850;
+					itemDefinition.rotationY = 0;
+					itemDefinition.rotationX = 1974;
+					itemDefinition.inventoryX = -17;
+					itemDefinition.inventoryY = -6;
+					npcInstance = EntityDefinition.forId(8387);
+					itemDefinition.inventoryModel = 65488;
+					break;
+				case 17006:
+					itemDefinition.name = "Boss Crest";
+					itemDefinition.inventoryModel = 65487;
+					itemDefinition.zoom = 1400;
+					itemDefinition.rotationX = 1957;
+					itemDefinition.rotationY = 617;
+					itemDefinition.rotationZ = 0;
+					itemDefinition.inventoryX = 3;
+					itemDefinition.inventoryY = 4;
+					itemDefinition.inventoryOptions = new String[]
+							{null, null, null, null, "Drop"};
+					itemDefinition.description = "I can use this in a Store Located Home.".getBytes();
+					break;
+				case 16993:
+					itemDefinition.name = "Ice Spider pet";
+					itemDefinition.inventoryOptions = new String[]
+							{null, null, null, null, "Drop"};
+					itemDefinition.zoom = 548;
+					itemDefinition.rotationY = 165;
+					itemDefinition.rotationX = 130;
+					itemDefinition.inventoryX = 1;
+					itemDefinition.inventoryY = -3;
+					npcInstance = EntityDefinition.forId(3022);
+					itemDefinition.inventoryModel = 65486;
+					break;
+				case 4133:
+					itemDefinition.name = "Crawling Hand pet";
+					itemDefinition.inventoryOptions = new String[]
+							{null, null, null, null, "Drop"};
+					itemDefinition.zoom = 1887;
+					itemDefinition.rotationY = 339;
+					itemDefinition.rotationX = 1852;
+					itemDefinition.inventoryX = 1;
+					itemDefinition.inventoryY = 26;
+					npcInstance = EntityDefinition.forId(448);
+					itemDefinition.inventoryModel = 12344;
+					break;
+			//120 capes	
+			case 16930:
+				itemDefinition.name = "Attack Master Cape";
+				itemDefinition.inventoryModel = 65365;
+				itemDefinition.maleModel = 65364;
+				itemDefinition.femaleModel = 65364;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "When worn, no warrior guild tokens are needed to access the cyclopes within the Warriors' Guild.".getBytes();
+				break;
+			case 16931:
+				itemDefinition.name = "Agility Master Cape";
+				itemDefinition.inventoryModel = 65366;
+				itemDefinition.maleModel = 65367;
+				itemDefinition.femaleModel = 65367;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "A substitute for a graceful cape, and once per day, restores 100% run energy and provides the effect of a stamina potion for one minute.".getBytes();
+				break;
+			case 16932:
+				itemDefinition.name = "Construction Master Cape";
+				itemDefinition.inventoryModel = 65368;
+				itemDefinition.maleModel = 65369;
+				itemDefinition.femaleModel = 65369;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "Unlimited teleports to the player's own house or any player-owned house portal.".getBytes();
+				break;
+			case 16933:
+				itemDefinition.name = "Crafting Master Cape";
+				itemDefinition.inventoryModel = 65372;
+				itemDefinition.maleModel = 65373;
+				itemDefinition.femaleModel = 65373;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "	Unlimited teleports to the Crafting Guild (allows access to the Crafting Guild bank chest without the need for Falador hard diary).".getBytes();
+				break;
+			case 16934:
+				itemDefinition.name = "Defence Master Cape";
+				itemDefinition.inventoryModel = 65374;
+				itemDefinition.maleModel = 65375;
+				itemDefinition.femaleModel = 65375;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "Acts as a ring of life, can be toggled on or off.".getBytes();
+				break;
+			case 16935:
+				itemDefinition.name = "Farming Master Cape";
+				itemDefinition.inventoryModel = 65377;
+				itemDefinition.maleModel = 65376;
+				itemDefinition.femaleModel = 65376;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "	When worn, harvesting herb patches will have a 5% increase in yield (stacks with the magic secateurs).".getBytes();
+				break;
+			case 16936:
+				itemDefinition.name = "Firemaking Master Cape";
+				itemDefinition.inventoryModel = 65378;
+				itemDefinition.maleModel = 65379;
+				itemDefinition.femaleModel = 65379;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "Acts as an inextinguishable light source and as warm clothing for Wintertodt.".getBytes();
+				break;
+			case 16937:
+				itemDefinition.name = "Fishing Master Cape";
+				itemDefinition.inventoryModel = 65380;
+				itemDefinition.maleModel = 65381;
+				itemDefinition.femaleModel = 65381;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "Unlimited teleports to the Fishing Guild as well as Otto's Grotto.".getBytes();
+				break;
+			case 16938:
+				itemDefinition.name = "Fletching Master Cape";
+				itemDefinition.inventoryModel = 65382;
+				itemDefinition.maleModel = 65383;
+				itemDefinition.femaleModel = 65383;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "	Can be searched for a mithril grapple and bronze crossbow three times per day.".getBytes();
+				break;
+			case 16939:
+				itemDefinition.name = "Constitution Master Cape";
+				itemDefinition.inventoryModel = 65384;
+				itemDefinition.maleModel = 65385;
+				itemDefinition.femaleModel = 65385;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "Natural hitpoint restoration rate is doubled".getBytes();
+				break;
+			case 16940:
+				itemDefinition.name = "Herblore Master Cape";
+				itemDefinition.inventoryModel = 65386;
+				itemDefinition.maleModel = 65387;
+				itemDefinition.femaleModel = 65387;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "Allows grimy herbs to be used in creating unfinished potions".getBytes();
+				break;
+			case 16941:
+				itemDefinition.name = "Hunter Master Cape";
+				itemDefinition.inventoryModel = 65388;
+				itemDefinition.maleModel = 65389;
+				itemDefinition.femaleModel = 65389;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "Five teleports to the black/red chinchompa hunter areas per day.".getBytes();
+				break;
+			case 16942:
+				itemDefinition.name = "Magic Master Cape";
+				itemDefinition.inventoryModel = 65390;
+				itemDefinition.maleModel = 65391;
+				itemDefinition.femaleModel = 65391;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "Permanent spellbook change five times per day.".getBytes();
+				break;
+			case 16943:
+				itemDefinition.name = "Mining Master Cape";
+				itemDefinition.inventoryModel = 65392;
+				itemDefinition.maleModel = 65393;
+				itemDefinition.femaleModel = 65393;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "While mining ore up to adamantite, there is a 5% chance of receiving an extra ore".getBytes();
+				break;
+			case 16944:
+				itemDefinition.name = "Prayer Master Cape";
+				itemDefinition.inventoryModel = 65395;
+				itemDefinition.maleModel = 65394;
+				itemDefinition.femaleModel = 65394;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "Acts as a holy wrench, but effects will not stack with a holy wrench or a ring of the gods (i).".getBytes();
+				break;
+			case 16945:
+				itemDefinition.name = "Range Master Cape";
+				itemDefinition.inventoryModel = 65396;
+				itemDefinition.maleModel = 65397;
+				itemDefinition.femaleModel = 65397;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "Acts as an Ava's accumulator, or Ava's assembler if a Vorkath's head is used on it.".getBytes();
+				break;
+			case 16946:
+				itemDefinition.name = "Runecrafting Master Cape";
+				itemDefinition.inventoryModel = 65398;
+				itemDefinition.maleModel = 65399;
+				itemDefinition.femaleModel = 65399;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "Allows access to any runecrafting altar without use of talismans/tiaras.".getBytes();
+				break;
+			case 16947:
+				itemDefinition.name = "Slayer Master Cape";
+				itemDefinition.inventoryModel = 65400;
+				itemDefinition.maleModel = 65401;
+				itemDefinition.femaleModel = 65401;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				//itemDefinition.description = "Provides a 10% chance of getting the previous task when getting a new task from a Slayer Master.".getBytes();
+				break;
+			case 16948:
+				itemDefinition.name = "Smithing Master Cape";
+				itemDefinition.inventoryModel = 65402;
+				itemDefinition.maleModel = 65403;
+				itemDefinition.femaleModel = 65403;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "".getBytes();
+				break;
+			case 16949:
+				itemDefinition.name = "Strength Master Cape";
+				itemDefinition.inventoryModel = 65404;
+				itemDefinition.maleModel = 65405;
+				itemDefinition.femaleModel = 65405;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "".getBytes();
+				break;
+			case 16950:
+				itemDefinition.name = "Summoning Master Cape";
+				itemDefinition.inventoryModel = 65406;
+				itemDefinition.maleModel = 65407;
+				itemDefinition.femaleModel = 65407;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "".getBytes();
+				break;
+			case 16951:
+				itemDefinition.name = "Thieving Master Cape";
+				itemDefinition.inventoryModel = 65408;
+				itemDefinition.maleModel = 65409;
+				itemDefinition.femaleModel = 65409;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "".getBytes();
+				break;
+			case 16952:
+				itemDefinition.name = "Woodcutting Master Cape";
+				itemDefinition.inventoryModel = 65410;
+				itemDefinition.maleModel = 65411;
+				itemDefinition.femaleModel = 65411;
+				itemDefinition.zoom = 2722;
+				itemDefinition.rotationX = 1087;
+				itemDefinition.rotationY = 590;
+				itemDefinition.rotationZ = 0;
+				itemDefinition.inventoryX = 0;
+				itemDefinition.inventoryY = 11;
+				itemDefinition.inventoryOptions = new String[]
+						{null, "Wear", null, null, "Drop"};
+				itemDefinition.description = "".getBytes();
+				break;
+			//120 capes
 			case 16210:
 				itemDefinition.name = "Vampyre claws";
 				itemDefinition.femaleModel = 29191;
@@ -5124,11 +6409,11 @@ public class CustomItem {
 				itemDefinition.inventoryModel = 3288;
 				itemDefinition.name = "Death Cape";
 				itemDefinition.description = "A cape worn by the Masters.".getBytes();
-				itemDefinition.zoom = 1579;
-				itemDefinition.inventoryY = -6;
-				itemDefinition.inventoryX = 0;
-				itemDefinition.rotationY= 500;
-				itemDefinition.rotationX = 0;
+				itemDefinition.zoom = 3000;
+				itemDefinition.inventoryY = 20;
+				itemDefinition.inventoryX = 55;
+				itemDefinition.rotationY= 530;
+				itemDefinition.rotationX = 1261;
 				itemDefinition.maleModel = 3287;
 				itemDefinition.femaleModel = 3287;
 				itemDefinition.groundOptions = new String[5];
@@ -13063,9 +14348,11 @@ public class CustomItem {
 				itemDefinition.inventoryModel = 40024;
 				itemDefinition.maleModel = 40025;
 				itemDefinition.femaleModel = 40025;
-				itemDefinition.zoom = 1650;
-				itemDefinition.rotationY = 498;
-				itemDefinition.rotationX = 700;
+				itemDefinition.zoom = 780;
+				itemDefinition.rotationY = 381;
+				itemDefinition.rotationX = 391;
+				itemDefinition.inventoryX = 2;
+				itemDefinition.inventoryY = 7;
 				break;
 			case 6593://arlo
 				itemDefinition.name = "Korasi sword";

@@ -471,6 +471,11 @@ public final class ObjectDefinition {
 				objectDef.actions = new String[]
 				{"Enter", "Info", null, null, null};
 				break;
+			case 23677:
+				objectDef.name = "Sotetseg";
+				objectDef.actions = new String[]
+				{"Enter", null, null, null, null};
+				break;
 			case 23709:
 				objectDef.actions = new String[]
 				{"Restore", null, null, null, null};

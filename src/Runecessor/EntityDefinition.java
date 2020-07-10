@@ -102,8 +102,8 @@ public final class EntityDefinition {
                 npc.actions[0] = null;
 
                 break;
+                
             case 11215:
-
                 data = forId(762);
                 npc.name = "Yveltal";
                 npc.size = 3;
@@ -124,6 +124,119 @@ public final class EntityDefinition {
                 npc.scaleZ = 70;
                 npc.scaleX = 70;
                 npc.combatLevel = 999;
+                break;
+            case 8387:
+                data = forId(8387);
+                npc.name = "Sotetseg";
+                npc.actions = new String[5];
+                npc.actions[0] = null;
+                npc.actions[1] = "Attack";
+                npc.actions[2] = null;
+                npc.actions[3] = null;
+                npc.actions[4] = null;
+                npc.showOnMinimap = true;
+                npc.scaleZ = 140;
+                npc.scaleX = 140;
+                npc.combatLevel = 995;
+                break;
+            case 11253:
+                data = forId(3022);
+                npc.size = 2;
+                npc.name = "Ice Spider Pet";
+                npc.actions = new String[5];
+                npc.actions[0] = null;
+                npc.actions[1] = null;
+                npc.actions[2] = "Pick-Up";
+                npc.actions[3] = null;
+                npc.actions[4] = null;
+                npc.models = data.models;
+                npc.standAnim = data.standAnim;
+                npc.walkAnim = data.walkAnim;
+                npc.turn180Sequence = data.turn180Sequence;
+                npc.turnLeftSequence = data.turnLeftSequence;
+                npc.turnRightSequence = data.turnRightSequence;
+                npc.scaleZ = 135;
+                npc.scaleX = 135;
+                npc.description = null;
+                npc.showOnMinimap = false;
+                npc.combatLevel = 0;
+                break;
+           case 11254:
+                data = forId(448);
+                npc.size = 2;
+                npc.name = "Crawling Hand Pet";
+                npc.actions = new String[5];
+                npc.actions[0] = null;
+                npc.actions[1] = null;
+                npc.actions[2] = "Pick-Up";
+                npc.actions[3] = null;
+                npc.actions[4] = null;
+                npc.models = data.models;
+                npc.standAnim = data.standAnim;
+                npc.walkAnim = data.walkAnim;
+                npc.turn180Sequence = data.turn180Sequence;
+                npc.turnLeftSequence = data.turnLeftSequence;
+                npc.turnRightSequence = data.turnRightSequence;
+                npc.scaleZ = 135;
+                npc.scaleX = 135;
+                npc.description = null;
+                npc.showOnMinimap = false;
+                npc.combatLevel = 0;
+                break;
+           case 11255:
+               data = forId(8387);
+               npc.size = 1;
+               npc.name = "Sotetseg Pet";
+               npc.actions = new String[5];
+               npc.actions[0] = null;
+               npc.actions[1] = null;
+               npc.actions[2] = "Pick-Up";
+               npc.actions[3] = null;
+               npc.actions[4] = null;
+               npc.models = data.models;
+               npc.standAnim = data.standAnim;
+               npc.walkAnim = data.walkAnim;
+               npc.turn180Sequence = data.turn180Sequence;
+               npc.turnLeftSequence = data.turnLeftSequence;
+               npc.turnRightSequence = data.turnRightSequence;
+               npc.scaleZ = 30;
+               npc.scaleX = 30;
+               npc.description = null;
+               npc.showOnMinimap = false;
+               npc.combatLevel = 0;
+               break;
+           case 8278:
+               npc.name = "Boss Barterer";
+               npc.actions = new String[5];
+               npc.actions[0] = "Trade";
+               npc.actions[1] = null;
+               npc.actions[2] = null;
+               npc.actions[3] = null;
+               npc.actions[4] = null;
+               npc.showOnMinimap = true;
+               npc.description = "This man has seen Adventure.";
+               break;
+           case 8269:
+               npc.name = "Master of Capes";
+               npc.actions = new String[5];
+               npc.actions[0] = "Trade";
+               npc.actions[1] = null;
+               npc.actions[2] = null;
+               npc.actions[3] = null;
+               npc.actions[4] = null;
+               npc.showOnMinimap = true;
+               npc.description = "Weird name, I wonder what he sells..";
+               break;
+           case 7900:
+                npc.name = "Staff Butler";
+                npc.actions = new String[5];
+                npc.actions[0] = "Bank";
+                npc.actions[1] = null;
+                npc.actions[2] = null;
+                npc.actions[3] = null;
+                npc.actions[4] = null;
+                npc.showOnMinimap = true;
+                npc.description = "This man looks well paid.";
                 break;
             case 11216:
 
@@ -171,6 +284,9 @@ public final class EntityDefinition {
                 npc.scaleX = 25;
                 npc.combatLevel = 999;
                 break;
+                
+    	
+    			
 			case 4922:
 				data = forId(4922);
                 Arrays.stream(data.models).forEach(model-> System.out.println("MODEL: " + model));
@@ -230,6 +346,30 @@ public final class EntityDefinition {
                 npc.actions[3] = null;
                 npc.actions[4] = null;
                 npc.combatLevel = 126;
+                npc.scaleZ = 130;
+                npc.scaleX = 130;
+                break;
+            case 6989:
+                npc.name = "Show Off";
+                npc.walkAnim = 1660;
+                npc.standAnim = 11973;
+                npc.models = new int[9];
+                npc.models[0] = 26632; //HEAD
+                npc.models[1] = 26632; //JAW
+                npc.models[2] = 34630; //CHEST
+                npc.models[3] = 65445; //CAPE
+                npc.models[4] = 34630; //ARM
+                npc.models[5] = 65468; //HAND
+                npc.models[6] = 34655; //WEP
+                npc.models[7] = 5024; //LEG
+                npc.models[8] = 27638; //BOOT
+                npc.actions = new String[5];
+                npc.actions[0] = "Speak With";
+                npc.actions[1] = null;
+                npc.actions[2] = "Trade";
+                npc.actions[3] = null;
+                npc.actions[4] = null;
+                npc.combatLevel = 132;
                 npc.scaleZ = 130;
                 npc.scaleX = 130;
                 break;

@@ -2570,8 +2570,8 @@ public class Client extends RSApplet {
 
     public Socket openSocket(int port) throws IOException {
     
-   return new Socket(InetAddress.getByName("127.0.0.1"), 5555);//serverip
-  //  return new Socket(InetAddress.getByName("162.252.11.137"), 43594);//serverip
+  return new Socket(InetAddress.getByName("127.0.0.1"), 5555);//serverip
+  //return new Socket(InetAddress.getByName("162.252.11.137"), 43594);//serverip
     }
     private boolean processMenuClick() {
         if (activeInterfaceType != 0) {
