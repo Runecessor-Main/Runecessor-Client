@@ -511,7 +511,7 @@ public final class ObjectDefinition {
 				break;
 			case 6943:
 				objectDef.actions = new String[]
-				{null, "Bank", null, null, null};
+				{null, "Bank", "Exchange", "Collect", null};
 				break;
 			case 29210:
 			case 29217:
